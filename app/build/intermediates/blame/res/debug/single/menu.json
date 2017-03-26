@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/menu/map.xml",
+        "source": "/Users/Martare/Documents/Android/app/src/main/res/menu/map.xml"
+    },
+    {
+        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/menu/map.xml",
+        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/menu/map.xml"
+    },
+    {
+        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/menu/add.xml",
+        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/menu/add.xml"
+    },
+    {
+        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/menu/add.xml",
+        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/menu/add.xml"
+    },
+    {
+        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/menu/map.xml",
+        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/menu/map.xml"
+    },
+    {
+        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/menu/share_fav.xml",
+        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/menu/share_fav.xml"
+    },
+    {
+        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/menu/share_fav.xml",
+        "source": "/Users/Martare/Documents/Android/app/src/main/res/menu/share_fav.xml"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/menu/add.xml",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/menu/add.xml"
+    },
+    {
+        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/menu/share_fav.xml",
+        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/menu/share_fav.xml"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/menu/map.xml",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/menu/map.xml"
+    },
+    {
+        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/menu/add.xml",
+        "source": "/Users/Martare/Documents/Android/app/src/main/res/menu/add.xml"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/menu/share_fav.xml",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/menu/share_fav.xml"
+    }
+]

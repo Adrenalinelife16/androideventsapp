@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_adrenaline_logo.png",
+        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/mipmap-mdpi/ic_adrenaline_logo.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_adrenaline_logo.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/mipmap-mdpi/ic_adrenaline_logo.png"
+    },
+    {
+        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_adrenaline_logo.png",
+        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/mipmap-mdpi/ic_adrenaline_logo.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_adrenaline_logo.png",
+        "source": "/Users/Martare/Documents/Android/app/src/main/res/mipmap-mdpi/ic_adrenaline_logo.png"
+    }
+]
