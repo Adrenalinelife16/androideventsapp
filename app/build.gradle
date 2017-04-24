@@ -2,8 +2,8 @@ apply plugin: 'com.android.application'
 
 android {
     useLibrary 'org.apache.http.legacy'
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "com.events"
@@ -21,9 +21,13 @@ android {
 }
 
 dependencies {
+    compile 'org.apache.httpcomponents:httpcore:4.4.1'
+    compile 'org.apache.httpcomponents:httpclient:4.5'
     compile 'com.google.android.gms:play-services:8.4.0'
     compile 'com.android.support:support-v13:23.1.1'
     compile 'com.google.android.gms:play-services-ads:8.4.0'
     compile 'com.google.android.gms:play-services-auth:8.4.0'
     compile 'com.google.android.gms:play-services-gcm:8.4.0'
-}
+    compile 'com.android.support:support-v4:21.0.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+  }

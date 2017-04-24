@@ -8,14 +8,32 @@
     android:padding="@dimen/pad_20dp" >
 
     <EditText
-        android:id="@+id/txtName"
+        android:id="@+id/FName"
         style="@style/txt_orange"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/pad_10dp"
-        android:hint="@string/name" >
+        android:hint="@string/fname" >
 
         <requestFocus />
+    </EditText>
+
+    <EditText
+    android:id="@+id/LName"
+    style="@style/txt_orange"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/pad_10dp"
+    android:hint="@string/lname" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/Username"
+        style="@style/txt_orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pad_10dp"
+        android:hint="@string/username" >
     </EditText>
 
     <EditText
@@ -31,12 +49,23 @@
     </EditText>
 
     <EditText
+    style="@style/txt_orange"
+    android:id="@+id/txtPwd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/pad_10dp"
+    android:hint="@string/pwd"
+    android:inputType="textPassword"
+    >
+</EditText>
+
+    <EditText
         style="@style/txt_orange"
-        android:id="@+id/txtPwd"
+        android:id="@+id/ctxtPwd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/pad_10dp"
-        android:hint="@string/pwd"
+        android:hint="@string/cpwd"
         android:inputType="textPassword"
         >
     </EditText>

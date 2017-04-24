@@ -15,13 +15,13 @@
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
 
     <permission
-        android:name="com.events.permission.MAPS_RECEIVE"
+        android:name="com.adrenalinelife.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" />
 
     <uses-permission
         android:name="android.permission.CALL_PHONE"
         android:required="false" />
-    <uses-permission android:name="com.events.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.adrenalinelife.permission.MAPS_RECEIVE" />
 
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -33,18 +33,18 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_adrenaline_logo"
+        android:icon="@mipmap/ic_adrenaline_logo2"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyChYHGVj4CyxxsT7VxMHuGPtRBEKqq3eZI" />
+            android:value="AIzaSyDgjrUoJNZTQeYeS6W-Q7RMjs5yMzRTCfU" />
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name="com.events.SplashScreen"
+            android:name="com.adrenalinelife.SplashScreen"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
@@ -56,48 +56,63 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.events.MainActivity"
+            android:name="com.adrenalinelife.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" >
         </activity>
         <activity
-            android:name="com.events.MapViewActivity"
+            android:name="com.adrenalinelife.MapViewActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" >
         </activity>
         <activity
-            android:name="com.events.EventDetailActivity"
+            android:name="com.adrenalinelife.EventDetailActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" >
         </activity>
         <activity
-            android:name="com.events.FeedDetail"
+            android:name="com.adrenalinelife.FeedDetail"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" >
         </activity>
         <activity
-            android:name="com.events.Login"
+            android:name="com.adrenalinelife.Login"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" >
         </activity>
         <activity
-            android:name="com.events.Register"
+            android:name="com.adrenalinelife.Register"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" >
         </activity>
         <activity
-            android:name="com.events.BookTkt"
+            android:name="com.adrenalinelife.BookTkt"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" >
         </activity>
         <activity
-            android:name="com.events.Browser"
+            android:name="com.adrenalinelife.Browser"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" >
         </activity>
         <activity
-            android:name="com.events.MoreDetail"
+            android:name="com.adrenalinelife.MoreDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.adrenalinelife.Logout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.adrenalinelife.Settings"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.adrenalinelife.CreateEvent"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" >
         </activity>

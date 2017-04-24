@@ -1,43 +1,39 @@
 [
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav3_sel.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav3_sel.png"
-    },
-    {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/switch_bg_on.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/switch_bg_on.png"
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav4_sel.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_nav4_sel.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ticket_bg2.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ticket_bg2.png"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav4_sel.png",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_nav4_sel.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\switch_bg_off.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\switch_bg_off.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/drawer_shadow.9.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/drawer_shadow.9.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/cal_bg_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/cal_bg_sel.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav3_sel.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav3_sel.png"
-    },
-    {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav3.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav3.png"
-    },
-    {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_time.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_time.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav5_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_nav5_sel.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_launcher.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav4.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav4.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav3.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav3.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_fav.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_fav.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\no_image.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\no_image.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/no_image.png",
@@ -48,296 +44,276 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_locate.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/switch_thumb.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/switch_thumb.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/arrow_right_small.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/arrow_right_small.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/tab_bg_sel.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/tab_bg_sel.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\actionbar_bg.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\actionbar_bg.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav6.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_nav6.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/progress_bg.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/progress_bg.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav1.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav1.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_date.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_date.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_fav_orange.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_fav_orange.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav6_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav6_sel.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/semi_trans_bg.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/semi_trans_bg.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\cal_mark.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\cal_mark.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_ig.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_ig.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_fav.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_fav.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_comment.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_comment.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav1.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav1.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_fav.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_fav.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/progress_main.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/progress_main.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\arrow_right.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\arrow_right.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_fb.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_fb.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/cal_mark.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/cal_mark.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/checkbox_checked.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/checkbox_checked.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ticket_bg2.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ticket_bg2.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/drawer_shadow.9.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/drawer_shadow.9.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/checkbox_checked.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/checkbox_checked.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_comment.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_comment.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/cal_bg.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/cal_bg.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ticket_bg2.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ticket_bg2.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/progress_bg.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/progress_bg.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav5_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav5_sel.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/cal_bg_sel.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/cal_bg_sel.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/drawer_shadow.9.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/drawer_shadow.9.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav4_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav4_sel.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/checkbox_unchecked.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/checkbox_unchecked.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_tw.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_tw.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav2.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav2.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\arrow_right_small.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\arrow_right_small.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/switch_bg_off.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/switch_bg_off.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\cal_bg_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\cal_bg_sel.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_fav.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_fav.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav2_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav2_sel.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/progress_main.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/progress_main.png"
-    },
-    {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_fb.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_fb.png"
-    },
-    {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_launcher.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/switch_thumb.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/switch_thumb.png"
-    },
-    {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav5_sel.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav5_sel.png"
-    },
-    {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav4.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_nav4.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\tab_bg_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\tab_bg_sel.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_ig.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_ig.png"
     },
     {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ticket_bg2.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ticket_bg2.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_back.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_back.png"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav3.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_nav3.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav3.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_nav3.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\cal_mark.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\cal_mark.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav6.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_nav6.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/arrow_left.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/arrow_left.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav6.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_nav6.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/cal_bg_sel.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/cal_bg_sel.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/cal_bg.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/cal_bg.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/splash.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/splash.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\actionbar_bg.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\actionbar_bg.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav5_sel.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav5_sel.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav5.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav5.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_fav_orange.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_fav_orange.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\semi_trans_bg.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\semi_trans_bg.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/switch_bg_on.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/switch_bg_on.png"
-    },
-    {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_ig.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_ig.png"
-    },
-    {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_back.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_back.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_comment.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_comment.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_share.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_share.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_fb.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_fb.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_add.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_add.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_tw.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_tw.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\switch_bg_off.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\switch_bg_off.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/semi_trans_bg.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/semi_trans_bg.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_ig.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_ig.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ticket_bg2.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ticket_bg2.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\tab_bg_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\tab_bg_sel.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_add.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_add.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_time.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_time.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/cal_mark.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/cal_mark.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_share.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_share.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\progress_main.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\progress_main.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_tw.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_tw.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/semi_trans_bg.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/semi_trans_bg.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_drawer.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_drawer.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav4.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_nav4.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/splash.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/splash.png"
-    },
-    {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/tab_bg_sel.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/tab_bg_sel.png"
-    },
-    {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ticket_bg1.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ticket_bg1.png"
-    },
-    {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/arrow_left.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/arrow_left.png"
-    },
-    {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/splash.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/splash.png"
-    },
-    {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/tab_bg.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/tab_bg.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_add.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_add.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/arrow_right.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/arrow_right.png"
     },
     {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/reg_btn_bg.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/reg_btn_bg.png"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_add.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_add.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/cal_mark.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/cal_mark.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/arrow_left.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/arrow_left.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav4.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav4.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\switch_bg_on.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\switch_bg_on.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_tw.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_tw.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/actionbar_bg.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/actionbar_bg.png"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav6_sel.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_nav6_sel.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/arrow_right_small.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/arrow_right_small.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_fav_orange.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_fav_orange.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav4_sel.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_nav4_sel.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ticket_bg1.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ticket_bg1.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_date.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_date.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav5.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_nav5.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/no_image.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/no_image.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_back.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_back.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/actionbar_bg.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/actionbar_bg.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_locate.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_locate.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/actionbar_bg.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/actionbar_bg.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/actionbar_bg.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/actionbar_bg.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_add.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_add.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/tab_bg.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/tab_bg.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav3_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav3_sel.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/switch_bg_off.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/switch_bg_off.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_fav_orange.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_fav_orange.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/reg_btn_bg.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/reg_btn_bg.png"
-    },
-    {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/switch_bg_off.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/switch_bg_off.png"
-    },
-    {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/progress_bg.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/progress_bg.png"
-    },
-    {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/checkbox_checked.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/checkbox_checked.png"
-    },
-    {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_tw.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_tw.png"
-    },
-    {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/progress_main.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/progress_main.png"
-    },
-    {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav5.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_nav5.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\arrow_right_small.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\arrow_right_small.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_date.png",
@@ -348,240 +324,228 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_nav1.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_time.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_time.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/arrow_right.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/arrow_right.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/no_image.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/no_image.png"
-    },
-    {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/semi_trans_bg.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/semi_trans_bg.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\checkbox_checked.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\checkbox_checked.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav2.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_nav2.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav1_sel.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav1_sel.png"
-    },
-    {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/cal_bg_sel.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/cal_bg_sel.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_launcher.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_launcher.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/arrow_left.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/arrow_left.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav4_sel.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav4_sel.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\checkbox_unchecked.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\checkbox_unchecked.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav3_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav3_sel.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/switch_bg_on.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/switch_bg_on.png"
     },
     {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_locate.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_locate.png"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/tab_bg.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/tab_bg.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\cal_bg_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\cal_bg_sel.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/arrow_right_small.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/arrow_right_small.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_drawer.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_drawer.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_time.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_time.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/adrenaline_splash.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/adrenaline_splash.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav2_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_nav2_sel.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_launcher.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_launcher.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav2_sel.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_nav2_sel.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_comment.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_comment.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav5.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav5.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_locate.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_locate.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav6_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav6_sel.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav2.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav2.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_back.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_back.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/cal_bg.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/cal_bg.png"
-    },
-    {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav1_sel.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav1_sel.png"
-    },
-    {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/arrow_right_small.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/arrow_right_small.png"
-    },
-    {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav6.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav6.png"
-    },
-    {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav5.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav5.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\checkbox_checked.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\checkbox_checked.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/drawer_shadow.9.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/drawer_shadow.9.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_launcher.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_launcher.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_tw.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_tw.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_fav_orange.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_fav_orange.png"
-    },
-    {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ticket_bg2.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ticket_bg2.png"
-    },
-    {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_date.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_date.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/switch_bg_on.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/switch_bg_on.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ticket_bg1.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ticket_bg1.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_locate.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_locate.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\progress_main.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\progress_main.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_share.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_share.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_fb.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_fb.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav4.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav4.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/switch_bg_off.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/switch_bg_off.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/arrow_left.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/arrow_left.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/adrenaline_splash.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/adrenaline_splash.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\reg_btn_bg.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\reg_btn_bg.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_comment.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_comment.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav4.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav4.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_fav.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_fav.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_fav.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_fav.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/switch_thumb.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/switch_thumb.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/checkbox_checked.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/checkbox_checked.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_fav_orange.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_fav_orange.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_back.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_back.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\reg_btn_bg.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\reg_btn_bg.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\drawer_shadow.9.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\drawer_shadow.9.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_drawer.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_drawer.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav5_sel.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_nav5_sel.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav2_sel.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav2_sel.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\switch_thumb.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\switch_thumb.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/no_image.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/no_image.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\arrow_left.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\arrow_left.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav4_sel.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav4_sel.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_share.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_share.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_fav.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_fav.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav5_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav5_sel.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_share.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_share.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_ig.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_ig.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ticket_bg1.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ticket_bg1.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\arrow_right.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\arrow_right.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\arrow_left.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\arrow_left.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/switch_bg_off.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/switch_bg_off.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/reg_btn_bg.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/reg_btn_bg.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\tab_bg.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\tab_bg.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav6.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav6.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav1_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_nav1_sel.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/switch_thumb.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/switch_thumb.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav6.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav6.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/cal_bg.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/cal_bg.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_launcher.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav3_sel.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_nav3_sel.png"
-    },
-    {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav6_sel.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_nav6_sel.png"
-    },
-    {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav2_sel.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav2_sel.png"
-    },
-    {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_tw.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_tw.png"
-    },
-    {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/checkbox_unchecked.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/checkbox_unchecked.png"
-    },
-    {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav1.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav1.png"
-    },
-    {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_comment.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_comment.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\switch_bg_on.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\switch_bg_on.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/cal_bg.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/cal_bg.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_date.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_date.png"
-    },
-    {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_share.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_share.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_fb.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_fb.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_back.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_back.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/switch_bg_on.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/switch_bg_on.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/checkbox_unchecked.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/checkbox_unchecked.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/progress_bg.png",
@@ -592,32 +556,56 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_comment.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav1_sel.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_nav1_sel.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\adrenaline_splash.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\adrenaline_splash.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav6_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_nav6_sel.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav3_sel.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_nav3_sel.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ticket_bg1.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ticket_bg1.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\tab_bg.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\tab_bg.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_ig.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_ig.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_time.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_time.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_drawer.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_drawer.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/tab_bg_sel.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/tab_bg_sel.png"
     },
     {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\semi_trans_bg.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\semi_trans_bg.png"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/splash.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/splash.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_add.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_add.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_locate.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_locate.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_back.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_back.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\checkbox_unchecked.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\checkbox_unchecked.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav2.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav2.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/reg_btn_bg.png",
@@ -628,72 +616,100 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/switch_thumb.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav6_sel.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav6_sel.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\no_image.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\no_image.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\switch_thumb.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\switch_thumb.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\cal_bg.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\cal_bg.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_time.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_time.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/checkbox_unchecked.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/checkbox_unchecked.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/splash.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/splash.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav6_sel.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav6_sel.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav2_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav2_sel.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav3.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav3.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\splash.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\splash.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\adrenaline_splash.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\adrenaline_splash.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav5.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_nav5.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav1.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_nav1.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_fb.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_fb.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/arrow_right.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/arrow_right.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav3_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_nav3_sel.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav1_sel.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_nav1_sel.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/progress_bg.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/progress_bg.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ticket_bg2.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ticket_bg2.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_drawer.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_drawer.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/arrow_right.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/arrow_right.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav4_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav4_sel.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/tab_bg_sel.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/tab_bg_sel.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav1.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav1.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/tab_bg.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/tab_bg.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\drawer_shadow.9.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\drawer_shadow.9.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav3.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_nav3.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_date.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_date.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/progress_main.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/progress_main.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav6.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav6.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/checkbox_unchecked.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/checkbox_unchecked.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/cal_mark.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/cal_mark.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ticket_bg1.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ticket_bg1.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/tab_bg.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/tab_bg.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/no_image.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/no_image.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav4.png",
@@ -704,99 +720,83 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_fav_orange.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav5_sel.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_nav5_sel.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\progress_bg.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\progress_bg.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav2.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_nav2.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/actionbar_bg.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/actionbar_bg.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/checkbox_checked.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/checkbox_checked.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/adrenaline_splash.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/adrenaline_splash.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav4_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_nav4_sel.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_date.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_date.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/progress_main.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/progress_main.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/arrow_right.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/arrow_right.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav1.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_nav1.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/reg_btn_bg.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/reg_btn_bg.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/semi_trans_bg.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/semi_trans_bg.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_ig.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_ig.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_share.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_share.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\cal_bg.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\cal_bg.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\splash.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\splash.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav1_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav1_sel.png"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav1_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav1_sel.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/adrenaline_splash.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/adrenaline_splash.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_locate.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_locate.png"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/cal_mark.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/cal_mark.png"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/adrenaline_splash.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/adrenaline_splash.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\progress_bg.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\progress_bg.png"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_time.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_time.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/tab_bg_sel.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/tab_bg_sel.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav3.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav3.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_drawer.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/drawable-large-hdpi/ic_drawer.png"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/drawer_shadow.9.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/drawer_shadow.9.png"
-    },
-    {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_drawer.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_drawer.png"
-    },
-    {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/cal_bg_sel.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/cal_bg_sel.png"
-    },
-    {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav2.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_nav2.png"
-    },
-    {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/arrow_right_small.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/arrow_right_small.png"
-    },
-    {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_launcher.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_add.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_add.png"
-    },
-    {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav5.png",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_nav5.png"
-    },
-    {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_fb.png",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/src/main/res/drawable-large-hdpi/ic_fb.png"
-    },
-    {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav2_sel.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ic_nav2_sel.png"
-    },
-    {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ticket_bg1.png",
-        "source": "/Users/Martare/Documents/Android/app/src/main/res/drawable-large-hdpi/ticket_bg1.png"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-large-hdpi\\ic_nav2.png",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\drawable-large-hdpi\\ic_nav2.png"
     }
 ]

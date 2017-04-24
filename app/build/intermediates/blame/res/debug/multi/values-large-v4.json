@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/Martare/Documents/Android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
+        "outputFile": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 112
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-large/values-large.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 184
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-large/values-large.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 243
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-large/values-large.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 307
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-large/values-large.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 374
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-large/values-large.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 441
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-large/values-large.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -125,7 +125,7 @@
                     "endOffset": 507
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-large/values-large.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -144,7 +144,7 @@
                     "endOffset": 573
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-large/values-large.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -163,7 +163,7 @@
                     "endOffset": 628
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-large/values-large.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -182,7 +182,7 @@
                     "endOffset": 732
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-large/values-large.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -201,7 +201,435 @@
                     "endOffset": 848
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-large/values-large.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1633,
+                        "endColumn": 115,
+                        "endOffset": 1744
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 61,
+                    "endOffset": 112
+                },
+                "from": {
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\values-large\\values-large.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 277,
+                        "endColumn": 61,
+                        "endOffset": 334
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 117,
+                    "endColumn": 71,
+                    "endOffset": 184
+                },
+                "from": {
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\values-large\\values-large.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 562,
+                        "endColumn": 71,
+                        "endOffset": 629
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 189,
+                    "endColumn": 58,
+                    "endOffset": 243
+                },
+                "from": {
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\values-large\\values-large.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 634,
+                        "endColumn": 58,
+                        "endOffset": 688
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 248,
+                    "endColumn": 63,
+                    "endOffset": 307
+                },
+                "from": {
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\values-large\\values-large.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 916,
+                        "endColumn": 63,
+                        "endOffset": 975
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 312,
+                    "endColumn": 66,
+                    "endOffset": 374
+                },
+                "from": {
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\values-large\\values-large.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 980,
+                        "endColumn": 66,
+                        "endOffset": 1042
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 379,
+                    "endColumn": 66,
+                    "endOffset": 441
+                },
+                "from": {
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\values-large\\values-large.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1047,
+                        "endColumn": 66,
+                        "endOffset": 1109
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 446,
+                    "endColumn": 65,
+                    "endOffset": 507
+                },
+                "from": {
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\values-large\\values-large.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1114,
+                        "endColumn": 65,
+                        "endOffset": 1175
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 512,
+                    "endColumn": 65,
+                    "endOffset": 573
+                },
+                "from": {
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\values-large\\values-large.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1180,
+                        "endColumn": 65,
+                        "endOffset": 1241
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 578,
+                    "endColumn": 54,
+                    "endOffset": 628
+                },
+                "from": {
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\values-large\\values-large.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1246,
+                        "endColumn": 54,
+                        "endOffset": 1296
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 633,
+                    "endColumn": 103,
+                    "endOffset": 732
+                },
+                "from": {
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\values-large\\values-large.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1529,
+                        "endColumn": 103,
+                        "endOffset": 1628
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 737,
+                    "endColumn": 115,
+                    "endOffset": 848
+                },
+                "from": {
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\values-large\\values-large.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1633,
+                        "endColumn": 115,
+                        "endOffset": 1744
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 61,
+                    "endOffset": 112
+                },
+                "from": {
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\values-large\\values-large.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 277,
+                        "endColumn": 61,
+                        "endOffset": 334
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 117,
+                    "endColumn": 71,
+                    "endOffset": 184
+                },
+                "from": {
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\values-large\\values-large.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 562,
+                        "endColumn": 71,
+                        "endOffset": 629
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 189,
+                    "endColumn": 58,
+                    "endOffset": 243
+                },
+                "from": {
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\values-large\\values-large.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 634,
+                        "endColumn": 58,
+                        "endOffset": 688
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 248,
+                    "endColumn": 63,
+                    "endOffset": 307
+                },
+                "from": {
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\values-large\\values-large.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 916,
+                        "endColumn": 63,
+                        "endOffset": 975
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 312,
+                    "endColumn": 66,
+                    "endOffset": 374
+                },
+                "from": {
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\values-large\\values-large.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 980,
+                        "endColumn": 66,
+                        "endOffset": 1042
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 379,
+                    "endColumn": 66,
+                    "endOffset": 441
+                },
+                "from": {
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\values-large\\values-large.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1047,
+                        "endColumn": 66,
+                        "endOffset": 1109
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 446,
+                    "endColumn": 65,
+                    "endOffset": 507
+                },
+                "from": {
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\values-large\\values-large.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1114,
+                        "endColumn": 65,
+                        "endOffset": 1175
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 512,
+                    "endColumn": 65,
+                    "endOffset": 573
+                },
+                "from": {
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\values-large\\values-large.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1180,
+                        "endColumn": 65,
+                        "endOffset": 1241
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 578,
+                    "endColumn": 54,
+                    "endOffset": 628
+                },
+                "from": {
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\values-large\\values-large.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1246,
+                        "endColumn": 54,
+                        "endOffset": 1296
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 633,
+                    "endColumn": 103,
+                    "endOffset": 732
+                },
+                "from": {
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\values-large\\values-large.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1529,
+                        "endColumn": 103,
+                        "endOffset": 1628
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 737,
+                    "endColumn": 115,
+                    "endOffset": 848
+                },
+                "from": {
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\values-large\\values-large.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -225,7 +653,7 @@
                     "endOffset": 112
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-large/values-large.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -244,7 +672,7 @@
                     "endOffset": 184
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-large/values-large.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -263,7 +691,7 @@
                     "endOffset": 243
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-large/values-large.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -282,7 +710,7 @@
                     "endOffset": 307
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-large/values-large.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -301,7 +729,7 @@
                     "endOffset": 374
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-large/values-large.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -320,7 +748,7 @@
                     "endOffset": 441
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-large/values-large.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -339,7 +767,7 @@
                     "endOffset": 507
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-large/values-large.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -358,7 +786,7 @@
                     "endOffset": 573
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-large/values-large.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -377,7 +805,7 @@
                     "endOffset": 628
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-large/values-large.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -396,7 +824,7 @@
                     "endOffset": 732
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-large/values-large.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -415,435 +843,7 @@
                     "endOffset": 848
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 1633,
-                        "endColumn": 115,
-                        "endOffset": 1744
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 61,
-                    "endOffset": 112
-                },
-                "from": {
-                    "file": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 277,
-                        "endColumn": 61,
-                        "endOffset": 334
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 117,
-                    "endColumn": 71,
-                    "endOffset": 184
-                },
-                "from": {
-                    "file": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 562,
-                        "endColumn": 71,
-                        "endOffset": 629
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 4,
-                    "startColumn": 4,
-                    "startOffset": 189,
-                    "endColumn": 58,
-                    "endOffset": 243
-                },
-                "from": {
-                    "file": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 634,
-                        "endColumn": 58,
-                        "endOffset": 688
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 248,
-                    "endColumn": 63,
-                    "endOffset": 307
-                },
-                "from": {
-                    "file": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 916,
-                        "endColumn": 63,
-                        "endOffset": 975
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 6,
-                    "startColumn": 4,
-                    "startOffset": 312,
-                    "endColumn": 66,
-                    "endOffset": 374
-                },
-                "from": {
-                    "file": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 980,
-                        "endColumn": 66,
-                        "endOffset": 1042
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 379,
-                    "endColumn": 66,
-                    "endOffset": 441
-                },
-                "from": {
-                    "file": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1047,
-                        "endColumn": 66,
-                        "endOffset": 1109
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 446,
-                    "endColumn": 65,
-                    "endOffset": 507
-                },
-                "from": {
-                    "file": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1114,
-                        "endColumn": 65,
-                        "endOffset": 1175
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 512,
-                    "endColumn": 65,
-                    "endOffset": 573
-                },
-                "from": {
-                    "file": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1180,
-                        "endColumn": 65,
-                        "endOffset": 1241
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 10,
-                    "startColumn": 4,
-                    "startOffset": 578,
-                    "endColumn": 54,
-                    "endOffset": 628
-                },
-                "from": {
-                    "file": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1246,
-                        "endColumn": 54,
-                        "endOffset": 1296
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 11,
-                    "startColumn": 4,
-                    "startOffset": 633,
-                    "endColumn": 103,
-                    "endOffset": 732
-                },
-                "from": {
-                    "file": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1529,
-                        "endColumn": 103,
-                        "endOffset": 1628
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 12,
-                    "startColumn": 4,
-                    "startOffset": 737,
-                    "endColumn": 115,
-                    "endOffset": 848
-                },
-                "from": {
-                    "file": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 1633,
-                        "endColumn": 115,
-                        "endOffset": 1744
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 61,
-                    "endOffset": 112
-                },
-                "from": {
-                    "file": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 277,
-                        "endColumn": 61,
-                        "endOffset": 334
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 117,
-                    "endColumn": 71,
-                    "endOffset": 184
-                },
-                "from": {
-                    "file": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 562,
-                        "endColumn": 71,
-                        "endOffset": 629
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 4,
-                    "startColumn": 4,
-                    "startOffset": 189,
-                    "endColumn": 58,
-                    "endOffset": 243
-                },
-                "from": {
-                    "file": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 634,
-                        "endColumn": 58,
-                        "endOffset": 688
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 248,
-                    "endColumn": 63,
-                    "endOffset": 307
-                },
-                "from": {
-                    "file": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 916,
-                        "endColumn": 63,
-                        "endOffset": 975
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 6,
-                    "startColumn": 4,
-                    "startOffset": 312,
-                    "endColumn": 66,
-                    "endOffset": 374
-                },
-                "from": {
-                    "file": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 980,
-                        "endColumn": 66,
-                        "endOffset": 1042
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 379,
-                    "endColumn": 66,
-                    "endOffset": 441
-                },
-                "from": {
-                    "file": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1047,
-                        "endColumn": 66,
-                        "endOffset": 1109
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 446,
-                    "endColumn": 65,
-                    "endOffset": 507
-                },
-                "from": {
-                    "file": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1114,
-                        "endColumn": 65,
-                        "endOffset": 1175
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 512,
-                    "endColumn": 65,
-                    "endOffset": 573
-                },
-                "from": {
-                    "file": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1180,
-                        "endColumn": 65,
-                        "endOffset": 1241
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 10,
-                    "startColumn": 4,
-                    "startOffset": 578,
-                    "endColumn": 54,
-                    "endOffset": 628
-                },
-                "from": {
-                    "file": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1246,
-                        "endColumn": 54,
-                        "endOffset": 1296
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 11,
-                    "startColumn": 4,
-                    "startOffset": 633,
-                    "endColumn": 103,
-                    "endOffset": 732
-                },
-                "from": {
-                    "file": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1529,
-                        "endColumn": 103,
-                        "endOffset": 1628
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 12,
-                    "startColumn": 4,
-                    "startOffset": 737,
-                    "endColumn": 115,
-                    "endOffset": 848
-                },
-                "from": {
-                    "file": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-large/values-large.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-large/values-large.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,

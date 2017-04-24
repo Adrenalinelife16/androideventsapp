@@ -11,7 +11,7 @@
                     "endOffset": 105
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-w500dp/values-w500dp.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-w500dp/values-w500dp.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -24,7 +24,7 @@
         ]
     },
     {
-        "outputFile": "/Users/Martare/Documents/Android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w500dp-v13/values-w500dp-v13.xml",
+        "outputFile": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w500dp-v13\\values-w500dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -35,7 +35,7 @@
                     "endOffset": 105
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-w500dp/values-w500dp.xml",
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\values-w500dp\\values-w500dp.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -48,7 +48,7 @@
         ]
     },
     {
-        "outputFile": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w500dp-v13/values-w500dp-v13.xml",
+        "outputFile": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w500dp-v13\\values-w500dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -59,7 +59,7 @@
                     "endOffset": 105
                 },
                 "from": {
-                    "file": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-w500dp/values-w500dp.xml",
+                    "file": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\values-w500dp\\values-w500dp.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -72,7 +72,7 @@
         ]
     },
     {
-        "outputFile": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w500dp-v13/values-w500dp-v13.xml",
+        "outputFile": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w500dp-v13/values-w500dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -83,7 +83,7 @@
                     "endOffset": 105
                 },
                 "from": {
-                    "file": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-w500dp/values-w500dp.xml",
+                    "file": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/values-w500dp/values-w500dp.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

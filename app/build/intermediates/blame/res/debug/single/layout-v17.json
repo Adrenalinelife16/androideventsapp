@@ -1,18 +1,18 @@
 [
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout-v17/mr_media_route_list_item.xml",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/layout-v17/mr_media_route_list_item.xml"
+        "source": "/Users/Martare/.android/build-cache/1c21bcdd0e5f1f6c08aa00737c9b83f60ef9221b/output/res/layout-v17/mr_media_route_list_item.xml"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/layout-v17/mr_media_route_list_item.xml",
-        "source": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/layout-v17/mr_media_route_list_item.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\layout-v17\\mr_media_route_list_item.xml",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\9cf7833c7236a264a8a1a47889bbb622a2ea4ec1\\output\\res\\layout-v17\\mr_media_route_list_item.xml"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/layout-v17/mr_media_route_list_item.xml",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/layout-v17/mr_media_route_list_item.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/layout-v17/mr_media_route_list_item.xml",
+        "source": "/Users/Martare/.android/build-cache/1c21bcdd0e5f1f6c08aa00737c9b83f60ef9221b/output/res/layout-v17/mr_media_route_list_item.xml"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/layout-v17/mr_media_route_list_item.xml",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/layout-v17/mr_media_route_list_item.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\layout-v17\\mr_media_route_list_item.xml",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\781322740722a54a5edbcdd4c4d25e285745f390\\output\\res\\layout-v17\\mr_media_route_list_item.xml"
     }
 ]

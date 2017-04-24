@@ -1,162 +1,162 @@
 [
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_fade_in.xml"
-    },
-    {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_out_top.xml"
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/anim/abc_fade_in.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_shrink_fade_out_from_bottom.xml"
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_in_bottom.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_fade_in.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\anim\\abc_slide_out_top.xml"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
-        "source": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_out_top.xml"
-    },
-    {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_popup_enter.xml"
-    },
-    {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_out_bottom.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/anim/abc_grow_fade_in_from_bottom.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_popup_exit.xml"
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/anim/abc_popup_exit.xml"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
-        "source": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_popup_exit.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/anim/abc_slide_out_top.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_in_bottom.xml"
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/anim/abc_slide_in_bottom.xml"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_in_top.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_out_bottom.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\anim\\abc_fade_in.xml"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
-        "source": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_grow_fade_in_from_bottom.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\anim\\abc_fade_out.xml"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
-        "source": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_out_bottom.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/anim/abc_popup_exit.xml"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_popup_exit.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_grow_fade_in_from_bottom.xml"
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/anim/abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
-        "source": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_fade_in.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/anim/abc_slide_out_bottom.xml"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_shrink_fade_out_from_bottom.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_fade_out.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\anim\\abc_popup_exit.xml"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
-        "source": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_in_bottom.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\anim\\abc_popup_enter.xml"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_grow_fade_in_from_bottom.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/anim/abc_fade_in.xml"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_out_top.xml"
-    },
-    {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_popup_enter.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
-        "source": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_popup_enter.xml"
-    },
-    {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_grow_fade_in_from_bottom.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
-        "source": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_fade_out.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
-        "source": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_in_top.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\anim\\abc_slide_in_top.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_out_bottom.xml"
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/anim/abc_slide_out_bottom.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_out_top.xml"
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/anim/abc_slide_out_top.xml"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_fade_in.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\anim\\abc_fade_in.xml"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_popup_exit.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_shrink_fade_out_from_bottom.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\anim\\abc_popup_enter.xml"
     },
     {
-        "merged": "/Users/Martare/Documents/Android/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
-        "source": "/Users/Martare/Documents/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_shrink_fade_out_from_bottom.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/anim/abc_fade_out.xml"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_fade_out.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
-        "merged": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
-        "source": "/Users/Martare/Downloads/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_in_top.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/anim/abc_popup_enter.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_popup_enter.xml"
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/anim/abc_popup_enter.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_in_top.xml"
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/anim/abc_slide_in_top.xml"
     },
     {
-        "merged": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
-        "source": "/Users/Martare/Dropbox/Adrenaline App/Events Android StudioJosh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_in_bottom.xml"
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/anim/abc_slide_in_top.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_fade_out.xml"
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/anim/abc_fade_out.xml"
     }
 ]

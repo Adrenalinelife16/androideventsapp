@@ -3,7 +3,6 @@
     android:id="@+id/lla"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:drawableLeft="@drawable/ic_nav1"
     android:paddingBottom="@dimen/pad_10dp"
     android:paddingLeft="@dimen/pad_15dp"
     android:paddingTop="@dimen/pad_10dp"

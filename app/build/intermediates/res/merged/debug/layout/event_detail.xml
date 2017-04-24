@@ -13,7 +13,7 @@
         <com.google.android.gms.maps.MapView
             android:id="@+id/map"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/pad_180dp" />
+            android:layout_height="350dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,7 +28,7 @@
                 android:orientation="vertical"
                 android:paddingLeft="@dimen/pad_10dp"
                 android:paddingRight="@dimen/pad_10dp"
-                android:paddingTop="@dimen/pad_10dp" >
+                android:paddingTop="@dimen/pad_10dp">
 
                 <TextView
                     android:id="@+id/lblTitle"
@@ -49,7 +49,7 @@
                 <LinearLayout
                     android:id="@+id/da"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:id="@+id/textView1"
@@ -112,14 +112,6 @@
                 android:layout_marginBottom="@dimen/pad_10dp"
                 android:layout_marginTop="@dimen/pad_10dp"
                 android:gravity="center" >
-
-                <TextView
-                    android:id="@+id/lblCost"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/free_event"
-                    android:textColor="@color/main_color_gray_dk"
-                    android:textSize="@dimen/txt_18sp" />
 
                 <Button
                     android:id="@+id/btnReg"

@@ -1,4 +1,7 @@
-#Sun Mar 26 15:28:20 CDT 2017
-base.0=/Users/Martare/Documents/Android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+#Tue Apr 04 12:17:25 CDT 2017
+base.0=E\:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_1954709d95c354b9c6d50b57065c1632d3702965
+renamed.1=classes2.dex
 renamed.0=classes.dex
-file.0=/Users/Martare/Documents/Android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+file.1=E\:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_27fc19284486b1e91c4b2067004dd95aaf9eb56a\\classes.dex
+base.1=E\:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_27fc19284486b1e91c4b2067004dd95aaf9eb56a
+file.0=E\:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_1954709d95c354b9c6d50b57065c1632d3702965\\classes.dex
