@@ -1,18 +1,6 @@
 [
     {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/raw/gtm_analytics",
-        "source": "/Users/Martare/.android/build-cache/1924a975b40847033e9e9420f72db0d418223570/output/res/raw/gtm_analytics"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/raw/gtm_analytics",
         "source": "/Users/Martare/.android/build-cache/1924a975b40847033e9e9420f72db0d418223570/output/res/raw/gtm_analytics"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\c4762f5343ee4918c66ee4f9d7fbc78c098d917a\\output\\res\\raw\\gtm_analytics"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\4e765b05da4a67a3cdaa06285d7cb230fc976391\\output\\res\\raw\\gtm_analytics"
     }
 ]

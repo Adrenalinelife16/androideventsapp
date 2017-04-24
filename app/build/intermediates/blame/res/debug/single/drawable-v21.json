@@ -1,34 +1,10 @@
 [
     {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
         "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/drawable-v21/abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
         "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/drawable-v21/abc_btn_colored_material.xml"
     }
 ]

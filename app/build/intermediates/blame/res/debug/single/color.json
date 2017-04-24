@@ -1,15 +1,31 @@
 [
     {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color/abc_secondary_text_material_dark.xml"
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color/abc_primary_text_disable_only_material_dark.xml"
     },
     {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\color\\abc_secondary_text_material_light.xml"
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color/switch_thumb_material_light.xml"
     },
     {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/color/wallet_secondary_text_holo_dark.xml",
-        "source": "/Users/Martare/.android/build-cache/90b10c6211d2edd6275234c46767bd4fa33b0d1a/output/res/color/wallet_secondary_text_holo_dark.xml"
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/tab_color.xml",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/color/tab_color.xml"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color/switch_thumb_material_dark.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_light.xml",
@@ -20,112 +36,16 @@
         "source": "/Users/Martare/.android/build-cache/90b10c6211d2edd6275234c46767bd4fa33b0d1a/output/res/color/wallet_secondary_text_holo_dark.xml"
     },
     {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\288712722a268c2305ea3c0e59c7c14485001fe1\\output\\res\\color\\common_google_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
-        "source": "/Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/res/color/common_google_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\color\\abc_secondary_text_material_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\color\\abc_secondary_text_material_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\color\\abc_search_url_text.xml"
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/wallet_primary_text_holo_light.xml",
+        "source": "/Users/Martare/.android/build-cache/90b10c6211d2edd6275234c46767bd4fa33b0d1a/output/res/color/wallet_primary_text_holo_light.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_dark.xml",
         "source": "/Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/res/color/common_plus_signin_btn_text_dark.xml"
     },
     {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_dark.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\288712722a268c2305ea3c0e59c7c14485001fe1\\output\\res\\color\\common_plus_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
         "source": "/Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/res/color/common_google_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/tab_color.xml",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/color/tab_color.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\288712722a268c2305ea3c0e59c7c14485001fe1\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color/abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\color\\abc_primary_text_material_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\color\\switch_thumb_material_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
-        "source": "/Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/res/color/common_google_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\color\\abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color/switch_thumb_material_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\wallet_primary_text_holo_light.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\e8443ad47f9496d91119456d34634b563cff73bc\\output\\res\\color\\wallet_primary_text_holo_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\color\\abc_search_url_text.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/color/wallet_primary_text_holo_light.xml",
-        "source": "/Users/Martare/.android/build-cache/90b10c6211d2edd6275234c46767bd4fa33b0d1a/output/res/color/wallet_primary_text_holo_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/wallet_primary_text_holo_light.xml",
-        "source": "/Users/Martare/.android/build-cache/90b10c6211d2edd6275234c46767bd4fa33b0d1a/output/res/color/wallet_primary_text_holo_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\color\\abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\wallet_primary_text_holo_light.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\cf0830db4b214c996469634463d94babd232a475\\output\\res\\color\\wallet_primary_text_holo_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_dark.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\56102817439e960ea2c7c5680522a7f1cca43b1a\\output\\res\\color\\common_plus_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color/switch_thumb_material_dark.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
@@ -134,118 +54,6 @@
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
         "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color/abc_secondary_text_material_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color/abc_primary_text_disable_only_material_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\color\\switch_thumb_material_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\tab_color.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\color\\tab_color.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color/switch_thumb_material_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\tab_color.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\src\\main\\res\\color\\tab_color.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_light.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\288712722a268c2305ea3c0e59c7c14485001fe1\\output\\res\\color\\common_plus_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color/abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_dark.xml",
-        "source": "/Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/res/color/common_plus_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\color\\switch_thumb_material_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color/abc_search_url_text.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color/abc_search_url_text.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\wallet_secondary_text_holo_dark.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\e8443ad47f9496d91119456d34634b563cff73bc\\output\\res\\color\\wallet_secondary_text_holo_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\color\\abc_primary_text_material_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\56102817439e960ea2c7c5680522a7f1cca43b1a\\output\\res\\color\\common_google_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_light.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\56102817439e960ea2c7c5680522a7f1cca43b1a\\output\\res\\color\\common_plus_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
-        "source": "/Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/res/color/common_google_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/color/tab_color.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/app/src/main/res/color/tab_color.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color/abc_primary_text_disable_only_material_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color/abc_primary_text_disable_only_material_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\color\\switch_thumb_material_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color/abc_primary_text_material_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\wallet_secondary_text_holo_dark.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\cf0830db4b214c996469634463d94babd232a475\\output\\res\\color\\wallet_secondary_text_holo_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\color\\abc_secondary_text_material_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color/switch_thumb_material_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color/abc_secondary_text_material_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\56102817439e960ea2c7c5680522a7f1cca43b1a\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_light.xml",
-        "source": "/Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/res/color/common_plus_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",

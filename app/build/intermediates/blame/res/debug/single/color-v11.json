@@ -1,30 +1,6 @@
 [
     {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/D:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\martinj\\.android\\build-cache\\cbad885a57d67071f17ddd4f1634171740437509\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/E:\\Adrenaline\\Events Android StudioJosh\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "/Users/Martare/Desktop/ALifeAndroidApp/C:\\Users\\Josh\\.android\\build-cache\\b4194a500ba7df7ab7b61aee9be2cbd968c3c5f9\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
-    },
-    {
-        "merged": "/Users/Martare/Desktop/ALifeAndroidApp/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
         "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
     },
     {
