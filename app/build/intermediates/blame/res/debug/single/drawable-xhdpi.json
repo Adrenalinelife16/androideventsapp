@@ -184,6 +184,10 @@
         "source": "/Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/res/drawable-xhdpi/common_plus_signin_btn_icon_dark_normal.9.png"
     },
     {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/date_layover_android.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xhdpi/date_layover_android.png"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_drawer.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xhdpi/ic_drawer.png"
     },
@@ -284,6 +288,10 @@
         "source": "/Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/res/drawable-xhdpi/common_google_signin_btn_text_light_pressed.9.png"
     },
     {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/dateunderlay.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xhdpi/dateunderlay.png"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_text_dark_normal.9.png",
         "source": "/Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/res/drawable-xhdpi/common_google_signin_btn_text_dark_normal.9.png"
     },
@@ -354,6 +362,10 @@
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_play_dark.png",
         "source": "/Users/Martare/.android/build-cache/1c21bcdd0e5f1f6c08aa00737c9b83f60ef9221b/output/res/drawable-xhdpi/ic_play_dark.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/image_layover.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xhdpi/image_layover.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_icon_dark_disabled.9.png",
@@ -452,6 +464,10 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xhdpi/ic_comment.png"
     },
     {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/image_layover_android.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xhdpi/image_layover_android.png"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/reg_btn_bg.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xhdpi/reg_btn_bg.png"
     },
@@ -470,6 +486,10 @@
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_nav6.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xhdpi/ic_nav6.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/imagelayover.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xhdpi/imagelayover.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_share.png",
@@ -578,6 +598,10 @@
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/switch_thumb.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xhdpi/switch_thumb.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/no_imagebig.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xhdpi/no_imagebig.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_cast_disabled_light.png",

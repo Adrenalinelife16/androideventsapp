@@ -44,6 +44,14 @@
         "source": "/Users/Martare/.android/build-cache/1c21bcdd0e5f1f6c08aa00737c9b83f60ef9221b/output/res/drawable-mdpi/ic_pause_light.png"
     },
     {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-mdpi/image_layover.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-mdpi/image_layover.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-mdpi/image_layover_android.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-mdpi/image_layover_android.png"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-mdpi/abc_textfield_activated_mtrl_alpha.9.png",
         "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/drawable-mdpi/abc_textfield_activated_mtrl_alpha.9.png"
     },
@@ -140,8 +148,16 @@
         "source": "/Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/res/drawable-mdpi/common_full_open_on_phone.png"
     },
     {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-mdpi/no_image.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-mdpi/no_image.png"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-mdpi/common_google_signin_btn_text_light_pressed.9.png",
         "source": "/Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/res/drawable-mdpi/common_google_signin_btn_text_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-mdpi/imagelayover.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-mdpi/imagelayover.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-mdpi/common_plus_signin_btn_text_light_focused.9.png",
@@ -196,6 +212,10 @@
         "source": "/Users/Martare/.android/build-cache/06cc1e19791f9e4e19181277306f0e334cbef6fc/output/res/drawable-mdpi/places_ic_clear.png"
     },
     {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-mdpi/no_imagebig.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-mdpi/no_imagebig.png"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-mdpi/abc_ic_clear_mtrl_alpha.png",
         "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/drawable-mdpi/abc_ic_clear_mtrl_alpha.png"
     },
@@ -238,6 +258,10 @@
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-mdpi/abc_ic_menu_selectall_mtrl_alpha.png",
         "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/drawable-mdpi/abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-mdpi/date_layover_android.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-mdpi/date_layover_android.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-mdpi/abc_btn_check_to_on_mtrl_000.png",

@@ -24,6 +24,10 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/drawer_shadow.9.png"
     },
     {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/image_layover_android.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/image_layover_android.png"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/semi_trans_bg.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/semi_trans_bg.png"
     },
@@ -68,6 +72,10 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_tw.png"
     },
     {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/imagelayover.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/imagelayover.png"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav6_sel.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_nav6_sel.png"
     },
@@ -104,6 +112,10 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/switch_bg_off.png"
     },
     {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/dateunderlay.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/dateunderlay.png"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/checkbox_checked.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/checkbox_checked.png"
     },
@@ -122,6 +134,10 @@
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/progress_main.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/progress_main.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/no_imagebig.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/no_imagebig.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/cal_bg.png",
@@ -172,8 +188,16 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/tab_bg.png"
     },
     {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/date_layover_android.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/date_layover_android.png"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/arrow_right_small.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/arrow_right_small.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/image_layover.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/image_layover.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav3_sel.png",
