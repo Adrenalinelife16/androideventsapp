@@ -35,7 +35,7 @@
     <string name="err_no_space">Sorry, All the seats are booked now. No space available.</string>
     <string name="err_past_event">Sorry, You can\'t book the past events!</string>
     <string name="err_event_booked">You have already booked this Event.</string>
-    <string name="Events">Event Feed</string>
+    <string name="Events">Events</string>
     <string name="feed">Social Feed</string>
     <string name="my_events">My Events</string>
     <string name="settings">Settings</string>

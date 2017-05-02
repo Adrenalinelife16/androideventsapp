@@ -21,11 +21,13 @@
     <ImageView
         android:id="@+id/date_layover"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:alpha=".6"
+        android:rotation="180"
         android:scaleType="fitXY"
-        android:src="@drawable/date_layover_android"/>
+        android:src="@drawable/image_layover_android"/>
 
     <ImageView
         android:id="@+id/image_layover"
