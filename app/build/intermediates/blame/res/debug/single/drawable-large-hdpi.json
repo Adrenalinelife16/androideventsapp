@@ -8,16 +8,16 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_share.png"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_time.png",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_time.png"
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav4_sel.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_nav4_sel.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ticket_bg2.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ticket_bg2.png"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav4_sel.png",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_nav4_sel.png"
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_time.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_time.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/drawer_shadow.9.png",
@@ -60,12 +60,12 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_drawer.png"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/imagelayover.png",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/imagelayover.png"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_tw.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_tw.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/imagelayover.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/imagelayover.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav6_sel.png",
@@ -108,10 +108,6 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/switch_bg_off.png"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/dateunderlay.png",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/dateunderlay.png"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/checkbox_checked.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/checkbox_checked.png"
     },
@@ -128,12 +124,12 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/progress_main.png"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/no_imagebig.png",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/no_imagebig.png"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/add_button.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/add_button.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/no_imagebig.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/no_imagebig.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/cal_bg.png",
@@ -182,10 +178,6 @@
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/tab_bg.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/tab_bg.png"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/date_layover_android.png",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/date_layover_android.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/arrow_right_small.png",

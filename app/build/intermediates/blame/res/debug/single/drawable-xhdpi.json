@@ -64,20 +64,20 @@
         "source": "/Users/Martare/.android/build-cache/5e8ad77525ca43b889527a8abd0d3b97413d221a/output/res/drawable-xhdpi/cast_ic_notification_2.png"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/cast_ic_notification_on.png",
-        "source": "/Users/Martare/.android/build-cache/5e8ad77525ca43b889527a8abd0d3b97413d221a/output/res/drawable-xhdpi/cast_ic_notification_on.png"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_icon_dark_focused.9.png",
         "source": "/Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/res/drawable-xhdpi/common_plus_signin_btn_icon_dark_focused.9.png"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_text_light_normal.9.png",
-        "source": "/Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/res/drawable-xhdpi/common_google_signin_btn_text_light_normal.9.png"
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/cast_ic_notification_on.png",
+        "source": "/Users/Martare/.android/build-cache/5e8ad77525ca43b889527a8abd0d3b97413d221a/output/res/drawable-xhdpi/cast_ic_notification_on.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_icon_light_disabled.9.png",
         "source": "/Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/res/drawable-xhdpi/common_plus_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_text_light_normal.9.png",
+        "source": "/Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/res/drawable-xhdpi/common_google_signin_btn_text_light_normal.9.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_nav4.png",
