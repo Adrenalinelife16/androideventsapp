@@ -8,10 +8,6 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/mipmap-xhdpi/adrenaline_logo.png"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_adrenaline_logo2.png",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/mipmap-xhdpi/ic_adrenaline_logo2.png"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/mipmap-xhdpi/adrenaline_splash2.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/mipmap-xhdpi/adrenaline_splash2.png"
     },
@@ -24,7 +20,7 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/mipmap-xhdpi/ic_instagram.png"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_adrenaline_logo.png",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/mipmap-xhdpi/ic_adrenaline_logo.png"
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     }
 ]
