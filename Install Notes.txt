@@ -1,0 +1,17 @@
+Make sure you are using the latest Android SDK and Build tools. If you do get errors when you import the project it mostly is related to using 
+the wrong version of the SDK or Build tools. 
+
+The easiest way to resolve these issues is to make sure the project uses the latest version of the SDK by select the SDK, 
+right click on the app folder and select Open Module Settings(F4)
+
+In the Properties Tab change: 
+Compile Sdk Version: <select latest>
+Built Tools Version: <select latest>
+
+Select the Dependancies Tab ensure you have the following:
+com.google.android.gms:play-services:8.4.0
+com.android.support:support-v12:23.1.1 or latest version
+
+Click Ok 
+
+Your project should now build

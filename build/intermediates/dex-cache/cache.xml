@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/8ddd711e7fec393c5048b3028760e0f128de268d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dfecc4d835cdabcdecf7e95f0d20a3ef1e9d8ef4">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_30080c6ccaa7e6563cb5d96f5126703b8531ad36.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_702ddc1d76ebbf7b8ce9aaefcb117b92e1bbf351.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/860a9324409f9b1eadde5e270ac4dd20eca8ec69/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_07bf1bc24cc6ea9951db2dd626a1a790036c4e77.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/860a9324409f9b1eadde5e270ac4dd20eca8ec69/output/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_0548300d9f56793cfa4e1d8a86df224764b5ba43.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/da35ec83c8e0d00e5182b36d860138bc8e13ce89/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_09cd50ec17e8ce3c3f2e88fda62d95706798341c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/f0203607ac7f9da0d80760e7d0e5da39a13c2e8e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b82b8e847173c28efffcd291b2a0b1ae9ad17fa4">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_5421f8f4f4a5fd94548f2ec988488be1b7c1ce98.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/1c21bcdd0e5f1f6c08aa00737c9b83f60ef9221b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_f837b08714d6268d0a3d9c450a59f1696232e957.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/708067e9af5e596d8fb808fd7d9e8a264b067b98/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="08d34b2d135c1cc96ab506fd8bf6916d1e2f391a">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_f10d4bebeb7fb498c9495d307a8d208c88ec952e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.1/f5aa318bda4c6c8d688c9d00b90681dcd82ce636/httpcore-4.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f5aa318bda4c6c8d688c9d00b90681dcd82ce636">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/httpcore-4.4.1_f521cbd1cb73ed1f9977451420d8571d05fa0a54.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/a189ba67a6ceb879838328412b67b97d32d1754d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c54246475c1bb64ac6857d1320364bfbfeda2c46">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_6c629e04e9cac8fa5d1e66583567260513d9096e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/46bd6081cef3828a5ae7467ac669a9e6abb3364a/output/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f4d7a07120e76988f3a15403838d323c2400db83">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_7c95334a1e8347e23915ada96561d2ce3369590d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/59e54fd282cb2cafaedf8427984a3023f20a1b94/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9cad249cf62751a323d9af568caf12284b7d6062">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_3209f774389bbb7218b9a7749ff1b31e68f894a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/fa83dd408778c40be0e777ed729f709350c895e0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_7a8ab84e37f05fd6f45f88501ea81232aebfa88d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/b6cc8ae9428a03003f11ff30b995d74e80260945/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3a364cc6b698d1b3b2d284f64618daaa7fe77ddf">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_77459eb79b718712d0877c259eec097d225467d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_5a16c04458a401bcea992689461a8da512ee6869.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/4f163631516639880ad0cd01bbf0b8f294b423cb/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_4472d50347261d6d78f63e48ab1e8543017b8032.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/dd840e25120a319f36f6284e750f870f37d0e309/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9fe026fb4c7fce21bc5142f6e1bdf844f28061ac">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_1cdab144ad2ee698da8a410d49d2ef8678b58cc3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/df209fa9de3637e3f693abf64434398eb94f418a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_1b457c10a3a1b7741aaa1e5fe57136fb0bbb126c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/42d2eaf036872d2210086dc0958332ccab111003/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0194a7409c40de94fb539d4ad9928ec5d47afeb7">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_59d09460ab8e2da676609a56f07541179471dec2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/704f3ef3e112a8467035c6cab9c123eed8c68a2b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="04de44f90606c77f3b28cf44861f306290505aac">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_82ca139b896e786d9c39b2d6ce7f5d7f090a2631.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_59fa8280221648b7bfd07230c11a2430a5c1c8dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/06cc1e19791f9e4e19181277306f0e334cbef6fc/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_08b5342bd6b5ff1fb9b56973af0c9f9c74047274.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/46bd6081cef3828a5ae7467ac669a9e6abb3364a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5ddf5f4817565c9db82613c16093f76640a54e15">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_cf4cace9052dceaa042275d7a50c6dd13ec68fa4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/90b10c6211d2edd6275234c46767bd4fa33b0d1a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2df436a8f02ce7e4d7d209671fc45f97c470f0e">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_1563a998eee6df3db46b205cefdfd7d351b25c46.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/8789770ea6137cd38d4630fe698af673a08f1cf9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_29d77073804163fced487e97c33120a960d3366a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/1c21bcdd0e5f1f6c08aa00737c9b83f60ef9221b/output/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.0_07dae2a88ad29d2c24a471507f343142ecd3c30c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/b320dc3b50b5844bc77bf33ad2229901f92e4613/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="966e5771a5a2ebfb31bf00d7cd6cd2546d245517">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_da1b02718da6ea2dda08f96034c695fbdd3839da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_b793fb98b4e99a9a36a48664ccf05d3404e94618.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/c9ea3daf0405ef2636088d819840bcc0a83f1b1d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e167a34eaca0b31704212f43f9576ea84e05046f">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_0a56f5ff467ba8aa878d1a0e3d59270620e92629.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/1b0860a01fdfcbd267548ddaa8e594de40417b43/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1a78298e7724d5440d210bcb946b3493250d354d">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_ae98675449b519293bcea9e5d8704de50bf8bf9c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/1924a975b40847033e9e9420f72db0d418223570/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1c9f35e952b212c843f7bd2c7eec8e82ad95602e">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_297428f6f30dc6ba081bdcc67585e5a093ebcc9e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/975b14408dedfb99b36e1a42c200c07fa4677947/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b36f30ac5ee5d5214f4b1e2ac49f11889d58e71a">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_3d756dc4d5cf3414c3ba3170b3f6c582c3434b09.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/2c03a2832d5c7bdc7260f6cd8d39224c12e88ff0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_7a52b1bebf1e77363475316824e53aa9e3492019.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/5e8ad77525ca43b889527a8abd0d3b97413d221a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="551e78f21acf69ebfb489c0e79647824c838013e">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_25fffbe3c379ea625c47a3399a949e79e0e13e2d.jar" />
+    </item>
+
+</items>

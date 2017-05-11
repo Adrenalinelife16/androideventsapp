@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/release/mipmap-xhdpi/ic_launcher.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/release/mipmap-xhdpi/ic_instagram.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/mipmap-xhdpi/ic_instagram.png"
+    }
+]
