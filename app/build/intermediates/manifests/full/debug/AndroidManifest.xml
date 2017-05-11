@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.events"
+    package="com.adrenalinelife"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -149,7 +149,7 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
 
         <provider
             android:name="com.google.android.gms.measurement.AppMeasurementContentProvider"
-            android:authorities="com.events.google_measurement_service"
+            android:authorities="com.adrenalinelife.google_measurement_service"
             android:exported="false" />
 
         <receiver

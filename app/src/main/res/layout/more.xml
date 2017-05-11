@@ -29,7 +29,7 @@
             android:text="@string/privacy" />
 
         <View
-            android:id="@+id/view1"
+            android:id="@id/view1"
             android:layout_width="match_parent"
             android:layout_height="@dimen/divider"
             android:background="@color/main_color_gray1" />
@@ -42,7 +42,7 @@
             android:text="@string/terms_condi" />
 
         <View
-            android:id="@+id/view1"
+            android:id="@id/view1"
             android:layout_width="match_parent"
             android:layout_height="@dimen/divider"
             android:background="@color/main_color_gray1" />
@@ -55,7 +55,7 @@
             android:text="@string/setting" />
 
         <View
-            android:id="@+id/view1"
+            android:id="@id/view1"
             android:layout_width="match_parent"
             android:layout_height="@dimen/divider"
             android:background="@color/main_color_gray1" />

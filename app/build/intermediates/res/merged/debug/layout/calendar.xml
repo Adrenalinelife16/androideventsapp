@@ -65,42 +65,42 @@
             android:layout_weight="1"
             android:text="S" />
         <TextView
-            android:id="@+id/textView1"
+            android:id="@id/textView1"
             style="@style/lbl_cal_day"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="M" />
         <TextView
-            android:id="@+id/textView1"
+            android:id="@id/textView1"
             style="@style/lbl_cal_day"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="T" />
         <TextView
-            android:id="@+id/textView1"
+            android:id="@id/textView1"
             style="@style/lbl_cal_day"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="W" />
         <TextView
-            android:id="@+id/textView1"
+            android:id="@id/textView1"
             style="@style/lbl_cal_day"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="T" />
         <TextView
-            android:id="@+id/textView1"
+            android:id="@id/textView1"
             style="@style/lbl_cal_day"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="F" />
         <TextView
-            android:id="@+id/textView1"
+            android:id="@id/textView1"
             style="@style/lbl_cal_day"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

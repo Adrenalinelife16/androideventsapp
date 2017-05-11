@@ -6,7 +6,7 @@ android {
     buildToolsVersion '25.0.0'
 
     defaultConfig {
-        applicationId "com.events"
+        applicationId "com.adrenalinelife"
         minSdkVersion 14
         targetSdkVersion 18
     }
