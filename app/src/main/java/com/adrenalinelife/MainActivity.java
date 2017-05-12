@@ -156,7 +156,7 @@ public class MainActivity extends CustomActivity
 	else
 	{
 		ArrayList<Data> al = new ArrayList<Data>();
-		al.add(new Data("Events", R.drawable.ic_nav1, R.drawable.ic_nav1_sel));
+		al.add(new Data("Event Feed", R.drawable.ic_nav1, R.drawable.ic_nav1_sel));
 		al.add(new Data("Social Feed", R.drawable.ic_nav2, R.drawable.ic_nav2_sel));
 		al.add(new Data("My Events", R.drawable.ic_nav3,
 				R.drawable.ic_nav3_sel));

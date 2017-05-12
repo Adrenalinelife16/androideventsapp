@@ -141,7 +141,8 @@ public class Commons
 			return StaticData.res.getString(R.string.today)
 					+ new SimpleDateFormat(" - hh:mm a").format(d);
 		}
-		String format = "dd MMM yyyy - hh:mm a";
+		//String format = "dd MMM yyyy - hh:mm a";
+		String format = "E hh:mm a - MMM dd yyyy";
 		return new SimpleDateFormat(format).format(d);
 	}
 
