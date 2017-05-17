@@ -144,11 +144,12 @@ public class MainActivity extends CustomActivity
 	{
 		ArrayList<Data> al = new ArrayList<Data>();
 		al.add(new Data("Event Feed", R.drawable.ic_nav1, R.drawable.ic_nav1_sel));
+		al.add(new Data("Discover Events", R.drawable.ic_nav2, R.drawable.ic_nav2_sel));
 		al.add(new Data("Social Feed", R.drawable.ic_nav2, R.drawable.ic_nav2_sel));
 		al.add(new Data("My Events", R.drawable.ic_nav3,
 				R.drawable.ic_nav3_sel));
 		al.add(new Data("More", R.drawable.ic_nav4, R.drawable.ic_nav4_sel));
-		al.add(new Data("About", R.drawable.ic_nav5, R.drawable.ic_nav5_sel));
+		//al.add(new Data("About", R.drawable.ic_nav5, R.drawable.ic_nav5_sel));
 		al.add(new Data("Rate this app", R.drawable.ic_nav6,
 				R.drawable.ic_nav6_sel));
 		return al;
@@ -157,11 +158,12 @@ public class MainActivity extends CustomActivity
 	{
 		ArrayList<Data> al = new ArrayList<Data>();
 		al.add(new Data("Event Feed", R.drawable.ic_nav1, R.drawable.ic_nav1_sel));
+		al.add(new Data("Discover Events", R.drawable.ic_nav2, R.drawable.ic_nav2_sel));
 		al.add(new Data("Social Feed", R.drawable.ic_nav2, R.drawable.ic_nav2_sel));
 		al.add(new Data("My Events", R.drawable.ic_nav3,
 				R.drawable.ic_nav3_sel));
 		al.add(new Data("More", R.drawable.ic_nav4, R.drawable.ic_nav4_sel));
-		al.add(new Data("About", R.drawable.ic_nav5, R.drawable.ic_nav5_sel));
+		//al.add(new Data("About", R.drawable.ic_nav5, R.drawable.ic_nav5_sel));
 		al.add(new Data("Rate this app", R.drawable.ic_nav6,
 				R.drawable.ic_nav6_sel));
 		al.add(new Data("Login/Register", R.drawable.ic_nav4, R.drawable.ic_nav4_sel));
@@ -187,10 +189,16 @@ public class MainActivity extends CustomActivity
 		}
 		else if (pos == 1)
 		{
-			title = getString(R.string.feed);
-			f = new FeedList();
+			title = getString(R.string.Discover_Events);
+
 		}
 		else if (pos == 2)
+		{
+			title = getString(R.string.feed);
+			f = new FeedList();
+
+		}
+		else if (pos == 3)
 		{
 			tab.setEnabled(true);
 			tab = findViewById(R.id.tab1);
@@ -201,36 +209,37 @@ public class MainActivity extends CustomActivity
 		}
 		else if (pos == 21)
 		{
-			if (tab != null)
-				tab.setEnabled(true);
+			tab.setEnabled(true);
 			tab = findViewById(R.id.tab2);
 			tab.setEnabled(false);
 			title = getString(R.string.my_fav);
 			f = new Events();
 			f.setArg(new Bundle());
-			pos = 2;
+			pos = 3;
 		}
 		else if (pos == 22)
 		{
 			title = getString(R.string.my_tkcts);
 			f = new MyTickets();
-			pos = 2;
+			pos = 3;
 		}
-		else if (pos == 3)
+		else if (pos == 4)
 		{
 			title = getString(R.string.more);
 			f = new More();
 		}
+		/*
 		else if (pos == 4)
 		{
 			title = getString(R.string.about);
 			f = new About();
 		}
+		*/
 		else if (pos == 5)
 		{
 			Intent i = new Intent(Intent.ACTION_VIEW,
 					Uri.parse("market://details?id=" + getPackageName()));
-			startActivity(Intent.createChooser(i, "Open with"));
+			startActivity(i);
 		}
 		else if (pos ==6)
 		{
@@ -238,7 +247,7 @@ public class MainActivity extends CustomActivity
 			startActivity(intent);
 		}
 		findViewById(R.id.vTabs).setVisibility(
-				pos == 2 ? View.VISIBLE : View.GONE);
+				pos == 3 ? View.VISIBLE : View.GONE);
 
 		if (f != null)
 		{
@@ -372,9 +381,10 @@ public class MainActivity extends CustomActivity
 			tab = v;
 			tab.setEnabled(false);
 			if (v.getId() == R.id.tab1)
-				launchFragment(2);
+				launchFragment(3);
 			else if (v.getId() == R.id.tab2)
 				launchFragment(21);
+
 			else
 			{
 				if (!StaticData.pref.contains(Const.USER_ID))

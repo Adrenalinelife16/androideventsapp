@@ -41,6 +41,7 @@ public class WebAccess
 	
 	/** The Constant EVENT_LIST_URL. */
 	protected static final String EVENT_LIST_URL = "api/getEvents/";
+	//"Adrenaline_Custom/api/getEvents/";
 
 	// protected static final String EVENT_BY_MONTH_URL =
 	// "api/getEventsByMonth/month/@@/year/$$";
