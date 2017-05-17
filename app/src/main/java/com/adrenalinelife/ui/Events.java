@@ -81,7 +81,7 @@ public class Events extends PagingFragment
 	//	return true;
 
 
-/*
+
 		SwipeRefresh = (SwipeRefreshLayout) v.findViewById(R.id.EventsRefresh);
 		SwipeRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
 			@Override
@@ -90,12 +90,10 @@ public class Events extends PagingFragment
 				setProgramList(v);
 				SwipeRefresh.setRefreshing(false);
 			}
-
-
 		});
-	    Configure the refreshing colors
+	    //Configure the refreshing colors
 		SwipeRefresh.setColorSchemeResources(android.R.color.holo_red_light);
-*/
+
 		return v;
 	}
 
