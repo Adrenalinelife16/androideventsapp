@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/menu/search.xml",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/menu/search.xml"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/menu/add.xml",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/menu/add.xml"
     },

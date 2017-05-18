@@ -190,7 +190,8 @@ public class MainActivity extends CustomActivity
 		else if (pos == 1)
 		{
 			title = getString(R.string.Discover_Events);
-
+			Intent intent = new Intent(THIS, DiscoverEvents.class);
+			startActivity(intent);
 		}
 		else if (pos == 2)
 		{

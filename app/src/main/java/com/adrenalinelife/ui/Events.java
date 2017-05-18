@@ -67,18 +67,14 @@ public class Events extends PagingFragment
 		final View v = inflater.inflate(R.layout.events, null);
 				setHasOptionsMenu(true);
 
-
-
 		setProgramList(v);
-
-
 
 
 		//Search View
 
-	//	SearchView simpleSearchView = (SearchView) findViewById(R.id.SearchEvents);
-	//	CharSequence query = simpleSearchView.getQuery();
-	//	return true;
+		//SearchView simpleSearchView = (SearchView) findViewById(R.id.searchEvents);
+		//CharSequence query = simpleSearchView.getQuery();
+		//return true;
 
 
 
@@ -274,6 +270,25 @@ public class Events extends PagingFragment
 		if (getArg() == null)
 			inflater.inflate(R.menu.add, menu);
 		super.onCreateOptionsMenu(menu, inflater);
+		/*
+		MenuInflater inflater2 = getLayoutInflater();
+		inflater2.inflate(R.menu.search, menu);
+		MenuItem item = menu.findItem(R.id.search_icon);
+		SearchView searchView = (SearchView)item.getActionView();
+		searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+			@Override
+			public boolean onQueryTextSubmit(String s) {
+				return false;
+			}
+
+			@Override
+			public boolean onQueryTextChange(String s) {
+
+				return false;
+			}
+
+		});
+*/
 	}
 
 	/* (non-Javadoc)

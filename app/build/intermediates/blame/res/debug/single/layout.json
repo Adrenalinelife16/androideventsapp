@@ -4,16 +4,20 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/register.xml"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/mr_media_route_controller_material_dialog_b.xml",
-        "source": "/Users/Martare/.android/build-cache/1c21bcdd0e5f1f6c08aa00737c9b83f60ef9221b/output/res/layout/mr_media_route_controller_material_dialog_b.xml"
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/ticket_item.xml",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/ticket_item.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/about.xml",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/about.xml"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/ticket_item.xml",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/ticket_item.xml"
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/mr_media_route_controller_material_dialog_b.xml",
+        "source": "/Users/Martare/.android/build-cache/1c21bcdd0e5f1f6c08aa00737c9b83f60ef9221b/output/res/layout/mr_media_route_controller_material_dialog_b.xml"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/discover_events.xml",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/discover_events.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
@@ -52,12 +56,12 @@
         "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_search_view.xml"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/place_autocomplete_progress.xml",
-        "source": "/Users/Martare/.android/build-cache/06cc1e19791f9e4e19181277306f0e334cbef6fc/output/res/layout/place_autocomplete_progress.xml"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/event_item.xml",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/event_item.xml"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/place_autocomplete_progress.xml",
+        "source": "/Users/Martare/.android/build-cache/06cc1e19791f9e4e19181277306f0e334cbef6fc/output/res/layout/place_autocomplete_progress.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/place_autocomplete_fragment.xml",

@@ -8,24 +8,24 @@
         "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/drawable-xxhdpi/abc_ic_go_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi/common_google_signin_btn_text_dark_normal.9.png",
-        "source": "/Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/res/drawable-xxhdpi/common_google_signin_btn_text_dark_normal.9.png"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_play_light.png",
         "source": "/Users/Martare/.android/build-cache/1c21bcdd0e5f1f6c08aa00737c9b83f60ef9221b/output/res/drawable-xxhdpi/ic_play_light.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi/common_google_signin_btn_text_dark_normal.9.png",
+        "source": "/Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/res/drawable-xxhdpi/common_google_signin_btn_text_dark_normal.9.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi/common_plus_signin_btn_icon_light_normal.9.png",
         "source": "/Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/res/drawable-xxhdpi/common_plus_signin_btn_icon_light_normal.9.png"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_media_route_on_1_mono_dark.png",
-        "source": "/Users/Martare/.android/build-cache/1c21bcdd0e5f1f6c08aa00737c9b83f60ef9221b/output/res/drawable-xxhdpi/ic_media_route_on_1_mono_dark.png"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi/abc_list_selector_disabled_holo_light.9.png",
         "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/drawable-xxhdpi/abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_media_route_on_1_mono_dark.png",
+        "source": "/Users/Martare/.android/build-cache/1c21bcdd0e5f1f6c08aa00737c9b83f60ef9221b/output/res/drawable-xxhdpi/ic_media_route_on_1_mono_dark.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi/common_plus_signin_btn_text_dark_pressed.9.png",
@@ -52,24 +52,24 @@
         "source": "/Users/Martare/.android/build-cache/1c21bcdd0e5f1f6c08aa00737c9b83f60ef9221b/output/res/drawable-xxhdpi/ic_cast_light.png"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_cast_on_2_light.png",
-        "source": "/Users/Martare/.android/build-cache/1c21bcdd0e5f1f6c08aa00737c9b83f60ef9221b/output/res/drawable-xxhdpi/ic_cast_on_2_light.png"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi/powered_by_google_dark.png",
         "source": "/Users/Martare/.android/build-cache/06cc1e19791f9e4e19181277306f0e334cbef6fc/output/res/drawable-xxhdpi/powered_by_google_dark.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_cast_on_2_light.png",
+        "source": "/Users/Martare/.android/build-cache/1c21bcdd0e5f1f6c08aa00737c9b83f60ef9221b/output/res/drawable-xxhdpi/ic_cast_on_2_light.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi/abc_textfield_activated_mtrl_alpha.9.png",
         "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/drawable-xxhdpi/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi/abc_ic_menu_selectall_mtrl_alpha.png",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/drawable-xxhdpi/abc_ic_menu_selectall_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi/abc_ic_menu_paste_mtrl_am_alpha.png",
         "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/drawable-xxhdpi/abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi/abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/drawable-xxhdpi/abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi/common_plus_signin_btn_text_dark_normal.9.png",
@@ -136,16 +136,16 @@
         "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/drawable-xxhdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi/date_layover.png",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xxhdpi/date_layover.png"
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi/cast_ic_notification_0.png",
+        "source": "/Users/Martare/.android/build-cache/5e8ad77525ca43b889527a8abd0d3b97413d221a/output/res/drawable-xxhdpi/cast_ic_notification_0.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi/abc_list_pressed_holo_light.9.png",
         "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/drawable-xxhdpi/abc_list_pressed_holo_light.9.png"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi/cast_ic_notification_0.png",
-        "source": "/Users/Martare/.android/build-cache/5e8ad77525ca43b889527a8abd0d3b97413d221a/output/res/drawable-xxhdpi/cast_ic_notification_0.png"
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi/date_layover.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xxhdpi/date_layover.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_media_play.png",

@@ -1,6 +1,7 @@
 package com.adrenalinelife;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -34,7 +35,14 @@ public class Browser extends CustomActivity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.web);
 
-		getActionBar().setTitle(R.string.book_ticket);
+		//getActionBar().setTitle(R.string.book_ticket);
+		getActionBar().setTitle("Discover Events");
+
+		//String urlYoga = "http://www.AdrenalineLife.org/events/categories/yoga/";
+		String extra = getIntent().getExtras().getString("url");
+		//String name = "yoga";
+		Log.e("Intent = " + extra);
+
 
 		final ProgressBar pBar = (ProgressBar) findViewById(R.id.progress);
 		web = (WebView) findViewById(R.id.web);
@@ -57,7 +65,7 @@ public class Browser extends CustomActivity
 			}
 
 		});
-
+		/*
 		web.setWebViewClient(new WebViewClient() {
 			@Override
 			public boolean shouldOverrideUrlLoading(WebView view, String url)
@@ -66,10 +74,26 @@ public class Browser extends CustomActivity
 				return super.shouldOverrideUrlLoading(view, url);
 			}
 		});
-		String url = Uri.decode(getIntent().getStringExtra(Const.EXTRA_DATA));
-		Log.e(url);
-		web.loadUrl(url);
-
+		*/
+/*
+		Log.e("Checking Intent");
+		if (extra.equals(name)) {
+			Log.e("Loading Yoga");
+			web.loadUrl(urlYoga);
+			Log.e("URL = " + urlYoga);
+		}
+		else
+			Log.e("Loading Facebook");
+			web.loadUrl("http://www.facebook.com");
+			*/
+		web.loadUrl(extra);
+		Log.e("URL = " + extra);
+/*
+		String yoga_url = "http://www.AdrenalineLife.org/events/categories/yoga/";
+		//String url = Uri.decode(getIntent().getStringExtra(Const.EXTRA_DATA));
+		//Log.e(url);
+		web.loadUrl(yoga_url);
+*/
 	}
 
 	/* (non-Javadoc)
