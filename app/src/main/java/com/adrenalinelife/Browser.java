@@ -38,9 +38,7 @@ public class Browser extends CustomActivity
 		//getActionBar().setTitle(R.string.book_ticket);
 		getActionBar().setTitle("Discover Events");
 
-		//String urlYoga = "http://www.AdrenalineLife.org/events/categories/yoga/";
 		String extra = getIntent().getExtras().getString("url");
-		//String name = "yoga";
 		Log.e("Intent = " + extra);
 
 
@@ -65,35 +63,9 @@ public class Browser extends CustomActivity
 			}
 
 		});
-		/*
-		web.setWebViewClient(new WebViewClient() {
-			@Override
-			public boolean shouldOverrideUrlLoading(WebView view, String url)
-			{
-				Log.e("WEB=" + url);
-				return super.shouldOverrideUrlLoading(view, url);
-			}
-		});
-		*/
-/*
-		Log.e("Checking Intent");
-		if (extra.equals(name)) {
-			Log.e("Loading Yoga");
-			web.loadUrl(urlYoga);
-			Log.e("URL = " + urlYoga);
-		}
-		else
-			Log.e("Loading Facebook");
-			web.loadUrl("http://www.facebook.com");
-			*/
+
 		web.loadUrl(extra);
 		Log.e("URL = " + extra);
-/*
-		String yoga_url = "http://www.AdrenalineLife.org/events/categories/yoga/";
-		//String url = Uri.decode(getIntent().getStringExtra(Const.EXTRA_DATA));
-		//Log.e(url);
-		web.loadUrl(yoga_url);
-*/
 	}
 
 	/* (non-Javadoc)

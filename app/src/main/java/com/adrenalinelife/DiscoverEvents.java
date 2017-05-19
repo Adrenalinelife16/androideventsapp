@@ -3,7 +3,9 @@ package com.adrenalinelife;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 import com.adrenalinelife.custom.CustomActivity;
@@ -22,7 +24,7 @@ public class DiscoverEvents extends CustomActivity {
     ImageButton tablegamesButton;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.discover_events);
 
@@ -32,7 +34,7 @@ public class DiscoverEvents extends CustomActivity {
             @Override
             public void onClick(View view ) {
                 String url = "http://www.AdrenalineLife.org/events/categories/yoga/";
-                Intent intent = new Intent(view.getContext(), Browser.class);
+                Intent intent = new Intent(view.getContext(), DiscoverBrowser.class);
                 intent.putExtra("url", url);
                 startActivity(intent);
             }

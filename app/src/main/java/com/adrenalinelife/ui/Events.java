@@ -270,25 +270,7 @@ public class Events extends PagingFragment
 		if (getArg() == null)
 			inflater.inflate(R.menu.add, menu);
 		super.onCreateOptionsMenu(menu, inflater);
-		/*
-		MenuInflater inflater2 = getLayoutInflater();
-		inflater2.inflate(R.menu.search, menu);
-		MenuItem item = menu.findItem(R.id.search_icon);
-		SearchView searchView = (SearchView)item.getActionView();
-		searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-			@Override
-			public boolean onQueryTextSubmit(String s) {
-				return false;
-			}
 
-			@Override
-			public boolean onQueryTextChange(String s) {
-
-				return false;
-			}
-
-		});
-*/
 	}
 
 	/* (non-Javadoc)

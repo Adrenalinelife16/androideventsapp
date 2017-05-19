@@ -37,6 +37,7 @@
     <string name="err_event_booked">You have already booked this Event.</string>
     <string name="Events">Events</string>
     <string name="Discover_Events">Discover Events</string>
+    <string name="Discover_Browser">Discover Browser</string>
     <string name="feed">Social Feed</string>
     <string name="my_events">My Events</string>
     <string name="settings">Settings</string>

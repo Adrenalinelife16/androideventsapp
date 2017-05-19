@@ -9,18 +9,22 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
-import com.adrenalinelife.DiscoverEvents;
 
 import com.adrenalinelife.custom.CustomActivity;
+import com.adrenalinelife.utils.Const;
 import com.adrenalinelife.utils.Log;
 
-
+/**
+ * The main Browser screen, launched for user to make the payment for the Events
+ * which are not Free. This screen simply shows a Webview that load the payment
+ * page url which allow user to make payment.
+ */
 @SuppressLint("SetJavaScriptEnabled")
-public class DiscoverBrowser extends CustomActivity {
+public class DiscoverBrowser extends CustomActivity
+{
 
     /** The web. */
     private WebView web;
-
 
     /* (non-Javadoc)
      * @see com.food.custom.CustomActivity#onCreate(android.os.Bundle)
@@ -31,11 +35,12 @@ public class DiscoverBrowser extends CustomActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.web);
 
-        getActionBar().setTitle(R.string.book_ticket);
+        //getActionBar().setTitle(R.string.book_ticket);
+        getActionBar().setTitle("Discover Events");
 
-        String urlYoga = "http://www.AdrenalineLife.org/events/categories/yoga/";
-        Bundle extra = getIntent().getExtras();
-        String Name;
+        String extra = getIntent().getExtras().getString("url");
+        Log.e("Intent = " + extra);
+
 
         final ProgressBar pBar = (ProgressBar) findViewById(R.id.progress);
         web = (WebView) findViewById(R.id.web);
@@ -59,20 +64,13 @@ public class DiscoverBrowser extends CustomActivity {
 
         });
 
-
-        if (extra != null) {
-            Name = extra.getString("name");
-            // and get whatever type user account id is
-            if (Name == "yoga")
-                web.loadUrl(urlYoga);
-            else
-                web.loadUrl("http://www.google.com");
-        }
-
-
-
+        web.loadUrl(extra);
+        Log.e("URL = " + extra);
     }
 
+    /* (non-Javadoc)
+     * @see android.support.v4.app.FragmentActivity#onBackPressed()
+     */
     @Override
     public void onBackPressed()
     {

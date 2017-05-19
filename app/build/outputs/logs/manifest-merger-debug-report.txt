@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:2:1-124:12
+ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:2:1-128:12
 	package
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:3:11-39
 		INJECTED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml
@@ -118,7 +118,7 @@ ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidM
 	android:name
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:31:22-77
 application
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:33:5-122:19
+ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:33:5-126:19
 MERGED from [com.google.android.gms:play-services:8.4.0] /Users/Martare/.android/build-cache/e1c22ab58cdbc680c479eee7c0bd34b2b9c053e6/output/AndroidManifest.xml:19:5-20
 MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/Martare/.android/build-cache/1924a975b40847033e9e9420f72db0d418223570/output/AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/Martare/.android/build-cache/da35ec83c8e0d00e5182b36d860138bc8e13ce89/output/AndroidManifest.xml:19:5-20
@@ -152,7 +152,7 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/Mart
 	android:allowBackup
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:34:9-35
 	android:icon
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:35:9-45
+		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:35:9-42
 	android:theme
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:37:9-40
 meta-data#com.google.android.maps.v2.API_KEY
@@ -294,6 +294,12 @@ ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidM
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:120:13-67
 	android:name
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:119:13-43
+activity#com.adrenalinelife.DiscoverBrowser
+ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:122:9-125:20
+	android:label
+		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:124:13-53
+	android:name
+		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:123:13-44
 activity#com.google.android.gms.appinvite.PreviewActivity
 ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/dd840e25120a319f36f6284e750f870f37d0e309/output/AndroidManifest.xml:21:9-29:20
 	android:exported
