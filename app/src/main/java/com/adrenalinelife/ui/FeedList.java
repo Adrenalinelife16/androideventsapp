@@ -179,11 +179,9 @@ public class FeedList extends CustomFragment
 			TextView lbl = (TextView) convertView.findViewById(R.id.lbl1);
 			lbl.setText(d.getTitle());
 			if (d.getType() == Feed.FEED_IG)
-				lbl.setCompoundDrawablesWithIntrinsicBounds(0, 0,
-						R.mipmap.ic_instagram, 0);
+				lbl.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_ig, 0, 0, 0);
 			else if (d.getType() == Feed.FEED_TW)
-				lbl.setCompoundDrawablesWithIntrinsicBounds(0, 0,
-						R.drawable.ic_tw, 0);
+				lbl.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_tw, 0, 0, 0);
 			else
 				lbl.setCompoundDrawablesWithIntrinsicBounds(0, 0,
 						R.drawable.ic_fb, 0);
@@ -195,17 +193,16 @@ public class FeedList extends CustomFragment
 			lbl.setText(Commons.millsToDateTime(d.getDate()));
 
 			ImageView img;
-			if (position % 2 == 0)
+			if (d.getType() == Feed.FEED_IG)
 			{
 				img = (ImageView) convertView.findViewById(R.id.img1);
-				convertView.findViewById(R.id.img2).setVisibility(View.GONE);
+				img.setVisibility(View.VISIBLE);
 			}
 			else
 			{
-				img = (ImageView) convertView.findViewById(R.id.img2);
-				convertView.findViewById(R.id.img1).setVisibility(View.GONE);
+				img = (ImageView) convertView.findViewById(R.id.img1);
+				img.setVisibility(View.GONE);
 			}
-			img.setVisibility(View.VISIBLE);
 			Bitmap bm = loader.loadImage(d.getImage(),
 					new ImageLoadedListener() {
 
