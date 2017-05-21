@@ -4,32 +4,32 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/register.xml"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/ticket_item.xml",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/ticket_item.xml"
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/discover_events.xml",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/discover_events.xml"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/mr_media_route_controller_material_dialog_b.xml",
+        "source": "/Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/res/layout/mr_media_route_controller_material_dialog_b.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/about.xml",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/about.xml"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/mr_media_route_controller_material_dialog_b.xml",
-        "source": "/Users/Martare/.android/build-cache/1c21bcdd0e5f1f6c08aa00737c9b83f60ef9221b/output/res/layout/mr_media_route_controller_material_dialog_b.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/discover_events.xml",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/discover_events.xml"
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/ticket_item.xml",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/ticket_item.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_screen_toolbar.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_screen_toolbar.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_action_mode_close_item_material.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_action_menu_item_layout.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_action_menu_item_layout.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/login.xml",
@@ -41,27 +41,27 @@
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/mr_media_route_chooser_dialog.xml",
-        "source": "/Users/Martare/.android/build-cache/1c21bcdd0e5f1f6c08aa00737c9b83f60ef9221b/output/res/layout/mr_media_route_chooser_dialog.xml"
+        "source": "/Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/res/layout/mr_media_route_chooser_dialog.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_action_mode_bar.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_action_mode_bar.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_list_menu_item_icon.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_list_menu_item_icon.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_search_view.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/event_item.xml",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/event_item.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_search_view.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/place_autocomplete_progress.xml",
         "source": "/Users/Martare/.android/build-cache/06cc1e19791f9e4e19181277306f0e334cbef6fc/output/res/layout/place_autocomplete_progress.xml"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/event_item.xml",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/event_item.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/place_autocomplete_fragment.xml",
@@ -69,11 +69,11 @@
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/notification_template_part_chronometer.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/notification_template_part_chronometer.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_alert_dialog_material.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_alert_dialog_material.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/event_detail.xml",
@@ -81,15 +81,15 @@
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_list_menu_item_layout.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_list_menu_item_layout.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_select_dialog_material.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_select_dialog_material.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_activity_chooser_view_list_item.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/my_tickets.xml",
@@ -101,31 +101,31 @@
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_screen_content_include.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_screen_content_include.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/mr_media_route_list_item.xml",
-        "source": "/Users/Martare/.android/build-cache/1c21bcdd0e5f1f6c08aa00737c9b83f60ef9221b/output/res/layout/mr_media_route_list_item.xml"
+        "source": "/Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/res/layout/mr_media_route_list_item.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/select_dialog_multichoice_material.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/select_dialog_multichoice_material.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_list_menu_item_checkbox.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/notification_template_part_time.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/notification_template_part_time.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_expanded_menu_layout.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_expanded_menu_layout.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/programs.xml",
@@ -133,7 +133,7 @@
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
@@ -141,7 +141,7 @@
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_action_bar_title_item.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_action_bar_title_item.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/more.xml",
@@ -157,11 +157,11 @@
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/notification_template_media.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/notification_template_media.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/select_dialog_item_material.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/select_dialog_item_material.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/web.xml",
@@ -177,47 +177,47 @@
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/select_dialog_singlechoice_material.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/notification_template_lines.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/notification_template_lines.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_list_menu_item_radio.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_list_menu_item_radio.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/support_simple_spinner_dropdown_item.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_screen_simple.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_screen_simple.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/notification_template_big_media.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/notification_template_big_media.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/notification_template_big_media_narrow.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/notification_template_big_media_narrow.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/notification_media_action.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/notification_media_action.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_popup_menu_item_layout.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_action_bar_up_container.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_action_bar_up_container.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/logout.xml",
@@ -225,7 +225,7 @@
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/notification_media_cancel_action.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/notification_media_cancel_action.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/place_autocomplete_item_prediction.xml",
@@ -233,7 +233,7 @@
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_action_menu_layout.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_action_menu_layout.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/splash.xml",
@@ -245,7 +245,7 @@
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_activity_chooser_view.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_activity_chooser_view.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/create_event.xml",
@@ -253,7 +253,7 @@
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
-        "source": "/Users/Martare/.android/build-cache/4c920ec1b6cf7411be6bd9e12de8e6cfde1d4df3/output/res/layout/abc_dialog_title_material.xml"
+        "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/abc_dialog_title_material.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/calendar.xml",

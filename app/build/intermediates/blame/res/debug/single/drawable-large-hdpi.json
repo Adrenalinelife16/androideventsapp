@@ -36,6 +36,10 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/semi_trans_bg.png"
     },
     {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/layover_image.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/layover_image.png"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav5.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_nav5.png"
     },
