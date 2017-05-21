@@ -9,7 +9,6 @@
         android:id="@+id/v"
         android:layout_width="match_parent"
         android:layout_height="125dp"
-        android:background="@color/common_google_signin_btn_text_light_disabled"
         android:gravity="center_vertical">
 
         <LinearLayout

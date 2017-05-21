@@ -15,6 +15,8 @@
         android:layout_alignParentStart="false"
         android:adjustViewBounds="false"
         android:cropToPadding="false"
+        android:maxHeight="300dp"
+        android:minHeight="200dp"
         android:scaleType="fitXY"
         android:src="@drawable/no_imagebig"/>
 
