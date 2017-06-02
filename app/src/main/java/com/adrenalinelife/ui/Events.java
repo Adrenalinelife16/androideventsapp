@@ -1,6 +1,7 @@
 package com.adrenalinelife.ui;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -12,9 +13,12 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SearchView;
@@ -32,51 +36,48 @@ import com.adrenalinelife.utils.Const;
 import com.adrenalinelife.utils.ImageLoader;
 import com.adrenalinelife.utils.ImageLoader.ImageLoadedListener;
 import com.adrenalinelife.utils.ImageUtils;
+import com.adrenalinelife.utils.Log;
 import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
 
 import java.util.ArrayList;
+import java.util.List;
+
+import static com.adrenalinelife.utils.Const.EXTRA_DATA;
 
 
-
-public class Events extends PagingFragment
+public class Events extends PagingFragment implements SearchView.OnQueryTextListener
 {
-
-
 
 	/** Search View **/
 	SearchView searchView;
+	ListView searchResults;
 
 	/** Swipe Refresh Layout **/
 	private SwipeRefreshLayout SwipeRefresh;
 
 	/** The Events list. */
-	private final ArrayList<Event> pList = new ArrayList<Event>();
+	private final ArrayList<Event> pList = new ArrayList<>();
+    private final ArrayList<Event> fList = new ArrayList<>();
+
 
 	/* (non-Javadoc)
 	 * @see android.support.v4.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)
 	 */
 
-
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState)
+							 Bundle savedInstanceState)
 	{
 		super.onCreateView(inflater, container, savedInstanceState);
 		final View v = inflater.inflate(R.layout.events, null);
-				setHasOptionsMenu(true);
+		setHasOptionsMenu(true);
 
+		Log.e("onCreateView");
 		setProgramList(v);
-
-
-		//Search View
-
-		//SearchView simpleSearchView = (SearchView) findViewById(R.id.searchEvents);
-		//CharSequence query = simpleSearchView.getQuery();
-		//return true;
-
-
+		Log.e("setProgramList(v)");
 
 		SwipeRefresh = (SwipeRefreshLayout) v.findViewById(R.id.EventsRefresh);
 		SwipeRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -87,14 +88,52 @@ public class Events extends PagingFragment
 				SwipeRefresh.setRefreshing(false);
 			}
 		});
-	    //Configure the refreshing colors
+		//Configure the refreshing colors
 		SwipeRefresh.setColorSchemeResources(android.R.color.holo_red_light);
 
+		/***Search View***/
+		searchView = (SearchView) v.findViewById(R.id.searchEvents);
+		searchView.setQueryHint("Search Events");
+		searchResults = (ListView) v.findViewById(R.id.list);
+		searchView.setOnQueryTextFocusChangeListener(new View.OnFocusChangeListener()
+		{
+			@Override
+			public void onFocusChange(View v, boolean hasFocus) {
+
+				//Toast.makeText(activity, String.valueOf(hasFocus),Toast.LENGTH_SHORT).show();
+			}
+		});
+		searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener()
+		{
+			@Override
+			public boolean onQueryTextSubmit(String query) {
+
+                //Hide Keyboard//
+                InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(getActivity().INPUT_METHOD_SERVICE);
+                imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
+
+				return true;
+			}
+			@Override
+			public boolean onQueryTextChange(String newText) {
+
+                final SearchAdapter sA = new SearchAdapter(getActivity(), pList);
+                searchResults.setAdapter(sA);
+                Log.e("searchResults.setAdapter(sA)");
+
+				if (newText.length() >= 0) {
+					//searchResults.setVisibility(v.VISIBLE);
+					Log.e("onQueryTextChange");
+					sA.getFilter().filter(newText);
+					Log.e(newText);
+				}
+				return true;
+			}
+		});
 		return v;
 	}
-
-
-		private void setProgramList(View v)
+	////////////////////////////////////////////////////////////////////////////////////////////////
+	private void setProgramList(View v)
 	{
 
 		initPagingList((ListView) v.findViewById(R.id.list),
@@ -103,10 +142,10 @@ public class Events extends PagingFragment
 
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
-					long arg3)
+									long arg3)
 			{
 				startActivity(new Intent(getActivity(),
-						EventDetailActivity.class).putExtra(Const.EXTRA_DATA,
+						EventDetailActivity.class).putExtra(EXTRA_DATA,
 						pList.get(arg2)));
 			}
 		});
@@ -121,9 +160,40 @@ public class Events extends PagingFragment
 
 		loadEventList();
 	}
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    public void setSearchList(View v, final ArrayList newList)
+    {
+        final ArrayList<Event> n = newList;
+        initPagingList((ListView) v.findViewById(R.id.list),
+                new SearchAdapter(getActivity(), newList));
+        list.setOnItemClickListener(new OnItemClickListener() {
 
+
+
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+                                    long arg3)
+            {
+                startActivity(new Intent(getActivity(),
+                        EventDetailActivity.class).putExtra(EXTRA_DATA,
+                        n.get(arg2)));
+            }
+        });
+
+        int w = StaticData.width;
+        int h = (int) (StaticData.width / 2.25); //2.25
+        bmNoImg = ImageUtils.getPlaceHolderImage(R.drawable.no_imagebig, w, h);
+
+        // loader = new ImageLoader(w,h,ImageUtils.SCALE_ASPECT_WIDTH);
+        //loader = new ImageLoader(StaticData.width, StaticData.height,
+                //ImageUtils.SCALE_FIT_WIDTH);
+
+        //loadSearchList();
+    }
+	////////////////////////////////////////////////////////////////////////////////////////////////
 	private void loadEventList()
-	{
+    {
+		Log.e("loadEventList");
 		reset();
 		pList.clear();
 		adapter.notifyDataSetChanged();
@@ -131,12 +201,23 @@ public class Events extends PagingFragment
 		loadNextPage();
 	}
 
+    public void loadSearchList()
+    {
+        Log.e("loadSearchList");
+        reset();
+        fList.clear();
+        adapter.notifyDataSetChanged();
+        footer.setVisibility(View.GONE);
+        //loadNextPage();
+    }
+	////////////////////////////////////////////////////////////////////////////////////////////////
 	/* (non-Javadoc)
 	 * @see com.adrenalinelife.custom.PagingFragment#loadNextPage()
 	 */
 	@Override
 	protected void loadNextPage()
 	{
+		Log.e("loadNextPage");
 		onStartLoading();
 		final ProgressDialog dia;
 		if (page == 0)
@@ -182,16 +263,25 @@ public class Events extends PagingFragment
 						}
 					}
 				});
-
 			}
 		}).start();
-
 	}
 
+    @Override
+    public boolean onQueryTextSubmit(String s) {
+        return false;
+    }
 
+    @Override
+    public boolean onQueryTextChange(String s) {
+
+
+        return false;
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
 	private class ProgramAdapter extends BaseAdapter
 	{
-
 		/* (non-Javadoc)
 		 * @see android.widget.Adapter#getCount()
 		 */
@@ -258,12 +348,134 @@ public class Events extends PagingFragment
 
 			return convertView;
 		}
-
 	}
+	////////////////////////////////////////////////////////////////////////////////////////////////
+	public class SearchAdapter extends BaseAdapter implements Filterable
+	{
+		Context mContext;
+		LayoutInflater inflater;
+        //int mLayout;
+		public List<Event> eventNamesList;
+		public ArrayList<Event> fList = new ArrayList<>();
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onCreateOptionsMenu(android.view.Menu, android.view.MenuInflater)
-	 */
+		public SearchAdapter(Context context, List<Event> eventNamesList) {
+			mContext = context;
+            //this.mLayout = layout;
+			this.eventNamesList = eventNamesList;
+			inflater = LayoutInflater.from(mContext);
+			this.fList.clear();
+			this.fList.addAll(eventNamesList);
+
+
+
+		}
+
+		@Override
+		public int getCount()
+		{
+			return fList.size();
+		}
+
+		@Override
+		public Event getItem(int position)
+		{
+			return fList.get(position);
+		}
+
+		@Override
+		public long getItemId(int position)
+		{
+			return position;
+		}
+
+		@Override
+		public View getView(int position, View convertView, ViewGroup parent)
+		{
+			if (convertView == null)
+				convertView = getLayoutInflater(null).inflate(
+						R.layout.program_item, null);
+
+			Event d = getItem(position);
+			TextView lbl = (TextView) convertView.findViewById(R.id.lbl1);
+			lbl.setText(d.getTitle());
+
+			lbl = (TextView) convertView.findViewById(R.id.lbl2);
+			lbl.setText(Html.fromHtml(d.getDesc()));
+
+			lbl = (TextView) convertView.findViewById(R.id.lbl3);
+
+			lbl.setText(Commons.millsToDateTime(d.getStartDateTime()));
+
+			ImageView img = (ImageView) convertView.findViewById(R.id.img);
+			Bitmap bm = loader.loadImage(d.getImage(),
+					new ImageLoadedListener() {
+
+						@Override
+						public void imageLoaded(Bitmap bm)
+						{
+							if (bm != null)
+								notifyDataSetChanged();
+						}
+					});
+			if (bm == null)
+				img.setImageBitmap(bmNoImg);
+			else
+				img.setImageBitmap(bm);
+
+			return convertView;
+		}
+		Filter myFilter = new Filter() {
+			@Override
+			protected FilterResults performFiltering(CharSequence newText) {
+				FilterResults filterResults = new FilterResults();
+				ArrayList<Event> tempList = new ArrayList<>();
+				Event item;
+				Log.e("Filter Results");
+				Log.e("Before: ", newText);
+                for (int i = 0; i < fList.size(); i++) {
+                    String eName;
+                    eName = fList.get(i).getTitle().toLowerCase();
+                    //String eDesc;
+                    //eDesc = pList.get(i).getDesc().toLowerCase();
+                    if (eName.contains(newText.toString())) { // || eDesc.contains(newText.toString())
+                        item = fList.get(i);
+                        tempList.add(item);
+                        Log.e("Item Title: ", eName);
+                        i++;
+                    }
+                    filterResults.values = tempList;
+                    filterResults.count = tempList.size();
+                }
+                return filterResults;
+            }
+			@SuppressWarnings("unchecked")
+			@Override
+			protected void publishResults(CharSequence newText, FilterResults results) {
+				Log.e("publishResults");
+				Log.e("Results: ", newText);
+				if (results.count > 0) {
+					fList.clear();
+					fList.addAll((ArrayList<Event>) results.values);
+                    Log.e("Inflate v View r.layout.events");
+                    final View v = inflater.inflate(R.layout.events, null);
+                    Log.e("setSearchList");
+                    setSearchList(v, fList);
+					notifyDataSetChanged();
+				} else {
+                    Log.e("else: pList.clear()");
+                    Toast.makeText(getActivity(), "No Results Found!",Toast.LENGTH_SHORT).show();
+                    fList.clear();
+					notifyDataSetInvalidated();
+				}
+			}
+		};
+		@Override
+		public Filter getFilter() {
+			Log.e("getFilter");
+			return myFilter;
+		}
+	}
+	////////////////////////////////////////////////////////////////////////////////////////////////
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
 	{
@@ -272,10 +484,6 @@ public class Events extends PagingFragment
 		super.onCreateOptionsMenu(menu, inflater);
 
 	}
-
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onOptionsItemSelected(android.view.MenuItem)
-	 */
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
 	{
@@ -287,5 +495,5 @@ public class Events extends PagingFragment
 		}
 		return true;
 	}
-
+	////////////////////////////////////////////////////////////////////////////////////////////////
 }

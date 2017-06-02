@@ -4,6 +4,10 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/register.xml"
     },
     {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/discover_events.xml",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/discover_events.xml"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/ticket_item.xml",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/ticket_item.xml"
     },
@@ -14,10 +18,6 @@
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/mr_media_route_controller_material_dialog_b.xml",
         "source": "/Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/res/layout/mr_media_route_controller_material_dialog_b.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/discover_events.xml",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/discover_events.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",

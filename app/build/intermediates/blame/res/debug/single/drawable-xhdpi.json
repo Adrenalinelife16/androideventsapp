@@ -232,12 +232,12 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xhdpi/tab_bg_sel.png"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/drawer_shadow.9.png",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xhdpi/drawer_shadow.9.png"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/layover_image.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xhdpi/layover_image.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/drawer_shadow.9.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xhdpi/drawer_shadow.9.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_text_dark_pressed.9.png",

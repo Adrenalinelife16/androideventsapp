@@ -80,10 +80,8 @@ public class WebAccess
 
 		if (param == null)
 			param = new ArrayList<NameValuePair>();
-
 		try
 		{
-
 			if (Utils.isOnline())
 			{
 				HttpPost post = new HttpPost(BASE_URL + restUrl);

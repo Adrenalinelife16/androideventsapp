@@ -322,16 +322,6 @@ public class WebHelper extends WebAccess
 		return new Status();
 	}
 
-	/**
-	 *
-	 *
-	 *
-	 *
-	 *
-	 */
-
-
-
 
 	/**
 	 * Do Create Event.
