@@ -120,7 +120,7 @@
             android:windowSoftInputMode="stateHidden|adjustResize" >
         </activity>
         <activity
-            android:name="com.adrenalinelife.DiscoverEvents"
+            android:name="com.adrenalinelife.ui.DiscoverEvents"
             android:label="@string/title_activity_discover_events" >
         </activity>
         <activity

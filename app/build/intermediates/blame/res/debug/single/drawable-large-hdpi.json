@@ -88,6 +88,10 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_fav.png"
     },
     {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/discover_sel.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/discover_sel.png"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/date_layover.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/date_layover.png"
     },
@@ -168,6 +172,10 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/no_imagebig.png"
     },
     {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/events_.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/events_.png"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/cal_bg.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/cal_bg.png"
     },
@@ -216,6 +224,10 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/tab_bg.png"
     },
     {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/discover_.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/discover_.png"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/a_basketball.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/a_basketball.png"
     },
@@ -238,6 +250,10 @@
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/tab_bg_sel.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/tab_bg_sel.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/events_sel.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/events_sel.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav2_sel.png",

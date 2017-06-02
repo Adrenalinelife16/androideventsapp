@@ -28,6 +28,14 @@
         "source": "/Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/res/drawable-xhdpi/ic_media_route_off_mono_dark.png"
     },
     {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/discover_sel.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xhdpi/discover_sel.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/discover_.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xhdpi/discover_.png"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_menu_share_mtrl_alpha.png",
         "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/drawable-xhdpi/abc_ic_menu_share_mtrl_alpha.png"
     },
@@ -178,6 +186,10 @@
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_nav4_sel.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xhdpi/ic_nav4_sel.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/events_sel.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xhdpi/events_sel.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_fav_orange.png",
@@ -350,6 +362,10 @@
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_fav.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xhdpi/ic_fav.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/events_.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-xhdpi/events_.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_cab_background_top_mtrl_alpha.9.png",

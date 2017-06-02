@@ -288,12 +288,12 @@ ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidM
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:116:13-67
 	android:name
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:114:13-40
-activity#com.adrenalinelife.DiscoverEvents
+activity#com.adrenalinelife.ui.DiscoverEvents
 ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:118:9-121:20
 	android:label
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:120:13-67
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:119:13-43
+		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:119:13-46
 activity#com.adrenalinelife.DiscoverBrowser
 ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:122:9-125:20
 	android:label

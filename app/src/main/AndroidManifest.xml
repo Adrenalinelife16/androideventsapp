@@ -116,7 +116,7 @@
             android:windowSoftInputMode="stateHidden|adjustResize">
         </activity>
         <activity
-            android:name=".DiscoverEvents"
+            android:name=".ui.DiscoverEvents"
             android:label="@string/title_activity_discover_events">
         </activity>
         <activity

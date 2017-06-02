@@ -1,16 +1,18 @@
-package com.adrenalinelife;
+package com.adrenalinelife.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
-import com.adrenalinelife.custom.CustomActivity;
+import com.adrenalinelife.Browser;
+import com.adrenalinelife.DiscoverBrowser;
+import com.adrenalinelife.R;
+import com.adrenalinelife.custom.CustomFragment;
 
-public class DiscoverEvents extends CustomActivity {
+public class DiscoverEvents extends CustomFragment {
 
     ImageButton yogaButton;
     ImageButton basketballButton;
@@ -24,12 +26,13 @@ public class DiscoverEvents extends CustomActivity {
     ImageButton tablegamesButton;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.discover_events);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        super.onCreateView(inflater, container, savedInstanceState);
+        final View v = inflater.inflate(R.layout.discover_events, null);
 
         //yoga
-        yogaButton = (ImageButton) findViewById(R.id.b_yoga);
+        yogaButton = (ImageButton) v.findViewById(R.id.b_yoga);
         yogaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
@@ -41,7 +44,7 @@ public class DiscoverEvents extends CustomActivity {
         });
 
         //ImageButton basketballButton;
-        basketballButton = (ImageButton) findViewById(R.id.b_basketball);
+        basketballButton = (ImageButton) v.findViewById(R.id.b_basketball);
         basketballButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
@@ -53,7 +56,7 @@ public class DiscoverEvents extends CustomActivity {
         });
 
         //ImageButton soccerButton;
-        soccerButton = (ImageButton) findViewById(R.id.b_soccer);
+        soccerButton = (ImageButton) v.findViewById(R.id.b_soccer);
         soccerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
@@ -66,7 +69,7 @@ public class DiscoverEvents extends CustomActivity {
 
 
         //ImageButton golfButton;
-        golfButton = (ImageButton) findViewById(R.id.b_golf);
+        golfButton = (ImageButton) v.findViewById(R.id.b_golf);
         golfButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
@@ -78,7 +81,7 @@ public class DiscoverEvents extends CustomActivity {
         });
 
         //ImageButton frisbeeButton;
-        frisbeeButton = (ImageButton) findViewById(R.id.b_frisbee);
+        frisbeeButton = (ImageButton) v.findViewById(R.id.b_frisbee);
         frisbeeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
@@ -90,7 +93,7 @@ public class DiscoverEvents extends CustomActivity {
         });
 
         //ImageButton tennisButton;
-        tennisButton = (ImageButton) findViewById(R.id.b_tennis);
+        tennisButton = (ImageButton) v.findViewById(R.id.b_tennis);
         tennisButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
@@ -102,7 +105,7 @@ public class DiscoverEvents extends CustomActivity {
         });
 
         //ImageButton fishingButton;
-        fishingButton = (ImageButton) findViewById(R.id.b_fishing);
+        fishingButton = (ImageButton) v.findViewById(R.id.b_fishing);
         fishingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
@@ -115,7 +118,7 @@ public class DiscoverEvents extends CustomActivity {
 
 
         //ImageButton moreButton;
-        moreButton = (ImageButton) findViewById(R.id.b_more);
+        moreButton = (ImageButton) v.findViewById(R.id.b_more);
         moreButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
@@ -127,7 +130,7 @@ public class DiscoverEvents extends CustomActivity {
         });
 
         //ImageButton kickballButton;
-        kickballButton = (ImageButton) findViewById(R.id.b_kickball);
+        kickballButton = (ImageButton) v.findViewById(R.id.b_kickball);
         kickballButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
@@ -139,7 +142,7 @@ public class DiscoverEvents extends CustomActivity {
         });
 
         //ImageButton tablegamesButton;
-        tablegamesButton = (ImageButton) findViewById(R.id.b_tablegames);
+        tablegamesButton = (ImageButton) v.findViewById(R.id.b_tablegames);
         tablegamesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
@@ -149,9 +152,6 @@ public class DiscoverEvents extends CustomActivity {
                 startActivity(intent);
             }
         });
-
+        return v;
     }
-
-
-
 }

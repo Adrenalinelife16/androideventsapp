@@ -24,7 +24,7 @@ import com.adrenalinelife.calendar.CalendarView;
 import com.adrenalinelife.custom.CustomActivity;
 import com.adrenalinelife.custom.CustomFragment;
 import com.adrenalinelife.model.Data;
-import com.adrenalinelife.ui.About;
+import com.adrenalinelife.ui.DiscoverEvents;
 import com.adrenalinelife.ui.FeedList;
 import com.adrenalinelife.ui.LeftNavAdapter;
 import com.adrenalinelife.ui.More;
@@ -143,8 +143,8 @@ public class MainActivity extends CustomActivity
 	if (StaticData.pref.contains(Const.USER_ID))
 	{
 		ArrayList<Data> al = new ArrayList<Data>();
-		al.add(new Data("Event Feed", R.drawable.ic_nav1, R.drawable.ic_nav1_sel));
-		al.add(new Data("Discover Events", R.drawable.ic_nav2, R.drawable.ic_nav2_sel));
+		al.add(new Data("Event Feed", R.drawable.events_, R.drawable.events_sel));
+		al.add(new Data("Discover Events", R.drawable.discover_, R.drawable.discover_sel));
 		al.add(new Data("Social Feed", R.drawable.ic_nav2, R.drawable.ic_nav2_sel));
 		al.add(new Data("My Events", R.drawable.ic_nav3,
 				R.drawable.ic_nav3_sel));
@@ -157,8 +157,8 @@ public class MainActivity extends CustomActivity
 	else
 	{
 		ArrayList<Data> al = new ArrayList<Data>();
-		al.add(new Data("Event Feed", R.drawable.ic_nav1, R.drawable.ic_nav1_sel));
-		al.add(new Data("Discover Events", R.drawable.ic_nav2, R.drawable.ic_nav2_sel));
+		al.add(new Data("Event Feed", R.drawable.events_, R.drawable.events_sel));
+		al.add(new Data("Discover Events", R.drawable.discover_, R.drawable.discover_sel));
 		al.add(new Data("Social Feed", R.drawable.ic_nav2, R.drawable.ic_nav2_sel));
 		al.add(new Data("My Events", R.drawable.ic_nav3,
 				R.drawable.ic_nav3_sel));
@@ -166,7 +166,7 @@ public class MainActivity extends CustomActivity
 		//al.add(new Data("About", R.drawable.ic_nav5, R.drawable.ic_nav5_sel));
 		al.add(new Data("Rate this app", R.drawable.ic_nav6,
 				R.drawable.ic_nav6_sel));
-		al.add(new Data("Login/Register", R.drawable.ic_nav4, R.drawable.ic_nav4_sel));
+		al.add(new Data("Login/Register", R.drawable.ic_nav5, R.drawable.ic_nav5_sel));
 		return al;
 		}
 	}
@@ -190,8 +190,9 @@ public class MainActivity extends CustomActivity
 		else if (pos == 1)
 		{
 			title = getString(R.string.Discover_Events);
-			Intent intent = new Intent(THIS, DiscoverEvents.class);
-			startActivity(intent);
+			f = new DiscoverEvents();
+			//Intent intent = new Intent(THIS, DiscoverEvents.class);
+			//startActivity(intent);
 		}
 		else if (pos == 2)
 		{

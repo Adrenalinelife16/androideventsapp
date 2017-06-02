@@ -75,9 +75,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		final View v = inflater.inflate(R.layout.events, null);
 		setHasOptionsMenu(true);
 
-		Log.e("onCreateView");
 		setProgramList(v);
-		Log.e("setProgramList(v)");
 
 		SwipeRefresh = (SwipeRefreshLayout) v.findViewById(R.id.EventsRefresh);
 		SwipeRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -90,6 +88,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		});
 		//Configure the refreshing colors
 		SwipeRefresh.setColorSchemeResources(android.R.color.holo_red_light);
+		//Toast.makeText(activity, String.valueOf(hasFocus),Toast.LENGTH_SHORT).show();
 
 		/***Search View***/
 		searchView = (SearchView) v.findViewById(R.id.searchEvents);
@@ -99,19 +98,24 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		{
 			@Override
 			public void onFocusChange(View v, boolean hasFocus) {
-
-				//Toast.makeText(activity, String.valueOf(hasFocus),Toast.LENGTH_SHORT).show();
+			}
+		});
+		searchView.setOnCloseListener(new SearchView.OnCloseListener() {
+			@Override
+			public boolean onClose() {
+				//Hide Keyboard//
+				InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(getActivity().INPUT_METHOD_SERVICE);
+				imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
+				return false;
 			}
 		});
 		searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener()
 		{
 			@Override
 			public boolean onQueryTextSubmit(String query) {
-
                 //Hide Keyboard//
                 InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(getActivity().INPUT_METHOD_SERVICE);
                 imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
-
 				return true;
 			}
 			@Override
@@ -119,11 +123,8 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 
                 final SearchAdapter sA = new SearchAdapter(getActivity(), pList);
                 searchResults.setAdapter(sA);
-                Log.e("searchResults.setAdapter(sA)");
 
 				if (newText.length() >= 0) {
-					//searchResults.setVisibility(v.VISIBLE);
-					Log.e("onQueryTextChange");
 					sA.getFilter().filter(newText);
 					Log.e(newText);
 				}
@@ -135,7 +136,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 	////////////////////////////////////////////////////////////////////////////////////////////////
 	private void setProgramList(View v)
 	{
-
 		initPagingList((ListView) v.findViewById(R.id.list),
 				new ProgramAdapter());
 		list.setOnItemClickListener(new OnItemClickListener() {
@@ -149,7 +149,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 						pList.get(arg2)));
 			}
 		});
-
 		int w = StaticData.width;
 		int h = (int) (StaticData.width / 2.25); //2.25
 		bmNoImg = ImageUtils.getPlaceHolderImage(R.drawable.no_imagebig, w, h);
@@ -166,10 +165,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
         final ArrayList<Event> n = newList;
         initPagingList((ListView) v.findViewById(R.id.list),
                 new SearchAdapter(getActivity(), newList));
-        list.setOnItemClickListener(new OnItemClickListener() {
-
-
-
+        searchResults.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
                                     long arg3)
@@ -179,41 +175,20 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
                         n.get(arg2)));
             }
         });
-
         int w = StaticData.width;
         int h = (int) (StaticData.width / 2.25); //2.25
         bmNoImg = ImageUtils.getPlaceHolderImage(R.drawable.no_imagebig, w, h);
-
-        // loader = new ImageLoader(w,h,ImageUtils.SCALE_ASPECT_WIDTH);
-        //loader = new ImageLoader(StaticData.width, StaticData.height,
-                //ImageUtils.SCALE_FIT_WIDTH);
-
-        //loadSearchList();
     }
 	////////////////////////////////////////////////////////////////////////////////////////////////
 	private void loadEventList()
     {
-		Log.e("loadEventList");
 		reset();
 		pList.clear();
 		adapter.notifyDataSetChanged();
 		footer.setVisibility(View.GONE);
 		loadNextPage();
 	}
-
-    public void loadSearchList()
-    {
-        Log.e("loadSearchList");
-        reset();
-        fList.clear();
-        adapter.notifyDataSetChanged();
-        footer.setVisibility(View.GONE);
-        //loadNextPage();
-    }
 	////////////////////////////////////////////////////////////////////////////////////////////////
-	/* (non-Javadoc)
-	 * @see com.adrenalinelife.custom.PagingFragment#loadNextPage()
-	 */
 	@Override
 	protected void loadNextPage()
 	{
@@ -266,52 +241,32 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 			}
 		}).start();
 	}
-
     @Override
-    public boolean onQueryTextSubmit(String s) {
-        return false;
-    }
-
+    public boolean onQueryTextSubmit(String s) {return false;}
     @Override
-    public boolean onQueryTextChange(String s) {
-
-
-        return false;
-    }
-
+    public boolean onQueryTextChange(String s) {return false;}
     ////////////////////////////////////////////////////////////////////////////////////////////////
 	private class ProgramAdapter extends BaseAdapter
 	{
-		/* (non-Javadoc)
-		 * @see android.widget.Adapter#getCount()
-		 */
+
 		@Override
 		public int getCount()
 		{
 			return pList.size();
 		}
 
-		/* (non-Javadoc)
-		 * @see android.widget.Adapter#getItem(int)
-		 */
 		@Override
 		public Event getItem(int position)
 		{
 			return pList.get(position);
 		}
 
-		/* (non-Javadoc)
-		 * @see android.widget.Adapter#getItemId(int)
-		 */
 		@Override
 		public long getItemId(int position)
 		{
 			return position;
 		}
 
-		/* (non-Javadoc)
-		 * @see android.widget.Adapter#getView(int, android.view.View, android.view.ViewGroup)
-		 */
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent)
 		{
@@ -365,9 +320,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 			inflater = LayoutInflater.from(mContext);
 			this.fList.clear();
 			this.fList.addAll(eventNamesList);
-
-
-
 		}
 
 		@Override
@@ -430,8 +382,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 				FilterResults filterResults = new FilterResults();
 				ArrayList<Event> tempList = new ArrayList<>();
 				Event item;
-				Log.e("Filter Results");
-				Log.e("Before: ", newText);
                 for (int i = 0; i < fList.size(); i++) {
                     String eName;
                     eName = fList.get(i).getTitle().toLowerCase();
@@ -440,7 +390,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
                     if (eName.contains(newText.toString())) { // || eDesc.contains(newText.toString())
                         item = fList.get(i);
                         tempList.add(item);
-                        Log.e("Item Title: ", eName);
                         i++;
                     }
                     filterResults.values = tempList;
@@ -451,18 +400,13 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 			@SuppressWarnings("unchecked")
 			@Override
 			protected void publishResults(CharSequence newText, FilterResults results) {
-				Log.e("publishResults");
-				Log.e("Results: ", newText);
 				if (results.count > 0) {
 					fList.clear();
 					fList.addAll((ArrayList<Event>) results.values);
-                    Log.e("Inflate v View r.layout.events");
                     final View v = inflater.inflate(R.layout.events, null);
-                    Log.e("setSearchList");
                     setSearchList(v, fList);
 					notifyDataSetChanged();
 				} else {
-                    Log.e("else: pList.clear()");
                     Toast.makeText(getActivity(), "No Results Found!",Toast.LENGTH_SHORT).show();
                     fList.clear();
 					notifyDataSetInvalidated();
@@ -471,7 +415,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		};
 		@Override
 		public Filter getFilter() {
-			Log.e("getFilter");
 			return myFilter;
 		}
 	}
@@ -482,7 +425,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		if (getArg() == null)
 			inflater.inflate(R.menu.add, menu);
 		super.onCreateOptionsMenu(menu, inflater);
-
 	}
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
@@ -491,7 +433,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		{
 			Intent intent = new Intent(getActivity(), CreateEvent.class);
 			startActivity(intent);
-
 		}
 		return true;
 	}
