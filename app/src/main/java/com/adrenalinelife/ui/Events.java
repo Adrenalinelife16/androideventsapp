@@ -154,8 +154,8 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		bmNoImg = ImageUtils.getPlaceHolderImage(R.drawable.no_imagebig, w, h);
 
 		// loader = new ImageLoader(w,h,ImageUtils.SCALE_ASPECT_WIDTH);
-		loader = new ImageLoader(StaticData.width, StaticData.height,
-				ImageUtils.SCALE_FIT_WIDTH);
+		//loader = new ImageLoader(StaticData.width, StaticData.height,
+		//		ImageUtils.SCALE_FIT_WIDTH);
 
 		loadEventList();
 	}
@@ -385,9 +385,9 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
                 for (int i = 0; i < fList.size(); i++) {
                     String eName;
                     eName = fList.get(i).getTitle().toLowerCase();
-                    //String eDesc;
-                    //eDesc = pList.get(i).getDesc().toLowerCase();
-                    if (eName.contains(newText.toString())) { // || eDesc.contains(newText.toString())
+                    String eDesc;
+                    eDesc = pList.get(i).getDesc().toLowerCase();
+                    if (eName.contains(newText.toString())|| eDesc.contains(newText.toString())) {
                         item = fList.get(i);
                         tempList.add(item);
                         i++;
