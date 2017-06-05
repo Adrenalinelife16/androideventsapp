@@ -157,6 +157,9 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		//loader = new ImageLoader(StaticData.width, StaticData.height,
 		//		ImageUtils.SCALE_FIT_WIDTH);
 
+        loader = new ImageLoader(StaticData.width, StaticData.height,
+                ImageUtils.SCALE_FIT_WIDTH);
+
 		loadEventList();
 	}
     ////////////////////////////////////////////////////////////////////////////////////////////////
