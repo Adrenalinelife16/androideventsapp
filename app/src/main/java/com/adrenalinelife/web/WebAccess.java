@@ -66,6 +66,13 @@ public class WebAccess
 	/** The Constant TKT_LIST_URL. */
 	protected static final String TKT_LIST_URL = "api/getUserTickets";
 
+	protected static final String GET_FAV_EVENTS = "api/getFavEvents/";
+
+	protected static final String USER_HAS_FAV_EVENT = "api/isFavourite/";
+
+	protected static final String GET_FAV_EVENTS2 = "Adrenaline_Custom/api/getFavEvents/";
+
+	protected static final String USER_HAS_FAV_EVENT2 = "Adrenaline_Custom/api/isFavourite/";
 	/**
 	 * Execute request.
 	 *
@@ -136,9 +143,9 @@ public class WebAccess
 				if (res != null)
 				{
 					String strRes = EntityUtils.toString(res.getEntity());
-					Log.e("URL=" + BASE_URL + restUrl);
+					Log.e("URL = " + BASE_URL + restUrl);
 					// Log.e("PARAM="+param.toString());
-					Log.e("RES=" + strRes);
+					Log.e("RES = " + strRes);
 					if (strRes != null)
 					{
 						if (save)

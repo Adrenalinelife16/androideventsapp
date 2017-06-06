@@ -1,78 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:layout_width="match_parent"
-              android:layout_height="125dp"
-              android:gravity="center_horizontal"
-              android:orientation="vertical">
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:padding="5dp"
+              android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
 
     <LinearLayout
-        android:id="@+id/v"
         android:layout_width="match_parent"
-        android:layout_height="125dp"
-        android:gravity="center_vertical">
+        android:layout_height="86dp"
+        android:layout_marginLeft="@dimen/pad_10dp"
+        android:layout_marginTop="-5dp"
+        android:layout_weight="0.92"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight=".50"
-            android:orientation="vertical"
+            android:layout_height="wrap_content"
             >
 
             <TextView
                 android:id="@+id/lbl1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:drawableLeft="@drawable/ic_tw"
-                android:ellipsize="end"
-                android:gravity="center_vertical"
-                android:maxLines="2"
-                android:text="Adrenaline Life"
-                android:textColor="@color/main_color_gray_dk"
+                android:text="TextView"
+                android:textColor="@color/adrenaline_blue"
                 android:textSize="@dimen/txt_14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/lbl3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:paddingBottom="@dimen/pad_3dp"
-                android:text="Tues March 21st 2044"
+                android:layout_weight="1"
+                android:text="TextView"
                 android:textColor="@color/main_color_gray_dk"
-                android:textSize="@dimen/txt_12sp"/>
-
-            <TextView
-                android:id="@+id/lbl2"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="@color/common_google_signin_btn_text_dark_default"
-                android:ellipsize="end"
-                android:maxLines="4"
-                android:paddingLeft="5dp"
-                android:text="Welcome to the newest app from Adrenaline Life and always look for more!"
-                android:textColor="@color/main_color_gray_dk"
-                android:textSize="@dimen/txt_16sp"/>
-
+                android:textSize="@dimen/txt_14sp"/>
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/img1"
-            android:layout_width="250dp"
-            android:layout_height="match_parent"
-            android:layout_weight=".50"
-            android:background="@color/blue_lt"
-            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/lbl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="1dp"
+            android:text="TextView"
+            android:textColor="@color/main_color_gray_dk"
+            android:textSize="@dimen/txt_16sp"/>
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/img2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/blue_lt"
-        android:paddingLeft="@dimen/pad_3dp"
-        android:scaleType="fitXY"
-        android:visibility="gone"/>
 
 </LinearLayout>

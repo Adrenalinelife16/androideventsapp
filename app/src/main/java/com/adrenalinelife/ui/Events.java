@@ -17,6 +17,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
@@ -29,7 +30,6 @@ import com.adrenalinelife.CreateEvent;
 import com.adrenalinelife.EventDetailActivity;
 import com.adrenalinelife.R;
 import com.adrenalinelife.custom.PagingFragment;
-import com.adrenalinelife.database.DbHelper;
 import com.adrenalinelife.model.Event;
 import com.adrenalinelife.utils.Commons;
 import com.adrenalinelife.utils.Const;
@@ -52,15 +52,22 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 
 	/** Search View **/
 	SearchView searchView;
-	ListView searchResults;
+	ListView filterResults;
+
+	/** Filter by Day **/
+    Button mFilterMonday;
+	Button mFilterTuesday;
+	Button mFilterWednesday;
+	Button mFilterThursday;
+	Button mFilterFriday;
+	Button mFilterSaturday;
+	Button mFilterSunday;
 
 	/** Swipe Refresh Layout **/
 	private SwipeRefreshLayout SwipeRefresh;
 
 	/** The Events list. */
 	private final ArrayList<Event> pList = new ArrayList<>();
-    private final ArrayList<Event> fList = new ArrayList<>();
-
 
 	/* (non-Javadoc)
 	 * @see android.support.v4.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)
@@ -76,6 +83,19 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		setHasOptionsMenu(true);
 
 		setProgramList(v);
+        filterResults = (ListView) v.findViewById(R.id.list);
+
+        mFilterMonday = (Button) v.findViewById(R.id.button_filter_monday);
+        mFilterMonday.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final SearchAdapter fA = new SearchAdapter(getActivity(), pList);
+                filterResults.setAdapter(fA);
+                fA.getFilter().filter("dMon");
+                Log.e("date button");
+
+            }
+        });
 
 		SwipeRefresh = (SwipeRefreshLayout) v.findViewById(R.id.EventsRefresh);
 		SwipeRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -93,7 +113,12 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		/***Search View***/
 		searchView = (SearchView) v.findViewById(R.id.searchEvents);
 		searchView.setQueryHint("Search Events");
-		searchResults = (ListView) v.findViewById(R.id.list);
+		searchView.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				searchView.setIconified(false);
+			}
+		});
 		searchView.setOnQueryTextFocusChangeListener(new View.OnFocusChangeListener()
 		{
 			@Override
@@ -122,11 +147,13 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 			public boolean onQueryTextChange(String newText) {
 
                 final SearchAdapter sA = new SearchAdapter(getActivity(), pList);
-                searchResults.setAdapter(sA);
+                filterResults.setAdapter(sA);
 
 				if (newText.length() >= 0) {
-					sA.getFilter().filter(newText);
-					Log.e(newText);
+                    String search = "s" + newText;
+
+					sA.getFilter().filter(search);
+					Log.e(search);
 				}
 				return true;
 			}
@@ -168,7 +195,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
         final ArrayList<Event> n = newList;
         initPagingList((ListView) v.findViewById(R.id.list),
                 new SearchAdapter(getActivity(), newList));
-        searchResults.setOnItemClickListener(new OnItemClickListener() {
+        filterResults.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
                                     long arg3)
@@ -210,7 +237,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 				if (getArg() == null)
 					al = WebHelper.getEvents(page, Const.PAGE_SIZE_30);
 				else
-					al = DbHelper.getFavouriteEvents(page);
+					al = WebHelper.getFavoriteEvents();
 				parent.runOnUiThread(new Runnable() {
 					@Override
 					public void run()
@@ -288,7 +315,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 
 			lbl.setText(Commons.millsToDateTime(d.getStartDateTime()));
 
-			ImageView img = (ImageView) convertView.findViewById(R.id.img);
+			ImageView img = (ImageView) convertView.findViewById(R.id.img1);
 			Bitmap bm = loader.loadImage(d.getImage(),
 					new ImageLoadedListener() {
 
@@ -361,7 +388,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 
 			lbl.setText(Commons.millsToDateTime(d.getStartDateTime()));
 
-			ImageView img = (ImageView) convertView.findViewById(R.id.img);
+			ImageView img = (ImageView) convertView.findViewById(R.id.img1);
 			Bitmap bm = loader.loadImage(d.getImage(),
 					new ImageLoadedListener() {
 
@@ -382,32 +409,65 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		Filter myFilter = new Filter() {
 			@Override
 			protected FilterResults performFiltering(CharSequence newText) {
+
 				FilterResults filterResults = new FilterResults();
 				ArrayList<Event> tempList = new ArrayList<>();
-				Event item;
-                for (int i = 0; i < fList.size(); i++) {
-                    String eName;
-                    eName = fList.get(i).getTitle().toLowerCase();
-                    String eDesc;
-                    eDesc = pList.get(i).getDesc().toLowerCase();
-                    if (eName.contains(newText.toString())|| eDesc.contains(newText.toString())) {
-                        item = fList.get(i);
-                        tempList.add(item);
-                        i++;
+                String q = newText.toString().substring(1);
+
+                if (newText.toString().toLowerCase().startsWith("s")){
+                    Log.e(q);
+                    Event item;
+                    for (int i = 0; i < fList.size(); i++) {
+
+                        String eName;
+						String eDesc;
+                        eName = fList.get(i).getTitle().toLowerCase();
+                        eDesc = pList.get(i).getDesc().toLowerCase();
+
+                        if (eName.contains(q.toLowerCase())|| eDesc.contains(q.toLowerCase())) {
+                            item = fList.get(i);
+                            tempList.add(item);
+                            Log.e(item);
+                            i++;
+                        }
+                        filterResults.values = tempList;
+                        filterResults.count = tempList.size();
                     }
-                    filterResults.values = tempList;
-                    filterResults.count = tempList.size();
+                } if (newText.toString().toLowerCase().startsWith("d")){
+                    Log.e(q);
+                    Event item;
+                    for (int i = 0; i < fList.size(); i++) {
+                        long eDate;
+                        eDate = fList.get(i).getStartDateTime();
+                        String eDay;
+                        eDay = Commons.toDAY(eDate);
+                        Log.e("eDay = ", eDay);
+                        Log.e("q = ", q);
+
+                        if (eDay.equals(q)) {
+                            item = fList.get(i);
+                            tempList.add(item);
+                            Log.e("Item = ", item);
+                            i++;
+                        }
+                        filterResults.values = tempList;
+                        filterResults.count = tempList.size();
+                    }
+
                 }
+
                 return filterResults;
             }
 			@SuppressWarnings("unchecked")
 			@Override
 			protected void publishResults(CharSequence newText, FilterResults results) {
 				if (results.count > 0) {
+                    Log.e(newText);
 					fList.clear();
 					fList.addAll((ArrayList<Event>) results.values);
                     final View v = inflater.inflate(R.layout.events, null);
                     setSearchList(v, fList);
+                    Log.e(fList);
 					notifyDataSetChanged();
 				} else {
                     Toast.makeText(getActivity(), "No Results Found!",Toast.LENGTH_SHORT).show();
@@ -425,8 +485,10 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
 	{
-		if (getArg() == null)
+		if (StaticData.pref.contains(Const.USER_ID)) {
 			inflater.inflate(R.menu.add, menu);
+		}
+
 		super.onCreateOptionsMenu(menu, inflater);
 	}
 	@Override

@@ -85,7 +85,7 @@ public class LeftNavAdapter extends BaseAdapter
 	 * @see android.widget.Adapter#getView(int, android.view.View, android.view.ViewGroup)
 	 */
 	@Override
-	public View getView(int position, View convertView, ViewGroup parent)
+	public View getView(int position, View convertView  , ViewGroup parent)
 	{
 		if (convertView == null)
 			convertView = LayoutInflater.from(context).inflate(

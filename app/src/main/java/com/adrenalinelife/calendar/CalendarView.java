@@ -358,7 +358,7 @@ public class CalendarView extends CustomFragment implements DateChangeListener
 			lbl = (TextView) convertView.findViewById(R.id.lbl4);
 			lbl.setText(d.getLocation());
 
-			ImageView img = (ImageView) convertView.findViewById(R.id.img);
+			ImageView img = (ImageView) convertView.findViewById(R.id.img1);
 			Bitmap bm = loader.loadImage(d.getImage(),
 					new ImageLoadedListener() {
 

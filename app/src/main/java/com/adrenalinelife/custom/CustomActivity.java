@@ -70,7 +70,7 @@ public class CustomActivity extends FragmentActivity implements OnClickListener
 		actionBar.setDisplayUseLogoEnabled(false);
 		actionBar.setLogo(null);
 		actionBar.setBackgroundDrawable(getResources().getDrawable(
-				R.drawable.actionbar_bg));
+				R.drawable.actionbar_bg_4));
 		actionBar.setDisplayHomeAsUpEnabled(true);
 		actionBar.setHomeButtonEnabled(true);
 		actionBar.setTitle(R.string.app_name);

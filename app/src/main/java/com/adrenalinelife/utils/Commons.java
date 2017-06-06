@@ -146,6 +146,19 @@ public class Commons
 		return new SimpleDateFormat(format).format(d);
 	}
 
+	public static String toDAY(long mills)
+	{
+		Date d = new Date(mills);
+
+		if (DateUtils.isToday(mills))
+		{
+			return StaticData.res.getString(R.string.today)
+					+ new SimpleDateFormat(" - hh:mm a").format(d);
+		}
+		//String format = "dd MMM yyyy - hh:mm a";
+		String format = "E";
+		return new SimpleDateFormat(format).format(d);
+	}
 	/**
 	 * Mills to date.
 	 *

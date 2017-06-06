@@ -22,6 +22,7 @@ import com.adrenalinelife.database.DbHelper;
 import com.adrenalinelife.model.Event;
 import com.adrenalinelife.utils.Commons;
 import com.adrenalinelife.utils.Const;
+import com.adrenalinelife.utils.Log;
 import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
@@ -186,11 +187,15 @@ public class EventDetail extends CustomFragment
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
 	{
-		inflater.inflate(R.menu.share_fav, menu);
-		if (e.isFav())
-		{
-			menu.findItem(R.id.menu_fav).setIcon(R.drawable.ic_fav_orange);
-			menu.findItem(R.id.menu_fav).setTitle(R.string.remove_fav);
+
+		Log.e("User ID: ", StaticData.pref.contains(Const.USER_ID));
+		if (StaticData.pref.contains(Const.USER_ID)) {
+			inflater.inflate(R.menu.share_fav, menu);
+			if (e.isFav())
+			{
+				menu.findItem(R.id.menu_fav).setIcon(R.drawable.ic_fav_orange);
+				menu.findItem(R.id.menu_fav).setTitle(R.string.remove_fav);
+			}
 		}
 		super.onCreateOptionsMenu(menu, inflater);
 	}
@@ -209,25 +214,25 @@ public class EventDetail extends CustomFragment
 			i.putExtra(Intent.EXTRA_SUBJECT, e.getTitle());
 			startActivity(Intent.createChooser(i, getString(R.string.share)));
 		}
-		else if (item.getItemId() == R.id.menu_fav)
+
+		if (item.getItemId() == R.id.menu_fav)
 		{
 			e.setFav(!e.isFav());
 			if (e.isFav())
 			{
 				item.setIcon(R.drawable.ic_fav_orange);
 				item.setTitle(R.string.remove_fav);
-				Toast.makeText(parent, R.string.msg_add_fav, Toast.LENGTH_SHORT)
-						.show();
+				Toast.makeText(parent, R.string.msg_add_fav, Toast.LENGTH_SHORT).show();
 			}
 			else
 			{
 				item.setIcon(R.drawable.ic_fav);
 				item.setTitle(R.string.add_to_fav);
-				Toast.makeText(parent, R.string.msg_rem_fav, Toast.LENGTH_SHORT)
-						.show();
+				Toast.makeText(parent, R.string.msg_rem_fav, Toast.LENGTH_SHORT).show();
 			}
 			DbHelper.setEventFavorite(e, e.isFav());
 		}
+
 		return super.onOptionsItemSelected(item);
 	}
 

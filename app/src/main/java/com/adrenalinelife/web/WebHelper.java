@@ -7,6 +7,8 @@ import com.adrenalinelife.model.Event;
 import com.adrenalinelife.model.Feed;
 import com.adrenalinelife.model.Status;
 import com.adrenalinelife.utils.Commons;
+import com.adrenalinelife.utils.Const;
+import com.adrenalinelife.utils.StaticData;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -40,7 +42,6 @@ public class WebHelper extends WebAccess
 	{
 		try
 		{
-
 			String url = EVENT_LIST_URL;
 			url = getPageParams(url, page, pageSize);
 			//url=getUserParams(url);
@@ -51,7 +52,6 @@ public class WebHelper extends WebAccess
 		{
 			e.printStackTrace();
 		}
-
 		return null;
 	}
 
@@ -184,7 +184,8 @@ public class WebHelper extends WebAccess
 		{
 			String res = executePostRequest(FEED_URL, null, true);
 			JSONObject obj = new JSONObject(res);
-
+			JSONArray arr = obj.getJSONArray("instagram_feeds");
+/*
 			JSONArray arr = obj.getJSONArray("twitter_feeds");
 			for (int i = 0; i < arr.length(); i++)
 			{
@@ -216,7 +217,6 @@ public class WebHelper extends WebAccess
 				al.add(f);
 			}
 */
-			arr = obj.getJSONArray("instagram_feeds");
 			for (int i = 0; i < arr.length(); i++)
 			{
 				JSONObject js = arr.getJSONObject(i);
@@ -264,10 +264,28 @@ public class WebHelper extends WebAccess
 		{
 			e.printStackTrace();
 		}
-
 		return null;
 	}
 
+	public static ArrayList<Event> getFavoriteEvents()
+	{
+		try
+		{
+			ArrayList<NameValuePair> param = new ArrayList<NameValuePair>();
+            param.add(new BasicNameValuePair("user_id", "24"));
+            param.add(new BasicNameValuePair("page", "1"));
+            param.add(new BasicNameValuePair("page_size", "1"));
+            //String url = GET_FAV_EVENTS;
+            //String url = GET_FAV_EVENTS2;
+            String res = executePostRequest(GET_FAV_EVENTS2, param, true);
+			return parseEvents(res);
+
+		} catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+		return null;
+	}
 	/**
 	 * Checks if is booked.
 	 * 

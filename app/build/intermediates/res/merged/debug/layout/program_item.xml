@@ -5,89 +5,94 @@
                 android:layout_height="wrap_content"
                 android:maxHeight="25dp">
 
-    <ImageView
-        android:id="@+id/img"
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="false"
-        android:adjustViewBounds="false"
-        android:cropToPadding="false"
-        android:maxHeight="300dp"
-        android:minHeight="200dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/no_imagebig"/>
-
-    <ImageView
-        android:id="@+id/date_layover"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:alpha=".6"
-        android:rotation="180"
-        android:scaleType="fitXY"
-        android:src="@drawable/image_layover_android"/>
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="false"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/no_imagebig"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignBottom="@+id/img1"
+            android:background="@drawable/actionbar_bg_4"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/lbl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:lines="1"
+                android:text="Event Title"
+                android:textColor="@color/main_color_orange"
+                android:textSize="@dimen/txt_18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/lbl2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="3sp"
+                android:lines="2"
+                android:text="Event Description"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_14sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <ImageView
-        android:id="@+id/image_layover"
+        android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignBottom="@+id/img"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
+        android:layout_height="wrap_content"
         android:scaleType="fitXY"
-        android:src="@drawable/layover_image"/>
+        android:src="@drawable/date_layover"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/date_layover"/>
 
     <TextView
         android:id="@+id/lbl3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_margin="@dimen/pad_5dp"
-        android:paddingBottom="@dimen/pad_5dp"
-        android:paddingLeft="@dimen/pad_5dp"
-        android:shadowColor="@color/white"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
         android:shadowDx="1"
         android:shadowDy="1"
         android:shadowRadius="1"
         android:text="Date!"
         android:textColor="@color/common_plus_signin_btn_text_dark_default"
         android:textSize="16dp"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/img"
-        android:gravity="center_vertical"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/pad_5dp"
-        android:paddingLeft="@dimen/pad_10dp"
-        android:paddingRight="@dimen/pad_10dp">
-
-        <TextView
-            android:id="@+id/lbl1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Event Title"
-            android:textColor="@color/main_color_orange"
-            android:textSize="@dimen/txt_18sp"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:id="@+id/lbl2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:lines="1"
-            android:text="Event Description"
-            android:textColor="@color/white"
-            android:textSize="@dimen/txt_16sp"/>
-
-    </LinearLayout>
 
 </RelativeLayout>
