@@ -1,14 +1,15 @@
 package com.adrenalinelife.web;
 
+import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 
 import com.adrenalinelife.database.DbHelper;
 import com.adrenalinelife.model.Event;
 import com.adrenalinelife.model.Feed;
 import com.adrenalinelife.model.Status;
+import com.adrenalinelife.ui.EventDetail;
 import com.adrenalinelife.utils.Commons;
-import com.adrenalinelife.utils.Const;
-import com.adrenalinelife.utils.StaticData;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -21,6 +22,8 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Locale;
 import java.util.TreeSet;
+
+import static android.support.constraint.R.id.parent;
 
 /**
  * The Class WebHelper class holds all the methods that communicate with server
@@ -64,7 +67,7 @@ public class WebHelper extends WebAccess
 	 * @throws Exception
 	 *             the exception
 	 */
-	private static ArrayList<Event> parseEvents(String res) throws Exception
+	public static ArrayList<Event> parseEvents(String res) throws Exception
 	{
 		JSONArray obj = new JSONArray(res);
 
@@ -255,10 +258,13 @@ public class WebHelper extends WebAccess
 	{
 		try
 		{
+			Log.e("get events by month", month + "/" + year);
 			ArrayList<NameValuePair> param = new ArrayList<NameValuePair>();
 			param.add(new BasicNameValuePair("month", month));
+			Log.e("param", month);
 			param.add(new BasicNameValuePair("year", year));
 			String res = executePostRequest(EVENT_BY_MONTH_URL, param, true);
+			Log.e("execute post request", res);
 			return parseEvents(res);
 		} catch (Exception e)
 		{
@@ -267,17 +273,17 @@ public class WebHelper extends WebAccess
 		return null;
 	}
 
-	public static ArrayList<Event> getFavoriteEvents()
+	public static ArrayList<Event> getFavoriteEvents(int page, int pageSize)
 	{
 		try
 		{
-			ArrayList<NameValuePair> param = new ArrayList<NameValuePair>();
-            param.add(new BasicNameValuePair("user_id", "24"));
-            param.add(new BasicNameValuePair("page", "1"));
-            param.add(new BasicNameValuePair("page_size", "1"));
-            //String url = GET_FAV_EVENTS;
-            //String url = GET_FAV_EVENTS2;
-            String res = executePostRequest(GET_FAV_EVENTS2, param, true);
+			page++;
+			ArrayList<NameValuePair> param = getUserParams();
+			param.add(new BasicNameValuePair("page", page + ""));
+			param.add(new BasicNameValuePair("page_size", pageSize + ""));
+            String res = executePostRequest(GET_FAV_EVENTS, param, true);
+			Log.e("String Res ", res);
+
 			return parseEvents(res);
 
 		} catch (Exception e)
@@ -285,6 +291,45 @@ public class WebHelper extends WebAccess
 			e.printStackTrace();
 		}
 		return null;
+	}
+
+	public static ArrayList<Event> addRemoveFavorite(String user_id, String event_id)
+	{
+		try
+		{
+			ArrayList<NameValuePair> param = new ArrayList<NameValuePair>();
+			param.add(new BasicNameValuePair("user_id", "24"));
+			param.add(new BasicNameValuePair("event_id", event_id));
+			String res = executePostRequest(ADD_REMOVE_FAV, param, true);
+			return parseEvents(res);
+		} catch (Exception e)
+		{
+			Log.e("Exception Caught ", e.getMessage());
+			e.printStackTrace();
+
+		}
+		return null;
+	}
+
+	public static boolean isFavoriteEvent(Event e)
+	{
+		try
+		{
+			String event_id = e.getId();
+            ArrayList<NameValuePair> param = getUserParams();
+			param.clear();
+            //param.add(new BasicNameValuePair("event_id", e.getId()));
+			param.add(new BasicNameValuePair("user_id", "24"));
+			param.add(new BasicNameValuePair("event_id", event_id));
+			String res = executePostRequest(USER_HAS_FAV_EVENT, param, true);
+			e.setFav(new Status(new JSONArray(res).getJSONObject(0)).isSuccess());
+			return e.isFav();
+		} catch (Exception ex)
+		{
+			ex.printStackTrace();
+		}
+        com.adrenalinelife.utils.Log.e("Is Fav Event? ", e.isFav());
+		return false;
 	}
 	/**
 	 * Checks if is booked.
@@ -467,8 +512,10 @@ public class WebHelper extends WebAccess
 		{
 			ArrayList<NameValuePair> param = getUserParams();
 			param.add(new BasicNameValuePair("event_id", event_id));
-			param.add(new BasicNameValuePair("booking_spaces", space));
-			param.add(new BasicNameValuePair("booking_comment", comment));
+			//param.add(new BasicNameValuePair("booking_spaces", space));
+			//param.add(new BasicNameValuePair("booking_comment", comment));
+			param.add(new BasicNameValuePair("booking_spaces", "1"));
+			param.add(new BasicNameValuePair("booking_comment", null));
 			String res = executePostRequest(BOOK_TKT_URL, param, false);
 			return new Status(res, "payment_page_link");
 		} catch (Exception ex)

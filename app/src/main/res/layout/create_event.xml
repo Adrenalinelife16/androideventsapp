@@ -8,291 +8,255 @@
     android:fillViewport="true"
     android:scrollbars="none" >
 
-    <LinearLayout android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
 
+        <TextView
+            android:id="@+id/eventNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="63dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:text="Event Name:"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent"/>
 
+        <EditText
+            android:id="@+id/eventName"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Event Name"
+            android:inputType="textPersonName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eventNameTextView"/>
 
-    <android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:layout_editor_absoluteY="73dp"
-    tools:layout_editor_absoluteX="0dp">
+        <TextView
+            android:id="@+id/startTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="63dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="13dp"
+            android:layout_weight="1"
+            android:text="Start:"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/eventName"/>
 
+        <EditText
+            android:id="@+id/startTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="time"/>
 
-    <EditText
-        android:id="@+id/eventName"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Event Name"
-        android:inputType="textPersonName"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/eventNameTextView"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        <EditText
+            android:id="@+id/startDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="date"/>
 
-    <TextView
-        android:id="@+id/startTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Start:"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="63dp"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline"
-        android:layout_marginTop="13dp"
-        app:layout_constraintTop_toBottomOf="@+id/eventName" />
+        <TextView
+            android:id="@+id/endTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="63dp"
+            android:layout_marginStart="30dp"
+            android:layout_weight="1"
+            android:text="End:"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline"
+            tools:layout_editor_absoluteY="151dp"/>
 
-    <EditText
-        android:id="@+id/startDate"
-        style="?android:attr/spinnerStyle"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Date"
-        android:inputType="date"
-        android:layout_marginLeft="63dp"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/startTextView"
-        android:layout_marginStart="43dp"
-        android:layout_marginTop="0dp" />
+        <EditText
+            android:id="@+id/endTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="time"/>
 
-    <EditText
-        android:id="@+id/startTime"
-        style="?android:attr/spinnerStyle"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Time"
-        android:inputType="time"
-        app:layout_constraintLeft_toRightOf="@+id/startDate"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="31dp"
-        app:layout_constraintTop_toBottomOf="@+id/eventName"
-        app:layout_constraintHorizontal_bias="0.358" />
+        <EditText
+            android:id="@+id/endDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="date"/>
 
-    <TextView
-        android:id="@+id/endTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="End:"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintTop_toBottomOf="@+id/startDate"
-        android:layout_marginLeft="63dp"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline" />
+        <TextView
+            android:id="@+id/whereTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="63dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1"
+            android:text="Where:"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/endDate"/>
 
-    <EditText
-        android:id="@+id/endDate"
-        style="?android:attr/spinnerStyle"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Date"
-        android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/endTextView"
-        android:layout_marginLeft="85dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="0dp" />
+        <EditText
+            android:id="@+id/locationName"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Location Name"
+            android:inputType="textPersonName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/whereTextView"/>
 
-    <EditText
-        android:id="@+id/endTime"
-        style="?android:attr/spinnerStyle"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Time"
-        android:inputType="textPersonName"
-        app:layout_constraintLeft_toRightOf="@+id/endDate"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="42dp"
-        app:layout_constraintBottom_toTopOf="@+id/locationName"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/startTime"
-        app:layout_constraintVertical_bias="0.758"
-        app:layout_constraintHorizontal_bias="0.347" />
+        <EditText
+            android:id="@+id/locationAddress"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPersonName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locationName"/>
 
-    <TextView
-        android:id="@+id/whereTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Where:"
-        android:layout_marginTop="24dp"
-        app:layout_constraintTop_toBottomOf="@+id/endDate"
-        android:layout_marginLeft="63dp"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline"
-        android:layout_marginStart="43dp" />
+        <EditText
+            android:id="@+id/locationCity"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="City"
+            android:inputType="textPersonName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locationAddress"/>
 
-    <EditText
-        android:id="@+id/locationName"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Location Name"
-        android:inputType="textPersonName"
-        android:layout_marginTop="9dp"
-        app:layout_constraintTop_toBottomOf="@+id/whereTextView"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        <Spinner
+            android:id="@+id/locationState"
+            android:layout_width="117dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/state_arrays"
+            app:layout_constraintHorizontal_bias="0.896"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/locationZip"
+            app:layout_constraintTop_toBottomOf="@+id/locationCity"/>
 
-    <EditText
-        android:id="@+id/locationAddress"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Address"
-        android:inputType="textPersonName"
-        android:layout_marginTop="11dp"
-        app:layout_constraintTop_toBottomOf="@+id/locationName"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        <EditText
+            android:id="@+id/locationZip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="83dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Zip Code"
+            android:inputType="textPersonName"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locationCity"/>
 
-    <EditText
-        android:id="@+id/locationCity"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="City"
-        android:inputType="textPersonName"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="12dp"
-        app:layout_constraintTop_toBottomOf="@+id/locationAddress"
-        app:layout_constraintRight_toRightOf="parent" />
+        <TextView
+            android:id="@+id/detailsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="83dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="Event Details:"
+            app:layout_constraintBottom_toTopOf="@+id/eventDetails"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locationState"
+            app:layout_constraintVertical_bias="1.0"/>
 
-    <EditText
-        android:id="@+id/locationZip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="14dp"
-        android:ems="10"
-        android:hint="Zip Code"
-        android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/locationCity"
-        android:layout_marginRight="83dp"
-        app:layout_constraintRight_toRightOf="parent" />
+        <EditText
+            android:id="@+id/eventDetails"
+            android:layout_width="350dp"
+            android:layout_height="190dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Event Detials"
+            android:inputType="textMultiLine"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locationZip"/>
 
-    <EditText
-        android:id="@+id/eventDetails"
-        android:layout_width="350dp"
-        android:layout_height="190dp"
-        android:layout_marginTop="64dp"
-        android:ems="10"
-        android:hint="Event Detials"
-        android:inputType="textMultiLine"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/locationZip"
-        app:layout_constraintRight_toRightOf="parent" />
+        <TextView
+            android:id="@+id/eventImageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="83dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="32dp"
+            android:layout_weight="1"
+            android:text="Event Image"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eventDetails"/>
 
-    <TextView
-        android:id="@+id/detailsTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Event Details:"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="83dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/eventDetails"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/locationState"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/eventNameTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Event Name:"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="63dp"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="16dp" />
-
-    <TextView
-        android:id="@+id/eventImageTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Event Image"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="83dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@+id/eventDetails" />
-
-    <Button
-        android:id="@+id/chooseImageBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:text="Select Image:"
-        android:layout_marginStart="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/eventImageTextView"
-        android:layout_marginLeft="81dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="0dp" />
+        <Button
+            android:id="@+id/chooseImageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="81dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:text="Select Image:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eventImageTextView"/>
 
         <ImageView
             android:id="@+id/submittedImageView"
             android:layout_width="350dp"
             android:layout_height="190dp"
             android:layout_marginTop="14dp"
+            android:layout_weight="1"
             android:background="@mipmap/ic_launcher"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/chooseImageBtn" />
+            app:layout_constraintTop_toBottomOf="@+id/chooseImageBtn"/>
 
-    <Button
-        android:id="@+id/submitEventBtn"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="Submit Event"
-        android:layout_marginTop="33dp"
-        app:layout_constraintTop_toBottomOf="@+id/submittedImageView"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp" />
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="73dp"/>
 
-    <android.support.constraint.Guideline
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/guideline"
-        app:layout_constraintGuide_begin="20dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteY="73dp"
-        tools:layout_editor_absoluteX="20dp" />
+        <Button
+            android:id="@+id/submitEventBtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="33dp"
+            android:layout_weight="1"
+            android:text="Submit Event"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/submittedImageView"/>
 
-    <Spinner
-        android:id="@+id/locationState"
-        android:layout_width="117dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="13dp"
-        app:layout_constraintTop_toBottomOf="@+id/locationCity"
-        android:layout_marginLeft="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginStart="16dp"
-        android:drawSelectorOnTop="true"
-        android:entries="@array/state_arrays"
-        app:layout_constraintRight_toLeftOf="@+id/locationZip"
-        android:layout_marginRight="8dp"
-        app:layout_constraintHorizontal_bias="0.896"
-        android:layout_marginEnd="8dp" />
-
-</android.support.constraint.ConstraintLayout>
     </LinearLayout>
 </ScrollView>

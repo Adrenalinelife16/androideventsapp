@@ -18,7 +18,6 @@ import com.adrenalinelife.BookTkt;
 import com.adrenalinelife.Login;
 import com.adrenalinelife.R;
 import com.adrenalinelife.custom.CustomFragment;
-import com.adrenalinelife.database.DbHelper;
 import com.adrenalinelife.model.Event;
 import com.adrenalinelife.utils.Commons;
 import com.adrenalinelife.utils.Const;
@@ -33,6 +32,17 @@ import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
+
+import java.util.ArrayList;
+import java.util.zip.Inflater;
+
+import static com.adrenalinelife.web.WebAccess.GET_FAV_EVENTS;
+import static com.adrenalinelife.web.WebAccess.executePostRequest;
+import static com.adrenalinelife.web.WebAccess.getUserParams;
+import static com.adrenalinelife.web.WebHelper.parseEvents;
 
 /**
  * The Class EventDetail is the Fragment class that shows the details about an
@@ -185,24 +195,51 @@ public class EventDetail extends CustomFragment
 	 * @see android.support.v4.app.Fragment#onCreateOptionsMenu(android.view.Menu, android.view.MenuInflater)
 	 */
 	@Override
-	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
+	public void onCreateOptionsMenu(final Menu menu, final MenuInflater inflater)
 	{
 
-		Log.e("User ID: ", StaticData.pref.contains(Const.USER_ID));
+		Log.e("OnCreateOptionsMenu");
 		if (StaticData.pref.contains(Const.USER_ID)) {
 			inflater.inflate(R.menu.share_fav, menu);
-			if (e.isFav())
-			{
-				menu.findItem(R.id.menu_fav).setIcon(R.drawable.ic_fav_orange);
-				menu.findItem(R.id.menu_fav).setTitle(R.string.remove_fav);
-			}
+			Log.e("User Has USER ID: ");
+			final ProgressDialog dia = parent
+					.showProgressDia(R.string.alert_loading);
+			new Thread(new Runnable() {
+				@Override
+				public void run()
+				{
+					final String id = '"' + e.getId() + '"';
+					Log.e("isFavoriteEvent: ", id);
+					final String s = checkFavoriteEvents(e);
+					Log.e("CHECK LIST ", s);
+					Log.e("WHAT IS THE ID ", id);
+					parent.runOnUiThread(new Runnable() {
+						@Override
+						public void run() {
+							dia.dismiss();
+							Log.e("If Statement Now");
+
+							if (s.contains(id)){
+								Log.e("s does contain id", s);
+								menu.findItem(R.id.menu_fav).setIcon(R.drawable.ic_fav_orange);
+								e.setFav(true);
+							}
+							else if (!s.contains(id)){
+								Log.e("s does NOT contain id", s);
+								menu.findItem(R.id.menu_fav).setIcon(R.drawable.ic_fav);
+								e.setFav(false);
+
+							}
+						}
+					});
+				}
+			}).start();
+
 		}
 		super.onCreateOptionsMenu(menu, inflater);
 	}
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onOptionsItemSelected(android.view.MenuItem)
-	 */
+
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
 	{
@@ -216,29 +253,57 @@ public class EventDetail extends CustomFragment
 		}
 
 		if (item.getItemId() == R.id.menu_fav)
+		Log.e("Fav pressed");
 		{
 			e.setFav(!e.isFav());
 			if (e.isFav())
 			{
+				Log.e("Add Fav");
 				item.setIcon(R.drawable.ic_fav_orange);
-				item.setTitle(R.string.remove_fav);
+				//item.setTitle(R.string.remove_fav);
 				Toast.makeText(parent, R.string.msg_add_fav, Toast.LENGTH_SHORT).show();
 			}
 			else
 			{
+				Log.e("Remove Fav");
 				item.setIcon(R.drawable.ic_fav);
 				item.setTitle(R.string.add_to_fav);
 				Toast.makeText(parent, R.string.msg_rem_fav, Toast.LENGTH_SHORT).show();
 			}
-			DbHelper.setEventFavorite(e, e.isFav());
+
+			final ProgressDialog dia = parent
+					.showProgressDia(R.string.alert_loading);
+			new Thread(new Runnable() {
+				@Override
+				public void run()
+				{
+					String id = e.getId();
+					Log.e("addRemoveFavorite: ", id);
+					Log.e("User ID: ", StaticData.User_iD);
+					WebHelper.addRemoveFavorite(null, id);
+					parent.runOnUiThread(new Runnable() {
+						@Override
+						public void run() {
+							dia.dismiss();
+							if (e.getId() == null) {
+								Log.e("Fav Post not made ", e.getId());
+								//Utils.showDialog(parent,
+								//StaticData.getErrorMessage());
+							}
+							else if (e.getId() != null) {
+								Log.e("Fav is not null");
+							}
+						}
+					});
+				}
+			}).start();
+
+			//DbHelper.setEventFavorite(e, e.isFav());
 		}
 
 		return super.onOptionsItemSelected(item);
 	}
 
-	/* (non-Javadoc)
-	 * @see com.adrenalinelife.custom.CustomFragment#onClick(android.view.View)
-	 */
 	@Override
 	public void onClick(View v)
 	{
@@ -289,6 +354,33 @@ public class EventDetail extends CustomFragment
 			}).start();
 		}
 	}
+
+
+	public static String checkFavoriteEvents(Event z)
+	{
+		ArrayList<String> resList = new ArrayList();
+		try
+		{
+			//String d = z.getId();
+			ArrayList<NameValuePair> param = getUserParams();
+			param.add(new BasicNameValuePair("page", "1"));
+			param.add(new BasicNameValuePair("page_size", "30"));
+			String res = executePostRequest(GET_FAV_EVENTS, param, true);
+			android.util.Log.e("String Res ", res);
+
+
+			//resList.add(d);
+			return res;
+
+
+		} catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+
 
 	/* (non-Javadoc)
 	 * @see android.support.v4.app.Fragment#onActivityResult(int, int, android.content.Intent)

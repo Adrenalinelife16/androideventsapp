@@ -1,14 +1,24 @@
 package com.adrenalinelife;
+import android.annotation.TargetApi;
+import android.app.Dialog;
+import android.app.DialogFragment;
 import android.app.ProgressDialog;
+import android.app.TimePickerDialog;
+import android.icu.util.Calendar;
+import android.os.Build;
 import android.os.Bundle;
+import android.text.format.DateFormat;
 import android.view.View;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TimePicker;
 
 import com.adrenalinelife.custom.CustomActivity;
 import com.adrenalinelife.model.Status;
 import com.adrenalinelife.utils.Commons;
 import com.adrenalinelife.utils.Const;
+import com.adrenalinelife.utils.Log;
 import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
@@ -30,6 +40,34 @@ public class CreateEvent extends CustomActivity {
 
         setTouchNClick(R.id.submitEventBtn);
 
+
+
+    }
+
+    public static class TimePickerFragment extends DialogFragment
+            implements TimePickerDialog.OnTimeSetListener {
+
+        @TargetApi(Build.VERSION_CODES.N)
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            // Use the current time as the default values for the picker
+            final Calendar c = Calendar.getInstance();
+            int hour = c.get(Calendar.HOUR_OF_DAY);
+            int minute = c.get(Calendar.MINUTE);
+
+            // Create a new instance of TimePickerDialog and return it
+            return new TimePickerDialog(getActivity(), this, hour, minute,
+                    DateFormat.is24HourFormat(getActivity()));
+        }
+
+        public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+            // Do something with the time chosen by the user
+        }
+    }
+
+    public void showTimePickerDialog(View v) {
+        final String start_date = (findViewById(R.id.startDate)).toString().trim();
+        final String start_time = (findViewById(R.id.startTime)).toString().trim();
     }
 
 
@@ -66,14 +104,10 @@ public class CreateEvent extends CustomActivity {
 
         // Get Event Dates
 
-        final String start_date = ((EditText) findViewById(R.id.startDate)).getText()
-                .toString().trim();
-        final String start_time = ((EditText) findViewById(R.id.startTime)).getText()
-                .toString().trim();
-        final String end_date = ((EditText) findViewById(R.id.endDate)).getText()
-                .toString().trim();
-        final String end_time = ((EditText) findViewById(R.id.endTime)).getText()
-                .toString().trim();
+        final String start_date = ((EditText) findViewById(R.id.startDate)).getText().toString().trim();
+        final String start_time = ((EditText) findViewById(R.id.startTime)).getText().toString().trim();
+        final String end_date = ((EditText) findViewById(R.id.endDate)).getText().toString().trim();
+        final String end_time = ((EditText) findViewById(R.id.endTime)).getText().toString().trim();
         if (Commons.isEmpty(start_date) || Commons.isEmpty(start_date)
                 || Commons.isEmpty(start_date))
         {
@@ -142,12 +176,25 @@ public class CreateEvent extends CustomActivity {
         }
         final String user = Const.USER_ID;
         final String category = "Test";
+        Log.e("Create Event Working Now");
+        Log.e(event_name);
+        Log.e(start_time);
+        Log.e(start_date);
+        Log.e(end_time);
+        Log.e(end_date);
+        Log.e(location_name);
+        Log.e(location_address);
+        Log.e(location_city);
+        Log.e(event_info);
+
+
 
         final ProgressDialog dia = showProgressDia(R.string.alert_wait);
         new Thread(new Runnable() {
             @Override
             public void run()
             {
+                Log.e("Running doCreateEvent");
                 final Status st = WebHelper.doCreateEvent(location_name, location_address, location_city, location_zip, location_state, category, user, event_name, event_info, start_time, end_time, start_date, end_date);
                 runOnUiThread(new Runnable() {
                     @Override

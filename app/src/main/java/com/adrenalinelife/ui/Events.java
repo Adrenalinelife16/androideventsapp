@@ -237,7 +237,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 				if (getArg() == null)
 					al = WebHelper.getEvents(page, Const.PAGE_SIZE_30);
 				else
-					al = WebHelper.getFavoriteEvents();
+					al = WebHelper.getFavoriteEvents(page, Const.PAGE_SIZE_30);
 				parent.runOnUiThread(new Runnable() {
 					@Override
 					public void run()

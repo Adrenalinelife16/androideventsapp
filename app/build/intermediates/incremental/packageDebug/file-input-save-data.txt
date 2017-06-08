@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jun 06 16:33:15 CDT 2017
+#Thu Jun 08 15:23:00 CDT 2017
 20.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 143.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 439.set=ANDROID_RESOURCE
@@ -81,7 +81,7 @@
 290.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable/mr_ic_play_dark.xml
 444.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 356.set=ANDROID_RESOURCE
-120.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_media_play.png
+120.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/add_button.png
 153.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_activity_chooser_view.xml
 279.set=ANDROID_RESOURCE
 324.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-large-hdpi-v4/ic_nav5.png
@@ -103,7 +103,7 @@
 179.set=ANDROID_RESOURCE
 27.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 176.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/mipmap-xxxhdpi-v4/ic_launcher.png
-347.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_focused.9.png
+347.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-large-hdpi-v4/discover_sel.png
 432.set=ANDROID_RESOURCE
 387.set=ANDROID_RESOURCE
 310.set=ANDROID_RESOURCE
@@ -486,7 +486,7 @@
 288.set=ANDROID_RESOURCE
 211.set=ANDROID_RESOURCE
 254.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
-271.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png
+271.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png
 425.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 166.set=ANDROID_RESOURCE
 101.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-large-hdpi-v4/progress_bg.png
@@ -526,7 +526,7 @@
 284.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png
 438.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 296.set=ANDROID_RESOURCE
-15.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_pause_light.png
+15.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_media_route_on_mono_dark.png
 147.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/color-v11/abc_background_cache_hint_selector_material_dark.xml
 318.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-large-hdpi-v4/cal_mark.png
 181.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
@@ -678,7 +678,7 @@
 277.set=ANDROID_RESOURCE
 198.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/ic_comment.png
 200.set=ANDROID_RESOURCE
-369.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-large-hdpi-v4/events_.png
+369.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_plusone_small_off_client.png
 155.set=ANDROID_RESOURCE
 9.set=ANDROID_RESOURCE
 370.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
@@ -736,7 +736,7 @@
 140.set=ANDROID_RESOURCE
 70.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 185.set=ANDROID_RESOURCE
-390.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png
+390.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/powered_by_google_light.png
 227.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 393.set=ANDROID_RESOURCE
 253.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-large-hdpi-v4/actionbar_bg_4.png
@@ -886,7 +886,7 @@
 189.set=ANDROID_RESOURCE
 28.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 177.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-large-hdpi-v4/ic_comment.png
-348.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-large-hdpi-v4/discover_sel.png
+348.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_focused.9.png
 442.set=ANDROID_RESOURCE
 397.set=ANDROID_RESOURCE
 320.set=ANDROID_RESOURCE
@@ -1054,7 +1054,7 @@
 69.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 86.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/layout-v21/events.xml
 400.set=ANDROID_RESOURCE
-389.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/powered_by_google_light.png
+389.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png
 355.set=ANDROID_RESOURCE
 8.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/ic_ig.png
 390.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
@@ -1241,7 +1241,7 @@ count=451
 48.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 267.set=ANDROID_RESOURCE
 197.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_list_menu_item_layout.xml
-368.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_plusone_small_off_client.png
+368.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-large-hdpi-v4/events_.png
 145.set=ANDROID_RESOURCE
 232.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 443.set=ANDROID_RESOURCE
@@ -1267,7 +1267,7 @@ count=451
 298.set=ANDROID_RESOURCE
 221.set=ANDROID_RESOURCE
 255.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
-272.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png
+272.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png
 426.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 102.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/color/common_plus_signin_btn_text_light.xml
 288.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
@@ -1304,7 +1304,7 @@ count=451
 27.set=ANDROID_RESOURCE
 285.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
 439.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
-16.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_media_route_on_mono_dark.png
+16.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_pause_light.png
 148.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/layout-v21/place_autocomplete_progress.xml
 319.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_setting_dark.png
 320.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
@@ -1336,7 +1336,7 @@ count=451
 408.set=ANDROID_RESOURCE
 391.set=ANDROID_RESOURCE
 35.set=ANDROID_RESOURCE
-119.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/add_button.png
+119.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_media_play.png
 29.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/layout/calendar.xml
 209.set=ANDROID_RESOURCE
 30.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
