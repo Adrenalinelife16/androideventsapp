@@ -578,6 +578,8 @@
     <string name="err_event_booked">You have already booked this Event.</string>
     <string name="err_field_empty">Please fill all the fields.</string>
     <string name="err_internet">Network Connection has been lost</string>
+    <string name="err_login">Please Login/Register to Access this Feature! </string>
+    <string name="err_more">Please remember, we are still in BETA.</string>
     <string name="err_no_space">Sorry, All the seats are booked now. No space available.</string>
     <string name="err_past_event">Sorry, You can\'t book the past events!</string>
     <string name="err_pwd">Password does not match!</string>

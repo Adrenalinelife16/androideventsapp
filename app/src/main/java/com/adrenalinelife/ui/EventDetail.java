@@ -239,7 +239,6 @@ public class EventDetail extends CustomFragment
 		super.onCreateOptionsMenu(menu, inflater);
 	}
 
-
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
 	{
@@ -279,8 +278,7 @@ public class EventDetail extends CustomFragment
 				{
 					String id = e.getId();
 					Log.e("addRemoveFavorite: ", id);
-					Log.e("User ID: ", StaticData.User_iD);
-					WebHelper.addRemoveFavorite(null, id);
+					WebHelper.addRemoveFavorite(id);
 					parent.runOnUiThread(new Runnable() {
 						@Override
 						public void run() {
@@ -297,8 +295,6 @@ public class EventDetail extends CustomFragment
 					});
 				}
 			}).start();
-
-			//DbHelper.setEventFavorite(e, e.isFav());
 		}
 
 		return super.onOptionsItemSelected(item);
@@ -358,21 +354,15 @@ public class EventDetail extends CustomFragment
 
 	public static String checkFavoriteEvents(Event z)
 	{
-		ArrayList<String> resList = new ArrayList();
 		try
 		{
-			//String d = z.getId();
+			Log.e("EventDetail checkFavoriteEvents");
 			ArrayList<NameValuePair> param = getUserParams();
 			param.add(new BasicNameValuePair("page", "1"));
 			param.add(new BasicNameValuePair("page_size", "30"));
 			String res = executePostRequest(GET_FAV_EVENTS, param, true);
 			android.util.Log.e("String Res ", res);
-
-
-			//resList.add(d);
 			return res;
-
-
 		} catch (Exception e)
 		{
 			e.printStackTrace();

@@ -126,6 +126,11 @@ public class StaticData
 		return Utils.isOnline() ? R.string.err_unexpect : R.string.err_internet;
 	}
 
+	public static int getLoginErrorMessage()
+	{
+		return Utils.isOnline() ? R.string.err_login : R.string.err_more;
+	}
+
 	/**
 	 * Clear.
 	 */

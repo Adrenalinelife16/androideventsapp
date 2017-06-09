@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Jun 08 15:23:00 CDT 2017
+#Fri Jun 09 02:44:17 CDT 2017
 20.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 143.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 439.set=ANDROID_RESOURCE
@@ -736,7 +736,7 @@
 140.set=ANDROID_RESOURCE
 70.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 185.set=ANDROID_RESOURCE
-390.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/powered_by_google_light.png
+390.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png
 227.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 393.set=ANDROID_RESOURCE
 253.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-large-hdpi-v4/actionbar_bg_4.png
@@ -1054,7 +1054,7 @@
 69.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 86.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/layout-v21/events.xml
 400.set=ANDROID_RESOURCE
-389.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png
+389.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/powered_by_google_light.png
 355.set=ANDROID_RESOURCE
 8.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/ic_ig.png
 390.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_

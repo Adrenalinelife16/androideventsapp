@@ -1,6 +1,8 @@
 package com.adrenalinelife;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.Uri;
@@ -23,8 +25,10 @@ import android.widget.ListView;
 import com.adrenalinelife.calendar.CalendarView;
 import com.adrenalinelife.custom.CustomActivity;
 import com.adrenalinelife.custom.CustomFragment;
+import com.adrenalinelife.custom.FireMissilesDialogFragment;
 import com.adrenalinelife.model.Data;
 import com.adrenalinelife.ui.DiscoverEvents;
+import com.adrenalinelife.ui.FavEvents;
 import com.adrenalinelife.ui.FeedList;
 import com.adrenalinelife.ui.LeftNavAdapter;
 import com.adrenalinelife.ui.More;
@@ -34,6 +38,8 @@ import com.adrenalinelife.utils.Const;
 import com.adrenalinelife.utils.StaticData;
 
 import java.util.ArrayList;
+
+import static com.adrenalinelife.utils.StaticData.getLoginErrorMessage;
 
 /**
  * The Class MainActivity is the base activity class of the application. This
@@ -211,13 +217,37 @@ public class MainActivity extends CustomActivity
 		}
 		else if (pos == 21)
 		{
-			tab.setEnabled(true);
-			tab = findViewById(R.id.tab2);
-			tab.setEnabled(false);
-			title = getString(R.string.my_fav);
-			f = new Events();
-			f.setArg(new Bundle());
-			pos = 3;
+			if (StaticData.pref.contains(Const.USER_ID)) {
+				tab.setEnabled(true);
+				tab = findViewById(R.id.tab2);
+				tab.setEnabled(false);
+				title = getString(R.string.my_fav);
+				f = new FavEvents();
+				f.setArg(new Bundle());
+				pos = 3;
+			} if (!StaticData.pref.contains(Const.USER_ID)){
+			AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+			builder.setMessage(R.string.err_login)
+					.setPositiveButton(R.string.login, new DialogInterface.OnClickListener() {
+						public void onClick(DialogInterface dialog, int id) {
+							Intent intent = new Intent(MainActivity.this, Login.class);
+							startActivity(intent);
+						}
+					})
+					.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+						public void onClick(DialogInterface dialog, int id) {
+							// User cancelled the dialog
+						}
+					});
+
+			AlertDialog action = builder.create();
+			action.show();
+		}
+
+
+
+
+
 		}
 		else if (pos == 22)
 		{

@@ -115,50 +115,6 @@ public class WebAccess
 		return save ? loadFromFile(restUrl, param) : null;
 
 	}
-
-	protected static String executePostRequest_2(String restUrl, ArrayList<NameValuePair> param, boolean save)
-	{
-
-		if (param == null)
-			param = new ArrayList<NameValuePair>();
-		try
-		{
-			if (Utils.isOnline())
-			{
-
-				URL url = new URL(BASE_URL + restUrl);
-				HttpURLConnection connection = (HttpURLConnection)url.openConnection();
-				connection.setRequestProperty(String.valueOf(param), "UTF-8");
-				connection.setRequestMethod("POST");
-				connection.setDoInput(true);
-				connection.connect();
-				String res = connection.getResponseMessage();
-				//HttpPost post = new HttpPost(BASE_URL + restUrl);
-				//post.setEntity(new UrlEncodedFormEntity(param, "UTF-8"));
-				//HttpResponse res = new DefaultHttpClient().execute(connection);
-				if (res != null)
-				{
-					//String strRes = EntityUtils.toString(res);
-					Log.e("URL=" + BASE_URL + restUrl);
-					Log.e("PARAM=" + param.toString());
-					Log.e("RES=" + res);
-					if (res != null)
-					{
-						if (save)
-							saveToFile(restUrl, param, res);
-						return res;
-					}
-				}
-			}
-
-		} catch (Exception e)
-		{
-			e.printStackTrace();
-		}
-		return save ? loadFromFile(restUrl, param) : null;
-
-	}
-
 	/**
 	 * Execute get request.
 	 *

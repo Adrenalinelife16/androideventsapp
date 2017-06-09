@@ -27,6 +27,8 @@
     <string name="free_event">Free Event</string>
     <string name="reg_now">Register Now</string>
     <string name="alert_loading">Loading...</string>
+    <string name="err_login">Please Login/Register to Access this Feature! </string>
+    <string name="err_more">Please remember, we are still in BETA.</string>
     <string name="err_unexpect">Sorry, An unexpected error occurred. Please make sure that you are connected to internet and then try again!</string>
     <string name="err_internet">Network Connection has been lost</string>
     <string name="msg_no_content">No content found!</string>

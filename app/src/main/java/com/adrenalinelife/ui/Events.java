@@ -1,7 +1,9 @@
 package com.adrenalinelife.ui;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -28,6 +30,7 @@ import android.widget.Toast;
 
 import com.adrenalinelife.CreateEvent;
 import com.adrenalinelife.EventDetailActivity;
+import com.adrenalinelife.Login;
 import com.adrenalinelife.R;
 import com.adrenalinelife.custom.PagingFragment;
 import com.adrenalinelife.model.Event;
@@ -41,10 +44,16 @@ import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
 
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import static com.adrenalinelife.utils.Const.EXTRA_DATA;
+import static com.adrenalinelife.web.WebAccess.GET_FAV_EVENTS;
+import static com.adrenalinelife.web.WebAccess.executePostRequest;
+import static com.adrenalinelife.web.WebAccess.getUserParams;
 
 
 public class Events extends PagingFragment implements SearchView.OnQueryTextListener
@@ -68,10 +77,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 
 	/** The Events list. */
 	private final ArrayList<Event> pList = new ArrayList<>();
-
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)
-	 */
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	@Override
@@ -123,6 +128,8 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		{
 			@Override
 			public void onFocusChange(View v, boolean hasFocus) {
+				InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(getActivity().INPUT_METHOD_SERVICE);
+				imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
 			}
 		});
 		searchView.setOnCloseListener(new SearchView.OnCloseListener() {
@@ -179,11 +186,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		int w = StaticData.width;
 		int h = (int) (StaticData.width / 2.25); //2.25
 		bmNoImg = ImageUtils.getPlaceHolderImage(R.drawable.no_imagebig, w, h);
-
-		// loader = new ImageLoader(w,h,ImageUtils.SCALE_ASPECT_WIDTH);
-		//loader = new ImageLoader(StaticData.width, StaticData.height,
-		//		ImageUtils.SCALE_FIT_WIDTH);
-
         loader = new ImageLoader(StaticData.width, StaticData.height,
                 ImageUtils.SCALE_FIT_WIDTH);
 
@@ -230,40 +232,27 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		else
 			dia = null;
 		new Thread(new Runnable() {
+			ArrayList<Event> al = new ArrayList<Event>();
 			@Override
-			public void run()
-			{
-				final ArrayList<Event> al;
-				if (getArg() == null)
-					al = WebHelper.getEvents(page, Const.PAGE_SIZE_30);
-				else
-					al = WebHelper.getFavoriteEvents(page, Const.PAGE_SIZE_30);
+			public void run() {
+				al = WebHelper.getEvents(page, Const.PAGE_SIZE_30);
 				parent.runOnUiThread(new Runnable() {
 					@Override
-					public void run()
-					{
+					public void run() {
 						if (dia != null)
 							dia.dismiss();
 
-						if (page == 0 && al == null)
-						{
+						if (page == 0 && al == null) {
 							Utils.showDialog(parent,
 									StaticData.getErrorMessage());
-						}
-						else if (page == 0 && al.size() == 0)
+						} else if (page == 0 && al.size() == 0)
 							Toast.makeText(parent, R.string.msg_no_content,
 									Toast.LENGTH_SHORT).show();
-
-						if (al == null || al.size() == 0)
-						{
+						if (al == null || al.size() == 0) {
 							onFinishLoading(0);
-						}
-						else
-						{
+						} else {
 							pList.addAll(al);
-
 							adapter.notifyDataSetChanged();
-
 							onFinishLoading(al.size());
 						}
 					}
@@ -422,7 +411,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
                         String eName;
 						String eDesc;
                         eName = fList.get(i).getTitle().toLowerCase();
-                        eDesc = pList.get(i).getDesc().toLowerCase();
+                        eDesc = fList.get(i).getDesc().toLowerCase();
 
                         if (eName.contains(q.toLowerCase())|| eDesc.contains(q.toLowerCase())) {
                             item = fList.get(i);
@@ -455,7 +444,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
                     }
 
                 }
-
                 return filterResults;
             }
 			@SuppressWarnings("unchecked")
@@ -485,20 +473,37 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
 	{
-		if (StaticData.pref.contains(Const.USER_ID)) {
-			inflater.inflate(R.menu.add, menu);
-		}
+		inflater.inflate(R.menu.add, menu);
 
 		super.onCreateOptionsMenu(menu, inflater);
 	}
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
 	{
-		if (item.getItemId() == R.id.menu_fav)
+		if (item.getItemId() == R.id.menu_fav && !StaticData.pref.contains(Const.USER_ID))
 		{
+			AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+			builder.setMessage(R.string.err_login)
+					.setPositiveButton(R.string.login, new DialogInterface.OnClickListener() {
+						public void onClick(DialogInterface dialog, int id) {
+							Intent intent = new Intent(getActivity(), Login.class);
+							startActivity(intent);
+						}
+					})
+					.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+						public void onClick(DialogInterface dialog, int id) {
+							// User cancelled the dialog
+						}
+					});
+
+			AlertDialog action = builder.create();
+			action.show();
+		} if (item.getItemId() == R.id.menu_fav && StaticData.pref.contains(Const.USER_ID)){
 			Intent intent = new Intent(getActivity(), CreateEvent.class);
 			startActivity(intent);
-		}
+
+	}
+
 		return true;
 	}
 	////////////////////////////////////////////////////////////////////////////////////////////////

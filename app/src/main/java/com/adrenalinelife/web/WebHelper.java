@@ -10,6 +10,7 @@ import com.adrenalinelife.model.Feed;
 import com.adrenalinelife.model.Status;
 import com.adrenalinelife.ui.EventDetail;
 import com.adrenalinelife.utils.Commons;
+import com.adrenalinelife.utils.StaticData;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -32,6 +33,7 @@ import static android.support.constraint.R.id.parent;
 public class WebHelper extends WebAccess
 {
 
+	public String stringOfFav;
 	/**
 	 * Gets the adrenalinelife.
 	 * 
@@ -58,6 +60,22 @@ public class WebHelper extends WebAccess
 		return null;
 	}
 
+	public static ArrayList<Event> grabFavEvents(int page, int pageSize)
+	{
+		try
+		{
+			String url = EVENT_LIST_URL;
+			url = getPageParams(url, page, pageSize);
+			String res = executeGetRequest(url, true);
+			return parseFavEvents(res);
+
+		} catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+		return null;
+	}
+
 	/**
 	 * Parses the adrenalinelife.
 	 * 
@@ -67,8 +85,11 @@ public class WebHelper extends WebAccess
 	 * @throws Exception
 	 *             the exception
 	 */
+
+
 	public static ArrayList<Event> parseEvents(String res) throws Exception
 	{
+		Log.e("parseEvents ", res);
 		JSONArray obj = new JSONArray(res);
 
 		TreeSet<Event> al = new TreeSet<Event>(new Comparator<Event>() {
@@ -91,6 +112,31 @@ public class WebHelper extends WebAccess
 		return new ArrayList<Event>(al);
 	}
 
+	public static ArrayList<Event> parseFavEvents(String res) throws Exception
+	{
+
+		JSONArray obj = new JSONArray(res);
+
+		TreeSet<Event> al = new TreeSet<Event>(new Comparator<Event>() {
+
+			@Override
+			public int compare(Event lhs, Event rhs)
+			{
+				if (lhs.getStartDateTime() == rhs.getStartDateTime())
+					return rhs.getTitle().compareTo(lhs.getTitle());
+				return rhs.getStartDateTime() > lhs.getStartDateTime() ? -1 : 1;
+			}
+		});
+		for (int i = 0; i < obj.length(); i++)
+		{
+			JSONObject js = obj.getJSONObject(i);
+			if (js.has("status") && js.has("message") && obj.length() == 1)
+				return new ArrayList<Event>();
+			al.add(parseFavEvent(js));
+		}
+		return new ArrayList<Event>(al);
+	}
+
 	/**
 	 * Parses the event.
 	 * 
@@ -102,6 +148,7 @@ public class WebHelper extends WebAccess
 	 */
 	private static Event parseEvent(JSONObject js) throws Exception
 	{
+
 		Event e = new Event();
 		e.setTitle(js.getString("event_name"));
 		e.setId(js.getString("event_id"));
@@ -135,10 +182,49 @@ public class WebHelper extends WebAccess
 			e2.printStackTrace();
 		}
 
+
+
 		/*while(e.getDesc().startsWith("/n")||e.getDesc().startsWith("/r"))
 			e.setDesc(e.getDesc().substring(1));
 		while(e.getDesc().endsWith("/n")||e.getDesc().endsWith("/r"))
 			e.setDesc(e.getDesc().substring(0,e.getDesc().length()-1));*/
+		return e;
+	}
+
+	private static Event parseFavEvent(JSONObject js) throws Exception
+	{
+		Event e = new Event();
+		e.setTitle(js.getString("event_name"));
+		e.setId(js.getString("event_id"));
+		e.setStartDate(js.getString("event_start_date"));
+		e.setStartTime(js.getString("event_start_time"));
+		e.setImage(js.getString("event_image_url"));
+		e.setDesc(js.getString("event_content"));
+		e.setEndDate(js.getString("event_end_date"));
+		e.setEndTime(js.getString("event_end_time"));
+		e.setLocation(js.getString("location_address") + ", "
+				+ js.getString("location_town") + ", "
+				+ js.getString("location_state") + ", "
+				+ js.getString("location_region") + ", "
+				+ js.getString("location_country") + "- "
+				+ js.getString("location_postcode"));
+		e.setLocation(e.getLocation().replaceAll(", null", ""));
+		e.setLocation(e.getLocation().replaceAll("- null", ""));
+
+		e.setLatitude(Commons.strToDouble(js.getString("location_latitude")));
+		e.setLongitude(Commons.strToDouble(js.getString("location_longitude")));
+
+		try
+		{
+			e.setPrice(Commons.strToDouble(js.getJSONObject("ticket")
+					.getString("ticket_price")));
+			e.setAvailSpace(Commons.strToInt(js.getJSONObject("ticket")
+					.getString("avail_spaces")));
+		} catch (Exception e2)
+		{
+			e2.printStackTrace();
+		}
+
 		return e;
 	}
 
@@ -293,12 +379,11 @@ public class WebHelper extends WebAccess
 		return null;
 	}
 
-	public static ArrayList<Event> addRemoveFavorite(String user_id, String event_id)
+	public static ArrayList<Event> addRemoveFavorite(String event_id)
 	{
 		try
 		{
-			ArrayList<NameValuePair> param = new ArrayList<NameValuePair>();
-			param.add(new BasicNameValuePair("user_id", "24"));
+			ArrayList<NameValuePair> param = getUserParams();
 			param.add(new BasicNameValuePair("event_id", event_id));
 			String res = executePostRequest(ADD_REMOVE_FAV, param, true);
 			return parseEvents(res);
