@@ -12,7 +12,10 @@
         android:id="@+id/searchEvents"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:clickable="true"/>
+        android:background="@drawable/search_bar"
+        android:clickable="true">
+
+    </SearchView>
 
     <HorizontalScrollView
         android:layout_width="match_parent"

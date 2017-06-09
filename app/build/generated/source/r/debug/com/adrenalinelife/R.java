@@ -2686,7 +2686,7 @@ containing a value of this type.
         public static final int mr_ic_settings_light=0x7f0200d2;
         public static final int no_image=0x7f0200d3;
         public static final int no_imagebig=0x7f0200d4;
-        public static final int notification_template_icon_bg=0x7f0200e6;
+        public static final int notification_template_icon_bg=0x7f0200e7;
         public static final int places_ic_clear=0x7f0200d5;
         public static final int places_ic_search=0x7f0200d6;
         public static final int powered_by_google_dark=0x7f0200d7;
@@ -2695,15 +2695,16 @@ containing a value of this type.
         public static final int progress_layer=0x7f0200da;
         public static final int progress_main=0x7f0200db;
         public static final int reg_btn_bg=0x7f0200dc;
-        public static final int semi_trans_bg=0x7f0200dd;
-        public static final int switch_bg_off=0x7f0200de;
-        public static final int switch_bg_on=0x7f0200df;
-        public static final int switch_thumb=0x7f0200e0;
-        public static final int tab_bg=0x7f0200e1;
-        public static final int tab_bg_sel=0x7f0200e2;
-        public static final int ticket_bg1=0x7f0200e3;
-        public static final int ticket_bg2=0x7f0200e4;
-        public static final int white_rect=0x7f0200e5;
+        public static final int search_bar=0x7f0200dd;
+        public static final int semi_trans_bg=0x7f0200de;
+        public static final int switch_bg_off=0x7f0200df;
+        public static final int switch_bg_on=0x7f0200e0;
+        public static final int switch_thumb=0x7f0200e1;
+        public static final int tab_bg=0x7f0200e2;
+        public static final int tab_bg_sel=0x7f0200e3;
+        public static final int ticket_bg1=0x7f0200e4;
+        public static final int ticket_bg2=0x7f0200e5;
+        public static final int white_rect=0x7f0200e6;
     }
     public static final class id {
         public static final int EventsRefresh=0x7f0e00cf;
