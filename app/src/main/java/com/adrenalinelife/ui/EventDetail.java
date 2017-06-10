@@ -167,7 +167,6 @@ public class EventDetail extends CustomFragment
 		}
 		mMapView = (MapView) v.findViewById(R.id.map);
 		mMapView.onCreate(savedInstanceState);
-
 	}
 
 	/**
@@ -188,9 +187,6 @@ public class EventDetail extends CustomFragment
 		mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(ll, 15));
 	}
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onCreateOptionsMenu(android.view.Menu, android.view.MenuInflater)
-	 */
 	@Override
 	public void onCreateOptionsMenu(final Menu menu, final MenuInflater inflater)
 	{
@@ -216,13 +212,11 @@ public class EventDetail extends CustomFragment
 							else if (!s.contains(id)){
 								menu.findItem(R.id.menu_fav).setIcon(R.drawable.ic_fav);
 								e.setFav(false);
-
 							}
 						}
 					});
 				}
 			}).start();
-
 		}
 		super.onCreateOptionsMenu(menu, inflater);
 	}
@@ -238,7 +232,6 @@ public class EventDetail extends CustomFragment
 			i.putExtra(Intent.EXTRA_SUBJECT, e.getTitle());
 			startActivity(Intent.createChooser(i, getString(R.string.share)));
 		}
-
 		else //(item.getItemId() == R.id.menu_fav)
 		{
 			e.setFav(!e.isFav());
@@ -253,7 +246,6 @@ public class EventDetail extends CustomFragment
 				item.setTitle(R.string.add_to_fav);
 				Toast.makeText(parent, R.string.msg_rem_fav, Toast.LENGTH_SHORT).show();
 			}
-
 			final ProgressDialog dia = parent
 					.showProgressDia(R.string.alert_loading);
 			new Thread(new Runnable() {
@@ -277,7 +269,6 @@ public class EventDetail extends CustomFragment
 				}
 			}).start();
 		}
-
 		return super.onOptionsItemSelected(item);
 	}
 
@@ -331,7 +322,6 @@ public class EventDetail extends CustomFragment
 		}
 	}
 
-
 	public static String checkFavoriteEvents(Event z)
 	{
 		try
@@ -341,7 +331,6 @@ public class EventDetail extends CustomFragment
 			param.add(new BasicNameValuePair("page", "1"));
 			param.add(new BasicNameValuePair("page_size", "30"));
 			String res = executePostRequest(GET_FAV_EVENTS, param, true);
-			android.util.Log.e("String Res ", res);
 			return res;
 		} catch (Exception e)
 		{

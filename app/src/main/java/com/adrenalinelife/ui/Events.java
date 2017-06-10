@@ -98,7 +98,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
                 filterResults.setAdapter(fA);
                 fA.getFilter().filter("dMon");
                 Log.e("date button");
-
             }
         });
 
@@ -268,7 +267,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
     ////////////////////////////////////////////////////////////////////////////////////////////////
 	private class ProgramAdapter extends BaseAdapter
 	{
-
 		@Override
 		public int getCount()
 		{
@@ -320,7 +318,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
                 img.setImageBitmap(bmNoImg);
             else
                 img.setImageBitmap(bm);
-
 
 			return convertView;
 		}
@@ -434,7 +431,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
                         String eDay;
                         eDay = Commons.toDAY(eDate);
 
-
                         if (eDay.equals(q)) {
                             item = fList.get(i);
                             tempList.add(item);
@@ -443,7 +439,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
                         filterResults.values = tempList;
                         filterResults.count = tempList.size();
                     }
-
                 }
                 return filterResults;
             }
@@ -502,9 +497,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		} if (item.getItemId() == R.id.menu_fav && StaticData.pref.contains(Const.USER_ID)){
 			Intent intent = new Intent(getActivity(), CreateEvent.class);
 			startActivity(intent);
-
 	}
-
 		return true;
 	}
 	////////////////////////////////////////////////////////////////////////////////////////////////

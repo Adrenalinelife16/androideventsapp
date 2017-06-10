@@ -34,7 +34,6 @@ public class Settings extends CustomActivity {
         } else {
             mLogout.setVisibility(View.GONE);
             setTouchNClick(R.id.Login);
-
         }
 
         getActionBar().setTitle(R.string.settings);

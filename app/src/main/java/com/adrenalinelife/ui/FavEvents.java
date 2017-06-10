@@ -339,28 +339,15 @@ public class FavEvents extends PagingFragment
                     Log.e(q);
                     Event item;
 
-                    int s = fList.size();
-                    String size = String.valueOf(s);
-                    String size2 = String.valueOf(stringOfFav);
-                    Log.e("Size of pList, ", size);
-                    Log.e("Size of FavList ", size2);
-
                     for (int i = 0; i < fList.size(); i++) {
 
                         item = fList.get(i);
                         String itemFav = '"' + item.getId() + '"';
 
-                        Log.e("itemFav ", itemFav);
-                        Log.e("stringOfFav ", stringOfFav);
-
                         if (stringOfFav.contains(itemFav)) {
                             item = fList.get(i);
                             tempList.add(item);
-                            Log.e("Item = ", item);
-                            //i++;
                         }
-                        String ss = String.valueOf(i);
-                        Log.e("i = ", ss);
                         filterResults.values = tempList;
                         filterResults.count = tempList.size();
                     }
@@ -399,7 +386,6 @@ public class FavEvents extends PagingFragment
         favA.getFilter().filter(favFilter);
         adapter.notifyDataSetChanged();
         favA.notifyDataSetChanged();
-
     }
 
     public static String checkFavoriteEvents2()
