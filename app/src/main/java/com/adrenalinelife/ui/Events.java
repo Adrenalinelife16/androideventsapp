@@ -128,8 +128,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		{
 			@Override
 			public void onFocusChange(View v, boolean hasFocus) {
-				InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(getActivity().INPUT_METHOD_SERVICE);
-				imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
+
 			}
 		});
 		searchView.setOnCloseListener(new SearchView.OnCloseListener() {
@@ -255,7 +254,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 							int i = pList.size();
 							String s = String.valueOf(i);
 							adapter.notifyDataSetChanged();
-							onFinishLoading(al.size());
+							//onFinishLoading(al.size());
 						}
 					}
 				});

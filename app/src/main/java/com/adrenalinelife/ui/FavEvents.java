@@ -81,6 +81,7 @@ public class FavEvents extends PagingFragment
         final View v = inflater.inflate(R.layout.events, null);
         setHasOptionsMenu(true);
 
+
         performCheck();
         setProgramList(v);
         filterResults = (ListView) v.findViewById(R.id.list);
@@ -90,8 +91,8 @@ public class FavEvents extends PagingFragment
             @Override
             public void onRefresh() {
 
-                setProgramList(v);
                 performCheck();
+                setProgramList(v);
                 SwipeRefresh.setRefreshing(false);
             }
         });
