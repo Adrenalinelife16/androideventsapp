@@ -11,7 +11,7 @@
         style="?android:attr/progressBarStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        />
+        android:visibility="gone"/>
 
     <TextView
         android:id="@+id/textView1"
@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/pad_10dp"
         android:text="@string/alert_loading"
-        android:textColor="@color/main_color_orange"
-        android:textSize="@dimen/txt_16sp" />
+        android:textSize="@dimen/txt_16sp"
+        android:visibility="gone"/>
 
 </LinearLayout>

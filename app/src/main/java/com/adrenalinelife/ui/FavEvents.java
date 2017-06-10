@@ -305,9 +305,9 @@ public class FavEvents extends PagingFragment
             lbl.setText(Commons.millsToDateTime(d.getStartDateTime()));
 
             ImageView img = (ImageView) convertView.findViewById(R.id.img1);
+
             Bitmap bm = loader.loadImage(d.getImage(),
                     new ImageLoadedListener() {
-
                         @Override
                         public void imageLoaded(Bitmap bm)
                         {
@@ -353,7 +353,7 @@ public class FavEvents extends PagingFragment
                             item = fList.get(i);
                             tempList.add(item);
                             Log.e("Item = ", item);
-                            i++;
+                            //i++;
                         }
                         String ss = String.valueOf(i);
                         Log.e("i = ", ss);

@@ -254,7 +254,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 							pList.addAll(al);
 							int i = pList.size();
 							String s = String.valueOf(i);
-							Log.e("pList = ", s);
 							adapter.notifyDataSetChanged();
 							onFinishLoading(al.size());
 						}
@@ -308,20 +307,21 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 			lbl.setText(Commons.millsToDateTime(d.getStartDateTime()));
 
 			ImageView img = (ImageView) convertView.findViewById(R.id.img1);
-			Bitmap bm = loader.loadImage(d.getImage(),
-					new ImageLoadedListener() {
 
-						@Override
-						public void imageLoaded(Bitmap bm)
-						{
-							if (bm != null)
-								notifyDataSetChanged();
-						}
-					});
-			if (bm == null)
-				img.setImageBitmap(bmNoImg);
-			else
-				img.setImageBitmap(bm);
+            Bitmap bm = loader.loadImage(d.getImage(),
+                    new ImageLoadedListener() {
+                        @Override
+                        public void imageLoaded(Bitmap bm)
+                        {
+                            if (bm != null)
+                                notifyDataSetChanged();
+                        }
+                    });
+            if (bm == null)
+                img.setImageBitmap(bmNoImg);
+            else
+                img.setImageBitmap(bm);
+
 
 			return convertView;
 		}
@@ -429,17 +429,16 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
                     Log.e(q);
                     Event item;
                     for (int i = 0; i < fList.size(); i++) {
+
                         long eDate;
                         eDate = fList.get(i).getStartDateTime();
                         String eDay;
                         eDay = Commons.toDAY(eDate);
-                        Log.e("eDay = ", eDay);
-                        Log.e("q = ", q);
+
 
                         if (eDay.equals(q)) {
                             item = fList.get(i);
                             tempList.add(item);
-                            Log.e("Item = ", item);
                             i++;
                         }
                         filterResults.values = tempList;

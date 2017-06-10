@@ -108,15 +108,11 @@ public class CustomActivity extends FragmentActivity implements OnClickListener
 		return v;
 	}
 
-	/* (non-Javadoc)
-	 * @see android.view.View.OnClickListener#onClick(android.view.View)
-	 */
 	@Override
 	public void onClick(View v)
 	{
 
 	}
-
 	/**
 	 * Show progress dia.
 	 *
