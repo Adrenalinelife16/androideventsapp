@@ -17,16 +17,22 @@ import com.adrenalinelife.utils.StaticData;
 
 public class Settings extends CustomActivity {
 
+    TextView mLogout;
+    TextView mLogin;
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings);
+        mLogin = (TextView) findViewById(R.id.Login);
+        mLogout = (TextView) findViewById(R.id.Logout);
 
         if (StaticData.pref.contains(Const.USER_ID)) {
+            mLogin.setVisibility(View.GONE);
             setTouchNClick(R.id.Logout);
 
         } else {
-
+            mLogout.setVisibility(View.GONE);
             setTouchNClick(R.id.Login);
 
         }

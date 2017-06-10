@@ -58,6 +58,7 @@ public class FavEvents extends PagingFragment
 
     /** Search View **/
     ListView filterResults;
+    SearchView searchView;
 
     /** Swipe Refresh Layout **/
     private SwipeRefreshLayout SwipeRefresh;
@@ -80,6 +81,8 @@ public class FavEvents extends PagingFragment
         super.onCreateView(inflater, container, savedInstanceState);
         final View v = inflater.inflate(R.layout.events, null);
         setHasOptionsMenu(true);
+        searchView = (SearchView) v.findViewById(R.id.searchEvents);
+        searchView.setVisibility(View.GONE);
 
 
         performCheck();
