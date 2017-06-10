@@ -252,6 +252,9 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 							onFinishLoading(0);
 						} else {
 							pList.addAll(al);
+							int i = pList.size();
+							String s = String.valueOf(i);
+							Log.e("pList = ", s);
 							adapter.notifyDataSetChanged();
 							onFinishLoading(al.size());
 						}
@@ -413,7 +416,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
                         eName = fList.get(i).getTitle().toLowerCase();
                         eDesc = fList.get(i).getDesc().toLowerCase();
 
-                        if (eName.contains(q.toLowerCase())|| eDesc.contains(q.toLowerCase())) {
+                        if (eName.contains(q.toLowerCase()) || eDesc.contains(q.toLowerCase())) {
                             item = fList.get(i);
                             tempList.add(item);
                             Log.e(item);

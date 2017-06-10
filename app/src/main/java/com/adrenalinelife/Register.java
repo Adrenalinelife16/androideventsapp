@@ -9,6 +9,7 @@ import com.adrenalinelife.custom.CustomActivity;
 import com.adrenalinelife.model.Status;
 import com.adrenalinelife.utils.Commons;
 import com.adrenalinelife.utils.Const;
+import com.adrenalinelife.utils.Log;
 import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
@@ -28,10 +29,10 @@ public class Register extends CustomActivity
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.register);
+		setContentView(R.layout.register_user);
 
-		setTouchNClick(R.id.btnCancel);
-		setTouchNClick(R.id.btnReg);
+		setTouchNClick(R.id.button_reg_cancel);
+		setTouchNClick(R.id.button_reg_submit);
 
 		getActionBar().setTitle(R.string.register);
 	}
@@ -43,8 +44,9 @@ public class Register extends CustomActivity
 	public void onClick(View v)
 	{
 		super.onClick(v);
-		if (v.getId() == R.id.btnReg)
+		if (v.getId() == R.id.button_reg_submit)
 		{
+			Log.e("doRegister");
 			doRegister();
 		}
 		else
@@ -57,24 +59,57 @@ public class Register extends CustomActivity
 	 * Call the Register API and check user's Login details and based on the API
 	 * response, take required action or show error message if any.
 	 */
+
+	/*
+	$name, $user_login, $login_name, $email,  $pwd, $address, $city, $state, $zip, $country, $phone
+	 */
+
+
 	private void doRegister()
 	{
-		final String first_name = ((EditText) findViewById(R.id.FName)).getText()
+		Log.e("Doing the Register Method");
+
+		////////////////////////////////////////////////////////////////////////////////////////////////
+		final String first_name = ((EditText) findViewById(R.id.reg_first_name)).getText()
 			.toString().trim();
-		final String last_name = ((EditText) findViewById(R.id.LName)).getText()
+		final String last_name = ((EditText) findViewById(R.id.reg_last_name)).getText()
 				.toString().trim();
 		final String name = first_name + " " + last_name;
 
-		final String login_name = ((EditText) findViewById(R.id.Username)).getText()
+		final String login_name = ((EditText) findViewById(R.id.reg_username)).getText()
 				.toString().trim();
-		final String user_login = ((EditText) findViewById(R.id.Username)).getText()
+		final String user_login = ((EditText) findViewById(R.id.reg_username)).getText()
+				.toString().trim().toLowerCase();
+		final String email = ((EditText) findViewById(R.id.reg_email)).getText()
 				.toString().trim();
-		final String email = ((EditText) findViewById(R.id.txtEmail)).getText()
+		final String pwd = ((EditText) findViewById(R.id.reg_pwd)).getText()
 				.toString().trim();
-		final String pwd = ((EditText) findViewById(R.id.txtPwd)).getText()
+		final String cpwd = ((EditText) findViewById(R.id.reg_con_pwd)).getText()
 				.toString().trim();
-		final String cpwd = ((EditText) findViewById(R.id.ctxtPwd)).getText()
+
+/*
+	$address, $city, $state, $zip, $country, $phone
+	 */
+
+
+		final String address = ((EditText) findViewById(R.id.reg_address)).getText()
 				.toString().trim();
+		final String city = ((EditText) findViewById(R.id.reg_city)).getText()
+				.toString().trim();
+		final String state = ((EditText) findViewById(R.id.reg_state)).getText()
+				.toString().trim();
+		final String zip = ((EditText) findViewById(R.id.reg_zip)).getText()
+				.toString().trim();
+		final String country = ((EditText) findViewById(R.id.reg_country)).getText()
+				.toString().trim();
+		final String phone = ((EditText) findViewById(R.id.reg_phone)).getText()
+				.toString().trim();
+
+
+
+
+		////////////////////////////////////////////////////////////////////////////////////////////////
+		/*
 
 		if (Commons.isEmpty(first_name) || Commons.isEmpty(first_name)
 				|| Commons.isEmpty(first_name))
@@ -88,8 +123,8 @@ public class Register extends CustomActivity
 			Utils.showDialog(THIS, R.string.err_field_empty);
 			return;
 		}
-		if (Commons.isEmpty(user_login) || Commons.isEmpty(user_login)
-				|| Commons.isEmpty(user_login))
+		if (Commons.isEmpty(login_name) || Commons.isEmpty(login_name)
+				|| Commons.isEmpty(login_name))
 		{
 			Utils.showDialog(THIS, R.string.err_field_empty);
 			return;
@@ -104,12 +139,16 @@ public class Register extends CustomActivity
 			Utils.showDialog(THIS, R.string.err_pwd);
 			return;
 		}
+		*/
+
+		////////////////////////////////////////////////////////////////////////////////////////////////
 		final ProgressDialog dia = showProgressDia(R.string.alert_wait);
 		new Thread(new Runnable() {
 			@Override
 			public void run()
 			{
-				final Status st = WebHelper.doRegister(name, login_name, user_login, email, pwd);
+				Log.e("Running WebHelper Do Reg", name);
+				final Status st = WebHelper.doRegister();
 				runOnUiThread(new Runnable() {
 					@Override
 					public void run()

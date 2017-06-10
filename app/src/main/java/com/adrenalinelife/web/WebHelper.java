@@ -556,20 +556,31 @@ public class WebHelper extends WebAccess
 	 *            the password
 	 * @return the status
 	 */
-	public static Status doRegister(String name, String user_login , String login_name, String email, String pwd)
+
+    /*
+	$name, $user_login, $login_name, $email,  $pwd, $address, $city, $state, $zip, $country, $phone
+	String name, String user_login, String nice_name, String email, String pwd
+	 */
+	public static Status doRegister()
 	{
 		try
 		{
-			Log.d("NAME", name);
-			Log.d("LOGIN_NAME", login_name);
-			Log.d("EMAIL", email);
-			Log.d("PWD", pwd);
+			//Log.d("NAME", name);
+			//Log.d("LOGIN_NAME", login_name);
+			//Log.d("EMAIL", email);
+			//Log.d("PWD", pwd);
 			ArrayList<NameValuePair> param = new ArrayList<NameValuePair>();
-			param.add(new BasicNameValuePair("name", name));
-			param.add(new BasicNameValuePair("user_login", user_login));
-			param.add(new BasicNameValuePair("nickname", login_name));
-			param.add(new BasicNameValuePair("email", email));
-			param.add(new BasicNameValuePair("pwd", pwd));
+			param.add(new BasicNameValuePair("name", "chazz romeo"));
+			param.add(new BasicNameValuePair("user_login", "chazzromeo1"));
+			//param.add(new BasicNameValuePair("nickname", "chazzromeo1"));
+			param.add(new BasicNameValuePair("email", "ckrphone@gmail.com"));
+			param.add(new BasicNameValuePair("pwd", "soccer23"));
+			//param.add(new BasicNameValuePair("address", address));
+			//param.add(new BasicNameValuePair("city", city));
+			//param.add(new BasicNameValuePair("state", state));
+			//param.add(new BasicNameValuePair("zip", zip));
+			//param.add(new BasicNameValuePair("country", country));
+			//param.add(new BasicNameValuePair("phone", phone));
 			String res = executePostRequest(REGISTER_URL, param, false);
 			return new Status(res, "user_id");
 		} catch (Exception ex)

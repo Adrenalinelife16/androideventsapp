@@ -204,6 +204,10 @@
         "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/notification_template_big_media.xml"
     },
     {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/register_user.xml",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/register_user.xml"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
         "source": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/layout/notification_template_big_media_narrow.xml"
     },

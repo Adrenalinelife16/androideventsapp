@@ -53,11 +53,10 @@ import static com.adrenalinelife.web.WebAccess.executePostRequest;
 import static com.adrenalinelife.web.WebAccess.getUserParams;
 
 
-public class FavEvents extends PagingFragment implements SearchView.OnQueryTextListener
+public class FavEvents extends PagingFragment
 {
 
     /** Search View **/
-    SearchView searchView;
     ListView filterResults;
 
     /** Swipe Refresh Layout **/
@@ -82,8 +81,8 @@ public class FavEvents extends PagingFragment implements SearchView.OnQueryTextL
         final View v = inflater.inflate(R.layout.events, null);
         setHasOptionsMenu(true);
 
-        setProgramList(v);
         performCheck();
+        setProgramList(v);
         filterResults = (ListView) v.findViewById(R.id.list);
 
         SwipeRefresh = (SwipeRefreshLayout) v.findViewById(R.id.EventsRefresh);
@@ -97,55 +96,6 @@ public class FavEvents extends PagingFragment implements SearchView.OnQueryTextL
             }
         });
         SwipeRefresh.setColorSchemeResources(android.R.color.holo_red_light);
-
-        /***Search View***/
-        searchView = (SearchView) v.findViewById(R.id.searchEvents);
-        searchView.setQueryHint("Search Events");
-        searchView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                searchView.setIconified(false);
-            }
-        });
-        searchView.setOnQueryTextFocusChangeListener(new View.OnFocusChangeListener()
-        {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-            }
-        });
-        searchView.setOnCloseListener(new SearchView.OnCloseListener() {
-            @Override
-            public boolean onClose() {
-                //Hide Keyboard//
-                InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(getActivity().INPUT_METHOD_SERVICE);
-                imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
-                return false;
-            }
-        });
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener()
-        {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                //Hide Keyboard//
-                InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(getActivity().INPUT_METHOD_SERVICE);
-                imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
-                return true;
-            }
-            @Override
-            public boolean onQueryTextChange(String newText) {
-
-                final SearchAdapter sA = new SearchAdapter(getActivity(), pList);
-                filterResults.setAdapter(sA);
-
-                if (newText.length() >= 0) {
-                    String search = "s" + newText;
-
-                    sA.getFilter().filter(search);
-                    Log.e(search);
-                }
-                return true;
-            }
-        });
         return v;
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -241,10 +191,6 @@ public class FavEvents extends PagingFragment implements SearchView.OnQueryTextL
             }
         }).start();
     }
-    @Override
-    public boolean onQueryTextSubmit(String s) {return false;}
-    @Override
-    public boolean onQueryTextChange(String s) {return false;}
     ////////////////////////////////////////////////////////////////////////////////////////////////
     private class ProgramAdapter extends BaseAdapter
     {
@@ -384,49 +330,17 @@ public class FavEvents extends PagingFragment implements SearchView.OnQueryTextL
                 ArrayList<Event> tempList = new ArrayList<>();
                 String q = newText.toString().substring(1);
 
-                if (newText.toString().toLowerCase().startsWith("s")){
+                if (newText.toString().toLowerCase().startsWith("f")){
+
                     Log.e(q);
                     Event item;
-                    for (int i = 0; i < fList.size(); i++) {
 
-                        String eName;
-                        String eDesc;
-                        eName = fList.get(i).getTitle().toLowerCase();
-                        eDesc = fList.get(i).getDesc().toLowerCase();
+                    int s = fList.size();
+                    String size = String.valueOf(s);
+                    String size2 = String.valueOf(stringOfFav);
+                    Log.e("Size of pList, ", size);
+                    Log.e("Size of FavList ", size2);
 
-                        if (eName.contains(q.toLowerCase())|| eDesc.contains(q.toLowerCase())) {
-                            item = fList.get(i);
-                            tempList.add(item);
-                            Log.e(item);
-                            i++;
-                        }
-                        filterResults.values = tempList;
-                        filterResults.count = tempList.size();
-                    }
-                } if (newText.toString().toLowerCase().startsWith("d")){
-                    Log.e(q);
-                    Event item;
-                    for (int i = 0; i < fList.size(); i++) {
-                        long eDate;
-                        eDate = fList.get(i).getStartDateTime();
-                        String eDay;
-                        eDay = Commons.toDAY(eDate);
-                        Log.e("eDay = ", eDay);
-                        Log.e("q = ", q);
-
-                        if (eDay.equals(q)) {
-                            item = fList.get(i);
-                            tempList.add(item);
-                            Log.e("Item = ", item);
-                            i++;
-                        }
-                        filterResults.values = tempList;
-                        filterResults.count = tempList.size();
-                    }
-
-                } if (newText.toString().toLowerCase().startsWith("f")){
-                    Log.e(q);
-                    Event item;
                     for (int i = 0; i < fList.size(); i++) {
 
                         item = fList.get(i);
@@ -441,12 +355,12 @@ public class FavEvents extends PagingFragment implements SearchView.OnQueryTextL
                             Log.e("Item = ", item);
                             i++;
                         }
+                        String ss = String.valueOf(i);
+                        Log.e("i = ", ss);
                         filterResults.values = tempList;
                         filterResults.count = tempList.size();
                     }
-
                 }
-
                 return filterResults;
             }
             @SuppressWarnings("unchecked")
@@ -508,6 +422,7 @@ public class FavEvents extends PagingFragment implements SearchView.OnQueryTextL
         Log.e("String of Fav ", stringOfFav);
         return stringOfFav;
     }
+
     public String performCheck()
     {
         try

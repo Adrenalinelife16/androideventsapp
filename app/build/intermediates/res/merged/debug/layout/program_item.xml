@@ -5,10 +5,32 @@
                 android:layout_height="wrap_content"
                 android:maxHeight="25dp">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/actionbar_bg_4"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lbl3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="Date!"
+            android:textColor="@color/common_plus_signin_btn_text_dark_default"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -46,7 +68,7 @@
                 android:layout_marginLeft="5dp"
                 android:lines="1"
                 android:text="Event Title"
-                android:textColor="@color/main_color_orange"
+                android:textColor="@color/adrenaline_red"
                 android:textSize="@dimen/txt_18sp"
                 android:textStyle="bold"/>
 
@@ -66,33 +88,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scaleType="fitXY"
-        android:src="@drawable/date_layover"/>
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scaleType="fitXY"
-        android:src="@drawable/date_layover"/>
-
-    <TextView
-        android:id="@+id/lbl3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="3dp"
-        android:shadowDx="1"
-        android:shadowDy="1"
-        android:shadowRadius="1"
-        android:text="Date!"
-        android:textColor="@color/common_plus_signin_btn_text_dark_default"
-        android:textSize="16dp"/>
 
 </RelativeLayout>

@@ -197,11 +197,8 @@ public class EventDetail extends CustomFragment
 	@Override
 	public void onCreateOptionsMenu(final Menu menu, final MenuInflater inflater)
 	{
-
-		Log.e("OnCreateOptionsMenu");
 		if (StaticData.pref.contains(Const.USER_ID)) {
 			inflater.inflate(R.menu.share_fav, menu);
-			Log.e("User Has USER ID: ");
 			final ProgressDialog dia = parent
 					.showProgressDia(R.string.alert_loading);
 			new Thread(new Runnable() {
@@ -209,23 +206,17 @@ public class EventDetail extends CustomFragment
 				public void run()
 				{
 					final String id = '"' + e.getId() + '"';
-					Log.e("isFavoriteEvent: ", id);
 					final String s = checkFavoriteEvents(e);
-					Log.e("CHECK LIST ", s);
-					Log.e("WHAT IS THE ID ", id);
 					parent.runOnUiThread(new Runnable() {
 						@Override
 						public void run() {
 							dia.dismiss();
-							Log.e("If Statement Now");
 
 							if (s.contains(id)){
-								Log.e("s does contain id", s);
 								menu.findItem(R.id.menu_fav).setIcon(R.drawable.ic_fav_orange);
 								e.setFav(true);
 							}
 							else if (!s.contains(id)){
-								Log.e("s does NOT contain id", s);
 								menu.findItem(R.id.menu_fav).setIcon(R.drawable.ic_fav);
 								e.setFav(false);
 
@@ -251,20 +242,16 @@ public class EventDetail extends CustomFragment
 			startActivity(Intent.createChooser(i, getString(R.string.share)));
 		}
 
-		if (item.getItemId() == R.id.menu_fav)
-		Log.e("Fav pressed");
+		else //(item.getItemId() == R.id.menu_fav)
 		{
 			e.setFav(!e.isFav());
 			if (e.isFav())
 			{
-				Log.e("Add Fav");
 				item.setIcon(R.drawable.ic_fav_orange);
-				//item.setTitle(R.string.remove_fav);
 				Toast.makeText(parent, R.string.msg_add_fav, Toast.LENGTH_SHORT).show();
 			}
 			else
 			{
-				Log.e("Remove Fav");
 				item.setIcon(R.drawable.ic_fav);
 				item.setTitle(R.string.add_to_fav);
 				Toast.makeText(parent, R.string.msg_rem_fav, Toast.LENGTH_SHORT).show();
@@ -277,18 +264,15 @@ public class EventDetail extends CustomFragment
 				public void run()
 				{
 					String id = e.getId();
-					Log.e("addRemoveFavorite: ", id);
 					WebHelper.addRemoveFavorite(id);
 					parent.runOnUiThread(new Runnable() {
 						@Override
 						public void run() {
 							dia.dismiss();
 							if (e.getId() == null) {
-								Log.e("Fav Post not made ", e.getId());
-								//Utils.showDialog(parent,
-								//StaticData.getErrorMessage());
+								Utils.showDialog(parent, StaticData.getErrorMessage());
 							}
-							else if (e.getId() != null) {
+							else {
 								Log.e("Fav is not null");
 							}
 						}
@@ -309,7 +293,6 @@ public class EventDetail extends CustomFragment
 			bookTicket();
 		}
 	}
-
 	/**
 	 * Book ticket.
 	 */
@@ -370,11 +353,6 @@ public class EventDetail extends CustomFragment
 		return null;
 	}
 
-
-
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onActivityResult(int, int, android.content.Intent)
-	 */
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent data)
 	{
