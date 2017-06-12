@@ -6,6 +6,7 @@
     <string name="search_events">Search Event Name</string>
     <string name="create_event">Create Event</string>
     <string name="drawer_close">Close</string>
+    <string name="back">Back</string>
     <string name="add">Add</string>
     <string name="map">Map</string>
     <string name="my_cal">Calendar</string>
@@ -28,6 +29,7 @@
     <string name="reg_now">Register Now</string>
     <string name="alert_loading">Loading...</string>
     <string name="err_login">Please Login/Register to Access this Feature! </string>
+    <string name="err_beta">Coming soon! Unfortunately, this feature is not ready yet.</string>
     <string name="err_more">Please remember, we are still in BETA.</string>
     <string name="err_unexpect">Sorry, An unexpected error occurred. Please make sure that you are connected to internet and then try again!</string>
     <string name="err_internet">Network Connection has been lost</string>
@@ -67,6 +69,7 @@
     <string name="err_email">Please enter valid email address.</string>
     <string name="err_pwd">Password does not match!</string>
     <string name="book_ticket">Book Event</string>
+
     <string name="msg_event_book_success">Event has been successfully booked.</string>
     <string name="help_centre_text">Today, people expect things to find them, not the other way around.
         This applies to sports and recreation, active people want to be active but they usually struggle on finding a place to go do what they love.

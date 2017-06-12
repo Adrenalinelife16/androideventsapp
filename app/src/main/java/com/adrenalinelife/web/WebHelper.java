@@ -572,15 +572,10 @@ public class WebHelper extends WebAccess
 			ArrayList<NameValuePair> param = new ArrayList<NameValuePair>();
 			param.add(new BasicNameValuePair("name", "chazz romeo"));
 			param.add(new BasicNameValuePair("user_login", "chazzromeo1"));
-			//param.add(new BasicNameValuePair("nickname", "chazzromeo1"));
-			param.add(new BasicNameValuePair("email", "ckrphone@gmail.com"));
+			param.add(new BasicNameValuePair("nickname", "chazzromeo1"));
+			param.add(new BasicNameValuePair("email", "ck@gmail.com"));
 			param.add(new BasicNameValuePair("pwd", "soccer23"));
-			//param.add(new BasicNameValuePair("address", address));
-			//param.add(new BasicNameValuePair("city", city));
-			//param.add(new BasicNameValuePair("state", state));
-			//param.add(new BasicNameValuePair("zip", zip));
-			//param.add(new BasicNameValuePair("country", country));
-			//param.add(new BasicNameValuePair("phone", phone));
+
 			String res = executePostRequest(REGISTER_URL, param, false);
 			return new Status(res, "user_id");
 		} catch (Exception ex)

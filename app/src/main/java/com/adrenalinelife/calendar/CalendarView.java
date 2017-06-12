@@ -61,18 +61,15 @@ public class CalendarView extends CustomFragment implements DateChangeListener
 	/** The items. */
 	public ArrayList<String> items; // container to store calendar items which
 	// needs showing the event marker
-	/** The adrenalinelife. */
+	/** The events. */
 	private final ArrayList<Event> events = new ArrayList<Event>();
 
 	/** The list. */
 	private ListView list;
 
-	/** The adrenalinelife for selected date. */
+	/** The event for selected date. */
 	private ArrayList<Event> eventSel;
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)
-	 */
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState)
@@ -292,9 +289,6 @@ public class CalendarView extends CustomFragment implements DateChangeListener
 		}
 	};
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onCreateOptionsMenu(android.view.Menu, android.view.MenuInflater)
-	 */
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
 	{
@@ -308,36 +302,24 @@ public class CalendarView extends CustomFragment implements DateChangeListener
 	private class EventAdapter extends BaseAdapter
 	{
 
-		/* (non-Javadoc)
-		 * @see android.widget.Adapter#getCount()
-		 */
 		@Override
 		public int getCount()
 		{
 			return eventSel.size();
 		}
 
-		/* (non-Javadoc)
-		 * @see android.widget.Adapter#getItem(int)
-		 */
 		@Override
 		public Event getItem(int position)
 		{
 			return eventSel.get(position);
 		}
 
-		/* (non-Javadoc)
-		 * @see android.widget.Adapter#getItemId(int)
-		 */
 		@Override
 		public long getItemId(int position)
 		{
 			return position;
 		}
 
-		/* (non-Javadoc)
-		 * @see android.widget.Adapter#getView(int, android.view.View, android.view.ViewGroup)
-		 */
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent)
 		{
@@ -379,9 +361,6 @@ public class CalendarView extends CustomFragment implements DateChangeListener
 
 	}
 
-	/* (non-Javadoc)
-	 * @see com.adrenalinelife.calendar.DateChangeListener#onDateChange(int, long)
-	 */
 	@Override
 	public void onDateChange(int position, long d)
 	{
@@ -411,7 +390,7 @@ public class CalendarView extends CustomFragment implements DateChangeListener
 				setNextMonth();
 				refreshCalendar(getView());
 			}
-
+			// Setup Event List according to the Calendar Day picked above.
 			for (Event e : events)
 			{
 				Calendar c1 = Calendar.getInstance();

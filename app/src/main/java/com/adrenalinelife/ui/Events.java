@@ -1,12 +1,16 @@
 package com.adrenalinelife.ui;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.text.Html;
 import android.view.LayoutInflater;
@@ -43,17 +47,13 @@ import com.adrenalinelife.utils.Log;
 import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
-
-import org.apache.http.NameValuePair;
-import org.apache.http.message.BasicNameValuePair;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationServices;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static com.adrenalinelife.utils.Const.EXTRA_DATA;
-import static com.adrenalinelife.web.WebAccess.GET_FAV_EVENTS;
-import static com.adrenalinelife.web.WebAccess.executePostRequest;
-import static com.adrenalinelife.web.WebAccess.getUserParams;
 
 
 public class Events extends PagingFragment implements SearchView.OnQueryTextListener
@@ -77,6 +77,9 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 
 	/** The Events list. */
 	private final ArrayList<Event> pList = new ArrayList<>();
+	private GoogleApiClient mGoogleApiClient;
+
+	private final int REQUEST_PERMISSION_LOCATION = 0;
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	@Override
@@ -87,6 +90,8 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		final View v = inflater.inflate(R.layout.events, null);
 		setHasOptionsMenu(true);
 
+
+		showPhoneStatePermission();
 		setProgramList(v);
         filterResults = (ListView) v.findViewById(R.id.list);
 
@@ -465,6 +470,67 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 			return myFilter;
 		}
 	}
+
+	private void showPhoneStatePermission() {
+		int permissionCheck = ContextCompat.checkSelfPermission(
+				getActivity(), Manifest.permission.ACCESS_FINE_LOCATION);
+		if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
+			if (ActivityCompat.shouldShowRequestPermissionRationale(getActivity(),
+					Manifest.permission.ACCESS_FINE_LOCATION)) {
+				showExplanation("Permission Needed", "Rationale", Manifest.permission.ACCESS_FINE_LOCATION, REQUEST_PERMISSION_LOCATION);
+			} else {
+				requestPermission(Manifest.permission.ACCESS_FINE_LOCATION, REQUEST_PERMISSION_LOCATION);
+			}
+		} else {
+			Toast.makeText(getActivity(), "Permission (already) Granted!", Toast.LENGTH_SHORT).show();
+		}
+	}
+	////////////////////////////////////////////////////////////////////////////////////////////////
+	@Override
+	public void onRequestPermissionsResult(
+			int requestCode,
+			String permissions[],
+			int[] grantResults) {
+		switch (requestCode) {
+			case REQUEST_PERMISSION_LOCATION:
+				if (grantResults.length > 0
+						&& grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+					Toast.makeText(getActivity(), "Permission Granted!", Toast.LENGTH_SHORT).show();
+				} else {
+					Toast.makeText(getActivity(), "Permission Denied!", Toast.LENGTH_SHORT).show();
+				}
+		}
+	}
+
+	private void showExplanation(String title,
+								 String message,
+								 final String permission,
+								 final int permissionRequestCode) {
+		AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+		builder.setTitle(title)
+				.setMessage(message)
+				.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+					public void onClick(DialogInterface dialog, int id) {
+						requestPermission(permission, permissionRequestCode);
+					}
+				});
+		builder.create().show();
+	}
+
+	private void requestPermission(String permissionName, int permissionRequestCode) {
+		ActivityCompat.requestPermissions(getActivity(),
+				new String[]{permissionName}, permissionRequestCode);
+	}
+
+
+	private synchronized void buildGoogleApiClient(){
+		mGoogleApiClient = new GoogleApiClient.Builder(getActivity())
+				.addConnectionCallbacks((GoogleApiClient.ConnectionCallbacks) Events.this)
+				.addOnConnectionFailedListener((GoogleApiClient.OnConnectionFailedListener) this)
+				.addApi(LocationServices.API)
+				.build();
+		mGoogleApiClient.connect();
+	}
 	////////////////////////////////////////////////////////////////////////////////////////////////
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
@@ -473,6 +539,8 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 
 		super.onCreateOptionsMenu(menu, inflater);
 	}
+
+	/* ONCE THE FEATURE IS READY, USE THIS METHOD INSTEAD OF THE CURRENT
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
 	{
@@ -497,6 +565,29 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		} if (item.getItemId() == R.id.menu_fav && StaticData.pref.contains(Const.USER_ID)){
 			Intent intent = new Intent(getActivity(), CreateEvent.class);
 			startActivity(intent);
+	}
+		return true;
+	}
+*/
+
+
+	// DELETE THIS METHOD AFTER CREATE EVENTS IS FINISHED
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item)
+	{
+		if (item.getItemId() == R.id.menu_fav)
+		{
+			final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+			builder.setMessage(R.string.err_beta)
+					.setPositiveButton(R.string.back, new DialogInterface.OnClickListener() {
+						public void onClick(DialogInterface dialog, int id) {
+
+							builder.setCancelable(true);
+
+						}
+					});
+			AlertDialog action = builder.create();
+			action.show();
 	}
 		return true;
 	}

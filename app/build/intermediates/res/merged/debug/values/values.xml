@@ -527,6 +527,7 @@
     <string name="app_name">Adrenaline Life</string>
     <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
     <string name="auth_google_play_services_client_google_display_name">Google</string>
+    <string name="back">Back</string>
     <string name="book_ticket">Book Event</string>
     <string name="booking_spce">Booking Spaces:</string>
     <string name="cancel">Cancel</string>
@@ -574,6 +575,7 @@
     <string name="drawer_close">Close</string>
     <string name="drawer_open">Open</string>
     <string name="email">"Email "</string>
+    <string name="err_beta">Coming soon! Unfortunately, this feature is not ready yet.</string>
     <string name="err_email">Please enter valid email address.</string>
     <string name="err_event_booked">You have already booked this Event.</string>
     <string name="err_field_empty">Please fill all the fields.</string>

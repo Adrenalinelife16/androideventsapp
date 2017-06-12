@@ -326,6 +326,7 @@ public class FavEvents extends PagingFragment
 
             return convertView;
         }
+
         Filter myFilter = new Filter() {
             @Override
             protected FilterResults performFiltering(CharSequence newText) {
@@ -358,12 +359,10 @@ public class FavEvents extends PagingFragment
             @Override
             protected void publishResults(CharSequence newText, FilterResults results) {
                 if (results.count > 0) {
-                    Log.e(newText);
                     fList.clear();
                     fList.addAll((ArrayList<Event>) results.values);
                     final View v = inflater.inflate(R.layout.events, null);
                     setSearchList(v, fList);
-                    Log.e(fList);
                     notifyDataSetChanged();
                 } else {
                     Toast.makeText(getActivity(), "No Results Found!",Toast.LENGTH_SHORT).show();
@@ -377,7 +376,7 @@ public class FavEvents extends PagingFragment
             return myFilter;
         }
     }
-
+    ////////////////////////////////////////////////////////////////////////////////////////////////
     public void performFavFilter()
     {
         final SearchAdapter favA = new SearchAdapter(getActivity(), pList);
@@ -397,20 +396,13 @@ public class FavEvents extends PagingFragment
             param.add(new BasicNameValuePair("page", "1"));
             param.add(new BasicNameValuePair("page_size", "30"));
             String res = executePostRequest(GET_FAV_EVENTS, param, true);
-            android.util.Log.e("String Res ", res);
             return res;
+
         } catch (Exception e)
         {
             e.printStackTrace();
         }
         return null;
-    }
-
-    public String saveFavStringEvents(String res)
-    {
-        this.stringOfFav = res;
-        Log.e("String of Fav ", stringOfFav);
-        return stringOfFav;
     }
 
     public String performCheck()
@@ -449,6 +441,12 @@ public class FavEvents extends PagingFragment
             e.printStackTrace();
         }
         return null;
+    }
+
+    public String saveFavStringEvents(String res)
+    {
+        this.stringOfFav = res;
+        return stringOfFav;
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////
