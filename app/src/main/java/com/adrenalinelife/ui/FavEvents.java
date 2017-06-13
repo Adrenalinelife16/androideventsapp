@@ -68,6 +68,8 @@ public class FavEvents extends PagingFragment
 
     public String stringOfFav;
 
+    public View mDayFilterScroll;
+
 
 	/* (non-Javadoc)
 	 * @see android.support.v4.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)
@@ -81,9 +83,11 @@ public class FavEvents extends PagingFragment
         super.onCreateView(inflater, container, savedInstanceState);
         final View v = inflater.inflate(R.layout.events, null);
         setHasOptionsMenu(true);
+
         searchView = (SearchView) v.findViewById(R.id.searchEvents);
         searchView.setVisibility(View.GONE);
-
+        mDayFilterScroll = v.findViewById(R.id.dayFilterScroll);
+        mDayFilterScroll.setVisibility(View.GONE);
 
         performCheck();
         setProgramList(v);

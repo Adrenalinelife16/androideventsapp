@@ -244,16 +244,13 @@ public class MainActivity extends CustomActivity
 			action.show();
 		}
 
-
-
-
-
 		}
 		else if (pos == 22)
 		{
 			title = getString(R.string.my_tkcts);
 			f = new MyTickets();
 			pos = 3;
+
 		}
 		else if (pos == 4)
 		{

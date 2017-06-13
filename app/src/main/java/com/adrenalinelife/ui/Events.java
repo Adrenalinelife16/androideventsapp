@@ -79,9 +79,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 
 	/** The Events list. */
 	private final ArrayList<Event> pList = new ArrayList<>();
-	private GoogleApiClient mGoogleApiClient;
-
-	private final int REQUEST_PERMISSION_LOCATION = 0;
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	@Override

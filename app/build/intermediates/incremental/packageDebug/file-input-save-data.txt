@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jun 13 01:15:44 CDT 2017
+#Tue Jun 13 01:37:25 CDT 2017
 20.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 143.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 439.set=ANDROID_RESOURCE
