@@ -906,7 +906,14 @@
                     "endOffset": 7334
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/color.xml"
+                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/color.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 786,
+                        "endColumn": 48,
+                        "endOffset": 830
+                    }
                 }
             },
             {
@@ -3954,14 +3961,7 @@
                     "endOffset": 49898
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 315,
-                        "endColumn": 37,
-                        "endOffset": 348
-                    }
+                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/strings.xml"
                 }
             },
             {
@@ -4537,14 +4537,7 @@
                     "endOffset": 55430
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 31,
-                        "startColumn": 4,
-                        "startOffset": 1859,
-                        "endColumn": 95,
-                        "endOffset": 1950
-                    }
+                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/strings.xml"
                 }
             },
             {
@@ -9169,9 +9162,8 @@
                     "startLine": 2048,
                     "startColumn": 4,
                     "startOffset": 156124,
-                    "endLine": 2052,
-                    "endColumn": 12,
-                    "endOffset": 156388
+                    "endColumn": 43,
+                    "endOffset": 156163
                 },
                 "from": {
                     "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/styles.xml"
@@ -9179,12 +9171,12 @@
             },
             {
                 "to": {
-                    "startLine": 2053,
+                    "startLine": 2049,
                     "startColumn": 4,
-                    "startOffset": 156393,
-                    "endLine": 2059,
+                    "startOffset": 156168,
+                    "endLine": 2053,
                     "endColumn": 12,
-                    "endOffset": 156797
+                    "endOffset": 156432
                 },
                 "from": {
                     "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/styles.xml"
@@ -9192,12 +9184,12 @@
             },
             {
                 "to": {
-                    "startLine": 2060,
+                    "startLine": 2054,
                     "startColumn": 4,
-                    "startOffset": 156802,
-                    "endLine": 2062,
+                    "startOffset": 156437,
+                    "endLine": 2060,
                     "endColumn": 12,
-                    "endOffset": 156937
+                    "endOffset": 156841
                 },
                 "from": {
                     "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/styles.xml"
@@ -9205,12 +9197,12 @@
             },
             {
                 "to": {
-                    "startLine": 2063,
+                    "startLine": 2061,
                     "startColumn": 4,
-                    "startOffset": 156942,
-                    "endLine": 2068,
+                    "startOffset": 156846,
+                    "endLine": 2063,
                     "endColumn": 12,
-                    "endOffset": 157251
+                    "endOffset": 156981
                 },
                 "from": {
                     "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/styles.xml"
@@ -9218,12 +9210,12 @@
             },
             {
                 "to": {
-                    "startLine": 2069,
+                    "startLine": 2064,
                     "startColumn": 4,
-                    "startOffset": 157256,
-                    "endLine": 2073,
+                    "startOffset": 156986,
+                    "endLine": 2069,
                     "endColumn": 12,
-                    "endOffset": 157501
+                    "endOffset": 157295
                 },
                 "from": {
                     "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/styles.xml"
@@ -9231,12 +9223,38 @@
             },
             {
                 "to": {
-                    "startLine": 2074,
+                    "startLine": 2070,
                     "startColumn": 4,
-                    "startOffset": 157506,
-                    "endLine": 2081,
+                    "startOffset": 157300,
+                    "endLine": 2074,
                     "endColumn": 12,
-                    "endOffset": 157952
+                    "endOffset": 157545
+                },
+                "from": {
+                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/styles.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2075,
+                    "startColumn": 4,
+                    "startOffset": 157550,
+                    "endLine": 2079,
+                    "endColumn": 12,
+                    "endOffset": 157800
+                },
+                "from": {
+                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/styles.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 2080,
+                    "startColumn": 4,
+                    "startOffset": 157805,
+                    "endLine": 2087,
+                    "endColumn": 12,
+                    "endOffset": 158251
                 },
                 "from": {
                     "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/styles.xml"

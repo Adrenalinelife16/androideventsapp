@@ -19,88 +19,147 @@
 
     <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="gone">
+        android:layout_height="40dp"
+        android:layout_marginBottom="3dp"
+        android:scrollbars="none"
+        android:visibility="visible">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/button_filter_monday"
-                android:layout_width="75dp"
-                android:layout_height="28dp"
-                android:background="@drawable/actionbar_bg_2"
-                android:padding="3dp"
-                android:text="Monday"/>
-
-            <Button
-                android:id="@+id/button_filter_tuesday"
-                android:layout_width="75dp"
-                android:layout_height="28dp"
-                android:layout_weight="1"
-                android:background="@drawable/actionbar_bg_2"
-                android:padding="3dp"
-                android:text="Tuesday"/>
-
-            <Button
-                android:id="@+id/button_filter_wednesday"
-                android:layout_width="100dp"
-                android:layout_height="28dp"
-                android:layout_weight="1"
-                android:background="@drawable/actionbar_bg_2"
-                android:padding="3dp"
-                android:text="Wednesday"/>
-
-            <Button
-                android:id="@+id/button_filter_thursday"
-                android:layout_width="85dp"
-                android:layout_height="28dp"
-                android:layout_weight="1"
-                android:background="@drawable/actionbar_bg_2"
-                android:padding="3dp"
-                android:text="Thursday"/>
-
-            <Button
-                android:id="@+id/button_filter_friday"
-                android:layout_width="75dp"
-                android:layout_height="28dp"
-                android:layout_weight="1"
-                android:background="@drawable/actionbar_bg_2"
-                android:padding="3dp"
-                android:text="Friday"/>
-
-            <Button
-                android:id="@+id/button_filter_saturday"
-                android:layout_width="85dp"
-                android:layout_height="28dp"
-                android:layout_weight="1"
-                android:background="@drawable/actionbar_bg_2"
-                android:padding="3dp"
-                android:text="Saturday"/>
-
-            <Button
-                android:id="@+id/button_filter_sunday"
-                android:layout_width="75dp"
-                android:layout_height="28dp"
-                android:elevation="0dp"
-                android:padding="3dp"
-                android:text="Sunday"/>
-
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="900dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Button"/>
+                android:background="@color/main_color_gray_dk"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Button"/>
+                <Button
+                    android:id="@+id/btn_mon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/main_color_gray_dk"
+                    android:text="Monday"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"/>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight=".02"
+                    android:background="@color/white_smoke_dk"/>
+
+                <Button
+                    android:id="@+id/btn_tues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/main_color_gray_dk"
+                    android:text="Tuesday"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"/>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight=".02"
+                    android:background="@color/white_smoke_dk"/>
+
+                <Button
+                    android:id="@+id/btn_wed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/main_color_gray_dk"
+                    android:text="Wednesday"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"/>
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight=".02"
+                    android:background="@color/white_smoke_dk"/>
+
+                <Button
+                    android:id="@+id/btn_thurs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/main_color_gray_dk"
+                    android:text="Thursday"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"/>
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight=".02"
+                    android:background="@color/white_smoke_dk"/>
+
+                <Button
+                    android:id="@+id/btn_fri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/main_color_gray_dk"
+                    android:text="Friday"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"/>
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight=".02"
+                    android:background="@color/white_smoke_dk"/>
+
+                <Button
+                    android:id="@+id/btn_sat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/main_color_gray_dk"
+                    android:text="Saturday"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"/>
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight=".02"
+                    android:background="@color/white_smoke_dk"/>
+
+                <Button
+                    android:id="@+id/btn_sun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/main_color_gray_dk"
+                    android:text="Sunday"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
         </LinearLayout>
     </HorizontalScrollView>
 

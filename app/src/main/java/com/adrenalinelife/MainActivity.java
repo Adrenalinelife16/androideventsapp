@@ -260,13 +260,6 @@ public class MainActivity extends CustomActivity
 			title = getString(R.string.more);
 			f = new More();
 		}
-		/*
-		else if (pos == 4)
-		{
-			title = getString(R.string.about);
-			f = new About();
-		}
-		*/
 		else if (pos == 5)
 		{
 			Intent i = new Intent(Intent.ACTION_VIEW,

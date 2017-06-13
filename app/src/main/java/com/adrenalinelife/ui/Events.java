@@ -52,6 +52,7 @@ import com.google.android.gms.location.LocationServices;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.zip.Inflater;
 
 import static com.adrenalinelife.utils.Const.EXTRA_DATA;
 
@@ -75,6 +76,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 	/** Swipe Refresh Layout **/
 	private SwipeRefreshLayout SwipeRefresh;
 
+
 	/** The Events list. */
 	private final ArrayList<Event> pList = new ArrayList<>();
 	private GoogleApiClient mGoogleApiClient;
@@ -90,27 +92,119 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		final View v = inflater.inflate(R.layout.events, null);
 		setHasOptionsMenu(true);
 
+		///////////////////////////////////////////////// - Initiating Views
+		mFilterMonday = (Button) v.findViewById(R.id.btn_mon);
+		mFilterTuesday = (Button) v.findViewById(R.id.btn_tues);
+		mFilterWednesday = (Button) v.findViewById(R.id.btn_wed);
+		mFilterThursday = (Button) v.findViewById(R.id.btn_thurs);
+		mFilterFriday = (Button) v.findViewById(R.id.btn_fri);
+		mFilterSaturday = (Button) v.findViewById(R.id.btn_sat);
+		mFilterSunday = (Button) v.findViewById(R.id.btn_sun);
 
-		showPhoneStatePermission();
+		filterResults = (ListView) v.findViewById(R.id.list);
+
+/////////////////////////////////////////////////  - Calling Initial onCreate Methods
+		setFilterTextWhite();
 		setProgramList(v);
-        filterResults = (ListView) v.findViewById(R.id.list);
+///////////////////////////////////////////////// - setOnClickListeners for each day in the filter tab
 
-        mFilterMonday = (Button) v.findViewById(R.id.button_filter_monday);
-        mFilterMonday.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                final SearchAdapter fA = new SearchAdapter(getActivity(), pList);
-                filterResults.setAdapter(fA);
-                fA.getFilter().filter("dMon");
-                Log.e("date button");
-            }
-        });
+		mFilterMonday.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+
+				setFilterTextWhite();
+				mFilterMonday.setTextColor(getResources().getColor(R.color.adrenaline_red));
+				final SearchAdapter monA = new SearchAdapter(getActivity(), pList);
+				filterResults.setAdapter(monA);
+				monA.getFilter().filter("dMon");
+				monA.notifyDataSetChanged();
+			}
+		});
+
+		mFilterTuesday.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+
+				setFilterTextWhite();
+				mFilterTuesday.setTextColor(getResources().getColor(R.color.adrenaline_red));
+				final SearchAdapter monA = new SearchAdapter(getActivity(), pList);
+				filterResults.setAdapter(monA);
+				monA.getFilter().filter("dTue");
+				monA.notifyDataSetChanged();
+			}
+		});
+
+		mFilterWednesday.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+
+				setFilterTextWhite();
+				mFilterWednesday.setTextColor(getResources().getColor(R.color.adrenaline_red));
+				final SearchAdapter monA = new SearchAdapter(getActivity(), pList);
+				filterResults.setAdapter(monA);
+				monA.getFilter().filter("dWed");
+				monA.notifyDataSetChanged();
+			}
+		});
+
+		mFilterThursday.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+
+				setFilterTextWhite();
+				mFilterThursday.setTextColor(getResources().getColor(R.color.adrenaline_red));
+				final SearchAdapter monA = new SearchAdapter(getActivity(), pList);
+				filterResults.setAdapter(monA);
+				monA.getFilter().filter("dThu");
+				monA.notifyDataSetChanged();
+			}
+		});
+
+		mFilterFriday.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+
+				setFilterTextWhite();
+				mFilterFriday.setTextColor(getResources().getColor(R.color.adrenaline_red));
+				final SearchAdapter monA = new SearchAdapter(getActivity(), pList);
+				filterResults.setAdapter(monA);
+				monA.getFilter().filter("dFri");
+				monA.notifyDataSetChanged();
+			}
+		});
+		mFilterSaturday.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+
+				setFilterTextWhite();
+				mFilterSaturday.setTextColor(getResources().getColor(R.color.adrenaline_red));
+				final SearchAdapter monA = new SearchAdapter(getActivity(), pList);
+				filterResults.setAdapter(monA);
+				monA.getFilter().filter("dSat");
+				monA.notifyDataSetChanged();
+			}
+		});
+
+		mFilterSunday.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+
+				setFilterTextWhite();
+				mFilterSunday.setTextColor(getResources().getColor(R.color.adrenaline_red));
+				final SearchAdapter monA = new SearchAdapter(getActivity(), pList);
+				filterResults.setAdapter(monA);
+				monA.getFilter().filter("dSun");
+				monA.notifyDataSetChanged();
+			}
+		});
+		//////////////////////////////////////////// - Swipe to Refresh
 
 		SwipeRefresh = (SwipeRefreshLayout) v.findViewById(R.id.EventsRefresh);
 		SwipeRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
 			@Override
 			public void onRefresh() {
 
+				setFilterTextWhite();
 				setProgramList(v);
 				SwipeRefresh.setRefreshing(false);
 			}
@@ -118,6 +212,8 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		//Configure the refreshing colors
 		SwipeRefresh.setColorSchemeResources(android.R.color.holo_red_light);
 		//Toast.makeText(activity, String.valueOf(hasFocus),Toast.LENGTH_SHORT).show();
+
+        //////////////////////////////////////////// - SearchView Setup
 
 		/***Search View***/
 		searchView = (SearchView) v.findViewById(R.id.searchEvents);
@@ -168,9 +264,13 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 				return true;
 			}
 		});
+		////////////////////////////////////////////END SEARCHVIEW SETUP
+
 		return v;
 	}
 	////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 	private void setProgramList(View v)
 	{
 		initPagingList((ListView) v.findViewById(R.id.list),
@@ -407,6 +507,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 				ArrayList<Event> tempList = new ArrayList<>();
                 String q = newText.toString().substring(1);
 
+				//SEARCH FILTER
                 if (newText.toString().toLowerCase().startsWith("s")){
                     Log.e(q);
                     Event item;
@@ -421,11 +522,11 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
                             item = fList.get(i);
                             tempList.add(item);
                             Log.e(item);
-                            i++;
                         }
                         filterResults.values = tempList;
                         filterResults.count = tempList.size();
                     }
+					//BY DAY FILTER
                 } if (newText.toString().toLowerCase().startsWith("d")){
                     Log.e(q);
                     Event item;
@@ -433,18 +534,32 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 
                         long eDate;
                         eDate = fList.get(i).getStartDateTime();
+						Log.e("eDate = ", eDate);
                         String eDay;
                         eDay = Commons.toDAY(eDate);
+						Log.e("eDay = ", eDay);
 
                         if (eDay.equals(q)) {
                             item = fList.get(i);
+							Log.e("Day Item = ", item);
                             tempList.add(item);
-                            i++;
                         }
                         filterResults.values = tempList;
                         filterResults.count = tempList.size();
                     }
-                }
+					//REFRESH FILTER
+                } if (newText.toString().toLowerCase().startsWith("r")){
+
+					Event item;
+					for (int i = 0; i < fList.size(); i++) {
+
+						item = fList.get(i);
+						tempList.add(item);
+
+						filterResults.values = tempList;
+						filterResults.count = tempList.size();
+					}
+				}
                 return filterResults;
             }
 			@SuppressWarnings("unchecked")
@@ -471,71 +586,12 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		}
 	}
 
-	private void showPhoneStatePermission() {
-		int permissionCheck = ContextCompat.checkSelfPermission(
-				getActivity(), Manifest.permission.ACCESS_FINE_LOCATION);
-		if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
-			if (ActivityCompat.shouldShowRequestPermissionRationale(getActivity(),
-					Manifest.permission.ACCESS_FINE_LOCATION)) {
-				showExplanation("Permission Needed", "Rationale", Manifest.permission.ACCESS_FINE_LOCATION, REQUEST_PERMISSION_LOCATION);
-			} else {
-				requestPermission(Manifest.permission.ACCESS_FINE_LOCATION, REQUEST_PERMISSION_LOCATION);
-			}
-		} else {
-			Toast.makeText(getActivity(), "Permission (already) Granted!", Toast.LENGTH_SHORT).show();
-		}
-	}
-	////////////////////////////////////////////////////////////////////////////////////////////////
-	@Override
-	public void onRequestPermissionsResult(
-			int requestCode,
-			String permissions[],
-			int[] grantResults) {
-		switch (requestCode) {
-			case REQUEST_PERMISSION_LOCATION:
-				if (grantResults.length > 0
-						&& grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-					Toast.makeText(getActivity(), "Permission Granted!", Toast.LENGTH_SHORT).show();
-				} else {
-					Toast.makeText(getActivity(), "Permission Denied!", Toast.LENGTH_SHORT).show();
-				}
-		}
-	}
 
-	private void showExplanation(String title,
-								 String message,
-								 final String permission,
-								 final int permissionRequestCode) {
-		AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-		builder.setTitle(title)
-				.setMessage(message)
-				.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-					public void onClick(DialogInterface dialog, int id) {
-						requestPermission(permission, permissionRequestCode);
-					}
-				});
-		builder.create().show();
-	}
-
-	private void requestPermission(String permissionName, int permissionRequestCode) {
-		ActivityCompat.requestPermissions(getActivity(),
-				new String[]{permissionName}, permissionRequestCode);
-	}
-
-
-	private synchronized void buildGoogleApiClient(){
-		mGoogleApiClient = new GoogleApiClient.Builder(getActivity())
-				.addConnectionCallbacks((GoogleApiClient.ConnectionCallbacks) Events.this)
-				.addOnConnectionFailedListener((GoogleApiClient.OnConnectionFailedListener) this)
-				.addApi(LocationServices.API)
-				.build();
-		mGoogleApiClient.connect();
-	}
 	////////////////////////////////////////////////////////////////////////////////////////////////
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
 	{
-		inflater.inflate(R.menu.add, menu);
+		inflater.inflate(R.menu.add_refresh, menu);
 
 		super.onCreateOptionsMenu(menu, inflater);
 	}
@@ -589,7 +645,27 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 			AlertDialog action = builder.create();
 			action.show();
 	}
+
+		else if (item.getItemId() == R.id.refresh) {
+
+			final SearchAdapter refreshA = new SearchAdapter(getActivity(), pList);
+			filterResults.setAdapter(refreshA);
+			setFilterTextWhite();
+			refreshA.getFilter().filter("r");
+			refreshA.notifyDataSetChanged();
+		}
+
 		return true;
 	}
 	////////////////////////////////////////////////////////////////////////////////////////////////
+
+	public void setFilterTextWhite(){
+		mFilterMonday.setTextColor(getResources().getColor(R.color.white));
+		mFilterTuesday.setTextColor(getResources().getColor(R.color.white));
+		mFilterWednesday.setTextColor(getResources().getColor(R.color.white));
+		mFilterThursday.setTextColor(getResources().getColor(R.color.white));
+		mFilterFriday.setTextColor(getResources().getColor(R.color.white));
+		mFilterSaturday.setTextColor(getResources().getColor(R.color.white));
+		mFilterSunday.setTextColor(getResources().getColor(R.color.white));
+	}
 }

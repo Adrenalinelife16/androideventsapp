@@ -32,6 +32,10 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/image_layover_android.png"
     },
     {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/adrenaline_grey_background.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/adrenaline_grey_background.png"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/semi_trans_bg.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/semi_trans_bg.png"
     },
@@ -58,6 +62,10 @@
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/arrow_right.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/arrow_right.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/actionbar_bg_2.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/actionbar_bg_2.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_add.png",
@@ -196,12 +204,12 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_back.png"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/adrenaline_splash.png",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/adrenaline_splash.png"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/arrow_left.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/arrow_left.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/adrenaline_splash.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/adrenaline_splash.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/progress_bg.png",
@@ -256,16 +264,16 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_nav3_sel.png"
     },
     {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/events_sel.png",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/events_sel.png"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav6.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/ic_nav6.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/tab_bg_sel.png",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/tab_bg_sel.png"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/events_sel.png",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/drawable-large-hdpi/events_sel.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-large-hdpi/ic_nav2_sel.png",

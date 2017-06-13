@@ -6,7 +6,7 @@
 		android:icon="@drawable/add_button"
 		android:showAsAction="always"
 		android:title="@string/my_fav"
-		/>
+		app:showAsAction="always"/>
 
 
 </menu>

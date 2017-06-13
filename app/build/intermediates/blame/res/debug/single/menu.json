@@ -8,6 +8,10 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/menu/add.xml"
     },
     {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/menu/add_refresh.xml",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/menu/add_refresh.xml"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/menu/map.xml",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/menu/map.xml"
     },
