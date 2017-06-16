@@ -69,6 +69,7 @@
     <string name="err_email">Please enter valid email address.</string>
     <string name="err_pwd">Password does not match!</string>
     <string name="book_ticket">Book Event</string>
+    <string name="category_view">Categories</string>
 
     <string name="msg_event_book_success">Event has been successfully booked.</string>
     <string name="help_centre_text">Today, people expect things to find them, not the other way around.

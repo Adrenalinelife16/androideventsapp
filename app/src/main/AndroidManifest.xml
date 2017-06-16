@@ -126,6 +126,10 @@
             android:name=".DiscoverBrowser"
             android:label="@string/Discover_Browser">
         </activity>
+        <activity
+            android:name=".ui.CategoryView"
+            android:label="@string/category_view">
+        </activity>
     </application>
 
 </manifest>

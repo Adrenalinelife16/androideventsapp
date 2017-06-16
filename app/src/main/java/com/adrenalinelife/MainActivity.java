@@ -25,7 +25,6 @@ import android.widget.ListView;
 import com.adrenalinelife.calendar.CalendarView;
 import com.adrenalinelife.custom.CustomActivity;
 import com.adrenalinelife.custom.CustomFragment;
-import com.adrenalinelife.custom.FireMissilesDialogFragment;
 import com.adrenalinelife.model.Data;
 import com.adrenalinelife.ui.DiscoverEvents;
 import com.adrenalinelife.ui.FavEvents;
@@ -38,8 +37,6 @@ import com.adrenalinelife.utils.Const;
 import com.adrenalinelife.utils.StaticData;
 
 import java.util.ArrayList;
-
-import static com.adrenalinelife.utils.StaticData.getLoginErrorMessage;
 
 /**
  * The Class MainActivity is the base activity class of the application. This

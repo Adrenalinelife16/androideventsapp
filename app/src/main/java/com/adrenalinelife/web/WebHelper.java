@@ -495,6 +495,20 @@ public class WebHelper extends WebAccess
 	 * @param location_zip
 	 * 			  the location zip code
 	 * @return  the status
+	 *
+	 * param.add(new BasicNameValuePair("locationname", location_name));
+	param.add(new BasicNameValuePair("address", location_address));
+	param.add(new BasicNameValuePair("city", location_city));
+	param.add(new BasicNameValuePair("zipcode", location_zip));
+	param.add(new BasicNameValuePair("state", location_state));
+	param.add(new BasicNameValuePair("category", category));
+	param.add(new BasicNameValuePair("user", user));
+	param.add(new BasicNameValuePair("eventName", event_name));
+	param.add(new BasicNameValuePair("eventInfo", event_info));
+	param.add(new BasicNameValuePair("startTime", start_time));
+	param.add(new BasicNameValuePair("endTime", end_time));
+	param.add(new BasicNameValuePair("startDate", start_date));
+	param.add(new BasicNameValuePair("endDate", end_date));
 	 */
 
 
@@ -516,19 +530,19 @@ public class WebHelper extends WebAccess
 			Log.d("EVENT START DATE", start_date);
 			Log.d("EVENT END DATE", end_date);
 			ArrayList<NameValuePair> param = new ArrayList<NameValuePair>();
-			param.add(new BasicNameValuePair("locationname", location_name));
-			param.add(new BasicNameValuePair("address", location_address));
-			param.add(new BasicNameValuePair("city", location_city));
-			param.add(new BasicNameValuePair("zipcode", location_zip));
-			param.add(new BasicNameValuePair("state", location_state));
-			param.add(new BasicNameValuePair("category", category));
-			param.add(new BasicNameValuePair("user", user));
-			param.add(new BasicNameValuePair("eventName", event_name));
-			param.add(new BasicNameValuePair("eventInfo", event_info));
-			param.add(new BasicNameValuePair("startTime", start_time));
-			param.add(new BasicNameValuePair("endTime", end_time));
-			param.add(new BasicNameValuePair("startDate", start_date));
-			param.add(new BasicNameValuePair("endDate", end_date));
+			param.add(new BasicNameValuePair("location_name", "Chazz's Basement"));
+			param.add(new BasicNameValuePair("location_address", "1200 south cove lane"));
+			param.add(new BasicNameValuePair("location_city", "Birmingham"));
+			param.add(new BasicNameValuePair("location_zip", "35216"));
+			param.add(new BasicNameValuePair("location_state", "AL"));
+			param.add(new BasicNameValuePair("category", "soccer"));
+			param.add(new BasicNameValuePair("user", "24"));
+			param.add(new BasicNameValuePair("event_name", "Basement Meeting2"));
+			param.add(new BasicNameValuePair("event_info", "Come to our test meeting"));
+			param.add(new BasicNameValuePair("start_time", "16:00:00"));
+			param.add(new BasicNameValuePair("end_time", "18:00:00"));
+			param.add(new BasicNameValuePair("start_date", "2017-06-18"));
+			param.add(new BasicNameValuePair("end_date", "2017-06-18"));
 
 			String res = executePostRequest(CREATE_EVENT_URL, param, false);
 			return new Status(res, "event_id");
@@ -543,6 +557,7 @@ public class WebHelper extends WebAccess
 
 
     /**
+	 *
 	 * Do register.
 	 * 
 	 * @param name

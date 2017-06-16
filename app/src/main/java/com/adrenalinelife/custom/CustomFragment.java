@@ -22,7 +22,7 @@ public class CustomFragment extends Fragment implements OnClickListener
 	public CustomActivity parent;
 	
 	/** The default no img bitmap. */
-	protected Bitmap bmNoImg;
+	protected static Bitmap bmNoImg;
 
 	/* (non-Javadoc)
 	 * @see android.support.v4.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)
@@ -36,7 +36,7 @@ public class CustomFragment extends Fragment implements OnClickListener
 	}
 
 	/** The iamge loader. */
-	protected ImageLoader loader;
+	protected static ImageLoader loader;
 	
 	/** The Bundle arg. */
 	private Bundle arg;

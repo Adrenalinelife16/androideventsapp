@@ -57,16 +57,16 @@ public class FavEvents extends PagingFragment
 {
 
     /** Search View **/
-    ListView filterResults;
+    static ListView filterResults;
     SearchView searchView;
 
     /** Swipe Refresh Layout **/
     private SwipeRefreshLayout SwipeRefresh;
 
     /** The Events list. */
-    private final ArrayList<Event> pList = new ArrayList<>();
+    private static final ArrayList<Event> pList = new ArrayList<>();
 
-    public String stringOfFav;
+    public static String stringOfFav;
 
     public View mDayFilterScroll;
 
@@ -200,7 +200,7 @@ public class FavEvents extends PagingFragment
         }).start();
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////
-    private class ProgramAdapter extends BaseAdapter
+    public class ProgramAdapter extends BaseAdapter
     {
 
         @Override
@@ -449,7 +449,7 @@ public class FavEvents extends PagingFragment
 
     public String saveFavStringEvents(String res)
     {
-        this.stringOfFav = res;
+        stringOfFav = res;
         return stringOfFav;
     }
 

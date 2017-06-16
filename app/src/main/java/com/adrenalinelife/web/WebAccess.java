@@ -57,7 +57,7 @@ public class WebAccess
 	protected static final String LOGIN_URL = "api/Login";
 	
 	/** The Constant CREATE_EVENT_URL. */
-	protected static final String CREATE_EVENT_URL = "http://www.adrenalinelife.org/Adrenaline_Custom/add_event.php";
+	protected static final String CREATE_EVENT_URL = "Adrenaline_Custom/addEvent.php";
 
 	/** The Constant REGISTER_URL. */
 	protected static final String REGISTER_URL = "Adrenaline_Custom/api/Register";

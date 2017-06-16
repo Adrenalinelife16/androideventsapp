@@ -93,12 +93,15 @@ public class CreateEvent extends CustomActivity {
         final String event_name = ((EditText) findViewById(R.id.eventName)).getText()
                 .toString().trim();
 
+        /*
+
         if (Commons.isEmpty(event_name) || Commons.isEmpty(event_name)
                 || Commons.isEmpty(event_name))
         {
             Utils.showDialog(THIS, R.string.err_field_empty);
             return;
         }
+        */
 
         final String event_info = ((EditText) findViewById(R.id.eventDetails)).getText().toString().trim();
 
@@ -108,6 +111,8 @@ public class CreateEvent extends CustomActivity {
         final String start_time = ((EditText) findViewById(R.id.startTime)).getText().toString().trim();
         final String end_date = ((EditText) findViewById(R.id.endDate)).getText().toString().trim();
         final String end_time = ((EditText) findViewById(R.id.endTime)).getText().toString().trim();
+
+        /*
         if (Commons.isEmpty(start_date) || Commons.isEmpty(start_date)
                 || Commons.isEmpty(start_date))
         {
@@ -132,7 +137,7 @@ public class CreateEvent extends CustomActivity {
             Utils.showDialog(THIS, R.string.err_field_empty);
             return;
         }
-
+*/
 
         // Get Location Info
         final String location_name = ((EditText) findViewById(R.id.locationName)).getText()
@@ -148,6 +153,8 @@ public class CreateEvent extends CustomActivity {
 
         final String location_zip = ((EditText) findViewById(R.id.locationZip)).getText()
                 .toString().trim();
+
+        /*
 
         if (Commons.isEmpty(location_name) || Commons.isEmpty(location_name)
                 || Commons.isEmpty(location_name))
@@ -187,7 +194,10 @@ public class CreateEvent extends CustomActivity {
         Log.e(location_city);
         Log.e(event_info);
 
+*/
 
+        final String user = Const.USER_ID;
+        final String category = "Test";
 
         final ProgressDialog dia = showProgressDia(R.string.alert_wait);
         new Thread(new Runnable() {

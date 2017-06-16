@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 import com.adrenalinelife.Browser;
+import com.adrenalinelife.CreateEvent;
 import com.adrenalinelife.DiscoverBrowser;
 import com.adrenalinelife.R;
 import com.adrenalinelife.custom.CustomFragment;
@@ -36,10 +37,8 @@ public class DiscoverEvents extends CustomFragment {
         yogaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
-                String url = "http://www.AdrenalineLife.org/events/categories/yoga/";
-                Intent intent = new Intent(view.getContext(), DiscoverBrowser.class);
-                intent.putExtra("url", url);
-                startActivity(intent);
+                startActivity(new Intent(getActivity(),
+                        CreateEvent.class));
             }
         });
 

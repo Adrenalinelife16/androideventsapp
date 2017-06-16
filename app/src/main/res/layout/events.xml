@@ -33,7 +33,7 @@
             <LinearLayout
                 android:layout_width="900dp"
                 android:layout_height="wrap_content"
-                android:background="@color/main_color_gray_dk"
+                android:background="@drawable/actionbar_bg_6"
                 android:orientation="horizontal">
 
                 <Button
@@ -41,7 +41,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@color/main_color_gray_dk"
+                    android:background="#0000"
                     android:text="Monday"
                     android:textColor="@color/white"
                     android:textSize="13sp"/>
@@ -60,7 +60,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@color/main_color_gray_dk"
+                    android:background="#0000"
                     android:text="Tuesday"
                     android:textColor="@color/white"
                     android:textSize="13sp"/>
@@ -79,7 +79,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@color/main_color_gray_dk"
+                    android:background="#0000"
                     android:text="Wednesday"
                     android:textColor="@color/white"
                     android:textSize="13sp"/>
@@ -98,7 +98,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@color/main_color_gray_dk"
+                    android:background="#0000"
                     android:text="Thursday"
                     android:textColor="@color/white"
                     android:textSize="13sp"/>
@@ -117,7 +117,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@color/main_color_gray_dk"
+                    android:background="#0000"
                     android:text="Friday"
                     android:textColor="@color/white"
                     android:textSize="13sp"/>
@@ -136,7 +136,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@color/main_color_gray_dk"
+                    android:background="#0000"
                     android:text="Saturday"
                     android:textColor="@color/white"
                     android:textSize="13sp"/>
@@ -155,7 +155,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@color/main_color_gray_dk"
+                    android:background="#0000"
                     android:text="Sunday"
                     android:textColor="@color/white"
                     android:textSize="13sp"/>

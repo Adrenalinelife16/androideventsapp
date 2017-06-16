@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:2:1-131:12
+ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:2:1-135:12
 	package
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:3:11-39
 		INJECTED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml
@@ -122,7 +122,7 @@ ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidM
 	android:name
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:34:22-77
 application
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:36:5-129:19
+ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:36:5-133:19
 MERGED from [com.google.android.gms:play-services:8.4.0] /Users/Martare/.android/build-cache/e1c22ab58cdbc680c479eee7c0bd34b2b9c053e6/output/AndroidManifest.xml:19:5-20
 MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/Martare/.android/build-cache/1924a975b40847033e9e9420f72db0d418223570/output/AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/Martare/.android/build-cache/da35ec83c8e0d00e5182b36d860138bc8e13ce89/output/AndroidManifest.xml:19:5-20
@@ -304,6 +304,12 @@ ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidM
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:127:13-53
 	android:name
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:126:13-44
+activity#com.adrenalinelife.ui.CategoryView
+ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:129:9-132:20
+	android:label
+		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:131:13-50
+	android:name
+		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:130:13-44
 activity#com.google.android.gms.appinvite.PreviewActivity
 ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/dd840e25120a319f36f6284e750f870f37d0e309/output/AndroidManifest.xml:21:9-29:20
 	android:exported

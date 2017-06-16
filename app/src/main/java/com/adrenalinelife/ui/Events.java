@@ -231,9 +231,8 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		searchView.setOnCloseListener(new SearchView.OnCloseListener() {
 			@Override
 			public boolean onClose() {
-				//Hide Keyboard//
-				InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(getActivity().INPUT_METHOD_SERVICE);
-				imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
+				searchView.setQuery("", false);
+				searchView.clearFocus();
 				return false;
 			}
 		});
@@ -307,6 +306,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
                         n.get(arg2)));
             }
         });
+
         int w = StaticData.width;
         int h = (int) (StaticData.width / 2.25); //2.25
         bmNoImg = ImageUtils.getPlaceHolderImage(R.drawable.no_imagebig, w, h);
@@ -621,16 +621,12 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 	}
 		return true;
 	}
-*/
 
 
-	// DELETE THIS METHOD AFTER CREATE EVENTS IS FINISHED
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item)
-	{
-		if (item.getItemId() == R.id.menu_fav)
-		{
-			final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+
+
+
+	final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 			builder.setMessage(R.string.err_beta)
 					.setPositiveButton(R.string.back, new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int id) {
@@ -641,6 +637,18 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 					});
 			AlertDialog action = builder.create();
 			action.show();
+*/
+
+
+	// DELETE THIS METHOD AFTER CREATE EVENTS IS FINISHED
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item)
+	{
+		if (item.getItemId() == R.id.menu_fav)
+		{
+            Intent intent = new Intent(getActivity(), CreateEvent.class);
+            startActivity(intent);
+
 	}
 
 		else if (item.getItemId() == R.id.refresh) {
@@ -648,6 +656,8 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 			final SearchAdapter refreshA = new SearchAdapter(getActivity(), pList);
 			filterResults.setAdapter(refreshA);
 			setFilterTextWhite();
+			searchView.setQuery("", false);
+			searchView.clearFocus();
 			refreshA.getFilter().filter("r");
 			refreshA.notifyDataSetChanged();
 		}
