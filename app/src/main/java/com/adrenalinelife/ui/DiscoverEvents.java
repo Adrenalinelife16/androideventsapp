@@ -1,5 +1,8 @@
 package com.adrenalinelife.ui;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,8 +11,6 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 import com.adrenalinelife.Browser;
-import com.adrenalinelife.CreateEvent;
-import com.adrenalinelife.DiscoverBrowser;
 import com.adrenalinelife.R;
 import com.adrenalinelife.custom.CustomFragment;
 
@@ -25,6 +26,8 @@ public class DiscoverEvents extends CustomFragment {
     ImageButton moreButton;
     ImageButton kickballButton;
     ImageButton tablegamesButton;
+    public Bundle mBundle;
+    public Intent mIntent;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -37,8 +40,17 @@ public class DiscoverEvents extends CustomFragment {
         yogaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
-                startActivity(new Intent(getActivity(),
-                        CreateEvent.class));
+
+                mBundle = new Bundle();
+                mBundle.putString("Filter", "yoga");
+
+                CategoryEvents catEvents = new CategoryEvents();
+                catEvents.setArguments(mBundle);
+
+                android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.content_frame, catEvents);
+                transaction.addToBackStack(null);
+                transaction.commit();
             }
         });
 
@@ -47,10 +59,14 @@ public class DiscoverEvents extends CustomFragment {
         basketballButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
-                String url = "http://www.AdrenalineLife.org/events/categories/basketball/";
-                Intent intent = new Intent(view.getContext(), Browser.class);
-                intent.putExtra("url", url);
-                startActivity(intent);
+                mBundle = new Bundle();
+                mBundle.putString("Filter", "basketball");
+                CategoryEvents catEvents = new CategoryEvents();
+                catEvents.setArguments(mBundle);
+                android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.content_frame, catEvents);
+                transaction.addToBackStack(null);
+                transaction.commit();
             }
         });
 
@@ -59,10 +75,14 @@ public class DiscoverEvents extends CustomFragment {
         soccerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
-                String url = "http://www.AdrenalineLife.org/events/categories/soccer/";
-                Intent intent = new Intent(view.getContext(), Browser.class);
-                intent.putExtra("url", url);
-                startActivity(intent);
+                mBundle = new Bundle();
+                mBundle.putString("Filter", "soccer");
+                CategoryEvents catEvents = new CategoryEvents();
+                catEvents.setArguments(mBundle);
+                android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.content_frame, catEvents);
+                transaction.addToBackStack(null);
+                transaction.commit();
             }
         });
 
@@ -72,10 +92,14 @@ public class DiscoverEvents extends CustomFragment {
         golfButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
-                String url = "http://www.AdrenalineLife.org/events/categories/golf/";
-                Intent intent = new Intent(view.getContext(), Browser.class);
-                intent.putExtra("url", url);
-                startActivity(intent);
+                mBundle = new Bundle();
+                mBundle.putString("Filter", "golf");
+                CategoryEvents catEvents = new CategoryEvents();
+                catEvents.setArguments(mBundle);
+                android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.content_frame, catEvents);
+                transaction.addToBackStack(null);
+                transaction.commit();
             }
         });
 
@@ -84,10 +108,14 @@ public class DiscoverEvents extends CustomFragment {
         frisbeeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
-                String url = "http://www.AdrenalineLife.org/events/categories/frisbee/";
-                Intent intent = new Intent(view.getContext(), Browser.class);
-                intent.putExtra("url", url);
-                startActivity(intent);
+                mBundle = new Bundle();
+                mBundle.putString("Filter", "frisbee");
+                CategoryEvents catEvents = new CategoryEvents();
+                catEvents.setArguments(mBundle);
+                android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.content_frame, catEvents);
+                transaction.addToBackStack(null);
+                transaction.commit();
             }
         });
 
@@ -96,10 +124,14 @@ public class DiscoverEvents extends CustomFragment {
         tennisButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
-                String url = "http://www.AdrenalineLife.org/events/categories/tennis/";
-                Intent intent = new Intent(view.getContext(), Browser.class);
-                intent.putExtra("url", url);
-                startActivity(intent);
+                mBundle = new Bundle();
+                mBundle.putString("Filter", "tennis");
+                CategoryEvents catEvents = new CategoryEvents();
+                catEvents.setArguments(mBundle);
+                android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.content_frame, catEvents);
+                transaction.addToBackStack(null);
+                transaction.commit();
             }
         });
 
@@ -108,10 +140,14 @@ public class DiscoverEvents extends CustomFragment {
         fishingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
-                String url = "http://www.AdrenalineLife.org/events/categories/fishing/";
-                Intent intent = new Intent(view.getContext(), Browser.class);
-                intent.putExtra("url", url);
-                startActivity(intent);
+                mBundle = new Bundle();
+                mBundle.putString("Filter", "fishing");
+                CategoryEvents catEvents = new CategoryEvents();
+                catEvents.setArguments(mBundle);
+                android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.content_frame, catEvents);
+                transaction.addToBackStack(null);
+                transaction.commit();
             }
         });
 
@@ -133,10 +169,14 @@ public class DiscoverEvents extends CustomFragment {
         kickballButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
-                String yoga = "http://www.AdrenalineLife.org/events/categories/kickball/";
-                Intent intent = new Intent(view.getContext(), Browser.class);
-                intent.putExtra("url", yoga);
-                startActivity(intent);
+                mBundle = new Bundle();
+                mBundle.putString("Filter", "kickball");
+                CategoryEvents catEvents = new CategoryEvents();
+                catEvents.setArguments(mBundle);
+                android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.content_frame, catEvents);
+                transaction.addToBackStack(null);
+                transaction.commit();
             }
         });
 
@@ -145,10 +185,14 @@ public class DiscoverEvents extends CustomFragment {
         tablegamesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
-                String yoga = "http://www.AdrenalineLife.org/events/categories/tablegames/";
-                Intent intent = new Intent(view.getContext(), Browser.class);
-                intent.putExtra("url", yoga);
-                startActivity(intent);
+                mBundle = new Bundle();
+                mBundle.putString("Filter", "tablegames");
+                CategoryEvents catEvents = new CategoryEvents();
+                catEvents.setArguments(mBundle);
+                android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.content_frame, catEvents);
+                transaction.addToBackStack(null);
+                transaction.commit();
             }
         });
         return v;

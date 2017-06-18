@@ -26,6 +26,7 @@ import com.adrenalinelife.calendar.CalendarView;
 import com.adrenalinelife.custom.CustomActivity;
 import com.adrenalinelife.custom.CustomFragment;
 import com.adrenalinelife.model.Data;
+import com.adrenalinelife.ui.CategoryEvents;
 import com.adrenalinelife.ui.DiscoverEvents;
 import com.adrenalinelife.ui.FavEvents;
 import com.adrenalinelife.ui.FeedList;
@@ -193,9 +194,8 @@ public class MainActivity extends CustomActivity
 		else if (pos == 1)
 		{
 			title = getString(R.string.Discover_Events);
+			//f = new CategoryEvents();
 			f = new DiscoverEvents();
-			//Intent intent = new Intent(THIS, DiscoverEvents.class);
-			//startActivity(intent);
 		}
 		else if (pos == 2)
 		{

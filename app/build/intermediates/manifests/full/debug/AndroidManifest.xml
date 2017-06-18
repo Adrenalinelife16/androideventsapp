@@ -37,6 +37,10 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Optional permission for App measurement to run. -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/alife_icon"
@@ -118,7 +122,17 @@
             android:windowSoftInputMode="stateHidden|adjustResize" >
         </activity>
         <activity
-            android:name="com.adrenalinelife.CreateEvent"
+            android:name="com.adrenalinelife.create_event.twoStartDateTime"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.adrenalinelife.create_event.oneCreateEvent"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.adrenalinelife.create_event.threeCreateEvent"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" >
         </activity>
@@ -131,8 +145,10 @@
             android:label="@string/Discover_Browser" >
         </activity>
         <activity
-            android:name="com.adrenalinelife.ui.CategoryView"
-            android:label="@string/category_view" >
+            android:name="com.adrenalinelife.ui.CategoryEvents"
+            android:label="@string/category_view"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
         </activity>
         <activity
             android:name="com.google.android.gms.appinvite.PreviewActivity"

@@ -1,16 +1,10 @@
 package com.adrenalinelife.ui;
 
-import android.Manifest;
-import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.text.Html;
 import android.view.LayoutInflater;
@@ -32,10 +26,9 @@ import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.adrenalinelife.CreateEvent;
 import com.adrenalinelife.EventDetailActivity;
-import com.adrenalinelife.Login;
 import com.adrenalinelife.R;
+import com.adrenalinelife.create_event.oneCreateEvent;
 import com.adrenalinelife.custom.PagingFragment;
 import com.adrenalinelife.model.Event;
 import com.adrenalinelife.utils.Commons;
@@ -47,12 +40,9 @@ import com.adrenalinelife.utils.Log;
 import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.LocationServices;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.zip.Inflater;
 
 import static com.adrenalinelife.utils.Const.EXTRA_DATA;
 
@@ -352,8 +342,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 							onFinishLoading(0);
 						} else {
 							pList.addAll(al);
-							int i = pList.size();
-							String s = String.valueOf(i);
 							adapter.notifyDataSetChanged();
 							//onFinishLoading(al.size());
 						}
@@ -616,7 +604,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 			AlertDialog action = builder.create();
 			action.show();
 		} if (item.getItemId() == R.id.menu_fav && StaticData.pref.contains(Const.USER_ID)){
-			Intent intent = new Intent(getActivity(), CreateEvent.class);
+			Intent intent = new Intent(getActivity(), three_create_event.class);
 			startActivity(intent);
 	}
 		return true;
@@ -646,7 +634,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 	{
 		if (item.getItemId() == R.id.menu_fav)
 		{
-            Intent intent = new Intent(getActivity(), CreateEvent.class);
+            Intent intent = new Intent(getActivity(), oneCreateEvent.class);
             startActivity(intent);
 
 	}

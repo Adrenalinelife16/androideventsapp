@@ -530,7 +530,7 @@ public class WebHelper extends WebAccess
 			Log.d("EVENT START DATE", start_date);
 			Log.d("EVENT END DATE", end_date);
 			ArrayList<NameValuePair> param = new ArrayList<NameValuePair>();
-			param.add(new BasicNameValuePair("location_name", "Chazz's Basement"));
+			param.add(new BasicNameValuePair("location_name", "Chazzs Basement"));
 			param.add(new BasicNameValuePair("location_address", "1200 south cove lane"));
 			param.add(new BasicNameValuePair("location_city", "Birmingham"));
 			param.add(new BasicNameValuePair("location_zip", "35216"));

@@ -11,13 +11,13 @@
                     "endOffset": 106
                 },
                 "from": {
-                    "file": "/Users/Martare/.android/build-cache/14c941722bd7b63d0944392fbf2c506c2f7831dc/output/res/values-port/values-port.xml",
+                    "file": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/values-port/values-port.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 276,
+                        "startOffset": 55,
                         "endColumn": 55,
-                        "endOffset": 327
+                        "endOffset": 106
                     }
                 }
             }

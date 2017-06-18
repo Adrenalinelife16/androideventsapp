@@ -114,7 +114,17 @@
             android:windowSoftInputMode="stateHidden|adjustResize">
         </activity>
         <activity
-            android:name=".CreateEvent"
+            android:name=".create_event.twoStartDateTime"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name=".create_event.oneCreateEvent"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name=".create_event.threeCreateEvent"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize">
         </activity>
@@ -127,8 +137,10 @@
             android:label="@string/Discover_Browser">
         </activity>
         <activity
-            android:name=".ui.CategoryView"
-            android:label="@string/category_view">
+            android:name=".ui.CategoryEvents"
+            android:label="@string/category_view"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
         </activity>
     </application>
 
