@@ -30,9 +30,8 @@ public class twoStartDateTime extends CustomActivity {
 
     //Bundle Variables
     public String mEventName;
+    public String mDescription;
     public String mEventCategory;
-    public String mEndDatePicker;
-    public String mEndTimePicker;
     public String mStartDatePicker;
     public String mStartTimePicker;
 
@@ -49,6 +48,7 @@ public class twoStartDateTime extends CustomActivity {
         //Set Variables for Bundle OUT
         mBundleIn = getIntent().getExtras();
         mEventName = mBundleIn.getString("Event_Name");
+        mDescription = mBundleIn.getString("Description");
         mEventCategory = mBundleIn.getString("Event_Category");
         Log.e("Event Name = ", mEventName);
         Log.e("Event Category = ", mEventCategory);
@@ -98,12 +98,13 @@ public class twoStartDateTime extends CustomActivity {
         //Bundle up all the info for the final POST Request
         mBundleOut = new Bundle();
         mBundleOut.putString("Event_Name", mEventName);
+        mBundleOut.putString("Description", mDescription);
         mBundleOut.putString("Event_Category", mEventCategory);
         mBundleOut.putString("Start_Time", mStartTimePicker);
         mBundleOut.putString("Start_Date", mStartDatePicker);
 
         //Build Intent, Send Intent to Next Page
-        mIntentOut = new Intent(twoStartDateTime.this, twoStartDateTime.class);
+        mIntentOut = new Intent(twoStartDateTime.this, twoEndDateTime.class);
         mIntentOut.putExtras(mBundleOut);
         Log.e("Bundle = ", mBundleOut);
         startActivity(mIntentOut);

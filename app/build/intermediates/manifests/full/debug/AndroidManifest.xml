@@ -127,6 +127,11 @@
             android:windowSoftInputMode="stateHidden|adjustResize" >
         </activity>
         <activity
+            android:name="com.adrenalinelife.create_event.twoEndDateTime"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
             android:name="com.adrenalinelife.create_event.oneCreateEvent"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" >

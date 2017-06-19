@@ -2,35 +2,67 @@ package com.adrenalinelife.create_event;
 import android.annotation.TargetApi;
 import android.app.Dialog;
 import android.app.DialogFragment;
+import android.app.ProgressDialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
+import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.icu.util.Calendar;
+import android.media.Image;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.ParcelFileDescriptor;
+import android.provider.MediaStore;
 import android.text.format.DateFormat;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TimePicker;
 
 import com.adrenalinelife.R;
 import com.adrenalinelife.custom.CustomActivity;
+import com.adrenalinelife.model.Status;
+import com.adrenalinelife.utils.Commons;
+import com.adrenalinelife.utils.Const;
+import com.adrenalinelife.utils.Log;
+import com.adrenalinelife.utils.StaticData;
+import com.adrenalinelife.utils.Utils;
+import com.adrenalinelife.web.WebHelper;
+
+import java.io.FileDescriptor;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
 
 
 public class threeCreateEvent extends CustomActivity {
 
 
     public Bundle mBundleIn;
-    public Bundle mBundleOut;
 
     public Intent mIntentIn;
-    public Intent mIntentOut;
 
-    public String mStartDatePicker;
-    public String mStartTimePicker;
-
+    //Bundle Variables
+    public String mEventName;
+    public String mDescription;
+    public String mEventCategory;
     public String mEndDatePicker;
     public String mEndTimePicker;
+    public String mStartDatePicker;
+    public String mStartTimePicker;
+    public String mLocation;
+    public String mAddress;
+    public String mCity;
+    public String mZip;
+    public String mState;
+    public String mUser;
+
+    private static int PICK_EVENT_PHOTO = 1;
+
+
 
 
 
@@ -44,37 +76,21 @@ public class threeCreateEvent extends CustomActivity {
 
         getActionBar().setTitle(R.string.create_event);
         setTouchNClick(R.id.submitEventBtn);
+        setTouchNClick(R.id.chooseImageBtn);
+        setTouchNClick(R.id.submittedImageView);
 
-
+        //Grab Bundle IN from Previous Page
+        //Set Variables for Bundle OUT
+        mBundleIn = getIntent().getExtras();
+        mEventName = mBundleIn.getString("Event_Name");
+        mDescription = mBundleIn.getString("Description");
+        mEventCategory = mBundleIn.getString("Event_Category");
+        mStartTimePicker = mBundleIn.getString("Start_Time");
+        mStartDatePicker = mBundleIn.getString("Start_Date");
+        mEndTimePicker = mBundleIn.getString("End_Time");
+        mEndDatePicker = mBundleIn.getString("End_Date");
 
     }
-
-    public static class TimePickerFragment extends DialogFragment
-            implements TimePickerDialog.OnTimeSetListener {
-
-        @TargetApi(Build.VERSION_CODES.N)
-        @Override
-        public Dialog onCreateDialog(Bundle savedInstanceState) {
-            // Use the current time as the default values for the picker
-            final Calendar c = Calendar.getInstance();
-            int hour = c.get(Calendar.HOUR_OF_DAY);
-            int minute = c.get(Calendar.MINUTE);
-
-            // Create a new instance of TimePickerDialog and return it
-            return new TimePickerDialog(getActivity(), this, hour, minute,
-                    DateFormat.is24HourFormat(getActivity()));
-        }
-
-        public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-            // Do something with the time chosen by the user
-        }
-    }
-
-    public void showTimePickerDialog(View v) {
-        //final String start_date = (findViewById(R.id.startDate)).toString().trim();
-        final String start_time = (findViewById(R.id.startTime)).toString().trim();
-    }
-
 
 
     @Override
@@ -85,124 +101,73 @@ public class threeCreateEvent extends CustomActivity {
         {
             doCreateEvent();
         }
+        if (v.getId() == R.id.chooseImageBtn || v.getId() == R.id.submittedImageView)
+        {
+            chooseEventImage();
+        }
         else
         {
 
         }
     }
 
+    public void chooseEventImage()
+    {
+        Intent intent = new Intent(Intent.ACTION_PICK,android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        intent.setType("image/*");
+        startActivityForResult(intent, PICK_EVENT_PHOTO);
+
+
+    }
+
     public void doCreateEvent()
     {
 
-        // Get Event Name
-        final String event_name = ((EditText) findViewById(R.id.eventName)).getText()
-                .toString().trim();
-
-        /*
-
-        if (Commons.isEmpty(event_name) || Commons.isEmpty(event_name)
-                || Commons.isEmpty(event_name))
-        {
-            Utils.showDialog(THIS, R.string.err_field_empty);
-            return;
-        }
-        */
-
-        final String event_info = ((EditText) findViewById(R.id.eventDetails)).getText().toString().trim();
-
-        // Get Event Dates
-
-       // final String start_date = ((EditText) findViewById(R.id.startDate)).getText().toString().trim();
-        //final String start_time = ((EditText) findViewById(R.id.startTime)).getText().toString().trim();
-       // final String end_date = ((EditText) findViewById(R.id.endDate)).getText().toString().trim();
-        //final String end_time = ((EditText) findViewById(R.id.endTime)).getText().toString().trim();
-
-        /*
-        if (Commons.isEmpty(start_date) || Commons.isEmpty(start_date)
-                || Commons.isEmpty(start_date))
-        {
-            Utils.showDialog(THIS, R.string.err_field_empty);
-            return;
-        }
-        if (Commons.isEmpty(start_time) || Commons.isEmpty(start_time)
-                || Commons.isEmpty(start_time))
-        {
-            Utils.showDialog(THIS, R.string.err_field_empty);
-            return;
-        }
-        if (Commons.isEmpty(end_date) || Commons.isEmpty(end_date)
-                || Commons.isEmpty(end_date))
-        {
-            Utils.showDialog(THIS, R.string.err_field_empty);
-            return;
-        }
-        if (Commons.isEmpty(end_time) || Commons.isEmpty(end_time)
-                || Commons.isEmpty(end_time))
-        {
-            Utils.showDialog(THIS, R.string.err_field_empty);
-            return;
-        }
-*/
-
         // Get Location Info
-        final String location_name = ((EditText) findViewById(R.id.locationName)).getText()
+        mLocation = ((EditText) findViewById(R.id.locationName)).getText()
                 .toString().trim();
 
-        final String location_address = ((EditText) findViewById(R.id.locationAddress)).getText()
+        mAddress = ((EditText) findViewById(R.id.locationAddress)).getText()
                 .toString().trim();
 
-        final String location_city = ((EditText) findViewById(R.id.locationCity)).getText()
+        mCity = ((EditText) findViewById(R.id.locationCity)).getText()
                 .toString().trim();
 
-        final String location_state = ((Spinner)findViewById(R.id.locationState)).getSelectedItem().toString();
+        mState = ((Spinner)findViewById(R.id.locationState)).getSelectedItem().toString();
 
-        final String location_zip = ((EditText) findViewById(R.id.locationZip)).getText()
+        mZip = ((EditText) findViewById(R.id.locationZip)).getText()
                 .toString().trim();
 
-        /*
 
-        if (Commons.isEmpty(location_name) || Commons.isEmpty(location_name)
-                || Commons.isEmpty(location_name))
+
+        if (Commons.isEmpty(mLocation) || Commons.isEmpty(mLocation)
+                || Commons.isEmpty(mLocation))
         {
             Utils.showDialog(THIS, R.string.err_field_empty);
             return;
         }
-        if (Commons.isEmpty(location_address) || Commons.isEmpty(location_address)
-                || Commons.isEmpty(location_address))
+        if (Commons.isEmpty(mAddress) || Commons.isEmpty(mAddress)
+                || Commons.isEmpty(mAddress))
         {
             Utils.showDialog(THIS, R.string.err_field_empty);
             return;
         }
-        if (Commons.isEmpty(location_city) || Commons.isEmpty(location_city)
-                || Commons.isEmpty(location_city))
+        if (Commons.isEmpty(mCity) || Commons.isEmpty(mCity)
+                || Commons.isEmpty(mCity))
         {
             Utils.showDialog(THIS, R.string.err_field_empty);
             return;
         }
 
-        if (Commons.isEmpty(location_zip) || Commons.isEmpty(location_zip)
-                || Commons.isEmpty(location_zip))
+        if (Commons.isEmpty(mState) || Commons.isEmpty(mState)
+                || Commons.isEmpty(mState))
         {
             Utils.showDialog(THIS, R.string.err_field_empty);
             return;
         }
-        final String user = Const.USER_ID;
-        final String category = "Test";
-        Log.e("Create Event Working Now");
-        Log.e(event_name);
-        Log.e(start_time);
-        Log.e(start_date);
-        Log.e(end_time);
-        Log.e(end_date);
-        Log.e(location_name);
-        Log.e(location_address);
-        Log.e(location_city);
-        Log.e(event_info);
 
-        start_time, end_time, start_date, end_date
-
-        final String user = Const.USER_ID;
-        final String category = "Test";
+        //Get/Pass User ID
+        mUser = Const.USER_ID;
 
         final ProgressDialog dia = showProgressDia(R.string.alert_wait);
         new Thread(new Runnable() {
@@ -210,7 +175,7 @@ public class threeCreateEvent extends CustomActivity {
             public void run()
             {
                 Log.e("Running doCreateEvent");
-                final Status st = WebHelper.doCreateEvent(location_name, location_address, location_city, location_zip, location_state, category, user, event_name, event_info);
+                final Status st = WebHelper.doCreateEvent(mLocation, mAddress, mCity, mZip, mState, mEventCategory, mUser, mEventName, mDescription, mStartTimePicker, mEndTimePicker, mStartDatePicker, mEndDatePicker);
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run()
@@ -230,14 +195,52 @@ public class threeCreateEvent extends CustomActivity {
                 });
             }
         }).start();
-*/
 
     }
 
 
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == PICK_EVENT_PHOTO && resultCode == RESULT_OK && null != data) {
 
 
 
+            Uri selectedImage = data.getData();
+            String[] filePathColumn = { MediaStore.Images.Media.DATA };
 
+            Cursor cursor = getContentResolver().query(selectedImage,
+                    filePathColumn, null, null, null);
+            cursor.moveToFirst();
+
+            int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+            String picturePath = cursor.getString(columnIndex);
+            cursor.close();
+
+            ImageView imageView = (ImageView) findViewById(R.id.submittedImageView);
+            imageView.setImageResource(0);
+
+            Bitmap bmp = null;
+            try {
+                bmp = getBitmapFromUri(selectedImage);
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+            imageView.setImageBitmap(bmp);
+
+        }
     }
+
+    private Bitmap getBitmapFromUri(Uri uri) throws IOException {
+        ParcelFileDescriptor parcelFileDescriptor =
+                getContentResolver().openFileDescriptor(uri, "r");
+        FileDescriptor fileDescriptor = parcelFileDescriptor.getFileDescriptor();
+        Bitmap image = BitmapFactory.decodeFileDescriptor(fileDescriptor);
+        parcelFileDescriptor.close();
+        return image;
+    }
+
+
+}
 

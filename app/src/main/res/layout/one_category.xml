@@ -16,7 +16,8 @@
         android:background="@drawable/search_bar"
         android:ems="10"
         android:hint="Event Name:"
-        android:inputType="textPersonName"/>
+        android:inputType="textPersonName"
+        android:padding="10dp"/>
 
     <Spinner
         android:id="@+id/category_spinner"
@@ -25,6 +26,19 @@
         android:layout_margin="10dp"
         android:background="@drawable/search_bar"
         android:entries="@array/categories_array"/>
+
+    <EditText
+        android:id="@+id/eventDescription"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:autoLink="all"
+        android:background="@drawable/search_bar"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Tell us about all the dirty details of your event!"
+        android:inputType="textMultiLine|textLongMessage"
+        android:padding="10dp"/>
 
     <Button
         android:id="@+id/one_category_button"

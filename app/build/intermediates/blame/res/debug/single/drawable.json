@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable/design_bottom_navigation_item_background.xml",
-        "source": "/Users/Martare/.android/build-cache/e4fcf4cb41d84a17aa239824862fae854a9b5c0e/output/res/drawable/design_bottom_navigation_item_background.xml"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable/mr_ic_cast_light.xml",
         "source": "/Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/res/drawable/mr_ic_cast_light.xml"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable/design_bottom_navigation_item_background.xml",
+        "source": "/Users/Martare/.android/build-cache/e4fcf4cb41d84a17aa239824862fae854a9b5c0e/output/res/drawable/design_bottom_navigation_item_background.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",

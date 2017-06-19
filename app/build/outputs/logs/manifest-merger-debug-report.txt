@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:2:1-147:12
+ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:2:1-152:12
 	package
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:3:11-39
 		INJECTED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml
@@ -134,7 +134,7 @@ ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidM
 	android:name
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:34:22-77
 application
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:36:5-145:19
+ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:36:5-150:19
 MERGED from [com.google.android.gms:play-services:8.4.0] /Users/Martare/.android/build-cache/e1c22ab58cdbc680c479eee7c0bd34b2b9c053e6/output/AndroidManifest.xml:19:5-20
 MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/Martare/.android/build-cache/1924a975b40847033e9e9420f72db0d418223570/output/AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/Martare/.android/build-cache/da35ec83c8e0d00e5182b36d860138bc8e13ce89/output/AndroidManifest.xml:19:5-20
@@ -313,7 +313,7 @@ ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidM
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:119:13-67
 	android:name
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:117:13-58
-activity#com.adrenalinelife.create_event.oneCreateEvent
+activity#com.adrenalinelife.create_event.twoEndDateTime
 ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:121:9-125:20
 	android:screenOrientation
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:123:13-49
@@ -321,36 +321,44 @@ ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidM
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:124:13-67
 	android:name
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:122:13-56
-activity#com.adrenalinelife.create_event.threeCreateEvent
+activity#com.adrenalinelife.create_event.oneCreateEvent
 ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:126:9-130:20
 	android:screenOrientation
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:128:13-49
 	android:windowSoftInputMode
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:129:13-67
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:127:13-58
-activity#com.adrenalinelife.ui.DiscoverEvents
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:131:9-134:20
-	android:label
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:133:13-67
-	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:132:13-46
-activity#com.adrenalinelife.DiscoverBrowser
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:135:9-138:20
-	android:label
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:137:13-53
-	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:136:13-44
-activity#com.adrenalinelife.ui.CategoryEvents
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:139:9-144:20
+		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:127:13-56
+activity#com.adrenalinelife.create_event.threeCreateEvent
+ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:131:9-135:20
 	android:screenOrientation
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:142:13-49
-	android:label
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:141:13-50
+		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:133:13-49
 	android:windowSoftInputMode
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:143:13-67
+		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:134:13-67
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:140:13-46
+		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:132:13-58
+activity#com.adrenalinelife.ui.DiscoverEvents
+ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:136:9-139:20
+	android:label
+		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:138:13-67
+	android:name
+		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:137:13-46
+activity#com.adrenalinelife.DiscoverBrowser
+ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:140:9-143:20
+	android:label
+		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:142:13-53
+	android:name
+		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:141:13-44
+activity#com.adrenalinelife.ui.CategoryEvents
+ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:144:9-149:20
+	android:screenOrientation
+		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:147:13-49
+	android:label
+		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:146:13-50
+	android:windowSoftInputMode
+		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:148:13-67
+	android:name
+		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:145:13-46
 activity#com.google.android.gms.appinvite.PreviewActivity
 ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/dd840e25120a319f36f6284e750f870f37d0e309/output/AndroidManifest.xml:21:9-29:20
 	android:exported

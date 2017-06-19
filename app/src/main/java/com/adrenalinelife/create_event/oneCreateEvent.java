@@ -21,11 +21,12 @@ public class oneCreateEvent extends CustomActivity {
 
     public Bundle mBundle;
     public Intent mIntent;
-    public Button mNextButton;
-    public EditText mEventName;
-    public Spinner mEventCategory;
+
     public String sEventName;
+    public String sDescription;
     public String sEventCategory;
+
+    public Spinner mSpinner;
 
     public void onCreate(Bundle savedInstanceState)
     {
@@ -35,6 +36,8 @@ public class oneCreateEvent extends CustomActivity {
         //getActionBar().setTitle(R.string.create_event);
 
         setTouchNClick(R.id.one_category_button);
+
+        mSpinner = (Spinner) findViewById(R.id.category_spinner);
 
     }
     @Override
@@ -57,10 +60,14 @@ public class oneCreateEvent extends CustomActivity {
         sEventName = ((EditText) findViewById(R.id.eventName)).getText().toString().trim();
 
         //get Event Category
-        sEventCategory = ((Spinner) findViewById(R.id.category_spinner)).getSelectedItem().toString();
+        sEventCategory = mSpinner.getSelectedItem().toString();
+
+        //get Event Description
+        sDescription = ((EditText) findViewById(R.id.eventDescription)).getText().toString().trim();
 
         mBundle = new Bundle();
         mBundle.putString("Event_Name", sEventName);
+        mBundle.putString("Description", sDescription);
         mBundle.putString("Event_Category", sEventCategory);
 
         mIntent = new Intent(oneCreateEvent.this, twoStartDateTime.class);

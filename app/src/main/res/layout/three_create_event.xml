@@ -15,90 +15,6 @@
 
 
         <TextView
-            android:id="@+id/eventNameTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="16dp"
-            android:layout_weight="1"
-            android:text="Event Name:"
-            app:layout_constraintLeft_toLeftOf="@+id/guideline"
-            app:layout_constraintTop_toTopOf="parent"/>
-
-        <EditText
-            android:id="@+id/eventName"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:background="@drawable/search_bar"
-            android:ems="10"
-            android:hint="Event Name"
-            android:inputType="textPersonName"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/eventNameTextView"/>
-
-        <TextView
-            android:id="@+id/startTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="13dp"
-            android:layout_weight="1"
-            android:text="Start Time and Date:"
-            app:layout_constraintLeft_toLeftOf="@+id/guideline"
-            app:layout_constraintTop_toBottomOf="@+id/eventName"/>
-
-        <TimePicker
-            android:id="@+id/startTime"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginLeft="-165dp"
-            android:layout_weight="1"/>
-
-        <DatePicker
-            android:id="@+id/datePicker"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
-
-        <TextView
-            android:id="@+id/endTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="13dp"
-            android:layout_weight="1"
-            android:text="End Time and Date:"
-            app:layout_constraintLeft_toLeftOf="@+id/guideline"
-            tools:layout_editor_absoluteY="151dp"/>
-
-        <TimePicker
-            android:id="@+id/endTime"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginLeft="-165dp"
-            android:layout_weight="1"/>
-
-        <EditText
-            android:id="@+id/endDate"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/search_bar"
-            android:ems="10"
-            android:hint="06/22/2030"
-            android:inputType="date"/>
-
-        <TextView
             android:id="@+id/whereTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -121,6 +37,7 @@
             android:ems="10"
             android:hint="Location Name"
             android:inputType="textPersonName"
+            android:padding="10dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/whereTextView"/>
@@ -136,6 +53,7 @@
             android:ems="10"
             android:hint="Address"
             android:inputType="textPersonName"
+            android:padding="10dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/locationName"/>
@@ -151,6 +69,7 @@
             android:ems="10"
             android:hint="City"
             android:inputType="textPersonName"
+            android:padding="10dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/locationAddress"/>
@@ -159,9 +78,9 @@
             android:id="@+id/locationState"
             android:layout_width="117dp"
             android:layout_height="38dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
             android:layout_weight="1"
+            android:background="@drawable/search_bar"
             android:drawSelectorOnTop="true"
             android:entries="@array/state_arrays"
             app:layout_constraintHorizontal_bias="0.896"
@@ -181,36 +100,9 @@
             android:ems="10"
             android:hint="Zip Code"
             android:inputType="textPersonName"
+            android:padding="10dp"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/locationCity"/>
-
-        <TextView
-            android:id="@+id/detailsTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:text="Event Details:"
-            app:layout_constraintBottom_toTopOf="@+id/eventDetails"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/locationState"
-            app:layout_constraintVertical_bias="1.0"/>
-
-        <EditText
-            android:id="@+id/eventDetails"
-            android:layout_width="350dp"
-            android:layout_height="190dp"
-            android:layout_marginLeft="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/search_bar"
-            android:ems="10"
-            android:hint="Event Detials"
-            android:inputType="textMultiLine"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/locationZip"/>
 
         <TextView
             android:id="@+id/eventImageTextView"
@@ -244,6 +136,7 @@
             android:layout_marginTop="14dp"
             android:layout_weight="1"
             android:background="@mipmap/ic_launcher"
+            android:scaleType="fitXY"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/chooseImageBtn"/>
@@ -263,7 +156,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="50dp"
             android:layout_marginTop="20dp"
             android:layout_weight="1"
             android:background="@drawable/actionbar_bg_black"
