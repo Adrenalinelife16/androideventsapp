@@ -63,6 +63,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 	Button mFilterSaturday;
 	Button mFilterSunday;
 
+
 	/** Swipe Refresh Layout **/
 	private SwipeRefreshLayout SwipeRefresh;
 
@@ -663,4 +664,5 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		mFilterSaturday.setTextColor(getResources().getColor(R.color.white));
 		mFilterSunday.setTextColor(getResources().getColor(R.color.white));
 	}
+
 }

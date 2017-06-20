@@ -12,15 +12,7 @@
                     "endOffset": 892
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 201,
-                        "startColumn": 4,
-                        "startOffset": 14391,
-                        "endLine": 225,
-                        "endColumn": 19,
-                        "endOffset": 15133
-                    }
+                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/strings.xml"
                 }
             },
             {
@@ -11368,19 +11360,27 @@
                     "startOffset": 197676,
                     "endLine": 2732,
                     "endColumn": 12,
-                    "endOffset": 197983
+                    "endOffset": 197982
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/styles.xml"
+                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 47,
+                        "startColumn": 4,
+                        "startOffset": 2169,
+                        "endLine": 52,
+                        "endColumn": 12,
+                        "endOffset": 2480
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 2733,
                     "startColumn": 4,
-                    "startOffset": 197988,
+                    "startOffset": 197987,
                     "endColumn": 43,
-                    "endOffset": 198027
+                    "endOffset": 198026
                 },
                 "from": {
                     "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/styles.xml"
@@ -11390,36 +11390,52 @@
                 "to": {
                     "startLine": 2734,
                     "startColumn": 4,
-                    "startOffset": 198032,
+                    "startOffset": 198031,
                     "endLine": 2738,
                     "endColumn": 12,
-                    "endOffset": 198296
+                    "endOffset": 198294
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/styles.xml"
+                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 1338,
+                        "endLine": 36,
+                        "endColumn": 12,
+                        "endOffset": 1605
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 2739,
                     "startColumn": 4,
-                    "startOffset": 198301,
+                    "startOffset": 198299,
                     "endLine": 2745,
                     "endColumn": 12,
-                    "endOffset": 198705
+                    "endOffset": 198702
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/styles.xml"
+                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 4,
+                        "startOffset": 1611,
+                        "endLine": 43,
+                        "endColumn": 12,
+                        "endOffset": 2020
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 2746,
                     "startColumn": 4,
-                    "startOffset": 198710,
+                    "startOffset": 198707,
                     "endLine": 2748,
                     "endColumn": 12,
-                    "endOffset": 198845
+                    "endOffset": 198842
                 },
                 "from": {
                     "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/styles.xml"
@@ -11429,23 +11445,31 @@
                 "to": {
                     "startLine": 2749,
                     "startColumn": 4,
-                    "startOffset": 198850,
+                    "startOffset": 198847,
                     "endLine": 2754,
                     "endColumn": 12,
-                    "endOffset": 199159
+                    "endOffset": 199156
                 },
                 "from": {
-                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/styles.xml"
+                    "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 5,
+                        "startOffset": 497,
+                        "endLine": 18,
+                        "endColumn": 12,
+                        "endOffset": 811
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 2755,
                     "startColumn": 4,
-                    "startOffset": 199164,
+                    "startOffset": 199161,
                     "endLine": 2759,
                     "endColumn": 12,
-                    "endOffset": 199409
+                    "endOffset": 199406
                 },
                 "from": {
                     "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/styles.xml"
@@ -11455,10 +11479,10 @@
                 "to": {
                     "startLine": 2760,
                     "startColumn": 4,
-                    "startOffset": 199414,
+                    "startOffset": 199411,
                     "endLine": 2764,
                     "endColumn": 12,
-                    "endOffset": 199664
+                    "endOffset": 199661
                 },
                 "from": {
                     "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/styles.xml"
@@ -11468,10 +11492,10 @@
                 "to": {
                     "startLine": 2765,
                     "startColumn": 4,
-                    "startOffset": 199669,
+                    "startOffset": 199666,
                     "endLine": 2772,
                     "endColumn": 12,
-                    "endOffset": 200115
+                    "endOffset": 200112
                 },
                 "from": {
                     "file": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/values/styles.xml"

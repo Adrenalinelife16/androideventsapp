@@ -19,6 +19,7 @@ import android.widget.BaseAdapter;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
@@ -66,6 +67,7 @@ public class FavEvents extends PagingFragment
     public static String stringOfFav;
 
     public View mDayFilterScroll;
+    public LinearLayout mExtActionBar;
 
 
 	/* (non-Javadoc)
@@ -85,6 +87,8 @@ public class FavEvents extends PagingFragment
         searchView.setVisibility(View.GONE);
         mDayFilterScroll = v.findViewById(R.id.dayFilterScroll);
         mDayFilterScroll.setVisibility(View.GONE);
+        mExtActionBar = (LinearLayout) v.findViewById(R.id.extActionBar);
+        mExtActionBar.setVisibility(View.GONE);
 
         performCheck();
         setProgramList(v);

@@ -1,10 +1,12 @@
 package com.adrenalinelife.ui;
 
+import android.app.ActionBar;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.text.Html;
 import android.view.LayoutInflater;
@@ -13,12 +15,14 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
@@ -49,7 +53,7 @@ public class CategoryEvents extends PagingFragment
 
     /** Search View **/
     static ListView filterResults;
-    SearchView searchView;
+
 
     /** Swipe Refresh Layout **/
     private SwipeRefreshLayout SwipeRefresh;
@@ -60,11 +64,15 @@ public class CategoryEvents extends PagingFragment
     public static String filterKey;
 
     public View mDayFilterScroll;
+    public LinearLayout mExtActionBar;
+    public SearchView searchView;
 
     public Bundle mBundle;
     public Intent mIntentOut;
     public String mFilter;
 
+    public FragmentManager mFragmentManager;
+    public ActionBar mBar;
     ////////////////////////////////////////////////////////////////////////////////////////////////////
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -77,12 +85,14 @@ public class CategoryEvents extends PagingFragment
         final View v = inflater.inflate(R.layout.events, null);
         setHasOptionsMenu(true);
 
-
         searchView = (SearchView) v.findViewById(R.id.searchEvents);
         searchView.setVisibility(View.GONE);
         mDayFilterScroll = v.findViewById(R.id.dayFilterScroll);
         mDayFilterScroll.setVisibility(View.GONE);
+        mExtActionBar = (LinearLayout) v.findViewById(R.id.extActionBar);
+        mExtActionBar.setVisibility(View.GONE);
 
+        //performDiscoverSetup();
         setProgramList(v);
         filterResults = (ListView) v.findViewById(R.id.list);
 
@@ -96,6 +106,7 @@ public class CategoryEvents extends PagingFragment
             }
         });
         SwipeRefresh.setColorSchemeResources(android.R.color.holo_red_light);
+
         return v;
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -261,13 +272,11 @@ public class CategoryEvents extends PagingFragment
     {
         Context mContext;
         LayoutInflater inflater;
-        //int mLayout;
         public List<Event> eventNamesList;
         public ArrayList<Event> fList = new ArrayList<>();
 
         public SearchAdapter(Context context, List<Event> eventNamesList) {
             mContext = context;
-            //this.mLayout = layout;
             this.eventNamesList = eventNamesList;
             inflater = LayoutInflater.from(mContext);
             this.fList.clear();
@@ -340,6 +349,26 @@ public class CategoryEvents extends PagingFragment
                 String q = newText.toString().substring(1);
 
                 //SEARCH FILTER
+                if (newText.toString().toLowerCase().startsWith("x")) {
+                    Log.e(q);
+                    Event item;
+                    for (int i = 0; i < fList.size(); i++) {
+
+                        String eName;
+                        String eDesc;
+                        eName = fList.get(i).getTitle().toLowerCase();
+                        eDesc = fList.get(i).getDesc().toLowerCase();
+
+                        if (eName.contains(q.toLowerCase()) || eDesc.contains(q.toLowerCase())) {
+                            item = fList.get(i);
+                            tempList.add(item);
+                            Log.e(item);
+                        }
+                        filterResults.values = tempList;
+                        filterResults.count = tempList.size();
+                    }
+                }
+                //CATEGORY FILTER
                 if (mFilter.toLowerCase() != null){
                     Log.e(newText);
                     Event item;
@@ -359,6 +388,7 @@ public class CategoryEvents extends PagingFragment
                         filterResults.count = tempList.size();
                     }
                 }
+
                 return filterResults;
             }
             @SuppressWarnings("unchecked")
@@ -367,6 +397,10 @@ public class CategoryEvents extends PagingFragment
                 if (results.count > 0) {
                     fList.clear();
                     fList.addAll((ArrayList<Event>) results.values);
+
+                    pList.clear();
+                    pList.addAll((ArrayList<Event>) results.values);
+
                     final View v = inflater.inflate(R.layout.events, null);
                     setSearchList(v, fList);
                     notifyDataSetChanged();
@@ -391,8 +425,6 @@ public class CategoryEvents extends PagingFragment
         adapter.notifyDataSetChanged();
         favA.notifyDataSetChanged();
     }
-
-
     ////////////////////////////////////////////////////////////////////////////////////////////////
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)

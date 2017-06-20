@@ -49,7 +49,7 @@ public class DiscoverEvents extends CustomFragment {
 
                 android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(R.id.content_frame, catEvents);
-                transaction.addToBackStack(null);
+                transaction.addToBackStack("Yoga");
                 transaction.commit();
             }
         });
@@ -65,7 +65,7 @@ public class DiscoverEvents extends CustomFragment {
                 catEvents.setArguments(mBundle);
                 android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(R.id.content_frame, catEvents);
-                transaction.addToBackStack(null);
+                transaction.addToBackStack("Basketball");
                 transaction.commit();
             }
         });
@@ -81,7 +81,7 @@ public class DiscoverEvents extends CustomFragment {
                 catEvents.setArguments(mBundle);
                 android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(R.id.content_frame, catEvents);
-                transaction.addToBackStack(null);
+                transaction.addToBackStack("Soccer");
                 transaction.commit();
             }
         });
@@ -98,7 +98,7 @@ public class DiscoverEvents extends CustomFragment {
                 catEvents.setArguments(mBundle);
                 android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(R.id.content_frame, catEvents);
-                transaction.addToBackStack(null);
+                transaction.addToBackStack("Golf");
                 transaction.commit();
             }
         });
@@ -114,7 +114,7 @@ public class DiscoverEvents extends CustomFragment {
                 catEvents.setArguments(mBundle);
                 android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(R.id.content_frame, catEvents);
-                transaction.addToBackStack(null);
+                transaction.addToBackStack("Frisbee");
                 transaction.commit();
             }
         });
@@ -130,7 +130,7 @@ public class DiscoverEvents extends CustomFragment {
                 catEvents.setArguments(mBundle);
                 android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(R.id.content_frame, catEvents);
-                transaction.addToBackStack(null);
+                transaction.addToBackStack("Tennis");
                 transaction.commit();
             }
         });
@@ -146,7 +146,7 @@ public class DiscoverEvents extends CustomFragment {
                 catEvents.setArguments(mBundle);
                 android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(R.id.content_frame, catEvents);
-                transaction.addToBackStack(null);
+                transaction.addToBackStack("Fishing");
                 transaction.commit();
             }
         });
@@ -175,7 +175,7 @@ public class DiscoverEvents extends CustomFragment {
                 catEvents.setArguments(mBundle);
                 android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(R.id.content_frame, catEvents);
-                transaction.addToBackStack(null);
+                transaction.addToBackStack("Kickball");
                 transaction.commit();
             }
         });
@@ -186,12 +186,12 @@ public class DiscoverEvents extends CustomFragment {
             @Override
             public void onClick(View view ) {
                 mBundle = new Bundle();
-                mBundle.putString("Filter", "tablegames");
+                mBundle.putString("Filter", "table");
                 CategoryEvents catEvents = new CategoryEvents();
                 catEvents.setArguments(mBundle);
                 android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(R.id.content_frame, catEvents);
-                transaction.addToBackStack(null);
+                transaction.addToBackStack("Table Games");
                 transaction.commit();
             }
         });

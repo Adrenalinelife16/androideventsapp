@@ -169,7 +169,7 @@ public class Commons
 	{
 
 		Date d = new Date(mills);
-		String format = "dd MMM yyyy";
+		String format = "EEEE - MMM dd yyyy";
 		return new SimpleDateFormat(format).format(d);
 	}
 

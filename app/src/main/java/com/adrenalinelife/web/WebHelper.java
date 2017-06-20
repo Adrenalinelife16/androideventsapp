@@ -550,12 +550,8 @@ public class WebHelper extends WebAccess
 		{
 			ex.printStackTrace();
 		}
-
 		return new Status();
 	}
-
-
-
     /**
 	 *
 	 * Do register.
@@ -628,7 +624,6 @@ public class WebHelper extends WebAccess
 		{
 			ex.printStackTrace();
 		}
-
 		return new Status();
 	}
 
@@ -656,7 +651,6 @@ public class WebHelper extends WebAccess
 		{
 			e.printStackTrace();
 		}
-
 		return null;
 	}
 }

@@ -9,50 +9,52 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical" >
- <LinearLayout
-     android:id="@+id/vTabs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/main_color_gray_dk"
-        android:orientation="horizontal"
-        android:visibility="gone" >
 
-        <Button
-            android:id="@+id/tab1"
-            style="@style/tab_btn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:enabled="false"
-            android:text="@string/my_cal" />
+        <LinearLayout
+            android:id="@+id/vTabs"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/actionbar_bg_6solid"
+            android:orientation="horizontal"
+            android:visibility="gone">
 
-        <View
-            android:id="@+id/view1"
-            style="@style/tab_divider"
-            android:layout_width="@dimen/pad_1dp"
-            android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/tab1"
+                style="@style/tab_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="@string/my_cal"/>
 
-        <Button
-            android:id="@+id/tab2"
-            style="@style/tab_btn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/my_fav" />
-        <View
-            android:id="@id/view1"
-            style="@style/tab_divider"
-            android:layout_width="@dimen/pad_1dp"
-            android:layout_height="match_parent" />
+            <View
+                android:id="@+id/view1"
+                style="@style/tab_divider"
+                android:layout_width="@dimen/pad_1dp"
+                android:layout_height="match_parent"/>
 
-        <Button
-            android:id="@+id/tab3"
-            style="@style/tab_btn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/my_tkcts" />
-    </LinearLayout>
+            <Button
+                android:id="@+id/tab2"
+                style="@style/tab_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/my_fav"/>
+
+            <View
+                android:id="@id/view1"
+                style="@style/tab_divider"
+                android:layout_width="@dimen/pad_1dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/tab3"
+                style="@style/tab_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/my_tkcts"/>
+        </LinearLayout>
         <FrameLayout
             android:id="@+id/content_frame"
             android:layout_width="match_parent"

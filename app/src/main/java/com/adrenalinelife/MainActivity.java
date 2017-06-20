@@ -153,7 +153,6 @@ public class MainActivity extends CustomActivity
 		al.add(new Data("My Events", R.drawable.ic_nav3,
 				R.drawable.ic_nav3_sel));
 		al.add(new Data("More", R.drawable.ic_nav4, R.drawable.ic_nav4_sel));
-		//al.add(new Data("About", R.drawable.ic_nav5, R.drawable.ic_nav5_sel));
 		al.add(new Data("Rate this app", R.drawable.ic_nav6,
 				R.drawable.ic_nav6_sel));
 		return al;
@@ -167,7 +166,6 @@ public class MainActivity extends CustomActivity
 		al.add(new Data("My Events", R.drawable.ic_nav3,
 				R.drawable.ic_nav3_sel));
 		al.add(new Data("More", R.drawable.ic_nav4, R.drawable.ic_nav4_sel));
-		//al.add(new Data("About", R.drawable.ic_nav5, R.drawable.ic_nav5_sel));
 		al.add(new Data("Rate this app", R.drawable.ic_nav6,
 				R.drawable.ic_nav6_sel));
 		al.add(new Data("Login/Register", R.drawable.ic_nav5, R.drawable.ic_nav5_sel));
