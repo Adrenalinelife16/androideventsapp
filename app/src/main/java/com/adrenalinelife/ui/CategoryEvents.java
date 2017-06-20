@@ -30,6 +30,7 @@ import android.widget.Toast;
 
 import com.adrenalinelife.EventDetailActivity;
 import com.adrenalinelife.R;
+import com.adrenalinelife.create_event.oneCreateEvent;
 import com.adrenalinelife.custom.PagingFragment;
 import com.adrenalinelife.model.Event;
 import com.adrenalinelife.utils.Commons;
@@ -429,11 +430,26 @@ public class CategoryEvents extends PagingFragment
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
     {
+        inflater.inflate(R.menu.back_button, menu);
         super.onCreateOptionsMenu(menu, inflater);
+
+
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
     {
+        if (item.getItemId() == R.id.menu_back)
+        {
+            DiscoverEvents disEvents = new DiscoverEvents();
+            disEvents.setArguments(mBundle);
+
+            android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+            transaction.replace(R.id.content_frame, disEvents);
+            transaction.addToBackStack("Discover Events");
+            transaction.commit();
+
+        }
+
         return true;
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////

@@ -89,6 +89,10 @@ public class threeCreateEvent extends CustomActivity {
         mStartDatePicker = mBundleIn.getString("Start_Date");
         mEndTimePicker = mBundleIn.getString("End_Time");
         mEndDatePicker = mBundleIn.getString("End_Date");
+        Log.e("Start Time = ", mStartTimePicker);
+        Log.e("End Time = ", mEndTimePicker);
+        Log.e("Start Date = ", mStartDatePicker);
+        Log.e("End Date = ", mEndDatePicker);
 
     }
 

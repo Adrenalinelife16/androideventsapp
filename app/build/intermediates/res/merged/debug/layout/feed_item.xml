@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:app="http://schemas.android.com/apk/res-auto"
               android:layout_width="match_parent"
-              android:layout_height="wrap_content"
+              android:layout_height="100dp"
               android:background="@color/white"
               android:gravity="center_vertical"
               android:orientation="horizontal"
@@ -18,9 +18,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="86dp"
+        android:layout_height="match_parent"
         android:layout_marginLeft="@dimen/pad_10dp"
-        android:layout_marginTop="-5dp"
         android:layout_weight="0.92"
         android:orientation="vertical">
 
@@ -33,8 +32,9 @@
                 android:id="@+id/lbl1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
                 android:text="TextView"
-                android:textColor="@color/adrenaline_blue"
+                android:textColor="@color/adrenaline_red"
                 android:textSize="@dimen/txt_14sp"/>
 
         </LinearLayout>
@@ -58,11 +58,9 @@
             android:id="@+id/lbl2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:paddingTop="1dp"
-            android:text="TextView"
-            android:textColor="@color/main_color_gray_dk"
-            android:textSize="@dimen/txt_16sp"/>
+            android:text="This is sample text as a post from instagram where people will type random stuff"
+            android:textColor="@color/main_color_gray_dk"/>
 
     </LinearLayout>
 

@@ -28,12 +28,12 @@
         "source": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/color/abc_hint_foreground_material_dark.xml"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/wallet_secondary_text_holo_dark.xml",
-        "source": "/Users/Martare/.android/build-cache/90b10c6211d2edd6275234c46767bd4fa33b0d1a/output/res/color/wallet_secondary_text_holo_dark.xml"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_light.xml",
         "source": "/Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/res/color/common_plus_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/wallet_secondary_text_holo_dark.xml",
+        "source": "/Users/Martare/.android/build-cache/90b10c6211d2edd6275234c46767bd4fa33b0d1a/output/res/color/wallet_secondary_text_holo_dark.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",

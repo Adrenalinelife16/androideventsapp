@@ -35,6 +35,9 @@ public class twoStartDateTime extends CustomActivity {
     public String mStartDatePicker;
     public String mStartTimePicker;
 
+    public String hour2;
+    public String min2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -76,7 +79,7 @@ public class twoStartDateTime extends CustomActivity {
         TimePicker timePicker = (TimePicker) findViewById(R.id.time_picker1);
         int hour = timePicker.getHour();
         int min = timePicker.getMinute();
-        mStartTimePicker = hour + ":" + min;
+        timeToString(hour, min);
         Log.e("Time Picker = ", mStartTimePicker);
 
         //Date Picker
@@ -111,7 +114,27 @@ public class twoStartDateTime extends CustomActivity {
 
     }
 
+    public String timeToString(int hour, int min){
 
+        if (min < 10 && hour < 10){
+            min2 = "0" + min;
+            hour2 = "0" + hour;
+            mStartTimePicker = hour2 + ":" + min2 + ":" + "00";
+        }
+        else if (hour < 10 && min >= 10){
+            hour2 = "0" + hour;
+            mStartTimePicker = hour2 + ":" + min + ":" + "00";
+        }
+        else if (hour >= 10 && min < 10){
+            min2 = "0" + min;
+            mStartTimePicker = hour + ":" + min2 + ":" + "00";
+        }
+        else if (hour >= 10 && min >= 10){
+            mStartTimePicker = hour + ":" + min + ":" + "00";
+        }
+        return mStartTimePicker;
+
+    }
 
 
 

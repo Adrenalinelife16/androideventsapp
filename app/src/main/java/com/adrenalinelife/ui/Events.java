@@ -4,6 +4,8 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.text.Html;
@@ -664,5 +666,11 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		mFilterSaturday.setTextColor(getResources().getColor(R.color.white));
 		mFilterSunday.setTextColor(getResources().getColor(R.color.white));
 	}
+
+
+
+
+
+
 
 }
