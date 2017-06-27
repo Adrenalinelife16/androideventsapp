@@ -5,12 +5,17 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
+import com.adrenalinelife.Login;
+import com.adrenalinelife.Logout;
 import com.adrenalinelife.MoreDetail;
 import com.adrenalinelife.R;
+import com.adrenalinelife.Register;
 import com.adrenalinelife.Settings;
 import com.adrenalinelife.custom.CustomFragment;
 import com.adrenalinelife.utils.Const;
+import com.adrenalinelife.utils.StaticData;
 
 /**
  * The Class More is the Fragment class that is launched when the user clicks on
@@ -21,9 +26,16 @@ import com.adrenalinelife.utils.Const;
 public class More extends CustomFragment
 {
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)
-	 */
+	public TextView mLogin;
+	public TextView mLogout;
+	public TextView mSettings;
+	public TextView mRegister;
+
+	public View vLogoutView;
+	public View vLoginView;
+	public View vRegView;
+	public View vSetView;
+
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState)
@@ -31,16 +43,46 @@ public class More extends CustomFragment
 		super.onCreateView(inflater, container, savedInstanceState);
 		View v = inflater.inflate(R.layout.more, null);
 
-		setTouchNClick(v.findViewById(R.id.help));
-		setTouchNClick(v.findViewById(R.id.privacy));
-		setTouchNClick(v.findViewById(R.id.terms));
-		setTouchNClick(v.findViewById(R.id.settings));
+		if (!StaticData.pref.contains(Const.USER_ID)) {
+			//We are not logged in
+
+			//Logout + Bar = GONE
+			mLogout = (TextView) v.findViewById(R.id.more_Logout);
+			mLogout.setVisibility(View.GONE);
+			vLogoutView = v.findViewById(R.id.logout_view);
+			vLogoutView.setVisibility(View.GONE);
+
+			//Buttons Setup
+			setTouchNClick(v.findViewById(R.id.help));
+			setTouchNClick(v.findViewById(R.id.privacy));
+			setTouchNClick(v.findViewById(R.id.terms));
+			setTouchNClick(v.findViewById(R.id.more_Login));
+			setTouchNClick(v.findViewById(R.id.more_register));
+
+		} else {
+			//We are Logged In
+
+			//Login + Bar = GONE
+			mLogin = (TextView) v.findViewById(R.id.more_Login);
+			mLogin.setVisibility(View.GONE);
+			vLoginView = v.findViewById(R.id.login_view);
+			vLoginView.setVisibility(View.GONE);
+			//Register + Bar = GONE
+			mRegister = (TextView) v.findViewById(R.id.more_register);
+			mRegister.setVisibility(View.GONE);
+			vRegView = v.findViewById(R.id.register_view);
+			vRegView.setVisibility(View.GONE);
+
+			//Buttons Setup
+			setTouchNClick(v.findViewById(R.id.help));
+			setTouchNClick(v.findViewById(R.id.privacy));
+			setTouchNClick(v.findViewById(R.id.terms));
+			setTouchNClick(v.findViewById(R.id.more_Logout));
+		}
+
 		return v;
 	}
 
-	/* (non-Javadoc)
-	 * @see com.adrenalinelife.custom.CustomFragment#onClick(android.view.View)
-	 */
 	@Override
 	public void onClick(View v)
 	{
@@ -69,11 +111,26 @@ public class More extends CustomFragment
 					startActivity(new Intent(parent, MoreDetail.class).putExtra(
 					Const.EXTRA_DATA, text).putExtra(Const.EXTRA_DATA1, title));
 		}
-		else
+		else if (v.getId() == R.id.more_Login)
 		{
-			Intent intent = new Intent(getActivity(), Settings.class);
-			startActivity(intent);
-
+			title = R.string.terms_condi;
+			text = R.string.terms_text;
+			startActivity(new Intent(parent, Login.class).putExtra(
+					Const.EXTRA_DATA, text).putExtra(Const.EXTRA_DATA1, title));
+		}
+		else if (v.getId() == R.id.more_Logout)
+		{
+			title = R.string.terms_condi;
+			text = R.string.terms_text;
+			startActivity(new Intent(parent, Logout.class).putExtra(
+					Const.EXTRA_DATA, text).putExtra(Const.EXTRA_DATA1, title));
+		}
+		else if (v.getId() == R.id.more_register)
+		{
+			title = R.string.terms_condi;
+			text = R.string.terms_text;
+			startActivity(new Intent(parent, Register.class).putExtra(
+					Const.EXTRA_DATA, text).putExtra(Const.EXTRA_DATA1, title));
 		}
 	}
 	public void btnClick(View v)

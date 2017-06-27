@@ -39,6 +39,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/Martare/.android/build-cache/5f63dbd904c146f60b29d6f39128843a026aaf6d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/pre-dexed/debug/classes_204cc7d635bfcf3f7bc8a53c6bc17f4f2364c6b9.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/Martare/.android/build-cache/5a10b1a3b6cb9cc1161d5e8f0522e061208866ef/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"

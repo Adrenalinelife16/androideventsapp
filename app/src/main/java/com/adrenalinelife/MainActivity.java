@@ -144,17 +144,18 @@ public class MainActivity extends CustomActivity
 	 * @return the dummy items
 	 */
 	private ArrayList<Data> getDummyLeftNavItems(){
-	if (StaticData.pref.contains(Const.USER_ID))
+	if (!StaticData.pref.contains(Const.USER_ID))
 	{
 		ArrayList<Data> al = new ArrayList<Data>();
 		al.add(new Data("Event Feed", R.drawable.events_, R.drawable.events_sel));
 		al.add(new Data("Discover Events", R.drawable.discover_, R.drawable.discover_sel));
-		al.add(new Data("Social Feed", R.drawable.ic_nav2, R.drawable.ic_nav2_sel));
+		al.add(new Data("Social Life", R.drawable.ic_nav2, R.drawable.ic_nav2_sel));
 		al.add(new Data("My Events", R.drawable.ic_nav3,
 				R.drawable.ic_nav3_sel));
 		al.add(new Data("More", R.drawable.ic_nav4, R.drawable.ic_nav4_sel));
 		al.add(new Data("Rate this app", R.drawable.ic_nav6,
 				R.drawable.ic_nav6_sel));
+		al.add(new Data("Login/Register", R.drawable.ic_nav5, R.drawable.ic_nav5_sel));
 		return al;
 	}
 	else
@@ -162,13 +163,12 @@ public class MainActivity extends CustomActivity
 		ArrayList<Data> al = new ArrayList<Data>();
 		al.add(new Data("Event Feed", R.drawable.events_, R.drawable.events_sel));
 		al.add(new Data("Discover Events", R.drawable.discover_, R.drawable.discover_sel));
-		al.add(new Data("Social Feed", R.drawable.ic_nav2, R.drawable.ic_nav2_sel));
+		al.add(new Data("Social Life", R.drawable.ic_nav2, R.drawable.ic_nav2_sel));
 		al.add(new Data("My Events", R.drawable.ic_nav3,
 				R.drawable.ic_nav3_sel));
 		al.add(new Data("More", R.drawable.ic_nav4, R.drawable.ic_nav4_sel));
 		al.add(new Data("Rate this app", R.drawable.ic_nav6,
 				R.drawable.ic_nav6_sel));
-		al.add(new Data("Login/Register", R.drawable.ic_nav5, R.drawable.ic_nav5_sel));
 		return al;
 		}
 	}

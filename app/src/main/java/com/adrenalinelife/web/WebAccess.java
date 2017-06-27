@@ -22,9 +22,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.URL;
+
 import java.util.ArrayList;
+
 
 /**
  * The Class WebAccess.
@@ -42,11 +42,10 @@ public class WebAccess
 	protected static final String FEED_URL = "webservices/tweet-fb.php";
 	
 	/** The Constant EVENT_LIST_URL. */
-	protected static final String EVENT_LIST_URL = "Adrenaline_Custom/api/getEvents/";
-	//"Adrenaline_Custom/api/getEvents/";
+	protected static final String EVENT_LIST_URL = "api/getEvents/";
+													//"Adrenaline_Custom/api/getEvents/";
 
-	// protected static final String EVENT_BY_MONTH_URL =
-	// "api/getEventsByMonth/month/@@/year/$$";
+	// protected static final String EVENT_BY_MONTH_URL = "api/getEventsByMonth/month/@@/year/$$";
 	/** The Constant EVENT_BY_MONTH_URL. */
 	protected static final String EVENT_BY_MONTH_URL = "api/getEventsByMonth";
 	
@@ -60,19 +59,21 @@ public class WebAccess
 	protected static final String CREATE_EVENT_URL = "Adrenaline_Custom/addEvent.php";
 
 	/** The Constant REGISTER_URL. */
-	protected static final String REGISTER_URL = "Adrenaline_Custom/api/Register";
-	
+	protected static final String REGISTER_URL = "api/Register";
+
 	/** The Constant BOOK_TKT_URL. */
 	protected static final String BOOK_TKT_URL = "api/getUserTickets/bookTicket";
 	
 	/** The Constant TKT_LIST_URL. */
 	protected static final String TKT_LIST_URL = "api/getUserTickets";
 
-	public static final String GET_FAV_EVENTS = "Adrenaline_Custom/api/getFavEvents";
+	public static final String GET_FAV_EVENTS = "api/getFavEvents";
 
-	protected static final String ADD_REMOVE_FAV = "Adrenaline_Custom/api/addRemoveFav";
+	protected static final String ADD_REMOVE_FAV = "api/addRemoveFav";
 
-	protected static final String USER_HAS_FAV_EVENT = "Adrenaline_Custom/api/isFavourite";
+	protected static final String USER_HAS_FAV_EVENT = "api/isFavourite";
+
+
 	/**
 	 * Execute request.
 	 *
@@ -97,6 +98,7 @@ public class WebAccess
 				{
 					String strRes = EntityUtils.toString(res.getEntity());
 					Log.e("URL=" + BASE_URL + restUrl);
+					Log.e("--RAW PARAM-- = ", param);
 					Log.e("PARAM=" + param.toString());
 					Log.e("RES=" + strRes);
 					if (strRes != null)
@@ -160,6 +162,42 @@ public class WebAccess
 		return save ? loadFromFile(restUrl, null) : null;
 
 	}
+
+
+	protected static String executeGetRequest2(String restUrl, boolean save)
+	{
+
+		try
+		{
+			if (Utils.isOnline())
+			{
+				HttpGet get = new HttpGet(BASE_URL + restUrl);
+				HttpResponse res = new DefaultHttpClient().execute(get);
+				if (res != null)
+				{
+					String strRes = EntityUtils.toString(res.getEntity());
+					Log.e("URL = " + BASE_URL + restUrl);
+					// Log.e("PARAM="+param.toString());
+					Log.e("RES = " + strRes);
+					if (strRes != null)
+					{
+						if (save)
+							saveToFile(restUrl, null, strRes);
+						return strRes;
+					}
+				}
+			}
+
+		} catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+		return save ? loadFromFile(restUrl, null) : null;
+
+	}
+
+
+
 
 	/**
 	 * Gets the page params.

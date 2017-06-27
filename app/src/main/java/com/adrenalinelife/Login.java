@@ -24,35 +24,43 @@ import com.adrenalinelife.web.WebHelper;
 public class Login extends CustomActivity
 {
 
-	/* (non-Javadoc)
-	 * @see com.adrenalinelife.custom.CustomActivity#onCreate(android.os.Bundle)
-	 */
+	public Bundle mBundle;
+
+	public String mEmail;
+	public String mPwd;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.login);
 
-		setTouchNClick(R.id.btnLogin);
-		setTouchNClick(R.id.btnReg);
+		setTouchNClick(R.id.button_login_submit);
+		setTouchNClick(R.id.button_reg);
 
 		getActionBar().setTitle(R.string.login);
+
+		//Log.e("email", mEmail);
+		//Log.e("pwd", mPwd);
+
 	}
 
-	/* (non-Javadoc)
-	 * @see com.adrenalinelife.custom.CustomActivity#onClick(android.view.View)
-	 */
+
 	@Override
 	public void onClick(View v)
 	{
 		super.onClick(v);
-		if (v.getId() == R.id.btnReg)
+		if (v.getId() == R.id.button_reg)
 		{
 			startActivityForResult(new Intent(THIS, Register.class),
 					Const.REQ_LOGIN);
 		}
 		else
 		{
+			mEmail = ((EditText) findViewById(R.id.txtEmail)).getText()
+					.toString();
+			mPwd = ((EditText) findViewById(R.id.txtPwd)).getText()
+					.toString();
 			doLogin();
 		}
 	}
@@ -63,16 +71,12 @@ public class Login extends CustomActivity
 	 */
 	private void doLogin()
 	{
-		final String email = ((EditText) findViewById(R.id.txtEmail)).getText()
-				.toString();
-		final String pwd = ((EditText) findViewById(R.id.txtPwd)).getText()
-				.toString();
 		final ProgressDialog dia = showProgressDia(R.string.alert_login);
 		new Thread(new Runnable() {
 			@Override
 			public void run()
 			{
-				final Status st = WebHelper.doLogin(email, pwd);
+				final Status st = WebHelper.doLogin(mEmail, mPwd);
 				runOnUiThread(new Runnable() {
 					@Override
 					public void run()
@@ -99,8 +103,6 @@ public class Login extends CustomActivity
 	/* (non-Javadoc)
 	 * @see android.support.v4.app.FragmentActivity#onActivityResult(int, int, android.content.Intent)
 	 */
-
-	//This is the 3rd Blank Comment for Push testing 3!!!!
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent data)
 	{
@@ -113,5 +115,4 @@ public class Login extends CustomActivity
 			finish();
 		}
 	}
-
 }

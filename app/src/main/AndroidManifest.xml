@@ -84,6 +84,11 @@
             android:windowSoftInputMode="stateHidden|adjustResize">
         </activity>
         <activity
+            android:name=".AutoLogin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
             android:name=".Register"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize">

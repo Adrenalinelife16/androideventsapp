@@ -3,7 +3,10 @@ package com.adrenalinelife.web;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
+import android.widget.Toast;
 
+import com.adrenalinelife.R;
+import com.adrenalinelife.Register;
 import com.adrenalinelife.database.DbHelper;
 import com.adrenalinelife.model.Event;
 import com.adrenalinelife.model.Feed;
@@ -11,6 +14,7 @@ import com.adrenalinelife.model.Status;
 import com.adrenalinelife.ui.EventDetail;
 import com.adrenalinelife.utils.Commons;
 import com.adrenalinelife.utils.StaticData;
+
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -59,6 +63,7 @@ public class WebHelper extends WebAccess
 		}
 		return null;
 	}
+
 
 	public static ArrayList<Event> grabFavEvents(int page, int pageSize)
 	{
@@ -290,7 +295,7 @@ public class WebHelper extends WebAccess
 
 				al.add(f);
 			}
-/*
+
 			arr = obj.getJSONArray("fb_feeds");
 			for (int i = 0; i < arr.length(); i++)
 			{
@@ -567,30 +572,25 @@ public class WebHelper extends WebAccess
 	 *            the password
 	 * @return the status
 	 */
-
-    /*
-	$name, $user_login, $login_name, $email,  $pwd, $address, $city, $state, $zip, $country, $phone
-	String name, String user_login, String nice_name, String email, String pwd
+	/*
+	String name, String user_login, String login_name, String email, String pwd
 	 */
-	public static Status doRegister()
+	public static Status doRegister(String name, String user_login, String login_name, String email, String pwd)
 	{
 		try
 		{
-			//Log.d("NAME", name);
-			//Log.d("LOGIN_NAME", login_name);
-			//Log.d("EMAIL", email);
-			//Log.d("PWD", pwd);
-			ArrayList<NameValuePair> param = new ArrayList<NameValuePair>();
-			param.add(new BasicNameValuePair("name", "chazz romeo"));
-			param.add(new BasicNameValuePair("user_login", "chazzromeo1"));
-			param.add(new BasicNameValuePair("nickname", "chazzromeo1"));
-			param.add(new BasicNameValuePair("email", "ck@gmail.com"));
-			param.add(new BasicNameValuePair("pwd", "soccer23"));
-
+			ArrayList<NameValuePair> param = new ArrayList<>();
+			param.add(new BasicNameValuePair("name", name));
+			param.add(new BasicNameValuePair("user_login", user_login));
+			param.add(new BasicNameValuePair("login_name", login_name));
+			param.add(new BasicNameValuePair("user_email", email));
+			param.add(new BasicNameValuePair("pwd", pwd));
 			String res = executePostRequest(REGISTER_URL, param, false);
 			return new Status(res, "user_id");
-		} catch (Exception ex)
-		{
+
+		} catch (Exception ex) {
+
+
 			ex.printStackTrace();
 		}
 

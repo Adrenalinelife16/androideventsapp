@@ -2,31 +2,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:orientation="vertical"
-    >
+              android:orientation="vertical">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <NumberPicker
+                android:id="@+id/numberPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"/>
+
             <TextView
                 android:id="@+id/setTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
                 android:text="Set Time"
                 android:textColor="@color/adrenaline_red"
                 android:textSize="20sp"/>
 
             <TimePicker
                 android:id="@+id/time_picker1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:background="@drawable/search_bar"/>
 
@@ -34,7 +40,7 @@
                 android:id="@+id/setDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="3dp"
                 android:text="Set Date"
                 android:textColor="@color/adrenaline_red"
                 android:textSize="20sp"/>

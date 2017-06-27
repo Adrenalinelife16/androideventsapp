@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.icu.text.SimpleDateFormat;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.TimePicker;
@@ -33,9 +34,12 @@ public class twoEndDateTime extends CustomActivity {
     public String mStartDatePicker;
     public String mStartTimePicker;
 
+    public TimePicker mTimePicker;
+
     public String min2;
     public String hour2;
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -53,6 +57,10 @@ public class twoEndDateTime extends CustomActivity {
         mEventCategory = mBundleIn.getString("Event_Category");
         mStartTimePicker = mBundleIn.getString("Start_Time");
         mStartDatePicker = mBundleIn.getString("Start_Date");
+
+        mTimePicker = (TimePicker) findViewById(R.id.time_picker1);
+        mTimePicker.setHour(12);
+        mTimePicker.setMinute(00);
 
     }
 
@@ -74,11 +82,9 @@ public class twoEndDateTime extends CustomActivity {
 
 
         //Time Picker
-        TimePicker timePicker = (TimePicker) findViewById(R.id.time_picker1);
-        int hour = timePicker.getHour();
-        int min = timePicker.getMinute();
+        int hour = mTimePicker.getHour();
+        int min = mTimePicker.getMinute();
         timeToString(hour, min);
-        //mEndTimePicker = hour2 + ":" + min2 + ":" + "00";
         Log.e("Time Picker = ", mEndTimePicker);
 
         //Date Picker
@@ -138,9 +144,6 @@ public class twoEndDateTime extends CustomActivity {
         return mEndTimePicker;
 
     }
-
-
-
 
 
 }

@@ -11,8 +11,8 @@
     <Button
         android:id="@+id/btnlogout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/actionbar_bg_black"
+        android:layout_height="48dp"
+        android:background="@drawable/actionbar_bg_6solid"
         android:text="Confirm Logout"
         android:textColor="@color/white"/>
 </LinearLayout>

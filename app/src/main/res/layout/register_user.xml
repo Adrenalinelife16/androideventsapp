@@ -6,7 +6,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/actionbar_bg_white">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -17,15 +18,16 @@
                 android:id="@+id/reg_first_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:ems="10"
                 android:hint="First Name"
-                android:inputType="textPersonName"
-                />
+                android:inputType="textPersonName"/>
 
             <EditText
                 android:id="@+id/reg_last_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:ems="10"
                 android:hint="Last Name"
                 android:inputType="textPersonName"/>
@@ -34,15 +36,16 @@
                 android:id="@+id/reg_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:ems="10"
                 android:hint="Username"
-                android:inputType="textPersonName"
-                />
+                android:inputType="textPersonName"/>
 
             <EditText
                 android:id="@+id/reg_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:ems="10"
                 android:hint="Email"
                 android:inputType="textEmailAddress"/>
@@ -51,6 +54,7 @@
                 android:id="@+id/reg_pwd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:ems="10"
                 android:hint="Password"
                 android:inputType="textPassword"/>
@@ -59,59 +63,10 @@
                 android:id="@+id/reg_con_pwd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:ems="10"
                 android:hint="Confirm Password"
                 android:inputType="textPassword"/>
-
-            <EditText
-                android:id="@+id/reg_address"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Address"
-                android:inputType="textPostalAddress"/>
-
-            <EditText
-                android:id="@+id/reg_city"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="City"
-                android:inputType="textPersonName"
-                />
-
-            <EditText
-                android:id="@+id/reg_state"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="State"
-                android:inputType="textPersonName"/>
-
-            <EditText
-                android:id="@+id/reg_zip"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Zipcode"
-                android:inputType="number"/>
-
-            <EditText
-                android:id="@+id/reg_country"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Country"
-                android:inputType="textPersonName"
-                />
-
-            <EditText
-                android:id="@+id/reg_phone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Phone Number"
-                android:inputType="phone"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -121,16 +76,22 @@
                 <Button
                     android:id="@+id/button_reg_submit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:text="Register"/>
+                    android:background="@drawable/actionbar_bg_6solid"
+                    android:text="Register"
+                    android:textColor="@color/white"/>
 
                 <Button
                     android:id="@+id/button_reg_cancel"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:text="Cancel"/>
+                    android:background="@drawable/actionbar_bg_6solid"
+                    android:text="Cancel"
+                    android:textColor="@color/white"/>
             </LinearLayout>
 
         </LinearLayout>
