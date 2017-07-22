@@ -66,6 +66,7 @@
                 android:layout_margin="5dp"
                 android:ems="10"
                 android:hint="Confirm Password"
+                android:imeOptions="actionSend"
                 android:inputType="textPassword"/>
 
             <LinearLayout

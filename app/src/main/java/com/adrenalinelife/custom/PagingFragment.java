@@ -96,18 +96,12 @@ abstract public class PagingFragment extends CustomFragment implements
 			footer.setVisibility(View.VISIBLE);
 	}
 
-	/* (non-Javadoc)
-	 * @see android.widget.AbsListView.OnScrollListener#onScroll(android.widget.AbsListView, int, int, int)
-	 */
 	@Override
 	public void onScroll(AbsListView view, int firstVisibleItem,
 			int visibleItemCount, int totalItemCount)
 	{
 	}
 
-	/* (non-Javadoc)
-	 * @see android.widget.AbsListView.OnScrollListener#onScrollStateChanged(android.widget.AbsListView, int)
-	 */
 	@Override
 	public void onScrollStateChanged(AbsListView view, int scrollState)
 	{
@@ -117,9 +111,7 @@ abstract public class PagingFragment extends CustomFragment implements
 				&& list.getLastVisiblePosition() >= total - 2 && !isRunning
 				&& hasMore)
 			loadNextPage();
-
 	}
-
 	/**
 	 * Load next page.
 	 */

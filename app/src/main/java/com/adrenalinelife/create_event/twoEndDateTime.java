@@ -80,7 +80,6 @@ public class twoEndDateTime extends CustomActivity {
     @TargetApi(Build.VERSION_CODES.N)
     public void oneCreateEvent() {
 
-
         //Time Picker
         int hour = mTimePicker.getHour();
         int min = mTimePicker.getMinute();
@@ -119,8 +118,6 @@ public class twoEndDateTime extends CustomActivity {
         Log.e("Bundle = ", mBundleOut);
         startActivity(mIntentOut);
 
-
-
     }
 
     public String timeToString(int hour, int min){
@@ -144,6 +141,4 @@ public class twoEndDateTime extends CustomActivity {
         return mEndTimePicker;
 
     }
-
-
 }

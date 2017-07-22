@@ -1,6 +1,7 @@
 package com.adrenalinelife.utils;
 
 // TODO: Auto-generated Javadoc
+
 /**
  * The Class Log.
  */

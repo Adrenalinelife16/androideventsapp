@@ -1,20 +1,13 @@
 package com.adrenalinelife.web;
 
-import android.content.Context;
-import android.content.Intent;
+import android.graphics.Bitmap;
 import android.util.Log;
-import android.widget.Toast;
 
-import com.adrenalinelife.R;
-import com.adrenalinelife.Register;
 import com.adrenalinelife.database.DbHelper;
 import com.adrenalinelife.model.Event;
 import com.adrenalinelife.model.Feed;
 import com.adrenalinelife.model.Status;
-import com.adrenalinelife.ui.EventDetail;
 import com.adrenalinelife.utils.Commons;
-import com.adrenalinelife.utils.StaticData;
-
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -28,15 +21,12 @@ import java.util.Comparator;
 import java.util.Locale;
 import java.util.TreeSet;
 
-import static android.support.constraint.R.id.parent;
-
 /**
  * The Class WebHelper class holds all the methods that communicate with server
  * API and parses the results in required Java Bean classes.
  */
 public class WebHelper extends WebAccess
 {
-
 	public String stringOfFav;
 	/**
 	 * Gets the adrenalinelife.
@@ -64,7 +54,6 @@ public class WebHelper extends WebAccess
 		return null;
 	}
 
-
 	public static ArrayList<Event> grabFavEvents(int page, int pageSize)
 	{
 		try
@@ -90,7 +79,6 @@ public class WebHelper extends WebAccess
 	 * @throws Exception
 	 *             the exception
 	 */
-
 
 	public static ArrayList<Event> parseEvents(String res) throws Exception
 	{
@@ -186,8 +174,6 @@ public class WebHelper extends WebAccess
 		{
 			e2.printStackTrace();
 		}
-
-
 
 		/*while(e.getDesc().startsWith("/n")||e.getDesc().startsWith("/r"))
 			e.setDesc(e.getDesc().substring(1));
@@ -466,7 +452,6 @@ public class WebHelper extends WebAccess
 			Log.v("Res", res);
 			return new Status(res, "user_id");
 
-
 		} catch (Exception ex)
 		{
 			ex.printStackTrace();
@@ -474,8 +459,6 @@ public class WebHelper extends WebAccess
 
 		return new Status();
 	}
-
-
 	/**
 	 * Do Create Event.
 	 *
@@ -501,6 +484,20 @@ public class WebHelper extends WebAccess
 	 * 			  the location zip code
 	 * @return  the status
 	 *
+	 *
+	 * Log.d("LOCATION NAME", location_name);
+	Log.d("LOCATION ADDRESS", location_address);
+	Log.d("LOCATION CITY", location_city);
+	Log.d("LOCATION ZIP", location_zip);
+	Log.d("LOCATION STATE", location_state);
+	Log.d("CATEGORY", category);
+	Log.d("USER ID", user);
+	Log.d("EVENT NAME", event_name);
+	Log.d("EVENT INFO", event_info);
+	Log.d("EVENT START TIME", start_time);
+	Log.d("EVENT END TIME", end_time);
+	Log.d("EVENT START DATE", start_date);
+	Log.d("EVENT END DATE", end_date);
 	 * param.add(new BasicNameValuePair("locationname", location_name));
 	param.add(new BasicNameValuePair("address", location_address));
 	param.add(new BasicNameValuePair("city", location_city));
@@ -514,40 +511,34 @@ public class WebHelper extends WebAccess
 	param.add(new BasicNameValuePair("endTime", end_time));
 	param.add(new BasicNameValuePair("startDate", start_date));
 	param.add(new BasicNameValuePair("endDate", end_date));
+
+
+	String location_name, String location_address, String location_city, String location_zip, String location_state, String category, String user, String event_name, String event_info, String start_time, String end_time, String start_date, String end_date
+
+
+
 	 */
 
 
-	public static Status doCreateEvent(String location_name, String location_address, String location_city, String location_zip, String location_state, String category, String user, String event_name, String event_info, String start_time, String end_time, String start_date, String end_date)
+	public static Status doCreateEvent(String image)
 	{
 		try
 		{
-			Log.d("LOCATION NAME", location_name);
-			Log.d("LOCATION ADDRESS", location_address);
-			Log.d("LOCATION CITY", location_city);
-			Log.d("LOCATION ZIP", location_zip);
-			Log.d("LOCATION STATE", location_state);
-			Log.d("CATEGORY", category);
-			Log.d("USER ID", user);
-			Log.d("EVENT NAME", event_name);
-			Log.d("EVENT INFO", event_info);
-			Log.d("EVENT START TIME", start_time);
-			Log.d("EVENT END TIME", end_time);
-			Log.d("EVENT START DATE", start_date);
-			Log.d("EVENT END DATE", end_date);
 			ArrayList<NameValuePair> param = new ArrayList<NameValuePair>();
-			param.add(new BasicNameValuePair("location_name", location_name));
-			param.add(new BasicNameValuePair("location_address", location_address));
-			param.add(new BasicNameValuePair("location_city", location_city));
-			param.add(new BasicNameValuePair("location_zip", location_zip));
-			param.add(new BasicNameValuePair("location_state", location_state));
-			param.add(new BasicNameValuePair("category", category));
-			param.add(new BasicNameValuePair("user", user));
-			param.add(new BasicNameValuePair("event_name", event_name));
-			param.add(new BasicNameValuePair("event_info", event_info));
-			param.add(new BasicNameValuePair("start_time", start_time));
-			param.add(new BasicNameValuePair("end_time", end_time));
-			param.add(new BasicNameValuePair("start_date", start_date));
-			param.add(new BasicNameValuePair("end_date", end_date));
+			param.add(new BasicNameValuePair("location_name", "Basement Office"));
+			param.add(new BasicNameValuePair("location_address", "1200 South Cove Lane"));
+			param.add(new BasicNameValuePair("location_city", "Birmingham"));
+			param.add(new BasicNameValuePair("location_zip", "35216"));
+			param.add(new BasicNameValuePair("location_state", "AL"));
+			param.add(new BasicNameValuePair("category", "Soccer"));
+			param.add(new BasicNameValuePair("user", "24"));
+			param.add(new BasicNameValuePair("event_name", "Marathon of Adrenaline"));
+			param.add(new BasicNameValuePair("event_info", "This is the info"));
+			param.add(new BasicNameValuePair("start_time", "18:00:00"));
+			param.add(new BasicNameValuePair("end_time", "19:00:00"));
+			param.add(new BasicNameValuePair("start_date", "2017-07-21"));
+			param.add(new BasicNameValuePair("end_date", "2017-07-21"));
+			param.add(new BasicNameValuePair("image", image));
 
 			String res = executePostRequest(CREATE_EVENT_URL, param, false);
 			return new Status(res, "event_id");
@@ -571,9 +562,6 @@ public class WebHelper extends WebAccess
 	 * @param pwd
 	 *            the password
 	 * @return the status
-	 */
-	/*
-	String name, String user_login, String login_name, String email, String pwd
 	 */
 	public static Status doRegister(String name, String user_login, String login_name, String email, String pwd)
 	{

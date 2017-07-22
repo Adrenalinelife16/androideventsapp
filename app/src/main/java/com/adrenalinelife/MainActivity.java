@@ -19,14 +19,10 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
-
-
-
 import com.adrenalinelife.calendar.CalendarView;
 import com.adrenalinelife.custom.CustomActivity;
 import com.adrenalinelife.custom.CustomFragment;
 import com.adrenalinelife.model.Data;
-import com.adrenalinelife.ui.CategoryEvents;
 import com.adrenalinelife.ui.DiscoverEvents;
 import com.adrenalinelife.ui.FavEvents;
 import com.adrenalinelife.ui.FeedList;
@@ -62,9 +58,6 @@ public class MainActivity extends CustomActivity
 	/** The tab. */
 	private View tab;
 
-	/* (non-Javadoc)
-	 * @see com.newsfeeder.custom.CustomActivity#onCreate(android.os.Bundle)
-	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -78,10 +71,7 @@ public class MainActivity extends CustomActivity
 		setupContainer();
 		setupDrawer();
 
-
 	}
-
-
 	/**
 	 * Setup the drawer layout. This method also includes the method calls for
 	 * setting up the Left side drawer.
@@ -316,12 +306,8 @@ public class MainActivity extends CustomActivity
 				getSupportFragmentManager().getBackStackEntryCount() - 1)
 				.getName();
 		getActionBar().setTitle(title);
-	//	getActionBar().setLogo(R.mipmap.adrenaline_logo);
 	}
 
-	/* (non-Javadoc)
-	 * @see android.app.Activity#onPostCreate(android.os.Bundle)
-	 */
 	@Override
 	protected void onPostCreate(Bundle savedInstanceState)
 	{
@@ -330,9 +316,6 @@ public class MainActivity extends CustomActivity
 		drawerToggle.syncState();
 	}
 
-	/* (non-Javadoc)
-	 * @see android.app.Activity#onConfigurationChanged(android.content.res.Configuration)
-	 */
 	@Override
 	public void onConfigurationChanged(Configuration newConfig)
 	{
@@ -348,9 +331,6 @@ public class MainActivity extends CustomActivity
 		return super.onCreateOptionsMenu(menu);
 	}*/
 
-	/* (non-Javadoc)
-	 * @see com.newsfeeder.custom.CustomActivity#onOptionsItemSelected(android.view.MenuItem)
-	 */
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
 	{
@@ -362,9 +342,6 @@ public class MainActivity extends CustomActivity
 		return super.onOptionsItemSelected(item);
 	}
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.FragmentActivity#onKeyDown(int, android.view.KeyEvent)
-	 */
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event)
 	{
@@ -383,7 +360,6 @@ public class MainActivity extends CustomActivity
 
 	/** The temp tab view. */
 	private View temp;
-
 
 	@Override
 	public void onClick(View v)
@@ -418,12 +394,8 @@ public class MainActivity extends CustomActivity
 					launchFragment(22);
 			}
 		}
-
 	}
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.FragmentActivity#onDestroy()
-	 */
 	@Override
 	protected void onDestroy()
 	{
@@ -431,9 +403,6 @@ public class MainActivity extends CustomActivity
 		StaticData.clear();
 	}
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.FragmentActivity#onActivityResult(int, int, android.content.Intent)
-	 */
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent data)
 	{

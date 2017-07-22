@@ -18,7 +18,6 @@ import java.util.ArrayList;
  */
 public class LeftNavAdapter extends BaseAdapter
 {
-
 	/** The items. */
 	private ArrayList<Data> items;
 
@@ -39,7 +38,6 @@ public class LeftNavAdapter extends BaseAdapter
 		selected = position;
 		notifyDataSetChanged();
 	}
-
 	/**
 	 * Instantiates a new left navigation adapter.
 	 * 
@@ -53,37 +51,24 @@ public class LeftNavAdapter extends BaseAdapter
 		this.context = context;
 		this.items = items;
 	}
-
-	/* (non-Javadoc)
-	 * @see android.widget.Adapter#getCount()
-	 */
 	@Override
 	public int getCount()
 	{
 		return items.size();
 	}
 
-	/* (non-Javadoc)
-	 * @see android.widget.Adapter#getItem(int)
-	 */
 	@Override
 	public Data getItem(int arg0)
 	{
 		return items.get(arg0);
 	}
 
-	/* (non-Javadoc)
-	 * @see android.widget.Adapter#getItemId(int)
-	 */
 	@Override
 	public long getItemId(int position)
 	{
 		return position;
 	}
 
-	/* (non-Javadoc)
-	 * @see android.widget.Adapter#getView(int, android.view.View, android.view.ViewGroup)
-	 */
 	@Override
 	public View getView(int position, View convertView  , ViewGroup parent)
 	{

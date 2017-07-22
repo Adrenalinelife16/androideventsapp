@@ -10,10 +10,8 @@ import android.widget.Toast;
 import com.adrenalinelife.custom.CustomActivity;
 import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Const;
-
-
 /**
- * Created by Josh on 1/23/2017.
+ * Created by Chazz Romeo on 7/10/2017.
  */
 
 public class Logout extends CustomActivity {

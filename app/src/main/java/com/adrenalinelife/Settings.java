@@ -10,16 +10,14 @@ import com.adrenalinelife.custom.CustomActivity;
 import com.adrenalinelife.utils.Const;
 import com.adrenalinelife.utils.StaticData;
 
-
 /**
- * Created by Josh on 1/23/2017.
+ * Created by Chazz Romeo on 7/10/2017.
  */
 
 public class Settings extends CustomActivity {
 
     TextView mLogout;
     TextView mLogin;
-
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

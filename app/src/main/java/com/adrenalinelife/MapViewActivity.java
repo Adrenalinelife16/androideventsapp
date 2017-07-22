@@ -11,9 +11,6 @@ import com.adrenalinelife.ui.MapViewer;
  */
 public class MapViewActivity extends CustomActivity
 {
-	/* (non-Javadoc)
-	 * @see com.food.custom.CustomActivity#onCreate(android.os.Bundle)
-	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -33,5 +30,4 @@ public class MapViewActivity extends CustomActivity
 		getSupportFragmentManager().beginTransaction()
 				.replace(R.id.content_frame, new MapViewer()).commit();
 	}
-
 }

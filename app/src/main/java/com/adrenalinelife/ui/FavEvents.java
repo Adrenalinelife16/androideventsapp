@@ -69,12 +69,7 @@ public class FavEvents extends PagingFragment
     public View mDayFilterScroll;
     public LinearLayout mExtActionBar;
 
-
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)
-	 */
-
-    ////////////////////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
@@ -203,7 +198,6 @@ public class FavEvents extends PagingFragment
     ////////////////////////////////////////////////////////////////////////////////////////////////
     public class ProgramAdapter extends BaseAdapter
     {
-
         @Override
         public int getCount()
         {
@@ -391,7 +385,6 @@ public class FavEvents extends PagingFragment
         adapter.notifyDataSetChanged();
         favA.notifyDataSetChanged();
     }
-
     public static String checkFavoriteEvents2()
     {
         try
@@ -409,7 +402,6 @@ public class FavEvents extends PagingFragment
         }
         return null;
     }
-
     public String performCheck()
     {
         try
@@ -447,13 +439,11 @@ public class FavEvents extends PagingFragment
         }
         return null;
     }
-
     public String saveFavStringEvents(String res)
     {
         stringOfFav = res;
         return stringOfFav;
     }
-
     ////////////////////////////////////////////////////////////////////////////////////////////////
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)

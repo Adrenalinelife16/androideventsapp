@@ -32,10 +32,8 @@ import com.adrenalinelife.MainActivity;
 /**
  * The Class ExceptionHandler.
  */
-public class ExceptionHandler implements
-		java.lang.Thread.UncaughtExceptionHandler
+public class ExceptionHandler implements java.lang.Thread.UncaughtExceptionHandler
 {
-	
 	/** The my context. */
 	private final Context myContext;
 

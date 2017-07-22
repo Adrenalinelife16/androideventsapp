@@ -25,13 +25,11 @@ import java.io.IOException;
 
 import java.util.ArrayList;
 
-
 /**
  * The Class WebAccess.
  */
 public class WebAccess
 {
-	
 	/** The base url. */
 	public static String BASE_URL = "http://www.adrenalinelife.org/";
 	
@@ -43,7 +41,6 @@ public class WebAccess
 	
 	/** The Constant EVENT_LIST_URL. */
 	protected static final String EVENT_LIST_URL = "api/getEvents/";
-													//"Adrenaline_Custom/api/getEvents/";
 
 	// protected static final String EVENT_BY_MONTH_URL = "api/getEventsByMonth/month/@@/year/$$";
 	/** The Constant EVENT_BY_MONTH_URL. */
@@ -56,7 +53,7 @@ public class WebAccess
 	protected static final String LOGIN_URL = "api/Login";
 	
 	/** The Constant CREATE_EVENT_URL. */
-	protected static final String CREATE_EVENT_URL = "Adrenaline_Custom/addEvent.php";
+	protected static final String CREATE_EVENT_URL = "api/addEvent";
 
 	/** The Constant REGISTER_URL. */
 	protected static final String REGISTER_URL = "api/Register";
@@ -72,8 +69,6 @@ public class WebAccess
 	protected static final String ADD_REMOVE_FAV = "api/addRemoveFav";
 
 	protected static final String USER_HAS_FAV_EVENT = "api/isFavourite";
-
-
 	/**
 	 * Execute request.
 	 *
@@ -160,13 +155,10 @@ public class WebAccess
 			e.printStackTrace();
 		}
 		return save ? loadFromFile(restUrl, null) : null;
-
 	}
-
 
 	protected static String executeGetRequest2(String restUrl, boolean save)
 	{
-
 		try
 		{
 			if (Utils.isOnline())
@@ -195,10 +187,6 @@ public class WebAccess
 		return save ? loadFromFile(restUrl, null) : null;
 
 	}
-
-
-
-
 	/**
 	 * Gets the page params.
 	 *

@@ -66,10 +66,11 @@ public class twoStartDateTime extends CustomActivity {
 
         mTimePicker = (TimePicker) findViewById(R.id.time_picker1);
         mTimePicker.setHour(12);
-        mNumberPicker = (NumberPicker) findViewById(R.id.time_picker1);
-       // mTimePicker.setDisplayedValues(new String[]{"0", "15", "30", "45"});
-        mTimePicker.setMinute(00);
 
+        //Could be causing issue here!!/////////////////////////////////////////////////////////
+        //mNumberPicker = (NumberPicker) findViewById(R.id.time_picker1);
+       // mTimePicker.setDisplayedValues(new String[]{"0", "15", "30", "45"});
+        //mTimePicker.setMinute(00);
 
         mDatePicker= (DatePicker) findViewById(R.id.date_picker2);
 
@@ -90,7 +91,6 @@ public class twoStartDateTime extends CustomActivity {
     }
     @TargetApi(Build.VERSION_CODES.N)
     public void oneCreateEvent() {
-
 
         //Time Picker
         int hour = mTimePicker.getHour();
@@ -148,9 +148,5 @@ public class twoStartDateTime extends CustomActivity {
             mStartTimePicker = hour + ":" + min + ":" + "00";
         }
         return mStartTimePicker;
-
     }
-
-
-
 }

@@ -18,32 +18,32 @@ ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidM
 uses-sdk
 ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:7:5-9:40
 MERGED from [com.android.support:support-v13:23.1.1] /Users/Martare/.android/build-cache/1a9a77fd8d82f953dbee93af5f14f7ab6e077e00/output/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services:8.4.0] /Users/Martare/.android/build-cache/e1c22ab58cdbc680c479eee7c0bd34b2b9c053e6/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/fa83dd408778c40be0e777ed729f709350c895e0/output/AndroidManifest.xml:23:5-42
-MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/Martare/.android/build-cache/1924a975b40847033e9e9420f72db0d418223570/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/Martare/.android/build-cache/da35ec83c8e0d00e5182b36d860138bc8e13ce89/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/dd840e25120a319f36f6284e750f870f37d0e309/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-appstate:8.4.0] /Users/Martare/.android/build-cache/05488a8a54e2aec3ddfec1d0bf6ea3b630d6ad75/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/b320dc3b50b5844bc77bf33ad2229901f92e4613/output/AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-cast:8.4.0] /Users/Martare/.android/build-cache/5e8ad77525ca43b889527a8abd0d3b97413d221a/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services:8.4.0] /Users/Martare/.android/build-cache/2710a6d7278ed3403dcba4e957729015a27e751d/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/Martare/.android/build-cache/ca404dc47f7839b7c311f63c343acfe9499a4c3a/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/Martare/.android/build-cache/c8aae2bfade13ca5af9b193450a8b59c387c0322/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appstate:8.4.0] /Users/Martare/.android/build-cache/eb69710c3c84a74ee5c691cafb84fe3b0a06d044/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/9c0a2da65f3e1322bf7837b7b0627d52c8653eca/output/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-cast:8.4.0] /Users/Martare/.android/build-cache/1e51502b176bb57a24f2873368688c4055209d0c/output/AndroidManifest.xml:18:5-42
 MERGED from [com.android.support:mediarouter-v7:23.0.0] /Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-fitness:8.4.0] /Users/Martare/.android/build-cache/a189ba67a6ceb879838328412b67b97d32d1754d/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-games:8.4.0] /Users/Martare/.android/build-cache/b6cc8ae9428a03003f11ff30b995d74e80260945/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-drive:8.4.0] /Users/Martare/.android/build-cache/975b14408dedfb99b36e1a42c200c07fa4677947/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/Martare/.android/build-cache/4f163631516639880ad0cd01bbf0b8f294b423cb/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-location:8.4.0] /Users/Martare/.android/build-cache/06cc1e19791f9e4e19181277306f0e334cbef6fc/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/8789770ea6137cd38d4630fe698af673a08f1cf9/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /Users/Martare/.android/build-cache/59e54fd282cb2cafaedf8427984a3023f20a1b94/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-panorama:8.4.0] /Users/Martare/.android/build-cache/708067e9af5e596d8fb808fd7d9e8a264b067b98/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-plus:8.4.0] /Users/Martare/.android/build-cache/1b0860a01fdfcbd267548ddaa8e594de40417b43/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-safetynet:8.4.0] /Users/Martare/.android/build-cache/42d2eaf036872d2210086dc0958332ccab111003/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-vision:8.4.0] /Users/Martare/.android/build-cache/8ddd711e7fec393c5048b3028760e0f128de268d/output/AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-wallet:8.4.0] /Users/Martare/.android/build-cache/90b10c6211d2edd6275234c46767bd4fa33b0d1a/output/AndroidManifest.xml:19:5-42
-MERGED from [com.google.android.gms:play-services-identity:8.4.0] /Users/Martare/.android/build-cache/f0203607ac7f9da0d80760e7d0e5da39a13c2e8e/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/Martare/.android/build-cache/704f3ef3e112a8467035c6cab9c123eed8c68a2b/output/AndroidManifest.xml:26:5-42
-MERGED from [com.google.android.gms:play-services-wearable:8.4.0] /Users/Martare/.android/build-cache/c9ea3daf0405ef2636088d819840bcc0a83f1b1d/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/Martare/.android/build-cache/01d2b8cd279d33b0458442207f73228df0a964b1/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/Martare/.android/build-cache/2c03a2832d5c7bdc7260f6cd8d39224c12e88ff0/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-fitness:8.4.0] /Users/Martare/.android/build-cache/62d06edc0cb478607a10c7e1d67bcdba525c34d7/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-games:8.4.0] /Users/Martare/.android/build-cache/f5c98b73c5b2ac6d5f399bb7e50e6737082ce6b1/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] /Users/Martare/.android/build-cache/c978a116750a75194b95185ef3ad360d5c2aac2f/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/Martare/.android/build-cache/2e5f3d3e69206bca354fa6da6ef6b3cf6d3ad962/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-location:8.4.0] /Users/Martare/.android/build-cache/1034932d6ed822d05128538d2973d97125cf75e4/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /Users/Martare/.android/build-cache/fbf4acfba664d71386c25cdc849d410c9b71d5b0/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-panorama:8.4.0] /Users/Martare/.android/build-cache/5beba4d1df1f6eae0535737ee9167fecb106b4f6/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-plus:8.4.0] /Users/Martare/.android/build-cache/ea48800bcf28fbaa9ff5b3a3d3e3349d1ffecb8a/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-safetynet:8.4.0] /Users/Martare/.android/build-cache/b96c55431c6cfe98208dfe3cd4b0925e723330fd/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-vision:8.4.0] /Users/Martare/.android/build-cache/b5c677a018737e46e4add6657bb1568d6b868547/output/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-wallet:8.4.0] /Users/Martare/.android/build-cache/75e1d57504b9f579f67513631b5e4e3bf1a1f408/output/AndroidManifest.xml:19:5-42
+MERGED from [com.google.android.gms:play-services-identity:8.4.0] /Users/Martare/.android/build-cache/0395f8f2637b5e9af38d95ae148c03361e5984a4/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/Martare/.android/build-cache/3db9090576283f98127a1bb6bbb11babf326dabc/output/AndroidManifest.xml:26:5-42
+MERGED from [com.google.android.gms:play-services-wearable:8.4.0] /Users/Martare/.android/build-cache/5194a35ca69f95eed0eb89f1d0b135b1445d79a3/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/Martare/.android/build-cache/7307b0f4aba3c36a53bafffd4dbd589e33027821/output/AndroidManifest.xml:18:5-42
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/Martare/.android/build-cache/df209fa9de3637e3f693abf64434398eb94f418a/output/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:design:25.3.1] /Users/Martare/.android/build-cache/e4fcf4cb41d84a17aa239824862fae854a9b5c0e/output/AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/AndroidManifest.xml:21:5-23:78
@@ -69,12 +69,12 @@ MERGED from [com.android.support:support-compat:25.3.1] /Users/Martare/.android/
 		INJECTED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:11:5-66
-MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/fa83dd408778c40be0e777ed729f709350c895e0/output/AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/Martare/.android/build-cache/1924a975b40847033e9e9420f72db0d418223570/output/AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/dd840e25120a319f36f6284e750f870f37d0e309/output/AndroidManifest.xml:19:5-67
-MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/Martare/.android/build-cache/4f163631516639880ad0cd01bbf0b8f294b423cb/output/AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/8789770ea6137cd38d4630fe698af673a08f1cf9/output/AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/Martare/.android/build-cache/704f3ef3e112a8467035c6cab9c123eed8c68a2b/output/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/Martare/.android/build-cache/ca404dc47f7839b7c311f63c343acfe9499a4c3a/output/AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:19:5-67
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/Martare/.android/build-cache/2e5f3d3e69206bca354fa6da6ef6b3cf6d3ad962/output/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/Martare/.android/build-cache/3db9090576283f98127a1bb6bbb11babf326dabc/output/AndroidManifest.xml:21:5-66
 	android:name
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:11:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
@@ -83,11 +83,11 @@ ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidM
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:12:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:13:5-78
-MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/fa83dd408778c40be0e777ed729f709350c895e0/output/AndroidManifest.xml:21:5-78
-MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/Martare/.android/build-cache/1924a975b40847033e9e9420f72db0d418223570/output/AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/8789770ea6137cd38d4630fe698af673a08f1cf9/output/AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /Users/Martare/.android/build-cache/59e54fd282cb2cafaedf8427984a3023f20a1b94/output/AndroidManifest.xml:19:5-79
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/Martare/.android/build-cache/704f3ef3e112a8467035c6cab9c123eed8c68a2b/output/AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/Martare/.android/build-cache/ca404dc47f7839b7c311f63c343acfe9499a4c3a/output/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /Users/Martare/.android/build-cache/fbf4acfba664d71386c25cdc849d410c9b71d5b0/output/AndroidManifest.xml:19:5-79
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/Martare/.android/build-cache/3db9090576283f98127a1bb6bbb11babf326dabc/output/AndroidManifest.xml:20:5-78
 	android:name
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:13:22-76
 uses-permission#android.permission.ACCESS_FINE_LOCATION
@@ -120,7 +120,7 @@ ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidM
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:25:22-79
 uses-feature#0x00020000
 ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:29:5-31:34
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/Martare/.android/build-cache/704f3ef3e112a8467035c6cab9c123eed8c68a2b/output/AndroidManifest.xml:22:5-24:33
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/Martare/.android/build-cache/3db9090576283f98127a1bb6bbb11babf326dabc/output/AndroidManifest.xml:22:5-24:33
 	android:glEsVersion
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:30:9-41
 	android:required
@@ -136,30 +136,30 @@ ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidM
 application
 ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:36:5-155:19
 MERGED from [com.android.support:support-v13:23.1.1] /Users/Martare/.android/build-cache/1a9a77fd8d82f953dbee93af5f14f7ab6e077e00/output/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services:8.4.0] /Users/Martare/.android/build-cache/e1c22ab58cdbc680c479eee7c0bd34b2b9c053e6/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/fa83dd408778c40be0e777ed729f709350c895e0/output/AndroidManifest.xml:24:5-32:19
-MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/Martare/.android/build-cache/1924a975b40847033e9e9420f72db0d418223570/output/AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/Martare/.android/build-cache/da35ec83c8e0d00e5182b36d860138bc8e13ce89/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/dd840e25120a319f36f6284e750f870f37d0e309/output/AndroidManifest.xml:20:5-30:19
-MERGED from [com.google.android.gms:play-services-appstate:8.4.0] /Users/Martare/.android/build-cache/05488a8a54e2aec3ddfec1d0bf6ea3b630d6ad75/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/b320dc3b50b5844bc77bf33ad2229901f92e4613/output/AndroidManifest.xml:20:5-32:19
-MERGED from [com.google.android.gms:play-services-cast:8.4.0] /Users/Martare/.android/build-cache/5e8ad77525ca43b889527a8abd0d3b97413d221a/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services:8.4.0] /Users/Martare/.android/build-cache/2710a6d7278ed3403dcba4e957729015a27e751d/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/Martare/.android/build-cache/ca404dc47f7839b7c311f63c343acfe9499a4c3a/output/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/Martare/.android/build-cache/c8aae2bfade13ca5af9b193450a8b59c387c0322/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:20:5-30:19
+MERGED from [com.google.android.gms:play-services-appstate:8.4.0] /Users/Martare/.android/build-cache/eb69710c3c84a74ee5c691cafb84fe3b0a06d044/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/9c0a2da65f3e1322bf7837b7b0627d52c8653eca/output/AndroidManifest.xml:20:5-32:19
+MERGED from [com.google.android.gms:play-services-cast:8.4.0] /Users/Martare/.android/build-cache/1e51502b176bb57a24f2873368688c4055209d0c/output/AndroidManifest.xml:19:5-20
 MERGED from [com.android.support:mediarouter-v7:23.0.0] /Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-fitness:8.4.0] /Users/Martare/.android/build-cache/a189ba67a6ceb879838328412b67b97d32d1754d/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-games:8.4.0] /Users/Martare/.android/build-cache/b6cc8ae9428a03003f11ff30b995d74e80260945/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-drive:8.4.0] /Users/Martare/.android/build-cache/975b14408dedfb99b36e1a42c200c07fa4677947/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/Martare/.android/build-cache/4f163631516639880ad0cd01bbf0b8f294b423cb/output/AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.gms:play-services-location:8.4.0] /Users/Martare/.android/build-cache/06cc1e19791f9e4e19181277306f0e334cbef6fc/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/8789770ea6137cd38d4630fe698af673a08f1cf9/output/AndroidManifest.xml:26:5-46:19
-MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /Users/Martare/.android/build-cache/59e54fd282cb2cafaedf8427984a3023f20a1b94/output/AndroidManifest.xml:20:5-20
-MERGED from [com.google.android.gms:play-services-panorama:8.4.0] /Users/Martare/.android/build-cache/708067e9af5e596d8fb808fd7d9e8a264b067b98/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-plus:8.4.0] /Users/Martare/.android/build-cache/1b0860a01fdfcbd267548ddaa8e594de40417b43/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-safetynet:8.4.0] /Users/Martare/.android/build-cache/42d2eaf036872d2210086dc0958332ccab111003/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-vision:8.4.0] /Users/Martare/.android/build-cache/8ddd711e7fec393c5048b3028760e0f128de268d/output/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-identity:8.4.0] /Users/Martare/.android/build-cache/f0203607ac7f9da0d80760e7d0e5da39a13c2e8e/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/Martare/.android/build-cache/704f3ef3e112a8467035c6cab9c123eed8c68a2b/output/AndroidManifest.xml:27:5-20
-MERGED from [com.google.android.gms:play-services-wearable:8.4.0] /Users/Martare/.android/build-cache/c9ea3daf0405ef2636088d819840bcc0a83f1b1d/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/Martare/.android/build-cache/2c03a2832d5c7bdc7260f6cd8d39224c12e88ff0/output/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-fitness:8.4.0] /Users/Martare/.android/build-cache/62d06edc0cb478607a10c7e1d67bcdba525c34d7/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-games:8.4.0] /Users/Martare/.android/build-cache/f5c98b73c5b2ac6d5f399bb7e50e6737082ce6b1/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] /Users/Martare/.android/build-cache/c978a116750a75194b95185ef3ad360d5c2aac2f/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/Martare/.android/build-cache/2e5f3d3e69206bca354fa6da6ef6b3cf6d3ad962/output/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-location:8.4.0] /Users/Martare/.android/build-cache/1034932d6ed822d05128538d2973d97125cf75e4/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:26:5-46:19
+MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /Users/Martare/.android/build-cache/fbf4acfba664d71386c25cdc849d410c9b71d5b0/output/AndroidManifest.xml:20:5-20
+MERGED from [com.google.android.gms:play-services-panorama:8.4.0] /Users/Martare/.android/build-cache/5beba4d1df1f6eae0535737ee9167fecb106b4f6/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-plus:8.4.0] /Users/Martare/.android/build-cache/ea48800bcf28fbaa9ff5b3a3d3e3349d1ffecb8a/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:8.4.0] /Users/Martare/.android/build-cache/b96c55431c6cfe98208dfe3cd4b0925e723330fd/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-vision:8.4.0] /Users/Martare/.android/build-cache/b5c677a018737e46e4add6657bb1568d6b868547/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-identity:8.4.0] /Users/Martare/.android/build-cache/0395f8f2637b5e9af38d95ae148c03361e5984a4/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/Martare/.android/build-cache/3db9090576283f98127a1bb6bbb11babf326dabc/output/AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-wearable:8.4.0] /Users/Martare/.android/build-cache/5194a35ca69f95eed0eb89f1d0b135b1445d79a3/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/Martare/.android/build-cache/7307b0f4aba3c36a53bafffd4dbd589e33027821/output/AndroidManifest.xml:20:5-24:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/Martare/.android/build-cache/df209fa9de3637e3f693abf64434398eb94f418a/output/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:25.3.1] /Users/Martare/.android/build-cache/e4fcf4cb41d84a17aa239824862fae854a9b5c0e/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/AndroidManifest.xml:29:5-20
@@ -188,7 +188,7 @@ ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidM
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:42:13-62
 meta-data#com.google.android.gms.version
 ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:44:9-46:68
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/Martare/.android/build-cache/2c03a2832d5c7bdc7260f6cd8d39224c12e88ff0/output/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/Martare/.android/build-cache/7307b0f4aba3c36a53bafffd4dbd589e33027821/output/AndroidManifest.xml:21:9-23:69
 	android:value
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:46:13-66
 	android:name
@@ -368,91 +368,91 @@ ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidM
 	android:name
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:150:13-46
 activity#com.google.android.gms.ads.AdActivity
-ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/fa83dd408778c40be0e777ed729f709350c895e0/output/AndroidManifest.xml:26:9-29:64
+ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:26:9-29:64
 	android:configChanges
-		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/fa83dd408778c40be0e777ed729f709350c895e0/output/AndroidManifest.xml:28:13-122
+		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:28:13-122
 	android:theme
-		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/fa83dd408778c40be0e777ed729f709350c895e0/output/AndroidManifest.xml:29:13-61
+		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:29:13-61
 	android:name
-		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/fa83dd408778c40be0e777ed729f709350c895e0/output/AndroidManifest.xml:27:13-65
+		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:27:13-65
 activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
-ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/fa83dd408778c40be0e777ed729f709350c895e0/output/AndroidManifest.xml:30:9-31:52
+ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:30:9-31:52
 	android:theme
-		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/fa83dd408778c40be0e777ed729f709350c895e0/output/AndroidManifest.xml:31:13-50
+		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:31:13-50
 	android:name
-		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/fa83dd408778c40be0e777ed729f709350c895e0/output/AndroidManifest.xml:30:19-91
+		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:30:19-91
 activity#com.google.android.gms.appinvite.PreviewActivity
-ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/dd840e25120a319f36f6284e750f870f37d0e309/output/AndroidManifest.xml:21:9-29:20
+ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:21:9-29:20
 	android:exported
-		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/dd840e25120a319f36f6284e750f870f37d0e309/output/AndroidManifest.xml:23:17-40
+		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:23:17-40
 	android:theme
-		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/dd840e25120a319f36f6284e750f870f37d0e309/output/AndroidManifest.xml:24:17-63
+		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:24:17-63
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/dd840e25120a319f36f6284e750f870f37d0e309/output/AndroidManifest.xml:22:17-48
+		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:22:17-48
 intent-filter#android.intent.category.DEFAULT+com.google.android.gms.appinvite.ACTION_PREVIEW
-ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/dd840e25120a319f36f6284e750f870f37d0e309/output/AndroidManifest.xml:25:13-28:29
+ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:25:13-28:29
 action#com.google.android.gms.appinvite.ACTION_PREVIEW
-ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/dd840e25120a319f36f6284e750f870f37d0e309/output/AndroidManifest.xml:26:17-89
+ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:26:17-89
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/dd840e25120a319f36f6284e750f870f37d0e309/output/AndroidManifest.xml:26:25-87
+		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:26:25-87
 category#android.intent.category.DEFAULT
-ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/dd840e25120a319f36f6284e750f870f37d0e309/output/AndroidManifest.xml:27:17-75
+ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:27:17-75
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/dd840e25120a319f36f6284e750f870f37d0e309/output/AndroidManifest.xml:27:27-73
+		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:27:27-73
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/b320dc3b50b5844bc77bf33ad2229901f92e4613/output/AndroidManifest.xml:21:9-24:46
+ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/9c0a2da65f3e1322bf7837b7b0627d52c8653eca/output/AndroidManifest.xml:21:9-24:46
 	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/b320dc3b50b5844bc77bf33ad2229901f92e4613/output/AndroidManifest.xml:23:19-52
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/9c0a2da65f3e1322bf7837b7b0627d52c8653eca/output/AndroidManifest.xml:23:19-52
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/b320dc3b50b5844bc77bf33ad2229901f92e4613/output/AndroidManifest.xml:24:19-43
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/9c0a2da65f3e1322bf7837b7b0627d52c8653eca/output/AndroidManifest.xml:24:19-43
 	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/b320dc3b50b5844bc77bf33ad2229901f92e4613/output/AndroidManifest.xml:22:19-78
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/9c0a2da65f3e1322bf7837b7b0627d52c8653eca/output/AndroidManifest.xml:22:19-78
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/b320dc3b50b5844bc77bf33ad2229901f92e4613/output/AndroidManifest.xml:21:19-72
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/9c0a2da65f3e1322bf7837b7b0627d52c8653eca/output/AndroidManifest.xml:21:19-72
 service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/b320dc3b50b5844bc77bf33ad2229901f92e4613/output/AndroidManifest.xml:28:9-31:110
+ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/9c0a2da65f3e1322bf7837b7b0627d52c8653eca/output/AndroidManifest.xml:28:9-31:110
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/b320dc3b50b5844bc77bf33ad2229901f92e4613/output/AndroidManifest.xml:30:13-36
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/9c0a2da65f3e1322bf7837b7b0627d52c8653eca/output/AndroidManifest.xml:30:13-36
 	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/b320dc3b50b5844bc77bf33ad2229901f92e4613/output/AndroidManifest.xml:31:13-107
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/9c0a2da65f3e1322bf7837b7b0627d52c8653eca/output/AndroidManifest.xml:31:13-107
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/b320dc3b50b5844bc77bf33ad2229901f92e4613/output/AndroidManifest.xml:29:13-62
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/9c0a2da65f3e1322bf7837b7b0627d52c8653eca/output/AndroidManifest.xml:29:13-62
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/Martare/.android/build-cache/4f163631516639880ad0cd01bbf0b8f294b423cb/output/AndroidManifest.xml:21:5-82
+ADDED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/Martare/.android/build-cache/2e5f3d3e69206bca354fa6da6ef6b3cf6d3ad962/output/AndroidManifest.xml:21:5-82
 	android:name
-		ADDED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/Martare/.android/build-cache/4f163631516639880ad0cd01bbf0b8f294b423cb/output/AndroidManifest.xml:21:22-79
+		ADDED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/Martare/.android/build-cache/2e5f3d3e69206bca354fa6da6ef6b3cf6d3ad962/output/AndroidManifest.xml:21:22-79
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/8789770ea6137cd38d4630fe698af673a08f1cf9/output/AndroidManifest.xml:24:5-67
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/8789770ea6137cd38d4630fe698af673a08f1cf9/output/AndroidManifest.xml:24:22-65
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:24:22-65
 provider#com.google.android.gms.measurement.AppMeasurementContentProvider
-ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/8789770ea6137cd38d4630fe698af673a08f1cf9/output/AndroidManifest.xml:28:7-31:37
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:28:7-31:37
 	android:authorities
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/8789770ea6137cd38d4630fe698af673a08f1cf9/output/AndroidManifest.xml:29:11-76
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:29:11-76
 	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/8789770ea6137cd38d4630fe698af673a08f1cf9/output/AndroidManifest.xml:31:11-35
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:31:11-35
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/8789770ea6137cd38d4630fe698af673a08f1cf9/output/AndroidManifest.xml:30:11-90
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:30:11-90
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/8789770ea6137cd38d4630fe698af673a08f1cf9/output/AndroidManifest.xml:33:7-39:18
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:33:7-39:18
 	android:enabled
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/8789770ea6137cd38d4630fe698af673a08f1cf9/output/AndroidManifest.xml:35:11-33
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:35:11-33
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/8789770ea6137cd38d4630fe698af673a08f1cf9/output/AndroidManifest.xml:34:11-83
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:34:11-83
 intent-filter#com.google.android.gms.measurement.UPLOAD
-ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/8789770ea6137cd38d4630fe698af673a08f1cf9/output/AndroidManifest.xml:36:9-38:25
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:36:9-38:25
 action#com.google.android.gms.measurement.UPLOAD
-ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/8789770ea6137cd38d4630fe698af673a08f1cf9/output/AndroidManifest.xml:37:11-77
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:37:11-77
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/8789770ea6137cd38d4630fe698af673a08f1cf9/output/AndroidManifest.xml:37:19-75
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:37:19-75
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/8789770ea6137cd38d4630fe698af673a08f1cf9/output/AndroidManifest.xml:41:7-44:37
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:41:7-44:37
 	android:enabled
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/8789770ea6137cd38d4630fe698af673a08f1cf9/output/AndroidManifest.xml:43:11-33
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:43:11-33
 	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/8789770ea6137cd38d4630fe698af673a08f1cf9/output/AndroidManifest.xml:44:11-35
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:44:11-35
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/8789770ea6137cd38d4630fe698af673a08f1cf9/output/AndroidManifest.xml:42:11-82
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:42:11-82
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:25.3.1] /Users/Martare/.android/build-cache/e4fcf4cb41d84a17aa239824862fae854a9b5c0e/output/AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/AndroidManifest.xml:25:5-27:34

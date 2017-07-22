@@ -39,9 +39,6 @@ public class MyTickets extends PagingFragment
 	/** The ticket list. */
 	private final ArrayList<Event> tList = new ArrayList<Event>();
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)
-	 */
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState)
@@ -101,9 +98,6 @@ public class MyTickets extends PagingFragment
 		loadNextPage();
 	}
 
-	/* (non-Javadoc)
-	 * @see com.adrenalinelife.custom.PagingFragment#loadNextPage()
-	 */
 	@Override
 	protected void loadNextPage()
 	{
@@ -162,37 +156,24 @@ public class MyTickets extends PagingFragment
 	 */
 	private class TicketAdapter extends BaseAdapter
 	{
-
-		/* (non-Javadoc)
-		 * @see android.widget.Adapter#getCount()
-		 */
 		@Override
 		public int getCount()
 		{
 			return tList.size();
 		}
 
-		/* (non-Javadoc)
-		 * @see android.widget.Adapter#getItem(int)
-		 */
 		@Override
 		public Event getItem(int position)
 		{
 			return tList.get(position);
 		}
 
-		/* (non-Javadoc)
-		 * @see android.widget.Adapter#getItemId(int)
-		 */
 		@Override
 		public long getItemId(int position)
 		{
 			return position;
 		}
 
-		/* (non-Javadoc)
-		 * @see android.widget.Adapter#getView(int, android.view.View, android.view.ViewGroup)
-		 */
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent)
 		{

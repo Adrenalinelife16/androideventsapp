@@ -10,7 +10,6 @@ import android.os.Environment;
  */
 public class Const
 {
-
 	/** The Constant REQ_LOGIN. */
 	public static final int REQ_LOGIN = 1;
 	
@@ -46,7 +45,6 @@ public class Const
 
 	static
 	{
-
 		ROOT_DIR = new File(Environment.getExternalStorageDirectory(), "Events");
 		if (!ROOT_DIR.exists())
 		{
@@ -60,7 +58,5 @@ public class Const
 		CACHE_DIR = new File(ROOT_DIR, "Cache");
 		if (!CACHE_DIR.exists())
 			CACHE_DIR.mkdirs();
-
 	}
-
 }

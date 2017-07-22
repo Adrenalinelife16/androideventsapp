@@ -10,10 +10,6 @@ import com.adrenalinelife.utils.Const;
 
 public class EventDetailActivity extends CustomActivity
 {
-	/* (non-Javadoc)
-	I'm adding this code for Push Testing 2
-	 * @see com.food.custom.CustomActivity#onCreate(android.os.Bundle)
-	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -26,7 +22,6 @@ public class EventDetailActivity extends CustomActivity
 
 		addFragment();
 	}
-
 	/**
 	 * Attach the appropriate fragment with this activity.
 	 */
@@ -41,9 +36,6 @@ public class EventDetailActivity extends CustomActivity
 				.replace(R.id.content_frame, ed).commit();
 	}
 
-	/* (non-Javadoc)
-	 * @see android.app.Activity#onOptionsItemSelected(android.view.MenuItem)
-	 */
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
 	{

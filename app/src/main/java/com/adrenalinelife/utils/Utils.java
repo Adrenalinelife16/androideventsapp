@@ -35,7 +35,6 @@ import android.view.inputmethod.InputMethodManager;
  */
 public class Utils
 {
-
 	/**
 	 * Show dialog.
 	 *
@@ -259,13 +258,11 @@ public class Utils
 		ConnectivityManager conMgr = (ConnectivityManager) ctx
 				.getSystemService(Context.CONNECTIVITY_SERVICE);
 
-		if (conMgr.getActiveNetworkInfo() != null
+		return conMgr.getActiveNetworkInfo() != null
 
-		&& conMgr.getActiveNetworkInfo().isAvailable()
+				&& conMgr.getActiveNetworkInfo().isAvailable()
 
-		&& conMgr.getActiveNetworkInfo().isConnected())
-			return true;
-		return false;
+				&& conMgr.getActiveNetworkInfo().isConnected();
 	}
 
 	/**
@@ -536,7 +533,6 @@ public class Utils
 	 */
 	public static void changeLocale(Activity act, Locale locale)
 	{
-
 		// Locale locale = new Locale(lang);
 		// Locale.setDefault(locale);
 		Configuration config = new Configuration();

@@ -15,10 +15,6 @@ import com.adrenalinelife.utils.Const;
  */
 public class MoreDetail extends CustomActivity
 {
-
-	/* (non-Javadoc)
-	 * @see com.adrenalinelife.custom.CustomActivity#onCreate(android.os.Bundle)
-	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -35,9 +31,6 @@ public class MoreDetail extends CustomActivity
 			setTouchNClick(R.id.btn).setVisibility(View.VISIBLE);
 	}
 
-	/* (non-Javadoc)
-	 * @see com.adrenalinelife.custom.CustomActivity#onClick(android.view.View)
-	 */
 	@Override
 	public void onClick(View v)
 	{

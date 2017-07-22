@@ -223,7 +223,6 @@ public class CalendarView extends CustomFragment implements DateChangeListener
 	protected void showToast(String string)
 	{
 		Toast.makeText(getActivity(), string, Toast.LENGTH_SHORT).show();
-
 	}
 
 	/**

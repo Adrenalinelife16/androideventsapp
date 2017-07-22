@@ -71,8 +71,6 @@ public class FeedList extends CustomFragment
 
 		return v;
 	}
-
-
 	private void setFeedList(View v)
 	{
 
@@ -126,7 +124,6 @@ public class FeedList extends CustomFragment
 			}
 		}).start();
 	}
-
 
 	private class ProgramAdapter extends BaseAdapter
 	{

@@ -3,13 +3,7 @@ package com.adrenalinelife.ui;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.content.IntentSender;
-import android.content.pm.PackageManager;
-import android.location.LocationManager;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -22,7 +16,6 @@ import android.widget.Toast;
 
 import com.adrenalinelife.BookTkt;
 import com.adrenalinelife.Login;
-import com.adrenalinelife.Manifest;
 import com.adrenalinelife.R;
 import com.adrenalinelife.custom.CustomFragment;
 import com.adrenalinelife.model.Event;
@@ -33,13 +26,6 @@ import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.ResultCallback;
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.location.LocationRequest;
-import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.location.LocationSettingsRequest;
-import com.google.android.gms.location.LocationSettingsResult;
-import com.google.android.gms.location.LocationSettingsStatusCodes;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -52,12 +38,10 @@ import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
 import java.util.ArrayList;
-import java.util.zip.Inflater;
 
 import static com.adrenalinelife.web.WebAccess.GET_FAV_EVENTS;
 import static com.adrenalinelife.web.WebAccess.executePostRequest;
 import static com.adrenalinelife.web.WebAccess.getUserParams;
-import static com.adrenalinelife.web.WebHelper.parseEvents;
 
 /**
  * The Class EventDetail is the Fragment class that shows the details about an
@@ -77,7 +61,6 @@ public class EventDetail extends CustomFragment
 
 	/** The e. */
 	private Event e;
-	private GoogleApiClient mGoogleApiClient;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,

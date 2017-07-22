@@ -15,7 +15,6 @@ import com.adrenalinelife.R;
  */
 public class Commons
 {
-	
 	/**
 	 * Gets the time span.
 	 *

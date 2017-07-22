@@ -3,19 +3,15 @@ package com.adrenalinelife.create_event;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
 import com.adrenalinelife.R;
 import com.adrenalinelife.custom.CustomActivity;
 import com.adrenalinelife.utils.Log;
-
 /**
  * Created by Martare on 6/17/17.
  */
-
-
 public class oneCreateEvent extends CustomActivity {
 
 
@@ -33,12 +29,9 @@ public class oneCreateEvent extends CustomActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.one_category);
 
-        //getActionBar().setTitle(R.string.create_event);
-
         setTouchNClick(R.id.one_category_button);
 
         mSpinner = (Spinner) findViewById(R.id.category_spinner);
-
     }
     @Override
     public void onClick(View v)
@@ -74,12 +67,5 @@ public class oneCreateEvent extends CustomActivity {
         mIntent.putExtras(mBundle);
         Log.e("Bundle = ", mBundle);
         startActivity(mIntent);
-
-
-
     }
-
-
-
-
 }

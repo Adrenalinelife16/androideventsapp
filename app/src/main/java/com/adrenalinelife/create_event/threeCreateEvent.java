@@ -1,26 +1,17 @@
 package com.adrenalinelife.create_event;
-import android.annotation.TargetApi;
-import android.app.Dialog;
-import android.app.DialogFragment;
 import android.app.ProgressDialog;
-import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.icu.util.Calendar;
-import android.media.Image;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.ParcelFileDescriptor;
 import android.provider.MediaStore;
-import android.text.format.DateFormat;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
-import android.widget.TimePicker;
 
 import com.adrenalinelife.R;
 import com.adrenalinelife.custom.CustomActivity;
@@ -33,17 +24,11 @@ import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
 
 import java.io.FileDescriptor;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
-
 
 public class threeCreateEvent extends CustomActivity {
 
-
     public Bundle mBundleIn;
-
-    public Intent mIntentIn;
 
     //Bundle Variables
     public String mEventName;
@@ -59,18 +44,14 @@ public class threeCreateEvent extends CustomActivity {
     public String mZip;
     public String mState;
     public String mUser;
+    public Bitmap mImage;
+    public String mImageString;
+    public String mBaseString;
 
     private static int PICK_EVENT_PHOTO = 1;
 
-
-
-
-
-
     public void onCreate(Bundle savedInstanceState)
     {
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.three_create_event);
 
@@ -96,7 +77,6 @@ public class threeCreateEvent extends CustomActivity {
 
     }
 
-
     @Override
     public void onClick(View v)
     {
@@ -121,12 +101,10 @@ public class threeCreateEvent extends CustomActivity {
         intent.setType("image/*");
         startActivityForResult(intent, PICK_EVENT_PHOTO);
 
-
     }
 
     public void doCreateEvent()
     {
-
         // Get Location Info
         mLocation = ((EditText) findViewById(R.id.locationName)).getText()
                 .toString().trim();
@@ -142,7 +120,7 @@ public class threeCreateEvent extends CustomActivity {
         mZip = ((EditText) findViewById(R.id.locationZip)).getText()
                 .toString().trim();
 
-
+        /*
 
         if (Commons.isEmpty(mLocation) || Commons.isEmpty(mLocation)
                 || Commons.isEmpty(mLocation))
@@ -173,13 +151,15 @@ public class threeCreateEvent extends CustomActivity {
         //Get/Pass User ID
         mUser = Const.USER_ID;
 
+*/
+        //mLocation, mAddress, mCity, mZip, mState, mEventCategory, mUser, mEventName, mDescription, mStartTimePicker, mEndTimePicker, mStartDatePicker, mEndDatePicker
         final ProgressDialog dia = showProgressDia(R.string.alert_wait);
         new Thread(new Runnable() {
             @Override
             public void run()
             {
                 Log.e("Running doCreateEvent");
-                final Status st = WebHelper.doCreateEvent(mLocation, mAddress, mCity, mZip, mState, mEventCategory, mUser, mEventName, mDescription, mStartTimePicker, mEndTimePicker, mStartDatePicker, mEndDatePicker);
+                final Status st = WebHelper.doCreateEvent(mBaseString);
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run()
@@ -202,13 +182,10 @@ public class threeCreateEvent extends CustomActivity {
 
     }
 
-
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == PICK_EVENT_PHOTO && resultCode == RESULT_OK && null != data) {
-
-
 
             Uri selectedImage = data.getData();
             String[] filePathColumn = { MediaStore.Images.Media.DATA };
@@ -218,8 +195,12 @@ public class threeCreateEvent extends CustomActivity {
             cursor.moveToFirst();
 
             int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
-            String picturePath = cursor.getString(columnIndex);
+            mImageString = cursor.getString(columnIndex);
             cursor.close();
+
+            //Convert Selected Image to Base64 String
+            mBaseString = Utils.getBase64ImageString(mImageString);
+
 
             ImageView imageView = (ImageView) findViewById(R.id.submittedImageView);
             imageView.setImageResource(0);
@@ -227,6 +208,7 @@ public class threeCreateEvent extends CustomActivity {
             Bitmap bmp = null;
             try {
                 bmp = getBitmapFromUri(selectedImage);
+                saveImage(bmp);
             } catch (IOException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
@@ -242,7 +224,16 @@ public class threeCreateEvent extends CustomActivity {
         FileDescriptor fileDescriptor = parcelFileDescriptor.getFileDescriptor();
         Bitmap image = BitmapFactory.decodeFileDescriptor(fileDescriptor);
         parcelFileDescriptor.close();
+
+
         return image;
+    }
+
+    public Bitmap saveImage(Bitmap image)
+    {
+        mImage = image;
+
+        return mImage;
     }
 
 

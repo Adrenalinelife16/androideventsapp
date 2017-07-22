@@ -16,10 +16,6 @@ import android.widget.ImageView;
  */
 public class ImgTouchEffect implements OnTouchListener
 {
-
-	/* (non-Javadoc)
-	 * @see android.view.View.OnTouchListener#onTouch(android.view.View, android.view.MotionEvent)
-	 */
 	@Override
 	public boolean onTouch(View v, MotionEvent event)
 	{

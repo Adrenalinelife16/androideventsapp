@@ -55,7 +55,6 @@ public class ImageLoader extends ImageUtils
 	 */
 	public final class QueueItem
 	{
-		
 		/** The url. */
 		public String url;
 		
@@ -157,7 +156,7 @@ public class ImageLoader extends ImageUtils
 		 *
 		 * @param bm the bm
 		 */
-		public void imageLoaded(Bitmap bm);
+        void imageLoaded(Bitmap bm);
 	}
 
 	/**
@@ -165,10 +164,7 @@ public class ImageLoader extends ImageUtils
 	 */
 	public class QueueRunner implements Runnable
 	{
-		
-		/* (non-Javadoc)
-		 * @see java.lang.Runnable#run()
-		 */
+
 		@Override
 		public void run()
 		{

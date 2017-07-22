@@ -41,14 +41,11 @@ public class ImageUtils
 	public static final int SCALE_CROP = 3;// crop and fill empty with color
 	
 	/** The Constant SCALE_FIT_CENTER. */
-	public static final int SCALE_FIT_CENTER = 4;// scale and put at center and
-													// fill empty with color
+	public static final int SCALE_FIT_CENTER = 4;// scale and put at center and fill empty with color
 	/** The Constant SCALE_FIT_CENTER_NO_COL. */
-													public static final int SCALE_FIT_CENTER_NO_COL = 5;// SCALE_FIT_CENTER and
-														// not fill empty with
-														// color
+	public static final int SCALE_FIT_CENTER_NO_COL = 5;// SCALE_FIT_CENTER and not fill empty with color
 	/** The Constant SCALE_FIT_MIN_WH. */
-														public static final int SCALE_FIT_MIN_WH = 6;// scale to min width/height
+	public static final int SCALE_FIT_MIN_WH = 6;// scale to min width/height
 	
 	/** The Constant SCALE_ASPECT_WIDTH. */
 	public static final int SCALE_ASPECT_WIDTH = 7;// aspect ratio with width
@@ -57,19 +54,18 @@ public class ImageUtils
 	public static final int SCALE_ASPECT_HEIGHT = 8;// aspect ratio with height
 	
 	/** The Constant SCALE_FIT_WIDTH. */
-	public static final int SCALE_FIT_WIDTH = 9;// fit the width and scale the
-												// height accordingly
+	public static final int SCALE_FIT_WIDTH = 9;// fit the width and scale the height accordingly
 
 	/**
-												 * Gets the orientation fixed framed image.
-												 *
-												 * @param f the f
-												 * @param w the w
-												 * @param h the h
-												 * @param scaleType the scale type
-												 * @return the orientation fixed framed image
-												 */
-												public static Bitmap getOrientationFixedFramedImage(File f, int w, int h,
+	 * Gets the orientation fixed framed image.
+	 *
+	 * @param f the f
+	 * @param w the w
+	 * @param h the h
+	 * @param scaleType the scale type
+	 * @return the orientation fixed framed image
+	 */
+	public static Bitmap getOrientationFixedFramedImage(File f, int w, int h,
 			int scaleType)
 	{
 
@@ -193,7 +189,6 @@ public class ImageUtils
 
 		return output;
 	}
-
 	/**
 	 * Gets the circular bitmap.
 	 *

@@ -21,10 +21,6 @@ import com.adrenalinelife.utils.Const;
 @SuppressLint("SetJavaScriptEnabled")
 public class FeedDetail extends CustomActivity
 {
-
-	/* (non-Javadoc)
-	 * @see com.adrenalinelife.custom.CustomActivity#onCreate(android.os.Bundle)
-	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{

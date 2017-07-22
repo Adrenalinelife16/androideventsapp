@@ -19,7 +19,6 @@ import com.adrenalinelife.database.DbHelper;
  */
 public class StaticData
 {
-
 	/** Stored User ID */
 	public static String User_iD;
 
@@ -72,8 +71,6 @@ public class StaticData
 		if (!DbHelper.isOpen())
 			DbHelper.init(appContext);
 
-		// loadSavedItems();
-
 		try
 		{
 			appVersion = ctx.getPackageManager().getPackageInfo(
@@ -85,7 +82,6 @@ public class StaticData
 		}
 
 		clearCache();
-
 	}
 
 	/**

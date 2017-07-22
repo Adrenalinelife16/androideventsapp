@@ -29,13 +29,9 @@ import com.adrenalinelife.web.WebHelper;
  */
 public class BookTkt extends CustomActivity
 {
-
 	/** The event to be booked. */
 	private Event e;
 
-	/* (non-Javadoc)
-	 * @see com.adrenalinelife.custom.CustomActivity#onCreate(android.os.Bundle)
-	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -86,9 +82,6 @@ public class BookTkt extends CustomActivity
 		}).start();
 	}
 
-	/* (non-Javadoc)
-	 * @see com.adrenalinelife.custom.CustomActivity#onClick(android.view.View)
-	 */
 	@Override
 	public void onClick(View v)
 	{
@@ -146,9 +139,6 @@ public class BookTkt extends CustomActivity
 		}).start();
 	}
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.FragmentActivity#onActivityResult(int, int, android.content.Intent)
-	 */
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent data)
 	{

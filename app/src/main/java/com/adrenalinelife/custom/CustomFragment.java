@@ -24,9 +24,6 @@ public class CustomFragment extends Fragment implements OnClickListener
 	/** The default no img bitmap. */
 	protected static Bitmap bmNoImg;
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)
-	 */
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState)
@@ -77,18 +74,12 @@ public class CustomFragment extends Fragment implements OnClickListener
 		return v;
 	}
 
-	/* (non-Javadoc)
-	 * @see android.view.View.OnClickListener#onClick(android.view.View)
-	 */
 	@Override
 	public void onClick(View v)
 	{
 
 	}
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onDestroyView()
-	 */
 	@Override
 	public void onDestroyView()
 	{

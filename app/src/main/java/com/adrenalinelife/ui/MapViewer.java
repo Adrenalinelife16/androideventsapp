@@ -38,9 +38,6 @@ public class MapViewer extends CustomFragment
 	/** The Google map. */
 	private GoogleMap mMap;
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)
-	 */
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState)
@@ -52,9 +49,6 @@ public class MapViewer extends CustomFragment
 		return v;
 	}
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onPause()
-	 */
 	@Override
 	public void onPause()
 	{
@@ -62,9 +56,6 @@ public class MapViewer extends CustomFragment
 		super.onPause();
 	}
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onDestroy()
-	 */
 	@Override
 	public void onDestroy()
 	{
@@ -72,9 +63,6 @@ public class MapViewer extends CustomFragment
 		super.onDestroy();
 	}
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onResume()
-	 */
 	@Override
 	public void onResume()
 	{
@@ -145,9 +133,6 @@ public class MapViewer extends CustomFragment
 		mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(l[2], 11));
 	}
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onCreateOptionsMenu(android.view.Menu, android.view.MenuInflater)
-	 */
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
 	{
@@ -155,9 +140,6 @@ public class MapViewer extends CustomFragment
 		super.onCreateOptionsMenu(menu, inflater);
 	}
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onOptionsItemSelected(android.view.MenuItem)
-	 */
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
 	{

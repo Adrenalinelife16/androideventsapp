@@ -27,7 +27,6 @@ import com.adrenalinelife.model.Event;
  */
 public class CalendarAdapter extends BaseAdapter
 {
-
 	/** The context. */
 	private Activity mContext;
 
@@ -132,27 +131,18 @@ public class CalendarAdapter extends BaseAdapter
 		this.items = items;
 	}
 
-	/* (non-Javadoc)
-	 * @see android.widget.Adapter#getCount()
-	 */
 	@Override
 	public int getCount()
 	{
 		return dayString.size();
 	}
 
-	/* (non-Javadoc)
-	 * @see android.widget.Adapter#getItem(int)
-	 */
 	@Override
 	public Object getItem(int position)
 	{
 		return dayString.get(position);
 	}
 
-	/* (non-Javadoc)
-	 * @see android.widget.Adapter#getItemId(int)
-	 */
 	@Override
 	public long getItemId(int position)
 	{
@@ -160,9 +150,6 @@ public class CalendarAdapter extends BaseAdapter
 	}
 
 	// create a new view for each item referenced by the Adapter
-	/* (non-Javadoc)
-	 * @see android.widget.Adapter#getView(int, android.view.View, android.view.ViewGroup)
-	 */
 	@Override
 	public View getView(final int position, View convertView, ViewGroup parent)
 	{

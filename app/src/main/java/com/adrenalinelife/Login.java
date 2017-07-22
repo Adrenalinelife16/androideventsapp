@@ -23,9 +23,6 @@ import com.adrenalinelife.web.WebHelper;
  */
 public class Login extends CustomActivity
 {
-
-	public Bundle mBundle;
-
 	public String mEmail;
 	public String mPwd;
 
@@ -39,12 +36,7 @@ public class Login extends CustomActivity
 		setTouchNClick(R.id.button_reg);
 
 		getActionBar().setTitle(R.string.login);
-
-		//Log.e("email", mEmail);
-		//Log.e("pwd", mPwd);
-
 	}
-
 
 	@Override
 	public void onClick(View v)
@@ -99,10 +91,6 @@ public class Login extends CustomActivity
 			}
 		}).start();
 	}
-
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.FragmentActivity#onActivityResult(int, int, android.content.Intent)
-	 */
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent data)
 	{
@@ -110,8 +98,6 @@ public class Login extends CustomActivity
 		if (requestCode == Const.REQ_LOGIN && resultCode == Activity.RESULT_OK)
 		{
 			setResult(RESULT_OK);
-
-
 			finish();
 		}
 	}

@@ -7,19 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-import com.adrenalinelife.create_event.oneCreateEvent;
-import com.adrenalinelife.create_event.twoStartDateTime;
 import com.adrenalinelife.custom.CustomActivity;
 import com.adrenalinelife.model.Status;
 import com.adrenalinelife.utils.Commons;
 import com.adrenalinelife.utils.Const;
 import com.adrenalinelife.utils.Log;
-import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
-
-import static com.adrenalinelife.web.WebHelper.doLogin;
-
 /**
  * The Class Register is the Activity class that is launched when the user
  * clicks on Register button in Login screen and it allow user to register him
@@ -38,7 +32,6 @@ public class Register extends CustomActivity {
 
 	public Bundle mBundle;
 	public Intent mIntent;
-
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -72,14 +65,12 @@ public class Register extends CustomActivity {
 	private void doRegister()
 	{
 		Log.e("Doing the Register Method");
-
 		////////////////////////////////////////////////////////////////////////////////////////////////
 		mFirst = ((EditText) findViewById(R.id.reg_first_name)).getText()
 			.toString().trim();
 		mLast = ((EditText) findViewById(R.id.reg_last_name)).getText()
 				.toString().trim();
 		mName = mFirst + " " + mLast;
-
 		mUserName = ((EditText) findViewById(R.id.reg_username)).getText()
 				.toString().trim();
 		mNiceName = ((EditText) findViewById(R.id.reg_username)).getText()
@@ -88,43 +79,37 @@ public class Register extends CustomActivity {
 				.toString().trim();
 		mPwd = ((EditText) findViewById(R.id.reg_pwd)).getText()
 				.toString().trim();
-		//final String cpwd = ((EditText) findViewById(R.id.reg_con_pwd)).getText()
-		//		.toString().trim();
-
+		mPwd2 = ((EditText) findViewById(R.id.reg_con_pwd)).getText()
+				.toString().trim();
 		////////////////////////////////////////////////////////////////////////////////////////////////
-		/*
-
-		if (Commons.isEmpty(first_name) || Commons.isEmpty(first_name)
-				|| Commons.isEmpty(first_name))
+		if (Commons.isEmpty(mFirst) || Commons.isEmpty(mFirst)
+				|| Commons.isEmpty(mFirst))
 		{
 			Utils.showDialog(THIS, R.string.err_field_empty);
 			return;
 		}
-		if (Commons.isEmpty(last_name) || Commons.isEmpty(last_name)
-				|| Commons.isEmpty(last_name))
+		if (Commons.isEmpty(mLast) || Commons.isEmpty(mLast)
+				|| Commons.isEmpty(mLast))
 		{
 			Utils.showDialog(THIS, R.string.err_field_empty);
 			return;
 		}
-		if (Commons.isEmpty(login_name) || Commons.isEmpty(login_name)
-				|| Commons.isEmpty(login_name))
+		if (Commons.isEmpty(mUserName) || Commons.isEmpty(mUserName)
+				|| Commons.isEmpty(mUserName))
 		{
 			Utils.showDialog(THIS, R.string.err_field_empty);
 			return;
 		}
-		if (!Utils.isValidEmail(email))
+		if (!Utils.isValidEmail(mEmail))
 		{
 			Utils.showDialog(THIS, R.string.err_email);
 			return;
 		}
-		if (!(pwd).equals(cpwd))
+		if (!(mPwd).equals(mPwd2))
 		{
 			Utils.showDialog(THIS, R.string.err_pwd);
 			return;
 		}
-
-		name, user_login, login_name, email, pwd
-		*/
 		////////////////////////////////////////////////////////////////////////////////////////////////
 		final ProgressDialog dia = showProgressDia(R.string.alert_wait);
 		new Thread(new Runnable() {
@@ -142,57 +127,15 @@ public class Register extends CustomActivity {
 							Utils.showDialog(THIS, st.getMessage());
 						else
 						{
-
+							//Create Bundle for Login
 							mBundle = new Bundle();
 							mBundle.putString("email", mNiceName);
 							mBundle.putString("pwd", mPwd);
-
+							//Package Bundle into Intent, Send to auto login class
 							mIntent = new Intent(Register.this, AutoLogin.class);
 							mIntent.putExtras(mBundle);
 							Log.e("Bundle = ", mIntent);
 							startActivity(mIntent);
-
-
-							//StaticData.pref.edit().putString(Const.USER_ID, st.getData()).apply();
-							//StaticData.pref.edit()
-							//		.putString(Const.USER_ID, st.getData())
-							//		.putString(StaticData.User_iD, st.getData())
-							//		.apply();
-							//setResult(RESULT_OK);
-							//finish();
-
-						}
-					}
-				});
-			}
-		}).start();
-	}
-
-
-	private void autoLogin(){
-
-		final ProgressDialog dia = showProgressDia(R.string.alert_login);
-		new Thread(new Runnable() {
-			@Override
-			public void run()
-			{
-				final Status st = WebHelper.doLogin(mNiceName, mPwd);
-				runOnUiThread(new Runnable() {
-					@Override
-					public void run()
-					{
-						dia.dismiss();
-						if (!st.isSuccess())
-							Utils.showDialog(THIS, st.getMessage());
-						else
-						{
-							StaticData.pref.edit()
-									.putString(Const.USER_ID, st.getData())
-									.putString(StaticData.User_iD, st.getData())
-									.apply();
-							setResult(RESULT_OK);
-							android.util.Log.v("User_ID", StaticData.User_iD);
-							finish();
 						}
 					}
 				});
@@ -210,5 +153,4 @@ public class Register extends CustomActivity {
 			finish();
 		}
 	}
-
 }

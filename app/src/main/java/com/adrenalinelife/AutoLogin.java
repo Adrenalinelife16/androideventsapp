@@ -16,10 +16,7 @@ import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
 
 /**
- * The Class Login is the Activity class that is launched when the app require
- * user to Login to perform next operations like in this current we ask user to
- * Login before he/she is going to Book Event ticket and once the user is logged
- * in, it will never ask to loin again for the lifetime of this app.
+ * Created by Chazz Romeo on 7/10/2017.
  */
 public class AutoLogin extends CustomActivity
 {
@@ -40,16 +37,11 @@ public class AutoLogin extends CustomActivity
 
 		getActionBar().setTitle(R.string.login);
 
-
 		mBundle = getIntent().getExtras();
 		mEmail = mBundle.getString("email");
 		mPwd = mBundle.getString("pwd");
-		//Log.e("email", mEmail);
-		//Log.e("pwd", mPwd);
 		doLogin();
-
 	}
-
 
 	@Override
 	public void onClick(View v)
@@ -104,9 +96,6 @@ public class AutoLogin extends CustomActivity
 		}).start();
 	}
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.FragmentActivity#onActivityResult(int, int, android.content.Intent)
-	 */
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent data)
 	{

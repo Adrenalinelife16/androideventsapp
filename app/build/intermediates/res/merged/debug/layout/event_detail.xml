@@ -35,8 +35,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Milan Fashion Week"
-                    android:textColor="@color/main_color_orange"
-                    android:textSize="@dimen/txt_15sp" />
+                    android:textColor="@color/adrenaline_red"
+                    android:textSize="@dimen/txt_15sp"/>
 
                 <TextView
                     android:id="@+id/lblAddress"
@@ -57,8 +57,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="@dimen/pad_3dp"
                         android:text="@string/date"
-                        android:textColor="@color/main_color_orange"
-                        android:textSize="@dimen/txt_14sp" />
+                        android:textColor="@color/adrenaline_red"
+                        android:textSize="@dimen/txt_14sp"/>
 
                     <TextView
                         android:id="@+id/lblDate"
@@ -84,14 +84,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/white"
                 android:paddingBottom="@dimen/pad_5dp"
                 android:paddingLeft="@dimen/pad_10dp"
                 android:paddingRight="@dimen/pad_10dp"
                 android:paddingTop="@dimen/pad_5dp"
                 android:text="@string/description"
-                android:textColor="@color/main_color_orange"
-                android:textSize="@dimen/txt_15sp"
-                android:background="@color/white" />
+                android:textColor="@color/adrenaline_red"
+                android:textSize="@dimen/txt_15sp"/>
             
             <TextView
                     android:id="@+id/lblDesc"

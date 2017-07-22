@@ -38,9 +38,6 @@ public class CustomActivity extends FragmentActivity implements OnClickListener
 	/** The this. */
 	public CustomActivity THIS;
 
-	/* (non-Javadoc)
-	 * @see android.app.Activity#onCreate(android.os.Bundle)
-	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -124,9 +121,6 @@ public class CustomActivity extends FragmentActivity implements OnClickListener
 		return ProgressDialog.show(THIS, null, getString(msg));
 	}
 
-	/* (non-Javadoc)
-	 * @see android.app.Activity#onOptionsItemSelected(android.view.MenuItem)
-	 */
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
 	{
