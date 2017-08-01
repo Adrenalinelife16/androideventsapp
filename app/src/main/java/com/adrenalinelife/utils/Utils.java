@@ -215,6 +215,15 @@ public class Utils
 
 	}
 
+	public static AlertDialog showEventCreatedDialog(Context ctx, String msg)
+	{
+
+		return showDialog(ctx, msg);
+
+	}
+
+
+
 	/**
 	 * Show dialog.
 	 *

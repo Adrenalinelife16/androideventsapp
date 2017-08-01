@@ -195,8 +195,8 @@ public class CategoryEvents extends PagingFragment
                             onFinishLoading(0);
                         } else {
                             pList.addAll(al);
-                            adapter.notifyDataSetChanged();
-                            onFinishLoading(al.size());
+                            //adapter.notifyDataSetChanged();
+                            //onFinishLoading(al.size());
                             performDiscoverFilter();
                         }
                     }

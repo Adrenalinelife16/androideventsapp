@@ -204,6 +204,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 			public void onRefresh() {
 
 				setFilterTextWhite();
+                mFilterAll.setTextColor(getResources().getColor(R.color.adrenaline_red));
 				setProgramList(v);
 				SwipeRefresh.setRefreshing(false);
 			}

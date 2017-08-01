@@ -520,24 +520,24 @@ public class WebHelper extends WebAccess
 	 */
 
 
-	public static Status doCreateEvent(String image)
+	public static Status doCreateEvent(String location_name, String location_address, String location_city, String location_zip, String location_state, String category, String user, String event_name, String event_info, String start_time, String end_time, String start_date, String end_date, String image)
 	{
 		try
 		{
 			ArrayList<NameValuePair> param = new ArrayList<NameValuePair>();
-			param.add(new BasicNameValuePair("location_name", "Basement Office"));
-			param.add(new BasicNameValuePair("location_address", "1200 South Cove Lane"));
-			param.add(new BasicNameValuePair("location_city", "Birmingham"));
-			param.add(new BasicNameValuePair("location_zip", "35216"));
-			param.add(new BasicNameValuePair("location_state", "AL"));
-			param.add(new BasicNameValuePair("category", "Soccer"));
-			param.add(new BasicNameValuePair("user", "24"));
-			param.add(new BasicNameValuePair("event_name", "Marathon of Adrenaline"));
-			param.add(new BasicNameValuePair("event_info", "This is the info"));
-			param.add(new BasicNameValuePair("start_time", "18:00:00"));
-			param.add(new BasicNameValuePair("end_time", "19:00:00"));
-			param.add(new BasicNameValuePair("start_date", "2017-07-21"));
-			param.add(new BasicNameValuePair("end_date", "2017-07-21"));
+			param.add(new BasicNameValuePair("location_name", location_name));
+			param.add(new BasicNameValuePair("location_address", location_address));
+			param.add(new BasicNameValuePair("location_city", location_city));
+			param.add(new BasicNameValuePair("location_zip", location_zip));
+			param.add(new BasicNameValuePair("location_state", location_state));
+			param.add(new BasicNameValuePair("category", category));
+			param.add(new BasicNameValuePair("user", user));
+			param.add(new BasicNameValuePair("event_name", event_name));
+			param.add(new BasicNameValuePair("event_info", event_info));
+			param.add(new BasicNameValuePair("start_time", start_time));
+			param.add(new BasicNameValuePair("end_time", end_time));
+			param.add(new BasicNameValuePair("start_date", start_date));
+			param.add(new BasicNameValuePair("end_date", end_date));
 			param.add(new BasicNameValuePair("image", image));
 
 			String res = executePostRequest(CREATE_EVENT_URL, param, false);
