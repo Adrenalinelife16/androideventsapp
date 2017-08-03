@@ -123,22 +123,7 @@
             android:windowSoftInputMode="stateHidden|adjustResize" >
         </activity>
         <activity
-            android:name="com.adrenalinelife.create_event.twoStartDateTime"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" >
-        </activity>
-        <activity
-            android:name="com.adrenalinelife.create_event.twoEndDateTime"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" >
-        </activity>
-        <activity
-            android:name="com.adrenalinelife.create_event.oneCreateEvent"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" >
-        </activity>
-        <activity
-            android:name="com.adrenalinelife.create_event.threeCreateEvent"
+            android:name="com.adrenalinelife.create_event.editCreateEvent"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" >
         </activity>
@@ -157,7 +142,7 @@
             android:windowSoftInputMode="stateHidden|adjustResize" >
         </activity>
         <activity
-            android:name="com.adrenalinelife.create_event.fourFinalize"
+            android:name="com.adrenalinelife.create_event.reviewCreateEvent"
             android:label="@string/title_activity_four_finalize"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" >

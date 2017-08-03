@@ -28,8 +28,7 @@ import android.widget.Toast;
 
 import com.adrenalinelife.EventDetailActivity;
 import com.adrenalinelife.R;
-import com.adrenalinelife.create_event.oneCreateEvent;
-import com.adrenalinelife.create_event.threeCreateEvent;
+import com.adrenalinelife.create_event.editCreateEvent;
 import com.adrenalinelife.custom.CustomFragment;
 import com.adrenalinelife.custom.PagingFragment;
 import com.adrenalinelife.model.Event;
@@ -638,7 +637,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 			AlertDialog action = builder.create();
 			action.show();
 		} if (item.getItemId() == R.id.menu_fav && StaticData.pref.contains(Const.USER_ID)){
-			Intent intent = new Intent(getActivity(), three_create_event.class);
+			Intent intent = new Intent(getActivity(), edit_create_event.class);
 			startActivity(intent);
 	}
 		return true;
@@ -664,7 +663,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 	{
 		if (item.getItemId() == R.id.menu_fav)
 		{
-            Intent intent = new Intent(getActivity(), threeCreateEvent.class);
+            Intent intent = new Intent(getActivity(), editCreateEvent.class);
             startActivity(intent);
 
 	} else if (item.getItemId() == R.id.refresh) {

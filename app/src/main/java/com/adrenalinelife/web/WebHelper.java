@@ -559,7 +559,7 @@ public class WebHelper extends WebAccess
 			param.add(new BasicNameValuePair("location_state", "AL"));
 			param.add(new BasicNameValuePair("category", "Soccer"));
 			param.add(new BasicNameValuePair("user", "24"));
-			param.add(new BasicNameValuePair("event_name", "Cate Testing"));
+			param.add(new BasicNameValuePair("event_name", "User Id Test"));
 			param.add(new BasicNameValuePair("event_info", "Category Testing Event"));
 			param.add(new BasicNameValuePair("start_time", "18:00:00"));
 			param.add(new BasicNameValuePair("end_time", "19:00:00"));

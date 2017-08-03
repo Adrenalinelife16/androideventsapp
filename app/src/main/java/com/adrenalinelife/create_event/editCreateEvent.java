@@ -22,6 +22,7 @@ import android.widget.TimePicker;
 
 import com.adrenalinelife.R;
 import com.adrenalinelife.custom.CustomActivity;
+import com.adrenalinelife.utils.Commons;
 import com.adrenalinelife.utils.Log;
 import com.adrenalinelife.utils.Utils;
 
@@ -31,7 +32,7 @@ import java.io.IOException;
 import java.util.Calendar;
 import java.util.Date;
 
-public class threeCreateEvent extends CustomActivity {
+public class editCreateEvent extends CustomActivity {
 
     public Bundle mBundleIn;
     public Bundle mBundleOut;
@@ -78,7 +79,7 @@ public class threeCreateEvent extends CustomActivity {
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.three_create_event);
+        setContentView(R.layout.edit_create_event);
 
         getActionBar().setTitle(R.string.create_event);
         setTouchNClick(R.id.submitEventBtn);
@@ -96,7 +97,7 @@ public class threeCreateEvent extends CustomActivity {
         tStartDatePicker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DatePickerDialog dpd = new DatePickerDialog(threeCreateEvent.this, new DatePickerDialog.OnDateSetListener() {
+                DatePickerDialog dpd = new DatePickerDialog(editCreateEvent.this, new DatePickerDialog.OnDateSetListener() {
                     @TargetApi(Build.VERSION_CODES.N)
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
@@ -126,10 +127,24 @@ public class threeCreateEvent extends CustomActivity {
         tStartTimePicker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TimePickerDialog tpd = new TimePickerDialog(threeCreateEvent.this, new TimePickerDialog.OnTimeSetListener() {
+                TimePickerDialog tpd = new TimePickerDialog(editCreateEvent.this, new TimePickerDialog.OnTimeSetListener() {
+                    @TargetApi(Build.VERSION_CODES.N)
                     @Override
                     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-                        tStartTimePicker.setText(hourOfDay + ":" + minute);
+
+                        //Format End Time and Date to Correct String
+                        SimpleDateFormat dateF = new SimpleDateFormat("h:mm");
+                        String f2 = hourOfDay + ":" + minute;
+                        Date d2 = new Date();
+                        try {
+                            d2 = dateF.parse(f2);
+                        } catch (java.text.ParseException e) {
+                            e.printStackTrace();
+                        }
+                        SimpleDateFormat timeFormat2 = new SimpleDateFormat("h:mm a");
+                        String n2 = timeFormat2.format(d2);
+
+                        tStartTimePicker.setText(n2);
                         startTimeToString(hourOfDay, minute);
                         Log.e("Start Time", mStartTimePicker);
                     }
@@ -150,7 +165,7 @@ public class threeCreateEvent extends CustomActivity {
         tEndDatePicker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DatePickerDialog dpd2 = new DatePickerDialog(threeCreateEvent.this, new DatePickerDialog.OnDateSetListener() {
+                DatePickerDialog dpd2 = new DatePickerDialog(editCreateEvent.this, new DatePickerDialog.OnDateSetListener() {
                     @TargetApi(Build.VERSION_CODES.N)
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
@@ -180,10 +195,24 @@ public class threeCreateEvent extends CustomActivity {
         tEndTimePicker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TimePickerDialog tpd = new TimePickerDialog(threeCreateEvent.this, new TimePickerDialog.OnTimeSetListener() {
+                TimePickerDialog tpd = new TimePickerDialog(editCreateEvent.this, new TimePickerDialog.OnTimeSetListener() {
+                    @TargetApi(Build.VERSION_CODES.N)
                     @Override
                     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-                        tEndTimePicker.setText(hourOfDay + ":" + minute);
+
+                        //Format End Time and Date to Correct String
+                        SimpleDateFormat dateF = new SimpleDateFormat("h:mm");
+                        String f2 = hourOfDay + ":" + minute;
+                        Date d2 = new Date();
+                        try {
+                            d2 = dateF.parse(f2);
+                        } catch (java.text.ParseException e) {
+                            e.printStackTrace();
+                        }
+                        SimpleDateFormat timeFormat2 = new SimpleDateFormat("h:mm a");
+                        String n2 = timeFormat2.format(d2);
+
+                        tEndTimePicker.setText(n2);
                         endTimeToString(hourOfDay, minute);
                         Log.e("End Time", mEndTimePicker);
                     }
@@ -238,19 +267,6 @@ public class threeCreateEvent extends CustomActivity {
         mDescription = ((EditText) findViewById(R.id.event_details)).getText()
                 .toString().trim();
 
-        //Start Time to String
-        //mStartDatePicker = tStartDatePicker.toString();
-        //Log.e("Start Date", mStartDatePicker);
-        //Start Date to String
-        //mStartTimePicker = tStartTimePicker.toString();
-        //Log.e("Start Time", mStartTimePicker);
-        //End Time to String
-        //mEndDatePicker = tEndDatePicker.toString();
-        //Log.e("End Date", mEndDatePicker);
-        //End Date to String
-        //mEndTimePicker = tEndTimePicker.toString();
-        //Log.e("End Time", mEndTimePicker);
-
         // Get Location Info
         mLocation = ((EditText) findViewById(R.id.locationName)).getText()
                 .toString().trim();
@@ -266,34 +282,72 @@ public class threeCreateEvent extends CustomActivity {
         mZip = ((EditText) findViewById(R.id.locationZip)).getText()
                 .toString().trim();
 
-        /*
 
-        if (Commons.isEmpty(mLocation) || Commons.isEmpty(mLocation)
-                || Commons.isEmpty(mLocation))
-        {
-            Utils.showDialog(THIS, R.string.err_field_empty);
-            return;
-        }
-        if (Commons.isEmpty(mAddress) || Commons.isEmpty(mAddress)
-                || Commons.isEmpty(mAddress))
-        {
-            Utils.showDialog(THIS, R.string.err_field_empty);
-            return;
-        }
-        if (Commons.isEmpty(mCity) || Commons.isEmpty(mCity)
-                || Commons.isEmpty(mCity))
+        //Check if Text is empty////////////////////////////////////////////////////////////////////
+        if (Commons.isEmpty(mDescription))
         {
             Utils.showDialog(THIS, R.string.err_field_empty);
             return;
         }
 
-        if (Commons.isEmpty(mState) || Commons.isEmpty(mState)
-                || Commons.isEmpty(mState))
+        if (Commons.isEmpty(mEventName))
         {
             Utils.showDialog(THIS, R.string.err_field_empty);
             return;
         }
-*/
+
+        if (Commons.isEmpty(mLocation))
+        {
+            Utils.showDialog(THIS, R.string.err_field_empty);
+            return;
+        }
+        if (Commons.isEmpty(mAddress))
+        {
+            Utils.showDialog(THIS, R.string.err_field_empty);
+            return;
+        }
+        if (Commons.isEmpty(mCity))
+        {
+            Utils.showDialog(THIS, R.string.err_field_empty);
+            return;
+        }
+
+        if (Commons.isEmpty(mState))
+        {
+            Utils.showDialog(THIS, R.string.err_field_empty);
+            return;
+        }
+
+        if (mStartDatePicker == null)
+        {
+            Utils.showDialog(THIS, R.string.err_field_empty);
+            return;
+        }
+
+        if (mStartTimePicker == null)
+        {
+            Utils.showDialog(THIS, R.string.err_field_empty);
+            return;
+        }
+
+        if (mEndDatePicker == null)
+        {
+            Utils.showDialog(THIS, R.string.err_field_empty);
+            return;
+        }
+
+        if (mEndTimePicker == null)
+        {
+            Utils.showDialog(THIS, R.string.err_field_empty);
+            return;
+        }
+
+        if (mCategory.equals("Select a Category"))
+        {
+            Utils.showDialog(THIS, R.string.err_field_empty);
+            return;
+        }
+        ////////////////////////////////////////////////////////////////////////////////////////////
 
         //Bundle up all the info for the final POST Request
         mBundleOut = new Bundle();
@@ -312,7 +366,7 @@ public class threeCreateEvent extends CustomActivity {
         mBundleOut.putString("Image", mImageUri);
 
         //Build Intent, Send Intent to Next Page
-        mIntentOut = new Intent(threeCreateEvent.this, fourFinalize.class);
+        mIntentOut = new Intent(editCreateEvent.this, reviewCreateEvent.class);
         mIntentOut.putExtras(mBundleOut);
         Log.e("Bundle = ", mBundleOut);
         startActivity(mIntentOut);

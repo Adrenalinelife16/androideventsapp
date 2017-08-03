@@ -222,7 +222,16 @@ public class Utils
 
 	}
 
+	public static void showCreateEventDialog(Context ctx, int title, int msg, DialogInterface.OnClickListener listener)
+	{
 
+		AlertDialog.Builder builder = new AlertDialog.Builder(ctx);
+		builder.setMessage(msg).setCancelable(false)
+				.setPositiveButton(android.R.string.ok, listener);
+		builder.setTitle(title);
+		AlertDialog alert = builder.create();
+		alert.show();
+	}
 
 	/**
 	 * Show dialog.

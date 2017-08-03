@@ -1,40 +1,42 @@
 package com.adrenalinelife.create_event;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+import android.annotation.TargetApi;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.icu.text.SimpleDateFormat;
+import android.net.ParseException;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
-import android.app.Activity;
 import android.os.ParcelFileDescriptor;
 import android.provider.MediaStore;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.adrenalinelife.Login;
+import com.adrenalinelife.MainActivity;
 import com.adrenalinelife.R;
 import com.adrenalinelife.custom.CustomActivity;
-import com.adrenalinelife.custom.CustomFragment;
 import com.adrenalinelife.model.Status;
-import com.adrenalinelife.ui.DiscoverEvents;
 import com.adrenalinelife.ui.Events;
 import com.adrenalinelife.utils.Const;
 import com.adrenalinelife.utils.Log;
-import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
 
-import java.io.ByteArrayOutputStream;
 import java.io.FileDescriptor;
 import java.io.IOException;
+import java.util.Calendar;
+import java.util.Date;
 
-public class fourFinalize extends CustomActivity {
+public class reviewCreateEvent extends CustomActivity {
 
 
 
@@ -76,10 +78,11 @@ public class fourFinalize extends CustomActivity {
 
     private static int PICK_EVENT_PHOTO = 1;
 
+    @TargetApi(Build.VERSION_CODES.N)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.four_finalize);
+        setContentView(R.layout.review_create_event);
 
         setTouchNClick(R.id.submitEventButton);
         getActionBar().setTitle("Edit");
@@ -107,11 +110,37 @@ public class fourFinalize extends CustomActivity {
         rCategory = (TextView) findViewById(R.id.re_category);
         rCategory.setText(mEventCategory);
 
+        //Format Start Time and Date to Correct String
+        SimpleDateFormat dateFormatter = new SimpleDateFormat("hh:mm:ss - yyyy-MM-dd");
+        String f = mStartTimePicker + " - " + mStartDatePicker;
+        Date d = new Date();
+        try {
+            d = dateFormatter.parse(f);
+        } catch (java.text.ParseException e) {
+            e.printStackTrace();
+        }
+        SimpleDateFormat timeFormat = new SimpleDateFormat("EEEE h:mm a - MMM dd, yyyy");
+        String n = timeFormat.format(d);
         rStart = (TextView) findViewById(R.id.re_start);
-        rStart.setText(mStartTimePicker + " " + mStartDatePicker);
+        rStart.setText(n);
+        Log.e("Formatted Start Time and Date", n);
 
+
+        //Format End Time and Date to Correct String
+        SimpleDateFormat dateFormatter2 = new SimpleDateFormat("hh:mm:ss - yyyy-MM-dd");
+        String f2 = mEndTimePicker + " - " + mEndDatePicker;
+        Date d2 = new Date();
+        try {
+            d2 = dateFormatter2.parse(f2);
+        } catch (java.text.ParseException e) {
+            e.printStackTrace();
+        }
+        SimpleDateFormat timeFormat2 = new SimpleDateFormat("EEEE h:mm a - MMM dd, yyyy");
+        String n2 = timeFormat2.format(d2);
         rEnd = (TextView) findViewById(R.id.re_end);
-        rEnd.setText(mEndTimePicker + " " + mEndDatePicker);
+        rEnd.setText(n2);
+        Log.e("Formatted End Time and Date", n2);
+
 
         rLocationName = (TextView) findViewById(R.id.re_locationname);
         rLocationName.setText(mLocation);
@@ -152,9 +181,7 @@ public class fourFinalize extends CustomActivity {
 
             //Convert Selected Image to Base64 String
             pickImage();
-
         }
-
     }
 
     //Helping setup image for ImageView
@@ -184,7 +211,6 @@ public class fourFinalize extends CustomActivity {
         {
             doCreateEvent();
         }
-
     }
 
     public void doCreateEvent() {
@@ -200,6 +226,7 @@ public class fourFinalize extends CustomActivity {
             public void run()
             {
                 Log.e("Running doCreateEvent");
+
                 final Status st = WebHelper.doCreateEvent(mBaseString);
                 runOnUiThread(new Runnable() {
                     @Override
@@ -207,17 +234,29 @@ public class fourFinalize extends CustomActivity {
                     {
                         dia.dismiss();
                         if (!st.isSuccess()) {
-                            Utils.showEventCreatedDialog(fourFinalize.this, "Event Creation Successful");
-
+                            Utils.showEventCreatedDialog(reviewCreateEvent.this, "Event Creation Successful");
                             // Launch Events Fragment
+                            //Intent i = new Intent(reviewCreateEvent.this, Events.class);
+                            //startActivity(i);
 
+                            /*
+                            AlertDialog.Builder builder = new AlertDialog.Builder(reviewCreateEvent.this);
+                            builder.setMessage( "Event Creation Successful")
+                                    .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+                                        public void onClick(DialogInterface dialog, int id) {
+                                            Intent intent = new Intent(reviewCreateEvent.this, Events.class);
+                                            startActivity(intent);
+                                        }
+                                    });
 
-
+                            AlertDialog action = builder.create();
+                            action.show();
+                            */
                         }
 
                         else
                         {
-                            Utils.showEventCreatedDialog(fourFinalize.this, "Event Creation Unsuccessful!");
+                            Utils.showEventCreatedDialog(reviewCreateEvent.this, "Event Creation Unsuccessful!");
                             setResult(RESULT_OK);
                             finish();
                         }
@@ -226,8 +265,6 @@ public class fourFinalize extends CustomActivity {
             }
         }).start();
     }
-
-
     //Select and Convert Image for Upload
     public void pickImage(){
 
@@ -247,7 +284,7 @@ public class fourFinalize extends CustomActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Toast.makeText(fourFinalize.this, "You just pressed back button",Toast.LENGTH_SHORT).show();
+        Toast.makeText(reviewCreateEvent.this, "You just pressed back button",Toast.LENGTH_SHORT).show();
     }
 
 

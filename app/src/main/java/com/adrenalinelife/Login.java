@@ -10,6 +10,7 @@ import android.widget.EditText;
 
 import com.adrenalinelife.custom.CustomActivity;
 import com.adrenalinelife.model.Status;
+import com.adrenalinelife.utils.Commons;
 import com.adrenalinelife.utils.Const;
 import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
@@ -63,6 +64,24 @@ public class Login extends CustomActivity
 	 */
 	private void doLogin()
 	{
+		if (mEmail.length() < 3)
+		{
+			Utils.showDialog(THIS, R.string.err_field_empty);
+			return;
+		}
+
+		if (mEmail.contains("@"))
+		{
+			Utils.showDialog(THIS, "Please Login with your Username!");
+			return;
+		}
+
+		if (Commons.isEmpty(mPwd))
+		{
+			Utils.showDialog(THIS, R.string.err_field_empty);
+			return;
+		}
+
 		final ProgressDialog dia = showProgressDia(R.string.alert_login);
 		new Thread(new Runnable() {
 			@Override

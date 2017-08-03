@@ -784,23 +784,31 @@ If we decide to change our privacy policy, we will post those changes on this pa
     <string name="submit">Submit</string>
     <string name="terms_condi">Terms &amp; Conditions</string>
     <string name="terms_text">
-        Please read this Terms of Service agreement (the “Terms”) carefully.
+        Please read this Terms of Service agreement (the “Terms”) carefully.\n\n
 
-By accessing or using this website (www.AdrenalineLife.org) in any way, including using the services and resources available or enabled via the Website or application (the “Service”), downloading the Adrenaline Life\'s software application for mobile devices (the “Application”),
-        completing the registration process, and (or) merely browsing the Website, you represent that (1) you have read, understand, and agree to be bound by the Terms, (2) you are of legal age to form a binding contract with Adrenaline Life,
-        and (3) you have the authority to enter into the Terms personally or on behalf of the company you have named as the customer, and to bind that company to the Terms.
+        By accessing or using this website (www.AdrenalineLife.org) in any way, including using the services and resources available or
+        enabled via the Website or application (the “Service”), downloading the Adrenaline Life\'s software application for mobile devices
+        (the “Application”), completing the registration process, and (or) merely browsing the Website, you represent that (1) you have read,
+        understand, and agree to be bound by the Terms, (2) you are of legal age to form a binding contract with Adrenaline Life,
+        and (3) you have the authority to enter into the Terms personally or on behalf of the company you have named as the customer,
+        and to bind that company to the Terms.\n\n
 
-The term “you” refers to the individual or legal entity, as applicable, identified as the customer when you registered on the Website.
-        If you do not agree to be bound by the terms, you may not access or use this Website or the Service.
-        If you subscribe to the Services for a term (the “Initial Term”), then the Terms will be automatically renewed for additional periods of the same duration as the initial term at Adrenaline Life\'s
-        then-current fee for such services unless you decline to renew your subscription in accordance with section 6.5 below.The terms of use require the use of arbitration on an individual basis to resolve disputes,
-        rather than jury trials or class actions, and also limit the remedies available to you in the event of a dispute.Please note that the terms are subject to change by Adrenaline Life in its sole discretion at any time. When changes are made,
-        Adrenaline Life will make a new copy of the Terms of Service available at the Website. We will also update the "Last Updated" date at the top of the Terms. If we make any material changes, and you have registered to use the Service,
-        we will also send an e-mail to you at the last e-mail address you provided to us pursuant to the Terms.
-        Any changes to the Terms will be effective immediately for new users of the Website or Service and will be effective thirty (30) days after posting of notice of such changes on the Website for existing users,
-        provided that any material changes shall be effective for users who have a registered account on the Website (each, a "Registered User") upon the earlier of thirty (30) days after posting of notice of such changes on the Website or thirty (30) days after dispatch of an e-mail notice of such changes to Registered Users.
-        Adrenaline Life may require you to provide consent to the updated Agreement in a manner specified before further use of the Website or the Service is permitted. If you do not agree to any change(s) after receiving a notice of such change(s),
-        you shall stop using the Website and/or the Service. Otherwise, your continued use of the Website and/or Service constitutes your acceptance of such change(s). PLEASE REGULARLY CHECK THE WEBSITE TO VIEW THE THEN-CURRENT AGREEMENT.
+        The term “you” refers to the individual or legal entity, as applicable, identified as the customer when you registered on the Website.
+        If you do not agree to be bound by the terms, you may not access or use this Website or the Service.\n\n
+        If you subscribe to the Services for a term (the “Initial Term”), then the Terms will be automatically renewed for additional periods of the
+        same duration as the initial term at Adrenaline Life\'s then-current fee for such services unless you decline to renew your subscription in
+        accordance with section 6.5 below. \n\nThe terms of use require the use of arbitration on an individual basis to resolve disputes,
+        rather than jury trials or class actions, and also limit the remedies available to you in the event of a dispute. \n\nPlease note that the terms
+        are subject to change by Adrenaline Life in its sole discretion at any time. When changes are made,Adrenaline Life will make a new copy of the
+        Terms of Service available at the Website. We will also update the "Last Updated" date at the top of the Terms. \n\nIf we make any material changes,
+        and you have registered to use the Service, we will also send an e-mail to you at the last e-mail address you provided to us pursuant to the Terms.
+        Any changes to the Terms will be effective immediately for new users of the Website or Service and will be effective thirty (30) days after posting
+        of notice of such changes on the Website for existing users, provided that any material changes shall be effective for users who have a
+        registered account on the Website (each, a "Registered User") upon the earlier of thirty (30) days after posting of notice of such changes on the
+        Website or thirty (30) days after dispatch of an e-mail notice of such changes to Registered Users.Adrenaline Life may require you to provide
+        consent to the updated Agreement in a manner specified before further use of the Website or the Service is permitted. \n\nIf you do not agree to any
+        change(s) after receiving a notice of such change(s), you shall stop using the Website and/or the Service. Otherwise, your continued use of the
+        Website and/or Service constitutes your acceptance of such change(s).\n \n PLEASE REGULARLY CHECK THE WEBSITE TO VIEW THE THEN-CURRENT AGREEMENT.\n\n
 
     </string>
     <string name="title_activity_discover_events">DiscoverEvents</string>

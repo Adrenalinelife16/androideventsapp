@@ -227,6 +227,7 @@ public class MainActivity extends CustomActivity
 
 			AlertDialog action = builder.create();
 			action.show();
+			pos = 2;
 		}
 
 		}
@@ -261,7 +262,7 @@ public class MainActivity extends CustomActivity
 					Uri.parse("market://details?id=" + getPackageName()));
 			startActivity(i);
 		}
-		else if (pos ==6)
+		else if (pos == 6)
 		{
 			Intent intent = new Intent(THIS, Login.class);
 			startActivity(intent);
