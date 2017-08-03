@@ -152,7 +152,8 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                android:scaleType="fitXY"/>
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"/>
 
             <Button
                 android:id="@+id/submitEventButton"
@@ -161,7 +162,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="5dp"
-                android:background="@drawable/actionbar_bg_black"
+                android:background="@drawable/actionbar_bg_6solid"
                 android:text="Submit Event"
                 android:textColor="@color/white"/>
         </LinearLayout>

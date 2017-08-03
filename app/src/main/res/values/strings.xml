@@ -199,33 +199,31 @@ The term “you” refers to the individual or legal entity, as applicable, iden
     <string name="title_activity_discover_events">DiscoverEvents</string>
     <string name="large_text">
 
-
-
     </string>
 
     <string-array name="categories_array">
         <item>Select a Category</item>
-        <item>Soccer</item>
-        <item>Basketball</item>
         <item>Baseball/Softball</item>
-        <item>Football</item>
-        <item>Yoga</item>
-        <item>Fitness</item>
+        <item>Basketball</item>
+        <item>Billiards</item>
         <item>Bowling</item>
-        <item>Dance</item>
+        <item>Camping</item>
+        <item>Climbing</item>
+        <item>Disc Games</item>
         <item>Fishing</item>
+        <item>Fitness</item>
+        <item>Football</item>
+        <item>Golf</item>
         <item>Kickball</item>
-        <item>Laser Tag</item>
-        <item>Off-Road</item>
-        <item>Private Training</item>
-        <item>Camp</item>
-        <item>Skydiving</item>
-        <item>Table Games</item>
-        <item>Ultimate Frisbee</item>
-        <item>Water Sports</item>
-        <item>Running</item>
-        <item>Biking</item>
+        <item>Lacrosse</item>
         <item>Other</item>
+        <item>Riding</item>
+        <item>Running/Hiking</item>
+        <item>Soccer</item>
+        <item>Table Games</item>
+        <item>Tennis</item>
+        <item>Water Games</item>
+        <item>Yoga</item>
     </string-array>
 
     <string-array name="time_by_15">

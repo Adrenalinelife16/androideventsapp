@@ -1,6 +1,7 @@
 package com.adrenalinelife.create_event;
 import android.annotation.TargetApi;
-import android.app.ProgressDialog;
+import android.app.DatePickerDialog;
+import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
@@ -16,19 +17,18 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.TimePicker;
 
 import com.adrenalinelife.R;
 import com.adrenalinelife.custom.CustomActivity;
-import com.adrenalinelife.model.Status;
-import com.adrenalinelife.utils.Commons;
-import com.adrenalinelife.utils.Const;
 import com.adrenalinelife.utils.Log;
-import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
-import com.adrenalinelife.web.WebHelper;
 
 import java.io.FileDescriptor;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Calendar;
 import java.util.Date;
 
 public class threeCreateEvent extends CustomActivity {
@@ -38,10 +38,19 @@ public class threeCreateEvent extends CustomActivity {
     public Intent mIntentOut;
     public String mImageUri;
 
+
     //Bundle Variables
+    public Spinner sCategorySpinner;
+    public TextView tEndDatePicker;
+    public TextView tEndTimePicker;
+    public TextView tStartDatePicker;
+    public TextView tStartTimePicker;
+
+
+    //Strings to Parameters
     public String mEventName;
+    public String mCategory;
     public String mDescription;
-    public String mEventCategory;
     public String mEndDatePicker;
     public String mEndTimePicker;
     public String mStartDatePicker;
@@ -51,12 +60,20 @@ public class threeCreateEvent extends CustomActivity {
     public String mCity;
     public String mZip;
     public String mState;
-    public String mUser;
     public Bitmap mImage;
     public String mImageString;
     public String mBaseString;
 
     private static int PICK_EVENT_PHOTO = 1;
+
+    //DatePickerDialoge Setup
+    Calendar mCurrentDate;
+    Calendar mCurrentDate2;
+    int day, month, year, hour, min;
+    //End Date too
+    Calendar mCurrentDate3;
+    Calendar mCurrentDate4;
+    int day2, month2, year2, hour2, min2;
 
     public void onCreate(Bundle savedInstanceState)
     {
@@ -68,20 +85,114 @@ public class threeCreateEvent extends CustomActivity {
         setTouchNClick(R.id.chooseImageBtn);
         setTouchNClick(R.id.submittedImageView);
 
-        //Grab Bundle IN from Previous Page
-        //Set Variables for Bundle OUT
-        mBundleIn = getIntent().getExtras();
-        mEventName = mBundleIn.getString("Event_Name");
-        mDescription = mBundleIn.getString("Description");
-        mEventCategory = mBundleIn.getString("Event_Category");
-        mStartTimePicker = mBundleIn.getString("Start_Time");
-        mStartDatePicker = mBundleIn.getString("Start_Date");
-        mEndTimePicker = mBundleIn.getString("End_Time");
-        mEndDatePicker = mBundleIn.getString("End_Date");
-        Log.e("Start Time = ", mStartTimePicker);
-        Log.e("End Time = ", mEndTimePicker);
-        Log.e("Start Date = ", mStartDatePicker);
-        Log.e("End Date = ", mEndDatePicker);
+        //Start Date////////////////////////////////////////////////////////////////////////////////
+        tStartDatePicker = (TextView) findViewById(R.id.start_date);
+        mCurrentDate = Calendar.getInstance();
+        day = mCurrentDate.get(Calendar.DAY_OF_MONTH);
+        month = mCurrentDate.get(Calendar.MONTH);
+        year = mCurrentDate.get(Calendar.YEAR);
+        tStartDatePicker.setText("Set Date");
+
+        tStartDatePicker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatePickerDialog dpd = new DatePickerDialog(threeCreateEvent.this, new DatePickerDialog.OnDateSetListener() {
+                    @TargetApi(Build.VERSION_CODES.N)
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                        month = month + 1;
+                        tStartDatePicker.setText(month + "/" + dayOfMonth + "/" + year);
+                        //Format Date to Correct String
+                        SimpleDateFormat dateFormatter2 = new SimpleDateFormat("yyyy-MM-dd");
+                        year = year - 1900;
+                        Date d = new Date(year, month, dayOfMonth);
+                        String strDate = dateFormatter2.format(d);
+                        mStartDatePicker = strDate;
+                        Log.e("Start Date", mStartDatePicker);
+                    }
+                }, year, month, day);
+                dpd.show();
+            }
+        });
+        //Start Date////////////////////////////////////////////////////////////////////////////////
+
+        //Start Time////////////////////////////////////////////////////////////////////////////////
+        tStartTimePicker = (TextView) findViewById(R.id.start_time);
+        mCurrentDate2 = Calendar.getInstance();
+        hour = mCurrentDate2.get(Calendar.HOUR_OF_DAY);
+        min = mCurrentDate2.get(Calendar.MINUTE);
+        tStartTimePicker.setText("Set Time");
+
+        tStartTimePicker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TimePickerDialog tpd = new TimePickerDialog(threeCreateEvent.this, new TimePickerDialog.OnTimeSetListener() {
+                    @Override
+                    public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                        tStartTimePicker.setText(hourOfDay + ":" + minute);
+                        startTimeToString(hourOfDay, minute);
+                        Log.e("Start Time", mStartTimePicker);
+                    }
+                }, hour, min, false);
+                tpd.show();
+            }
+        });
+        //Start Time////////////////////////////////////////////////////////////////////////////////
+
+        //End Date//////////////////////////////////////////////////////////////////////////////////
+        tEndDatePicker = (TextView) findViewById(R.id.end_date);
+        mCurrentDate3 = Calendar.getInstance();
+        day2 = mCurrentDate3.get(Calendar.DAY_OF_MONTH);
+        month2 = mCurrentDate3.get(Calendar.MONTH);
+        year2 = mCurrentDate3.get(Calendar.YEAR);
+        tEndDatePicker.setText("Set Date");
+
+        tEndDatePicker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatePickerDialog dpd2 = new DatePickerDialog(threeCreateEvent.this, new DatePickerDialog.OnDateSetListener() {
+                    @TargetApi(Build.VERSION_CODES.N)
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                        month = month + 1;
+                        tEndDatePicker.setText(month + "/" + dayOfMonth + "/" + year);
+                        //Format Date to Correct String
+                        SimpleDateFormat dateFormatter2 = new SimpleDateFormat("yyyy-MM-dd");
+                        year = year - 1900;
+                        Date d = new Date(year, month, dayOfMonth);
+                        String strDate = dateFormatter2.format(d);
+                        mEndDatePicker = strDate;
+                        Log.e("End Date", mEndDatePicker);
+                    }
+                }, year2, month2, day2);
+                dpd2.show();
+            }
+        });
+        //End Date//////////////////////////////////////////////////////////////////////////////////
+
+        //End Time//////////////////////////////////////////////////////////////////////////////////
+        tEndTimePicker = (TextView) findViewById(R.id.end_time);
+        mCurrentDate4 = Calendar.getInstance();
+        hour2 = mCurrentDate4.get(Calendar.HOUR_OF_DAY);
+        min2 = mCurrentDate4.get(Calendar.MINUTE);
+        tEndTimePicker.setText("Set Time");
+
+        tEndTimePicker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TimePickerDialog tpd = new TimePickerDialog(threeCreateEvent.this, new TimePickerDialog.OnTimeSetListener() {
+                    @Override
+                    public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                        tEndTimePicker.setText(hourOfDay + ":" + minute);
+                        endTimeToString(hourOfDay, minute);
+                        Log.e("End Time", mEndTimePicker);
+                    }
+                }, hour2, min2, false);
+                tpd.show();
+            }
+        });
+        //End Time//////////////////////////////////////////////////////////////////////////////////
+
 
     }
 
@@ -91,7 +202,11 @@ public class threeCreateEvent extends CustomActivity {
         super.onClick(v);
         if (v.getId() == R.id.submitEventBtn)
         {
-            doCreateEvent();
+            try {
+                doCreateEvent();
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
         }
         if (v.getId() == R.id.chooseImageBtn || v.getId() == R.id.submittedImageView)
         {
@@ -111,8 +226,31 @@ public class threeCreateEvent extends CustomActivity {
 
     }
 
-    public void doCreateEvent()
-    {
+    public void doCreateEvent() throws FileNotFoundException {
+
+        //Event Name
+        mEventName = ((EditText) findViewById(R.id.event_name)).getText()
+                .toString().trim();
+        //Category
+        sCategorySpinner = (Spinner) findViewById(R.id.cate_spinner);
+        mCategory = sCategorySpinner.getSelectedItem().toString();
+        //Event Details
+        mDescription = ((EditText) findViewById(R.id.event_details)).getText()
+                .toString().trim();
+
+        //Start Time to String
+        //mStartDatePicker = tStartDatePicker.toString();
+        //Log.e("Start Date", mStartDatePicker);
+        //Start Date to String
+        //mStartTimePicker = tStartTimePicker.toString();
+        //Log.e("Start Time", mStartTimePicker);
+        //End Time to String
+        //mEndDatePicker = tEndDatePicker.toString();
+        //Log.e("End Date", mEndDatePicker);
+        //End Date to String
+        //mEndTimePicker = tEndTimePicker.toString();
+        //Log.e("End Time", mEndTimePicker);
+
         // Get Location Info
         mLocation = ((EditText) findViewById(R.id.locationName)).getText()
                 .toString().trim();
@@ -161,7 +299,7 @@ public class threeCreateEvent extends CustomActivity {
         mBundleOut = new Bundle();
         mBundleOut.putString("Event_Name", mEventName);
         mBundleOut.putString("Description", mDescription);
-        mBundleOut.putString("Event_Category", mEventCategory);
+        mBundleOut.putString("Event_Category", mCategory);
         mBundleOut.putString("Start_Time", mStartTimePicker);
         mBundleOut.putString("Start_Date", mStartDatePicker);
         mBundleOut.putString("End_Time", mEndTimePicker);
@@ -221,6 +359,10 @@ public class threeCreateEvent extends CustomActivity {
             imageView.setImageBitmap(bmp);
 
         }
+        if (resultCode == 1) {
+
+
+        }
     }
 
     private Bitmap getBitmapFromUri(Uri uri) throws IOException {
@@ -241,5 +383,46 @@ public class threeCreateEvent extends CustomActivity {
     }
 
 
+    public String startTimeToString(int hour, int min){
+
+        if (min < 10 && hour < 10){
+            String min2 = "0" + min;
+            String hour2 = "0" + hour;
+            mStartTimePicker = hour2 + ":" + min2 + ":" + "00";
+        }
+        else if (hour < 10 && min >= 10){
+            String hour2 = "0" + hour;
+            mStartTimePicker = hour2 + ":" + min + ":" + "00";
+        }
+        else if (hour >= 10 && min < 10){
+            String min2 = "0" + min;
+            mStartTimePicker = hour + ":" + min2 + ":" + "00";
+        }
+        else if (hour >= 10 && min >= 10){
+            mStartTimePicker = hour + ":" + min + ":" + "00";
+        }
+        return mStartTimePicker;
+    }
+
+    public String endTimeToString(int hour, int min){
+
+        if (min < 10 && hour < 10){
+            String min2 = "0" + min;
+            String hour2 = "0" + hour;
+            mEndTimePicker = hour2 + ":" + min2 + ":" + "00";
+        }
+        else if (hour < 10 && min >= 10){
+            String hour2 = "0" + hour;
+            mEndTimePicker = hour2 + ":" + min + ":" + "00";
+        }
+        else if (hour >= 10 && min < 10){
+            String min2 = "0" + min;
+            mEndTimePicker = hour + ":" + min2 + ":" + "00";
+        }
+        else if (hour >= 10 && min >= 10){
+            mEndTimePicker = hour + ":" + min + ":" + "00";
+        }
+        return mEndTimePicker;
+    }
 }
 

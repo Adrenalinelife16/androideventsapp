@@ -2,21 +2,5 @@
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout-v21/place_autocomplete_fragment.xml",
         "source": "/Users/Martare/.android/build-cache/1034932d6ed822d05128538d2973d97125cf75e4/output/res/layout-v21/place_autocomplete_fragment.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
-        "source": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/layout-v21/notification_action_tombstone.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
-        "source": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/layout-v21/notification_template_custom_big.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
-        "source": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/layout-v21/notification_template_icon_group.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
-        "source": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/layout-v21/notification_action.xml"
     }
 ]

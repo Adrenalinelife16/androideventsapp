@@ -5,14 +5,15 @@ import android.content.Intent;
 import android.icu.text.SimpleDateFormat;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.RequiresApi;
 import android.view.View;
 import android.widget.DatePicker;
+import android.widget.TextView;
 import android.widget.TimePicker;
 
 import com.adrenalinelife.R;
 import com.adrenalinelife.custom.CustomActivity;
 import com.adrenalinelife.utils.Log;
+
 
 import java.util.Date;
 
@@ -39,7 +40,10 @@ public class twoEndDateTime extends CustomActivity {
     public String min2;
     public String hour2;
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
+    public TextView mSetTime;
+    public TextView mSetDate;
+
+    @TargetApi(Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -48,6 +52,10 @@ public class twoEndDateTime extends CustomActivity {
         setTouchNClick(R.id.two_date_time_button);
 
         getActionBar().setTitle("SET: End Date and Time");
+        mSetTime = (TextView) findViewById(R.id.setTime);
+        mSetDate = (TextView) findViewById(R.id.setDate);
+        mSetTime.setText("End Time");
+        mSetDate.setText("End Date");
 
         //Grab Bundle IN from Previous Page
         //Set Variables for Bundle OUT
@@ -59,6 +67,7 @@ public class twoEndDateTime extends CustomActivity {
         mStartDatePicker = mBundleIn.getString("Start_Date");
 
         mTimePicker = (TimePicker) findViewById(R.id.time_picker1);
+
         mTimePicker.setHour(12);
         mTimePicker.setMinute(00);
 

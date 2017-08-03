@@ -18,7 +18,8 @@
         android:ems="10"
         android:hint="Event Name:"
         android:inputType="textPersonName"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:imeOptions="actionNext"/>
 
     <Spinner
         android:id="@+id/category_spinner"
@@ -39,14 +40,15 @@
         android:gravity="top"
         android:hint="Details about your event! Ex: CONTACT INFO, Skill level?, First time or is this a regular event?"
         android:inputType="textMultiLine|textLongMessage"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:imeOptions="actionDone"/>
 
     <Button
         android:id="@+id/one_category_button"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/actionbar_bg_black"
+        android:background="@drawable/actionbar_bg_6solid"
         android:text="Next"
         android:textColor="@color/white"/>
 </LinearLayout>

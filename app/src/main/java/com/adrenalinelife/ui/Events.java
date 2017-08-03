@@ -29,6 +29,8 @@ import android.widget.Toast;
 import com.adrenalinelife.EventDetailActivity;
 import com.adrenalinelife.R;
 import com.adrenalinelife.create_event.oneCreateEvent;
+import com.adrenalinelife.create_event.threeCreateEvent;
+import com.adrenalinelife.custom.CustomFragment;
 import com.adrenalinelife.custom.PagingFragment;
 import com.adrenalinelife.model.Event;
 import com.adrenalinelife.utils.Commons;
@@ -61,6 +63,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 	Button mFilterSaturday;
 	Button mFilterSunday;
 	Button mFilterAll;
+	Button mDiscoverEvents;
 
 
 	/** Swipe Refresh Layout **/
@@ -80,6 +83,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		setHasOptionsMenu(true);
 
 		///////////////////////////////////////////////// - Initiating Views
+
 		mFilterMonday = (Button) v.findViewById(R.id.btn_mon);
 		mFilterTuesday = (Button) v.findViewById(R.id.btn_tues);
 		mFilterWednesday = (Button) v.findViewById(R.id.btn_wed);
@@ -88,6 +92,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		mFilterSaturday = (Button) v.findViewById(R.id.btn_sat);
 		mFilterSunday = (Button) v.findViewById(R.id.btn_sun);
 		mFilterAll = (Button) v.findViewById(R.id.button_all_filter);
+		mDiscoverEvents = (Button) v.findViewById(R.id.discover_btn);
 
 		filterResults = (ListView) v.findViewById(R.id.list);
 
@@ -96,6 +101,23 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		mFilterAll.setTextColor(getResources().getColor(R.color.adrenaline_red));
 		setProgramList(v);
 ///////////////////////////////////////////////// - setOnClickListeners for each day in the filter tab
+
+		mDiscoverEvents.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				//Take User to Discover Events Page
+				setFilterTextWhite();
+				mDiscoverEvents.setTextColor(getResources().getColor(R.color.adrenaline_red));
+
+				//Start Fragment!
+				CustomFragment f = new DiscoverEvents();
+				android.support.v4.app.FragmentManager fragmentManager = getFragmentManager();
+				android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+				fragmentTransaction.replace(getId(), f);
+				fragmentTransaction.commit();
+
+			}
+		});
 
 		mFilterAll.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -642,18 +664,12 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 	{
 		if (item.getItemId() == R.id.menu_fav)
 		{
-            Intent intent = new Intent(getActivity(), oneCreateEvent.class);
+            Intent intent = new Intent(getActivity(), threeCreateEvent.class);
             startActivity(intent);
 
 	} else if (item.getItemId() == R.id.refresh) {
 
-			final SearchAdapter refreshA = new SearchAdapter(getActivity(), pList);
-			filterResults.setAdapter(refreshA);
-			setFilterTextWhite();
-			searchView.setQuery("", false);
-			searchView.clearFocus();
-			refreshA.getFilter().filter("r");
-			refreshA.notifyDataSetChanged();
+			softEventRefresh();
 		}
 		return true;
 	}
@@ -668,5 +684,20 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		mFilterSaturday.setTextColor(getResources().getColor(R.color.white));
 		mFilterSunday.setTextColor(getResources().getColor(R.color.white));
 		mFilterAll.setTextColor(getResources().getColor(R.color.white));
+		mDiscoverEvents.setTextColor(getResources().getColor(R.color.white));
 	}
+
+	public void softEventRefresh(){
+
+		final SearchAdapter refreshA = new SearchAdapter(getActivity(), pList);
+		filterResults.setAdapter(refreshA);
+		setFilterTextWhite();
+		searchView.setQuery("", false);
+		searchView.clearFocus();
+		refreshA.getFilter().filter("r");
+		refreshA.notifyDataSetChanged();
+		mFilterAll.setTextColor(getResources().getColor(R.color.red));
+
+	}
+
 }

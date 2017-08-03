@@ -1,5 +1,8 @@
 package com.adrenalinelife.create_event;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.app.ProgressDialog;
 import android.database.Cursor;
 import android.graphics.Bitmap;
@@ -9,19 +12,25 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.os.ParcelFileDescriptor;
 import android.provider.MediaStore;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.adrenalinelife.R;
 import com.adrenalinelife.custom.CustomActivity;
+import com.adrenalinelife.custom.CustomFragment;
 import com.adrenalinelife.model.Status;
+import com.adrenalinelife.ui.DiscoverEvents;
+import com.adrenalinelife.ui.Events;
 import com.adrenalinelife.utils.Const;
 import com.adrenalinelife.utils.Log;
 import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
 
+import java.io.ByteArrayOutputStream;
 import java.io.FileDescriptor;
 import java.io.IOException;
 
@@ -62,6 +71,9 @@ public class fourFinalize extends CustomActivity {
     public TextView rZip;
     public TextView rDetails;
 
+    public String cHour;
+    public String cMin;
+
     private static int PICK_EVENT_PHOTO = 1;
 
     @Override
@@ -70,7 +82,7 @@ public class fourFinalize extends CustomActivity {
         setContentView(R.layout.four_finalize);
 
         setTouchNClick(R.id.submitEventButton);
-
+        getActionBar().setTitle("Edit");
 
         //Grab Bundle IN from Previous Page
         mBundleIn = getIntent().getExtras();
@@ -87,10 +99,6 @@ public class fourFinalize extends CustomActivity {
         mState = mBundleIn.getString("State");
         mZip = mBundleIn.getString("Zip");
         mImageString = mBundleIn.getString("Image");
-
-        //Convert Image String to Uri
-        mImageUri = Uri.parse(mImageString);
-
 
         //Set all Variables to their spot
         TextView rEventName = (TextView) findViewById(R.id.re_eventname);
@@ -123,27 +131,33 @@ public class fourFinalize extends CustomActivity {
         rDetails = (TextView) findViewById(R.id.re_details);
         rDetails.setText(mDescription);
 
-        ImageView imageView = (ImageView) findViewById(R.id.imageReview);
-        imageView.setImageResource(0);
+        if (mImageString != null){
 
-        Bitmap bmp = null;
-        try {
-            bmp = getBitmapFromUri(mImageUri);
-            Log.e("bmp", bmp);
-            saveImage(bmp);
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+            //Convert Image String to Uri
+            mImageUri = Uri.parse(mImageString);
+
+            ImageView imageView = (ImageView) findViewById(R.id.imageReview);
+            imageView.setImageResource(0);
+
+            Bitmap bmp = null;
+            try {
+                bmp = getBitmapFromUri(mImageUri);
+                Log.e("bmp", bmp);
+                saveImage(bmp);
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+            imageView.setImageBitmap(bmp);
+
+            //Convert Selected Image to Base64 String
+            pickImage();
+
         }
-        imageView.setImageBitmap(bmp);
-
-
-        //Convert Selected Image to Base64 String
-        pickImage();
-        Log.e("Base String", mBaseString);
 
     }
 
+    //Helping setup image for ImageView
     private Bitmap getBitmapFromUri(Uri uri) throws IOException {
         ParcelFileDescriptor parcelFileDescriptor =
                 getContentResolver().openFileDescriptor(uri, "r");
@@ -154,6 +168,7 @@ public class fourFinalize extends CustomActivity {
         return image;
     }
 
+    //Helping Setup image for ImageView
     public Bitmap saveImage(Bitmap image)
     {
         mImage = image;
@@ -172,28 +187,34 @@ public class fourFinalize extends CustomActivity {
 
     }
 
-
     public void doCreateEvent() {
 
 
         // Get & Pass User ID
         mUser = Const.USER_ID;
 
-        //mLocation, mAddress, mCity, mZip, mState, mEventCategory, mUser, mEventName, mDescription, mStartTimePicker, mEndTimePicker, mStartDatePicker, mEndDatePicker
+        //mLocation, mAddress, mCity, mZip, mState, mEventCategory, mUser, mEventName, mDescription, tStartTimePicker, tEndTimePicker, tStartDatePicker, tEndDatePicker
         final ProgressDialog dia = showProgressDia(R.string.alert_wait);
         new Thread(new Runnable() {
             @Override
             public void run()
             {
                 Log.e("Running doCreateEvent");
-                final Status st = WebHelper.doCreateEvent(mLocation, mAddress, mCity, mZip, mState, mEventCategory, mUser, mEventName, mDescription, mStartTimePicker, mEndTimePicker, mStartDatePicker, mEndDatePicker, mBaseString);
+                final Status st = WebHelper.doCreateEvent(mBaseString);
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run()
                     {
                         dia.dismiss();
-                        if (!st.isSuccess())
+                        if (!st.isSuccess()) {
                             Utils.showEventCreatedDialog(fourFinalize.this, "Event Creation Successful");
+
+                            // Launch Events Fragment
+
+
+
+                        }
+
                         else
                         {
                             Utils.showEventCreatedDialog(fourFinalize.this, "Event Creation Unsuccessful!");
@@ -207,6 +228,7 @@ public class fourFinalize extends CustomActivity {
     }
 
 
+    //Select and Convert Image for Upload
     public void pickImage(){
 
         Uri.parse(mImageString);
@@ -222,6 +244,11 @@ public class fourFinalize extends CustomActivity {
         mBaseString = Utils.getBase64ImageString(mImageString);
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Toast.makeText(fourFinalize.this, "You just pressed back button",Toast.LENGTH_SHORT).show();
+    }
 
 
 }

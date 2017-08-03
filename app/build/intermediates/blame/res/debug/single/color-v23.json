@@ -1,46 +1,6 @@
 [
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
-        "source": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/color-v23/abc_tint_default.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
-        "source": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/color-v23/abc_tint_switch_track.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_text_material.xml",
-        "source": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/color-v23/abc_btn_colored_text_material.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color-v23/design_tint_password_toggle.xml",
-        "source": "/Users/Martare/.android/build-cache/e4fcf4cb41d84a17aa239824862fae854a9b5c0e/output/res/color-v23/design_tint_password_toggle.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
-        "source": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/color-v23/abc_tint_btn_checkable.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
-        "source": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/color-v23/abc_tint_spinner.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
-        "source": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/color-v23/abc_btn_colored_borderless_text_material.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
-        "source": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/color-v23/abc_tint_switch_thumb.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
-        "source": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/color-v23/abc_tint_edittext.xml"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
-        "source": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/color-v23/abc_color_highlight_material.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
-        "source": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/color-v23/abc_tint_seek_thumb.xml"
+        "source": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/color-v23/abc_color_highlight_material.xml"
     }
 ]

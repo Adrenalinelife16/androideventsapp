@@ -24,15 +24,6 @@
             android:textSize="@dimen/txt_14sp">
         </TextView>
 
-        <Button
-            android:id="@+id/btn"
-            style="@style/btn_orange"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/pad_30dp"
-            android:text="@string/send_email"
-            android:visibility="gone"/>
-
     </LinearLayout>
 
 </ScrollView>

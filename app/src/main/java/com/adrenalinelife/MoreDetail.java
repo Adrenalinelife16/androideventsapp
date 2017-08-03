@@ -27,8 +27,6 @@ public class MoreDetail extends CustomActivity
 		((TextView) findViewById(R.id.lbl)).setText(getIntent().getIntExtra(
 				Const.EXTRA_DATA, 0));
 
-		if (getIntent().getIntExtra(Const.EXTRA_DATA1, R.string.app_name) == R.string.help_center)
-			setTouchNClick(R.id.btn).setVisibility(View.VISIBLE);
 	}
 
 	@Override

@@ -11,13 +11,13 @@
                     "endOffset": 220
                 },
                 "from": {
-                    "file": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/values-es-rUS/values-es-rUS.xml",
+                    "file": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/values-es-rUS/values-es-rUS.xml",
                     "position": {
-                        "startLine": 2,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 55,
+                        "startOffset": 284,
                         "endColumn": 119,
-                        "endOffset": 170
+                        "endOffset": 399
                     }
                 }
             },
@@ -30,13 +30,13 @@
                     "endOffset": 328
                 },
                 "from": {
-                    "file": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/values-es-rUS/values-es-rUS.xml",
+                    "file": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/values-es-rUS/values-es-rUS.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 175,
+                        "startOffset": 404,
                         "endColumn": 107,
-                        "endOffset": 278
+                        "endOffset": 507
                     }
                 }
             },
@@ -49,13 +49,13 @@
                     "endOffset": 451
                 },
                 "from": {
-                    "file": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/values-es-rUS/values-es-rUS.xml",
+                    "file": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/values-es-rUS/values-es-rUS.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 283,
+                        "startOffset": 512,
                         "endColumn": 122,
-                        "endOffset": 401
+                        "endOffset": 630
                     }
                 }
             },
@@ -68,13 +68,13 @@
                     "endOffset": 560
                 },
                 "from": {
-                    "file": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/values-es-rUS/values-es-rUS.xml",
+                    "file": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/values-es-rUS/values-es-rUS.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 406,
+                        "startOffset": 635,
                         "endColumn": 108,
-                        "endOffset": 510
+                        "endOffset": 739
                     }
                 }
             },
@@ -87,13 +87,13 @@
                     "endOffset": 668
                 },
                 "from": {
-                    "file": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/values-es-rUS/values-es-rUS.xml",
+                    "file": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/values-es-rUS/values-es-rUS.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 515,
+                        "startOffset": 744,
                         "endColumn": 107,
-                        "endOffset": 618
+                        "endOffset": 847
                     }
                 }
             },
@@ -106,13 +106,13 @@
                     "endOffset": 753
                 },
                 "from": {
-                    "file": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/values-es-rUS/values-es-rUS.xml",
+                    "file": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/values-es-rUS/values-es-rUS.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 623,
+                        "startOffset": 852,
                         "endColumn": 84,
-                        "endOffset": 703
+                        "endOffset": 932
                     }
                 }
             },
@@ -125,13 +125,13 @@
                     "endOffset": 854
                 },
                 "from": {
-                    "file": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/values-es-rUS/values-es-rUS.xml",
+                    "file": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/values-es-rUS/values-es-rUS.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 708,
+                        "startOffset": 937,
                         "endColumn": 100,
-                        "endOffset": 804
+                        "endOffset": 1033
                     }
                 }
             },
@@ -144,13 +144,13 @@
                     "endOffset": 977
                 },
                 "from": {
-                    "file": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/values-es-rUS/values-es-rUS.xml",
+                    "file": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/values-es-rUS/values-es-rUS.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 809,
+                        "startOffset": 1038,
                         "endColumn": 122,
-                        "endOffset": 927
+                        "endOffset": 1156
                     }
                 }
             },
@@ -159,17 +159,17 @@
                     "startLine": 10,
                     "startColumn": 4,
                     "startOffset": 982,
-                    "endColumn": 84,
-                    "endOffset": 1062
+                    "endColumn": 81,
+                    "endOffset": 1059
                 },
                 "from": {
-                    "file": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/values-es-rUS/values-es-rUS.xml",
+                    "file": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/values-es-rUS/values-es-rUS.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 932,
-                        "endColumn": 84,
-                        "endOffset": 1012
+                        "startOffset": 1161,
+                        "endColumn": 81,
+                        "endOffset": 1238
                     }
                 }
             },
@@ -177,18 +177,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 1067,
-                    "endColumn": 81,
-                    "endOffset": 1144
+                    "startOffset": 1064,
+                    "endColumn": 111,
+                    "endOffset": 1171
                 },
                 "from": {
-                    "file": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/values-es-rUS/values-es-rUS.xml",
+                    "file": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/values-es-rUS/values-es-rUS.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 1017,
-                        "endColumn": 81,
-                        "endOffset": 1094
+                        "startOffset": 1243,
+                        "endColumn": 111,
+                        "endOffset": 1350
                     }
                 }
             },
@@ -196,18 +196,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 1149,
-                    "endColumn": 81,
-                    "endOffset": 1226
+                    "startOffset": 1176,
+                    "endColumn": 111,
+                    "endOffset": 1283
                 },
                 "from": {
-                    "file": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/values-es-rUS/values-es-rUS.xml",
+                    "file": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/values-es-rUS/values-es-rUS.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 1099,
-                        "endColumn": 81,
-                        "endOffset": 1176
+                        "startOffset": 1355,
+                        "endColumn": 111,
+                        "endOffset": 1462
                     }
                 }
             },
@@ -215,18 +215,18 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 1231,
-                    "endColumn": 111,
-                    "endOffset": 1338
+                    "startOffset": 1288,
+                    "endColumn": 100,
+                    "endOffset": 1384
                 },
                 "from": {
-                    "file": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/values-es-rUS/values-es-rUS.xml",
+                    "file": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/values-es-rUS/values-es-rUS.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 1181,
-                        "endColumn": 111,
-                        "endOffset": 1288
+                        "startOffset": 1467,
+                        "endColumn": 100,
+                        "endOffset": 1563
                     }
                 }
             },
@@ -234,18 +234,18 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 1343,
-                    "endColumn": 111,
-                    "endOffset": 1450
+                    "startOffset": 1389,
+                    "endColumn": 107,
+                    "endOffset": 1492
                 },
                 "from": {
-                    "file": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/values-es-rUS/values-es-rUS.xml",
+                    "file": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/values-es-rUS/values-es-rUS.xml",
                     "position": {
-                        "startLine": 14,
+                        "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1293,
-                        "endColumn": 111,
-                        "endOffset": 1400
+                        "startOffset": 1568,
+                        "endColumn": 107,
+                        "endOffset": 1671
                     }
                 }
             },
@@ -253,18 +253,18 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 1455,
-                    "endColumn": 100,
-                    "endOffset": 1551
+                    "startOffset": 1497,
+                    "endColumn": 106,
+                    "endOffset": 1599
                 },
                 "from": {
-                    "file": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/values-es-rUS/values-es-rUS.xml",
+                    "file": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/values-es-rUS/values-es-rUS.xml",
                     "position": {
-                        "startLine": 15,
+                        "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 1405,
-                        "endColumn": 100,
-                        "endOffset": 1501
+                        "startOffset": 1676,
+                        "endColumn": 106,
+                        "endOffset": 1778
                     }
                 }
             },
@@ -272,18 +272,18 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 1556,
-                    "endColumn": 107,
-                    "endOffset": 1659
+                    "startOffset": 1604,
+                    "endColumn": 106,
+                    "endOffset": 1706
                 },
                 "from": {
-                    "file": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/values-es-rUS/values-es-rUS.xml",
+                    "file": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/values-es-rUS/values-es-rUS.xml",
                     "position": {
-                        "startLine": 16,
+                        "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 1506,
-                        "endColumn": 107,
-                        "endOffset": 1609
+                        "startOffset": 1783,
+                        "endColumn": 106,
+                        "endOffset": 1885
                     }
                 }
             },
@@ -291,18 +291,18 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1664,
-                    "endColumn": 106,
-                    "endOffset": 1766
+                    "startOffset": 1711,
+                    "endColumn": 121,
+                    "endOffset": 1828
                 },
                 "from": {
-                    "file": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/values-es-rUS/values-es-rUS.xml",
+                    "file": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/values-es-rUS/values-es-rUS.xml",
                     "position": {
-                        "startLine": 17,
+                        "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 1614,
-                        "endColumn": 106,
-                        "endOffset": 1716
+                        "startOffset": 1890,
+                        "endColumn": 121,
+                        "endOffset": 2007
                     }
                 }
             },
@@ -310,18 +310,18 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1771,
-                    "endColumn": 106,
-                    "endOffset": 1873
+                    "startOffset": 1833,
+                    "endColumn": 99,
+                    "endOffset": 1928
                 },
                 "from": {
-                    "file": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/values-es-rUS/values-es-rUS.xml",
+                    "file": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/values-es-rUS/values-es-rUS.xml",
                     "position": {
-                        "startLine": 18,
+                        "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 1721,
-                        "endColumn": 106,
-                        "endOffset": 1823
+                        "startOffset": 2012,
+                        "endColumn": 99,
+                        "endOffset": 2107
                     }
                 }
             },
@@ -329,47 +329,9 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1878,
-                    "endColumn": 121,
-                    "endOffset": 1995
-                },
-                "from": {
-                    "file": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/values-es-rUS/values-es-rUS.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1828,
-                        "endColumn": 121,
-                        "endOffset": 1945
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 20,
-                    "startColumn": 4,
-                    "startOffset": 2000,
-                    "endColumn": 99,
-                    "endOffset": 2095
-                },
-                "from": {
-                    "file": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/values-es-rUS/values-es-rUS.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 1950,
-                        "endColumn": 99,
-                        "endOffset": 2045
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 21,
-                    "startColumn": 4,
-                    "startOffset": 2100,
+                    "startOffset": 1933,
                     "endColumn": 276,
-                    "endOffset": 2372
+                    "endOffset": 2205
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -384,11 +346,11 @@
             },
             {
                 "to": {
-                    "startLine": 22,
+                    "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 2377,
+                    "startOffset": 2210,
                     "endColumn": 134,
-                    "endOffset": 2507
+                    "endOffset": 2340
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -403,11 +365,11 @@
             },
             {
                 "to": {
-                    "startLine": 23,
+                    "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 2512,
+                    "startOffset": 2345,
                     "endColumn": 197,
-                    "endOffset": 2705
+                    "endOffset": 2538
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -422,11 +384,11 @@
             },
             {
                 "to": {
-                    "startLine": 24,
+                    "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 2710,
+                    "startOffset": 2543,
                     "endColumn": 133,
-                    "endOffset": 2839
+                    "endOffset": 2672
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -441,11 +403,11 @@
             },
             {
                 "to": {
-                    "startLine": 25,
+                    "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 2844,
+                    "startOffset": 2677,
                     "endColumn": 133,
-                    "endOffset": 2973
+                    "endOffset": 2806
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -460,11 +422,11 @@
             },
             {
                 "to": {
-                    "startLine": 26,
+                    "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 2978,
+                    "startOffset": 2811,
                     "endColumn": 214,
-                    "endOffset": 3188
+                    "endOffset": 3021
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -479,11 +441,11 @@
             },
             {
                 "to": {
-                    "startLine": 27,
+                    "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 3193,
+                    "startOffset": 3026,
                     "endColumn": 213,
-                    "endOffset": 3402
+                    "endOffset": 3235
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -498,11 +460,11 @@
             },
             {
                 "to": {
-                    "startLine": 28,
+                    "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 3407,
+                    "startOffset": 3240,
                     "endColumn": 132,
-                    "endOffset": 3535
+                    "endOffset": 3368
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -517,11 +479,11 @@
             },
             {
                 "to": {
-                    "startLine": 29,
+                    "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 3540,
+                    "startOffset": 3373,
                     "endColumn": 179,
-                    "endOffset": 3715
+                    "endOffset": 3548
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -536,11 +498,11 @@
             },
             {
                 "to": {
-                    "startLine": 30,
+                    "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 3720,
+                    "startOffset": 3553,
                     "endColumn": 121,
-                    "endOffset": 3837
+                    "endOffset": 3670
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -555,11 +517,11 @@
             },
             {
                 "to": {
-                    "startLine": 31,
+                    "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 3842,
+                    "startOffset": 3675,
                     "endColumn": 186,
-                    "endOffset": 4024
+                    "endOffset": 3857
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -574,11 +536,11 @@
             },
             {
                 "to": {
-                    "startLine": 32,
+                    "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 4029,
+                    "startOffset": 3862,
                     "endColumn": 118,
-                    "endOffset": 4143
+                    "endOffset": 3976
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -593,11 +555,11 @@
             },
             {
                 "to": {
-                    "startLine": 33,
+                    "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 4148,
+                    "startOffset": 3981,
                     "endColumn": 139,
-                    "endOffset": 4283
+                    "endOffset": 4116
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -612,11 +574,11 @@
             },
             {
                 "to": {
-                    "startLine": 34,
+                    "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 4288,
+                    "startOffset": 4121,
                     "endColumn": 173,
-                    "endOffset": 4457
+                    "endOffset": 4290
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -631,11 +593,11 @@
             },
             {
                 "to": {
-                    "startLine": 35,
+                    "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 4462,
+                    "startOffset": 4295,
                     "endColumn": 129,
-                    "endOffset": 4587
+                    "endOffset": 4420
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -650,11 +612,11 @@
             },
             {
                 "to": {
-                    "startLine": 36,
+                    "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 4592,
+                    "startOffset": 4425,
                     "endColumn": 186,
-                    "endOffset": 4774
+                    "endOffset": 4607
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -669,11 +631,11 @@
             },
             {
                 "to": {
-                    "startLine": 37,
+                    "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 4779,
+                    "startOffset": 4612,
                     "endColumn": 123,
-                    "endOffset": 4898
+                    "endOffset": 4731
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -688,11 +650,11 @@
             },
             {
                 "to": {
-                    "startLine": 38,
+                    "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 4903,
+                    "startOffset": 4736,
                     "endColumn": 258,
-                    "endOffset": 5157
+                    "endOffset": 4990
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/7307b0f4aba3c36a53bafffd4dbd589e33027821/output/res/values-es-rUS/common_strings.xml",
@@ -707,11 +669,11 @@
             },
             {
                 "to": {
-                    "startLine": 39,
+                    "startLine": 37,
                     "startColumn": 4,
-                    "startOffset": 5162,
+                    "startOffset": 4995,
                     "endColumn": 270,
-                    "endOffset": 5428
+                    "endOffset": 5261
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -726,11 +688,11 @@
             },
             {
                 "to": {
-                    "startLine": 40,
+                    "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 5433,
+                    "startOffset": 5266,
                     "endColumn": 127,
-                    "endOffset": 5556
+                    "endOffset": 5389
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -745,11 +707,11 @@
             },
             {
                 "to": {
-                    "startLine": 41,
+                    "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 5561,
+                    "startOffset": 5394,
                     "endColumn": 110,
-                    "endOffset": 5667
+                    "endOffset": 5500
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -764,11 +726,11 @@
             },
             {
                 "to": {
-                    "startLine": 42,
+                    "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 5672,
+                    "startOffset": 5505,
                     "endColumn": 200,
-                    "endOffset": 5868
+                    "endOffset": 5701
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -783,11 +745,11 @@
             },
             {
                 "to": {
-                    "startLine": 43,
+                    "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 5873,
+                    "startOffset": 5706,
                     "endColumn": 134,
-                    "endOffset": 6003
+                    "endOffset": 5836
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -802,11 +764,11 @@
             },
             {
                 "to": {
-                    "startLine": 44,
+                    "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 6008,
+                    "startOffset": 5841,
                     "endColumn": 235,
-                    "endOffset": 6239
+                    "endOffset": 6072
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -821,11 +783,11 @@
             },
             {
                 "to": {
-                    "startLine": 45,
+                    "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 6244,
+                    "startOffset": 6077,
                     "endColumn": 142,
-                    "endOffset": 6382
+                    "endOffset": 6215
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -840,11 +802,11 @@
             },
             {
                 "to": {
-                    "startLine": 46,
+                    "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 6387,
+                    "startOffset": 6220,
                     "endColumn": 207,
-                    "endOffset": 6590
+                    "endOffset": 6423
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -859,11 +821,11 @@
             },
             {
                 "to": {
-                    "startLine": 47,
+                    "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 6595,
+                    "startOffset": 6428,
                     "endColumn": 98,
-                    "endOffset": 6689
+                    "endOffset": 6522
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -878,11 +840,11 @@
             },
             {
                 "to": {
-                    "startLine": 48,
+                    "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 6694,
+                    "startOffset": 6527,
                     "endColumn": 91,
-                    "endOffset": 6781
+                    "endOffset": 6614
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -897,11 +859,11 @@
             },
             {
                 "to": {
-                    "startLine": 49,
+                    "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 6786,
+                    "startOffset": 6619,
                     "endColumn": 107,
-                    "endOffset": 6889
+                    "endOffset": 6722
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/values-es-rUS/base_strings.xml",
@@ -916,11 +878,11 @@
             },
             {
                 "to": {
-                    "startLine": 50,
+                    "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 6894,
+                    "startOffset": 6727,
                     "endColumn": 110,
-                    "endOffset": 7000
+                    "endOffset": 6833
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/res/values-es-rUS/values-es-rUS.xml",
@@ -935,11 +897,11 @@
             },
             {
                 "to": {
-                    "startLine": 51,
+                    "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 7005,
+                    "startOffset": 6838,
                     "endColumn": 113,
-                    "endOffset": 7114
+                    "endOffset": 6947
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/res/values-es-rUS/values-es-rUS.xml",
@@ -954,11 +916,11 @@
             },
             {
                 "to": {
-                    "startLine": 52,
+                    "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 7119,
+                    "startOffset": 6952,
                     "endColumn": 110,
-                    "endOffset": 7225
+                    "endOffset": 7058
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/res/values-es-rUS/values-es-rUS.xml",
@@ -973,11 +935,11 @@
             },
             {
                 "to": {
-                    "startLine": 53,
+                    "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 7230,
+                    "startOffset": 7063,
                     "endColumn": 105,
-                    "endOffset": 7331
+                    "endOffset": 7164
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/res/values-es-rUS/values-es-rUS.xml",
@@ -992,11 +954,11 @@
             },
             {
                 "to": {
-                    "startLine": 54,
+                    "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 7336,
+                    "startOffset": 7169,
                     "endColumn": 131,
-                    "endOffset": 7463
+                    "endOffset": 7296
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/res/values-es-rUS/values-es-rUS.xml",
@@ -1011,11 +973,11 @@
             },
             {
                 "to": {
-                    "startLine": 55,
+                    "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 7468,
+                    "startOffset": 7301,
                     "endColumn": 96,
-                    "endOffset": 7560
+                    "endOffset": 7393
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/res/values-es-rUS/values-es-rUS.xml",
@@ -1030,11 +992,11 @@
             },
             {
                 "to": {
-                    "startLine": 56,
+                    "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 7565,
+                    "startOffset": 7398,
                     "endColumn": 99,
-                    "endOffset": 7660
+                    "endOffset": 7493
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/res/values-es-rUS/values-es-rUS.xml",
@@ -1049,11 +1011,11 @@
             },
             {
                 "to": {
-                    "startLine": 57,
+                    "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 7665,
+                    "startOffset": 7498,
                     "endColumn": 125,
-                    "endOffset": 7786
+                    "endOffset": 7619
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/res/values-es-rUS/values-es-rUS.xml",
@@ -1068,11 +1030,11 @@
             },
             {
                 "to": {
-                    "startLine": 58,
+                    "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 7791,
+                    "startOffset": 7624,
                     "endColumn": 108,
-                    "endOffset": 7895
+                    "endOffset": 7728
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/res/values-es-rUS/values-es-rUS.xml",
@@ -1087,11 +1049,11 @@
             },
             {
                 "to": {
-                    "startLine": 59,
+                    "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 7900,
+                    "startOffset": 7733,
                     "endColumn": 86,
-                    "endOffset": 7982
+                    "endOffset": 7815
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/res/values-es-rUS/values-es-rUS.xml",
@@ -1106,11 +1068,11 @@
             },
             {
                 "to": {
-                    "startLine": 60,
+                    "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 7987,
+                    "startOffset": 7820,
                     "endColumn": 98,
-                    "endOffset": 8081
+                    "endOffset": 7914
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/res/values-es-rUS/values-es-rUS.xml",
@@ -1125,11 +1087,11 @@
             },
             {
                 "to": {
-                    "startLine": 61,
+                    "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 8086,
+                    "startOffset": 7919,
                     "endColumn": 105,
-                    "endOffset": 8187
+                    "endOffset": 8020
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/1034932d6ed822d05128538d2973d97125cf75e4/output/res/values-es-rUS/location_strings.xml",
@@ -1144,11 +1106,11 @@
             },
             {
                 "to": {
-                    "startLine": 62,
+                    "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 8192,
+                    "startOffset": 8025,
                     "endColumn": 97,
-                    "endOffset": 8285
+                    "endOffset": 8118
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/1034932d6ed822d05128538d2973d97125cf75e4/output/res/values-es-rUS/location_strings.xml",
@@ -1163,49 +1125,30 @@
             },
             {
                 "to": {
-                    "startLine": 63,
+                    "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 8290,
-                    "endColumn": 81,
-                    "endOffset": 8367
+                    "startOffset": 8123,
+                    "endColumn": 100,
+                    "endOffset": 8219
                 },
                 "from": {
-                    "file": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/values-es-rUS/values-es-rUS.xml",
+                    "file": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/values-es-rUS/values-es-rUS.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 2050,
-                        "endColumn": 81,
-                        "endOffset": 2127
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 64,
-                    "startColumn": 4,
-                    "startOffset": 8372,
-                    "endColumn": 100,
-                    "endOffset": 8468
-                },
-                "from": {
-                    "file": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/values-es-rUS/values-es-rUS.xml",
-                    "position": {
-                        "startLine": 22,
-                        "startColumn": 4,
-                        "startOffset": 2132,
+                        "startOffset": 2112,
                         "endColumn": 100,
-                        "endOffset": 2228
+                        "endOffset": 2208
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 65,
+                    "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 8473,
+                    "startOffset": 8224,
                     "endColumn": 107,
-                    "endOffset": 8576
+                    "endOffset": 8327
                 },
                 "from": {
                     "file": "/Users/Martare/.android/build-cache/75e1d57504b9f579f67513631b5e4e3bf1a1f408/output/res/values-es-rUS/wallet_strings.xml",

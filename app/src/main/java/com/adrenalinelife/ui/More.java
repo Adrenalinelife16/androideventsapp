@@ -3,7 +3,6 @@ package com.adrenalinelife.ui;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.RequiresApi;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -78,7 +77,6 @@ public class More extends CustomFragment
 		return v;
 	}
 
-	@RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 	@Override
 	public void onClick(View v)
 	{

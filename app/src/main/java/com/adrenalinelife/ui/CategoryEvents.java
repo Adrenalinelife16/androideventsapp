@@ -6,7 +6,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.support.annotation.IdRes;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -28,6 +31,7 @@ import android.widget.Toast;
 
 import com.adrenalinelife.EventDetailActivity;
 import com.adrenalinelife.R;
+import com.adrenalinelife.custom.CustomFragment;
 import com.adrenalinelife.custom.PagingFragment;
 import com.adrenalinelife.model.Event;
 import com.adrenalinelife.utils.Commons;
@@ -40,6 +44,8 @@ import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
 
+import java.io.FileDescriptor;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -205,30 +211,29 @@ public class CategoryEvents extends PagingFragment
         }).start();
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////
-    public class ProgramAdapter extends BaseAdapter
-    {
+
+    public class ProgramAdapter extends BaseAdapter {
 
         @Override
-        public int getCount()
-        {
-            return pList.size();
+        public int getCount() {
+            return 0;
         }
 
         @Override
-        public Event getItem(int position)
-        {
-            return pList.get(position);
+        public Event getItem(int position) {
+            return null;
         }
 
         @Override
-        public long getItemId(int position)
-        {
+        public long getItemId(int position) {
             return position;
         }
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent)
         {
+
+            /*
             if (convertView == null)
                 convertView = getLayoutInflater(null).inflate(
                         R.layout.event_item, null);
@@ -262,7 +267,10 @@ public class CategoryEvents extends PagingFragment
             else
                 img.setImageBitmap(bm);
 
-            return convertView;
+                return convertView;
+
+                */
+            return null;
         }
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -402,6 +410,7 @@ public class CategoryEvents extends PagingFragment
                     final View v = inflater.inflate(R.layout.events, null);
                     setSearchList(v, fList);
                     notifyDataSetChanged();
+
                 } else {
                     Toast.makeText(getActivity(), "No Results Found!",Toast.LENGTH_SHORT).show();
                     fList.clear();
@@ -422,32 +431,6 @@ public class CategoryEvents extends PagingFragment
         favA.getFilter().filter(mFilter);
         adapter.notifyDataSetChanged();
         favA.notifyDataSetChanged();
-    }
-    ////////////////////////////////////////////////////////////////////////////////////////////////
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
-    {
-        inflater.inflate(R.menu.back_button, menu);
-        super.onCreateOptionsMenu(menu, inflater);
-
-
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item)
-    {
-        if (item.getItemId() == R.id.menu_back)
-        {
-            DiscoverEvents disEvents = new DiscoverEvents();
-            disEvents.setArguments(mBundle);
-
-            android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
-            transaction.replace(R.id.content_frame, disEvents);
-            transaction.addToBackStack("Discover Events");
-            transaction.commit();
-
-        }
-
-        return true;
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////
 }

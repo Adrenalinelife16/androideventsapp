@@ -139,9 +139,9 @@ public class MainActivity extends CustomActivity
 		ArrayList<Data> al = new ArrayList<Data>();
 		al.add(new Data("Event Feed", R.drawable.events_, R.drawable.events_sel));
 		al.add(new Data("Discover Events", R.drawable.discover_, R.drawable.discover_sel));
-		al.add(new Data("Social Life", R.drawable.ic_nav2, R.drawable.ic_nav2_sel));
 		al.add(new Data("My Events", R.drawable.ic_nav3,
 				R.drawable.ic_nav3_sel));
+		al.add(new Data("Social Life", R.drawable.ic_nav2, R.drawable.ic_nav2_sel));
 		al.add(new Data("More", R.drawable.ic_nav4, R.drawable.ic_nav4_sel));
 		al.add(new Data("Rate this app", R.drawable.ic_nav6,
 				R.drawable.ic_nav6_sel));
@@ -153,9 +153,9 @@ public class MainActivity extends CustomActivity
 		ArrayList<Data> al = new ArrayList<Data>();
 		al.add(new Data("Event Feed", R.drawable.events_, R.drawable.events_sel));
 		al.add(new Data("Discover Events", R.drawable.discover_, R.drawable.discover_sel));
-		al.add(new Data("Social Life", R.drawable.ic_nav2, R.drawable.ic_nav2_sel));
 		al.add(new Data("My Events", R.drawable.ic_nav3,
 				R.drawable.ic_nav3_sel));
+		al.add(new Data("Social Life", R.drawable.ic_nav2, R.drawable.ic_nav2_sel));
 		al.add(new Data("More", R.drawable.ic_nav4, R.drawable.ic_nav4_sel));
 		al.add(new Data("Rate this app", R.drawable.ic_nav6,
 				R.drawable.ic_nav6_sel));
@@ -185,13 +185,13 @@ public class MainActivity extends CustomActivity
 			//f = new CategoryEvents();
 			f = new DiscoverEvents();
 		}
-		else if (pos == 2)
+		else if (pos == 3)
 		{
 			title = getString(R.string.feed);
 			f = new FeedList();
 
 		}
-		else if (pos == 3)
+		else if (pos == 2)
 		{
 			tab.setEnabled(true);
 			tab = findViewById(R.id.tab1);
@@ -209,7 +209,7 @@ public class MainActivity extends CustomActivity
 				title = getString(R.string.my_fav);
 				f = new FavEvents();
 				f.setArg(new Bundle());
-				pos = 3;
+				pos = 2;
 			} if (!StaticData.pref.contains(Const.USER_ID)){
 			AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
 			builder.setMessage(R.string.err_login)
@@ -232,9 +232,22 @@ public class MainActivity extends CustomActivity
 		}
 		else if (pos == 22)
 		{
-			title = getString(R.string.my_tkcts);
-			f = new MyTickets();
-			pos = 3;
+
+			AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+			builder.setMessage("Sorry, Feature Coming Soon!")
+					.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+						public void onClick(DialogInterface dialog, int id) {
+							// User cancelled the dialog
+						}
+					});
+
+			AlertDialog action = builder.create();
+			action.show();
+			// Old Method
+			//title = getString(R.string.my_tkcts);
+			//f = new MyTickets();
+			pos = 2;
+
 
 		}
 		else if (pos == 4)
@@ -254,7 +267,7 @@ public class MainActivity extends CustomActivity
 			startActivity(intent);
 		}
 		findViewById(R.id.vTabs).setVisibility(
-				pos == 3 ? View.VISIBLE : View.GONE);
+				pos == 2 ? View.VISIBLE : View.GONE);
 
 		if (f != null)
 		{
@@ -374,7 +387,7 @@ public class MainActivity extends CustomActivity
 			tab = v;
 			tab.setEnabled(false);
 			if (v.getId() == R.id.tab1)
-				launchFragment(3);
+				launchFragment(2);
 			else if (v.getId() == R.id.tab2)
 				launchFragment(21);
 
