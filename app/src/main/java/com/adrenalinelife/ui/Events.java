@@ -1,7 +1,9 @@
 package com.adrenalinelife.ui;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -27,6 +29,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.adrenalinelife.EventDetailActivity;
+import com.adrenalinelife.Login;
 import com.adrenalinelife.R;
 import com.adrenalinelife.create_event.editCreateEvent;
 import com.adrenalinelife.custom.CustomFragment;
@@ -124,7 +127,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 
 				setFilterTextWhite();
 				mFilterAll.setTextColor(getResources().getColor(R.color.adrenaline_red));
-				setProgramList(v);
+				softEventRefresh();
 			}
 		});
 
@@ -608,12 +611,11 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
 	{
-		inflater.inflate(R.menu.add_refresh, menu);
+		inflater.inflate(R.menu.add, menu);
 
 		super.onCreateOptionsMenu(menu, inflater);
 	}
 
-	/* ONCE THE FEATURE IS READY, USE THIS METHOD INSTEAD OF THE CURRENT
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
@@ -637,26 +639,14 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 			AlertDialog action = builder.create();
 			action.show();
 		} if (item.getItemId() == R.id.menu_fav && StaticData.pref.contains(Const.USER_ID)){
-			Intent intent = new Intent(getActivity(), edit_create_event.class);
+			Intent intent = new Intent(getActivity(), editCreateEvent.class);
 			startActivity(intent);
 	}
 		return true;
 	}
 
-	final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-			builder.setMessage(R.string.err_beta)
-					.setPositiveButton(R.string.back, new DialogInterface.OnClickListener() {
-						public void onClick(DialogInterface dialog, int id) {
 
-							builder.setCancelable(true);
-
-						}
-					});
-			AlertDialog action = builder.create();
-			action.show();
-*/
-
-
+/*
 	// DELETE THIS METHOD AFTER CREATE EVENTS IS FINISHED
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
@@ -665,13 +655,11 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		{
             Intent intent = new Intent(getActivity(), editCreateEvent.class);
             startActivity(intent);
-
-	} else if (item.getItemId() == R.id.refresh) {
-
-			softEventRefresh();
 		}
 		return true;
 	}
+
+	*/
 	////////////////////////////////////////////////////////////////////////////////////////////////
 
 	public void setFilterTextWhite(){

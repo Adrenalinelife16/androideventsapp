@@ -546,7 +546,36 @@ public class WebHelper extends WebAccess
 
 	 */
 
+	public static Status doCreateEvent(String location_name, String location_address, String location_city, String location_zip, String location_state, String category, String user, String event_name, String event_info, String start_time, String end_time, String start_date, String end_date, String image)
+	{
+		try
+		{
+			ArrayList<NameValuePair> param = new ArrayList<NameValuePair>();
+			param.add(new BasicNameValuePair("location_name", location_name));
+			param.add(new BasicNameValuePair("location_address", location_address));
+			param.add(new BasicNameValuePair("location_city", location_city));
+			param.add(new BasicNameValuePair("location_zip", location_zip));
+			param.add(new BasicNameValuePair("location_state", location_state));
+			param.add(new BasicNameValuePair("category", category));
+			param.add(new BasicNameValuePair("user", user));
+			param.add(new BasicNameValuePair("event_name", event_name));
+			param.add(new BasicNameValuePair("event_info", event_info));
+			param.add(new BasicNameValuePair("start_time", start_time));
+			param.add(new BasicNameValuePair("end_time", end_time));
+			param.add(new BasicNameValuePair("start_date", start_date));
+			param.add(new BasicNameValuePair("end_date", end_date));
+			param.add(new BasicNameValuePair("image", image));
 
+			String res = executePostRequest(CREATE_EVENT_URL, param, false);
+			return new Status(res, "event_id");
+		} catch (Exception ex)
+		{
+			ex.printStackTrace();
+		}
+		return new Status();
+	}
+
+/*
 	public static Status doCreateEvent(String image)
 	{
 		try
@@ -575,6 +604,8 @@ public class WebHelper extends WebAccess
 		}
 		return new Status();
 	}
+	*/
+
     /**
 	 *
 	 * Do register.

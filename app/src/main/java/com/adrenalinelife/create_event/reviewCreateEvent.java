@@ -227,7 +227,7 @@ public class reviewCreateEvent extends CustomActivity {
             {
                 Log.e("Running doCreateEvent");
 
-                final Status st = WebHelper.doCreateEvent(mBaseString);
+                final Status st = WebHelper.doCreateEvent(mLocation, mAddress, mCity, mZip, mState, mEventCategory, mUser, mEventName, mDescription, mStartTimePicker, mEndTimePicker, mStartDatePicker, mEndDatePicker, mBaseString);
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run()
@@ -239,7 +239,7 @@ public class reviewCreateEvent extends CustomActivity {
                             //Intent i = new Intent(reviewCreateEvent.this, Events.class);
                             //startActivity(i);
 
-                            /*
+
                             AlertDialog.Builder builder = new AlertDialog.Builder(reviewCreateEvent.this);
                             builder.setMessage( "Event Creation Successful")
                                     .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
@@ -251,7 +251,7 @@ public class reviewCreateEvent extends CustomActivity {
 
                             AlertDialog action = builder.create();
                             action.show();
-                            */
+
                         }
 
                         else
@@ -280,12 +280,11 @@ public class reviewCreateEvent extends CustomActivity {
         cursor.close();
         mBaseString = Utils.getBase64ImageString(mImageString);
     }
-
+/*
     @Override
     public void onBackPressed() {
         super.onBackPressed();
         Toast.makeText(reviewCreateEvent.this, "You just pressed back button",Toast.LENGTH_SHORT).show();
     }
-
-
+*/
 }

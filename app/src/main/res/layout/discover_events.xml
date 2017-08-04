@@ -139,6 +139,7 @@
                     app:layout_constraintBottom_toTopOf="@+id/b_yoga"
                     app:layout_constraintLeft_toRightOf="@+id/b_basketball"
                     app:layout_constraintRight_toRightOf="parent"/>
+
             </LinearLayout>
 
             <LinearLayout
@@ -146,6 +147,122 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/b_billiards"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white_smoke_dk"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/a_billiards"/>
+
+                <ImageButton
+                    android:id="@+id/b_baseball"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white_smoke_dk"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/a_baseball"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/b_fitness"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white_smoke_dk"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/a_fitness"/>
+
+                <ImageButton
+                    android:id="@+id/b_climbing"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white_smoke_dk"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/a_climbing"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/b_lacrosse"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white_smoke_dk"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/a_lacrosse"/>
+
+                <ImageButton
+                    android:id="@+id/b_football"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white_smoke_dk"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/a_football"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/b_running"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white_smoke_dk"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/a_running"/>
+
+                <ImageButton
+                    android:id="@+id/b_riding"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white_smoke_dk"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/a_riding"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/b_water"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white_smoke_dk"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/a_watergames"/>
 
                 <ImageButton
                     android:id="@+id/b_golf"
@@ -158,18 +275,6 @@
                     android:src="@drawable/a_golf"
                     app:layout_constraintBottom_toTopOf="@+id/imageButton10"
                     tools:layout_editor_absoluteX="46dp"/>
-
-                <ImageButton
-                    android:id="@+id/b_more"
-                    android:layout_width="170dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="5dp"
-                    android:layout_weight="1"
-                    android:background="@color/white_smoke_dk"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/a_more_categories"
-                    tools:layout_editor_absoluteX="264dp"
-                    tools:layout_editor_absoluteY="684dp"/>
 
             </LinearLayout>
 

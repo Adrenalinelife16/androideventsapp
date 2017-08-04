@@ -101,8 +101,8 @@ public class editCreateEvent extends CustomActivity {
                     @TargetApi(Build.VERSION_CODES.N)
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                        month = month + 1;
-                        tStartDatePicker.setText(month + "/" + dayOfMonth + "/" + year);
+                        int month2 = month + 1;
+                        tStartDatePicker.setText(month2 + "/" + dayOfMonth + "/" + year);
                         //Format Date to Correct String
                         SimpleDateFormat dateFormatter2 = new SimpleDateFormat("yyyy-MM-dd");
                         year = year - 1900;
@@ -169,8 +169,8 @@ public class editCreateEvent extends CustomActivity {
                     @TargetApi(Build.VERSION_CODES.N)
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                        month = month + 1;
-                        tEndDatePicker.setText(month + "/" + dayOfMonth + "/" + year);
+                        int month2 = month + 1;
+                        tEndDatePicker.setText(month2 + "/" + dayOfMonth + "/" + year);
                         //Format Date to Correct String
                         SimpleDateFormat dateFormatter2 = new SimpleDateFormat("yyyy-MM-dd");
                         year = year - 1900;

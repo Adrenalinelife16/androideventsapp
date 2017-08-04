@@ -9,9 +9,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.adrenalinelife.Browser;
 import com.adrenalinelife.R;
+import com.adrenalinelife.create_event.reviewCreateEvent;
 import com.adrenalinelife.custom.CustomFragment;
 
 public class DiscoverEvents extends CustomFragment {
@@ -23,9 +25,18 @@ public class DiscoverEvents extends CustomFragment {
     ImageButton golfButton;
     ImageButton tennisButton;
     ImageButton fishingButton;
-    ImageButton moreButton;
     ImageButton kickballButton;
     ImageButton tablegamesButton;
+    ImageButton watergamesButton;
+    ImageButton baseballButton;
+    ImageButton billiardsButton;
+    ImageButton fitnessButton;
+    ImageButton climbingButton;
+    ImageButton ridingButton;
+    ImageButton runningButton;
+    ImageButton lacrosseButton;
+    ImageButton footballButton;
+
     public Bundle mBundle;
 
     @Override
@@ -154,15 +165,19 @@ public class DiscoverEvents extends CustomFragment {
         });
 
 
-        //ImageButton moreButton;
-        moreButton = (ImageButton) v.findViewById(R.id.b_more);
-        moreButton.setOnClickListener(new View.OnClickListener() {
+        //ImageButton baseballButton;
+        baseballButton = (ImageButton) v.findViewById(R.id.b_baseball);
+        baseballButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
-                String url = "http://www.AdrenalineLife.org/events/categories/";
-                Intent intent = new Intent(view.getContext(), Browser.class);
-                intent.putExtra("url", url);
-                startActivity(intent);
+                mBundle = new Bundle();
+                mBundle.putString("Filter", "baseball");
+                CategoryEvents catEvents = new CategoryEvents();
+                catEvents.setArguments(mBundle);
+                android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.add(R.id.content_frame, catEvents);
+                transaction.addToBackStack("Baseball/Softball");
+                transaction.commit();
             }
         });
 
@@ -197,6 +212,135 @@ public class DiscoverEvents extends CustomFragment {
                 transaction.commit();
             }
         });
+
+        //ImageButton moreButton;
+        billiardsButton = (ImageButton) v.findViewById(R.id.b_billiards);
+        billiardsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view ) {
+                mBundle = new Bundle();
+                mBundle.putString("Filter", "billiards");
+                CategoryEvents catEvents = new CategoryEvents();
+                catEvents.setArguments(mBundle);
+                android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.add(R.id.content_frame, catEvents);
+                transaction.addToBackStack("Billiards");
+                transaction.commit();
+            }
+        });
+
+        //ImageButton moreButton;
+        fitnessButton = (ImageButton) v.findViewById(R.id.b_fitness);
+        fitnessButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view ) {
+                mBundle = new Bundle();
+                mBundle.putString("Filter", "fitness");
+                CategoryEvents catEvents = new CategoryEvents();
+                catEvents.setArguments(mBundle);
+                android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.add(R.id.content_frame, catEvents);
+                transaction.addToBackStack("Fitness");
+                transaction.commit();
+            }
+        });
+
+        //ImageButton moreButton;
+        climbingButton = (ImageButton) v.findViewById(R.id.b_climbing);
+        climbingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view ) {
+                mBundle = new Bundle();
+                mBundle.putString("Filter", "climbing");
+                CategoryEvents catEvents = new CategoryEvents();
+                catEvents.setArguments(mBundle);
+                android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.add(R.id.content_frame, catEvents);
+                transaction.addToBackStack("Climbing");
+                transaction.commit();
+            }
+        });
+
+        //ImageButton moreButton;
+        lacrosseButton = (ImageButton) v.findViewById(R.id.b_lacrosse);
+        lacrosseButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view ) {
+                mBundle = new Bundle();
+                mBundle.putString("Filter", "lacrosse");
+                CategoryEvents catEvents = new CategoryEvents();
+                catEvents.setArguments(mBundle);
+                android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.add(R.id.content_frame, catEvents);
+                transaction.addToBackStack("Lacrosse");
+                transaction.commit();
+            }
+        });
+
+        //ImageButton moreButton;
+        footballButton = (ImageButton) v.findViewById(R.id.b_football);
+        footballButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view ) {
+                mBundle = new Bundle();
+                mBundle.putString("Filter", "football");
+                CategoryEvents catEvents = new CategoryEvents();
+                catEvents.setArguments(mBundle);
+                android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.add(R.id.content_frame, catEvents);
+                transaction.addToBackStack("Football");
+                transaction.commit();
+            }
+        });
+
+        //ImageButton moreButton;
+        runningButton = (ImageButton) v.findViewById(R.id.b_running);
+        runningButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view ) {
+                mBundle = new Bundle();
+                mBundle.putString("Filter", "running");
+                CategoryEvents catEvents = new CategoryEvents();
+                catEvents.setArguments(mBundle);
+                android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.add(R.id.content_frame, catEvents);
+                transaction.addToBackStack("Running/Hiking");
+                transaction.commit();
+            }
+        });
+
+        //ImageButton moreButton;
+        ridingButton = (ImageButton) v.findViewById(R.id.b_riding);
+        ridingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view ) {
+                mBundle = new Bundle();
+                mBundle.putString("Filter", "riding");
+                CategoryEvents catEvents = new CategoryEvents();
+                catEvents.setArguments(mBundle);
+                android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.add(R.id.content_frame, catEvents);
+                transaction.addToBackStack("Riding");
+                transaction.commit();
+            }
+        });
+
+        //ImageButton moreButton;
+        watergamesButton = (ImageButton) v.findViewById(R.id.b_water);
+        watergamesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view ) {
+                mBundle = new Bundle();
+                mBundle.putString("Filter", "water");
+                CategoryEvents catEvents = new CategoryEvents();
+                catEvents.setArguments(mBundle);
+                android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.add(R.id.content_frame, catEvents);
+                transaction.addToBackStack("Water Games");
+                transaction.commit();
+            }
+        });
+
         return v;
     }
 
