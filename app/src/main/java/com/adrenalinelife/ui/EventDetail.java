@@ -1,8 +1,11 @@
 package com.adrenalinelife.ui;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.LayoutInflater;
@@ -222,15 +225,20 @@ public class EventDetail extends CustomFragment
 		super.onCreateOptionsMenu(menu, inflater);
 	}
 
+	@TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1)
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
 	{
 		if (item.getItemId() == R.id.menu_share)
 		{
 			Intent i = new Intent(Intent.ACTION_SEND);
-			i.setType("text/html");
-			i.putExtra(Intent.EXTRA_TEXT, e.getDesc());
-			i.putExtra(Intent.EXTRA_SUBJECT, e.getTitle());
+			i.setType("*/*");
+
+			i.putExtra(Intent.EXTRA_TEXT, e.getTitle() + " - " + "Find more local events and activities like this one by downloading the Adrenaline Life App Now! OneLink.to/Life");
+
+
+			//i.putExtra(Intent.EXTRA_TEXT, e.getDesc());
+			//i.putExtra(Intent.EXTRA_SUBJECT, e.getTitle());
 			startActivity(Intent.createChooser(i, getString(R.string.share)));
 		}
 		else //(item.getItemId() == R.id.menu_fav)

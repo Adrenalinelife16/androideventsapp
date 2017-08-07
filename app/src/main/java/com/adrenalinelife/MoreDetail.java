@@ -37,7 +37,7 @@ public class MoreDetail extends CustomActivity
 		i.setType("text/html");
 		i.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.help_email_subject));
 		i.putExtra(Intent.EXTRA_EMAIL,
-				new String[] { "contact@myapptemplates.com" });
+				new String[] { "adrenalinelife16@gmail.com" });
 		startActivity(Intent.createChooser(i, getString(R.string.send_email)));
 	}
 }

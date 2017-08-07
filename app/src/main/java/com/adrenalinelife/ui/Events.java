@@ -241,7 +241,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 
 		/***Search View***/
 		searchView = (SearchView) v.findViewById(R.id.searchEvents);
-		searchView.setQueryHint("Search Events");
+		searchView.setQueryHint("Search Local Events");
 		searchView.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {

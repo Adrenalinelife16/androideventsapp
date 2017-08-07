@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Aug 04 01:36:39 CDT 2017
+#Mon Aug 07 01:00:51 CDT 2017
 20.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 143.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar
 493.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
@@ -560,7 +560,7 @@
 432.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/color/abc_primary_text_material_dark.xml
 415.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 441.set=ANDROID_RESOURCE
-294.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png
+294.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png
 277.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 448.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 396.set=ANDROID_RESOURCE
@@ -1187,7 +1187,7 @@
 431.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/ic_fb.png
 414.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 431.set=ANDROID_RESOURCE
-293.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png
+293.file=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png
 276.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 447.base=/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/resources-debug.ap_
 386.set=ANDROID_RESOURCE
