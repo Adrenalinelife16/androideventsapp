@@ -29,6 +29,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.adrenalinelife.EventDetailActivity;
+import com.adrenalinelife.MainActivity;
 import com.adrenalinelife.R;
 import com.adrenalinelife.custom.CustomActivity;
 import com.adrenalinelife.custom.CustomFragment;
@@ -70,6 +71,8 @@ public class CalendarView extends CustomFragment implements DateChangeListener
 	/** The event for selected date. */
 	private ArrayList<Event> eventSel;
 
+
+
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState)
@@ -77,6 +80,7 @@ public class CalendarView extends CustomFragment implements DateChangeListener
 		super.onCreateView(inflater, container, savedInstanceState);
 		View v = inflater.inflate(R.layout.calendar, null);
 		setHasOptionsMenu(true);
+        //v.findViewById(R.id.vTabs).setVisibility(View.VISIBLE);
 
 		setupEventList(v);
 
@@ -410,4 +414,5 @@ public class CalendarView extends CustomFragment implements DateChangeListener
 		Log.e("Ev Count=" + eventSel.size());
 		((BaseAdapter) list.getAdapter()).notifyDataSetChanged();
 	}
+
 }

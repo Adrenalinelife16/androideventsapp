@@ -29,6 +29,7 @@ import android.widget.Button;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
@@ -77,6 +78,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 	Button mDiscoverEvents;
 
 	public Uri shareImageUri;
+	public LinearLayout vTabs;
 
 
 	/** Swipe Refresh Layout **/
@@ -106,14 +108,13 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		mFilterSunday = (Button) v.findViewById(R.id.btn_sun);
 		mFilterAll = (Button) v.findViewById(R.id.button_all_filter);
 		mDiscoverEvents = (Button) v.findViewById(R.id.discover_btn);
-
 		filterResults = (ListView) v.findViewById(R.id.list);
 
-/////////////////////////////////////////////  - Calling Initial onCreate Methods
+		/////////////////////////////////////  - Calling Initial onCreate Methods
 		setFilterTextWhite();
 		mFilterAll.setTextColor(getResources().getColor(R.color.adrenaline_red));
 		setProgramList(v);
-////////////////////////////////////////////// - setOnClickListeners for each day in the filter tab
+		////////////////////////////////////// - setOnClickListeners for each day in the filter tab
 
 		mDiscoverEvents.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -126,17 +127,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 				android.support.v4.app.FragmentManager fm = getFragmentManager();
 				FragmentTransaction ft = fm.beginTransaction();
 				ft.add(R.id.content_frame, f).addToBackStack("Discover Events").commit();
-
-
-				/*
-				//Start Fragment!
-				CustomFragment f = new DiscoverEvents();
-				android.support.v4.app.FragmentManager fragmentManager = getFragmentManager();
-				android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-				fragmentTransaction.addToBackStack("Discover Events");
-				fragmentTransaction.add(getId(), f);
-				fragmentTransaction.commit();
-				*/
 
 			}
 		});

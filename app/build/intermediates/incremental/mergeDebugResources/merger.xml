@@ -1686,7 +1686,7 @@
         <item>10</item>
         <item>11</item>
         <item>12</item>
-    </string-array><string name="price">Price:</string><string name="register">Register</string><string name="free">Free</string><string name="err_event_booked">You have already booked this Event.</string><string name="setting">Settings</string><string name="app_name">Adrenaline Life</string><string name="free_event">Free Event</string><string name="logout">Logout</string><string name="back">Back</string><string name="help_center">Help Center</string><string name="fname">First Name</string><string name="terms_condi">Terms &amp; Conditions</string><string name="msg_no_content">No content found!</string><string name="msg_event_book_success">Event has been successfully booked.</string><string-array name="state_arrays">
+    </string-array><string name="price">Price:</string><string name="register">Register</string><string name="free">Free</string><string name="err_event_booked">You have already booked this Event.</string><string name="setting">Settings</string><string name="app_name">Adrenaline Life</string><string name="free_event">Free Event</string><string name="logout">Logout</string><string name="back">Back</string><string name="help_center">Contact Us</string><string name="fname">First Name</string><string name="terms_condi">Terms &amp; Conditions</string><string name="msg_no_content">No content found!</string><string name="msg_event_book_success">Event has been successfully booked.</string><string-array name="state_arrays">
         <item>AL</item>
         <item>AK</item>
         <item>AZ</item>

@@ -246,7 +246,7 @@ public class EventDetail extends CustomFragment
 			Intent i = new Intent(Intent.ACTION_SEND);
 			i.setType("image/*");
 			i.putExtra(Intent.EXTRA_STREAM, shareImageUri);
-			i.putExtra(Intent.EXTRA_TEXT, e.getTitle() + " - " + "Download the Adrenaline Life Beta App now and #FindYourLife" + " - " + "www.onelink.to/life");
+			i.putExtra(Intent.EXTRA_TEXT, e.getTitle() + " - " + "Find more local events and activities like this one by downloading the Adrenaline Life app now! #FindYourLife" + " - " + "www.onelink.to/life");
 			startActivity(Intent.createChooser(i, getString(R.string.share)));
 		}
 		else //(item.getItemId() == R.id.menu_fav)

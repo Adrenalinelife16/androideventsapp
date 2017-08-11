@@ -8,9 +8,11 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.Uri;
+import android.nfc.Tag;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager.OnBackStackChangedListener;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
@@ -48,6 +50,8 @@ import java.util.ArrayList;
 public class MainActivity extends CustomActivity
 {
 
+	private static final String TAG = "initial";
+	private static final String TAG_ANSWERS_FRAGMENT = null;
 	/** The drawer layout. */
 	private DrawerLayout drawerLayout;
 
@@ -291,7 +295,7 @@ public class MainActivity extends CustomActivity
 			*/
 			Log.e("No WHILE, begin transaction ", String.valueOf(getSupportFragmentManager().getBackStackEntryCount()));
 			getSupportFragmentManager().beginTransaction()
-					.add(R.id.content_frame, f)
+					.replace(R.id.content_frame, f, TAG)
 					.addToBackStack(title)
 					.commit();
 
@@ -394,21 +398,19 @@ public class MainActivity extends CustomActivity
 		return super.onKeyDown(keyCode, event);
 	}
 
-	//This will allow the back button to back through each view in the stack, if no more, ask the user to exit the app
 /*
+	//This will allow the back button to back through each view in the stack, if no more, ask the user to exit the app
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event)
 	{
 		if (keyCode == KeyEvent.KEYCODE_BACK)
 		{
-			//Toast.makeText(this,"Back Button Pressed",Toast.LENGTH_SHORT).show();
 			Log.e("back stack = ", String.valueOf(getSupportFragmentManager().getBackStackEntryCount()));
 			if (getSupportFragmentManager().getBackStackEntryCount() > 1) {
 				FragmentManager fm = this.getFragmentManager();
 
-				int fmCount = fm.getBackStackEntryCount();
 				fm.popBackStackImmediate(0, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-				//fm.popBackStackImmediate();
+				removeCurrentFragment(TAG);
 
 		} 	if (getSupportFragmentManager().getBackStackEntryCount() <= 1) {
 				Toast.makeText(this,"Nothing To Pop Back To",Toast.LENGTH_SHORT).show();
@@ -424,7 +426,6 @@ public class MainActivity extends CustomActivity
 						.setNegativeButton("No", null)
 						.show();
 			}
-				//getSupportFragmentManager().popBackStackImmediate();
 
 		}
 		return super.onKeyDown(keyCode, event);
@@ -463,7 +464,6 @@ public class MainActivity extends CustomActivity
 					tab.setEnabled(true);
 					temp.setEnabled(false);
 				}
-
 				else
 					launchFragment(22);
 			}
@@ -515,5 +515,24 @@ public class MainActivity extends CustomActivity
 
 	}
 */
+
+
+
+	public void removeCurrentFragment(String fragmentTag)
+	{
+		FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+		Fragment currentFrag =  getSupportFragmentManager().findFragmentByTag(fragmentTag);
+		String fragName = "NONE";
+
+		if (currentFrag != null)
+			fragName = currentFrag.getClass().getSimpleName();
+
+		Log.d(TAG, "flag name " + fragName);
+
+		if (currentFrag != null && currentFrag.isVisible())
+			transaction.remove(currentFrag);
+
+		transaction.commit();
+	}
 
 }
