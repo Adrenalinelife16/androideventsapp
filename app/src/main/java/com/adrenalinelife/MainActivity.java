@@ -1,14 +1,18 @@
 package com.adrenalinelife;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.FragmentManager;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.FragmentManager.OnBackStackChangedListener;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
@@ -18,6 +22,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.adrenalinelife.calendar.CalendarView;
 import com.adrenalinelife.custom.CustomActivity;
@@ -272,13 +277,24 @@ public class MainActivity extends CustomActivity
 
 		if (f != null)
 		{
+			/*
 			while (getSupportFragmentManager().getBackStackEntryCount() > 0)
 			{
+				Log.e("while loop! ", String.valueOf(getSupportFragmentManager().getBackStackEntryCount()));
 				getSupportFragmentManager().popBackStackImmediate();
 			}
+
+			FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+			fragmentTransaction.addToBackStack(title);
+			fragmentTransaction.add(R.id.content_frame, f);
+			fragmentTransaction.commit();
+			*/
+			Log.e("No WHILE, begin transaction ", String.valueOf(getSupportFragmentManager().getBackStackEntryCount()));
 			getSupportFragmentManager().beginTransaction()
-					.replace(R.id.content_frame, f).addToBackStack(title)
+					.add(R.id.content_frame, f)
+					.addToBackStack(title)
 					.commit();
+
 			if (adapter != null)
 				adapter.setSelection(pos);
 		}
@@ -356,21 +372,65 @@ public class MainActivity extends CustomActivity
 		return super.onOptionsItemSelected(item);
 	}
 
+	// This will disable the back button inside fragments and ask the user to exit the app every single time.
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event)
 	{
 		if (keyCode == KeyEvent.KEYCODE_BACK)
 		{
-			if (getSupportFragmentManager().getBackStackEntryCount() > 1)
-			{
-				getSupportFragmentManager().popBackStackImmediate();
-			}
-			else
-				finish();
-			return true;
+			new AlertDialog.Builder(this)
+					.setMessage("Are you sure you want to exit?")
+					.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+						@TargetApi(Build.VERSION_CODES.LOLLIPOP)
+						@Override
+						public void onClick(DialogInterface dialog, int which) {
+							finishAndRemoveTask();
+						}
+					})
+					.setNegativeButton("No", null)
+					.show();
+
 		}
 		return super.onKeyDown(keyCode, event);
 	}
+
+	//This will allow the back button to back through each view in the stack, if no more, ask the user to exit the app
+/*
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event)
+	{
+		if (keyCode == KeyEvent.KEYCODE_BACK)
+		{
+			//Toast.makeText(this,"Back Button Pressed",Toast.LENGTH_SHORT).show();
+			Log.e("back stack = ", String.valueOf(getSupportFragmentManager().getBackStackEntryCount()));
+			if (getSupportFragmentManager().getBackStackEntryCount() > 1) {
+				FragmentManager fm = this.getFragmentManager();
+
+				int fmCount = fm.getBackStackEntryCount();
+				fm.popBackStackImmediate(0, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+				//fm.popBackStackImmediate();
+
+		} 	if (getSupportFragmentManager().getBackStackEntryCount() <= 1) {
+				Toast.makeText(this,"Nothing To Pop Back To",Toast.LENGTH_SHORT).show();
+				new AlertDialog.Builder(this)
+						.setMessage("Are you sure you want to exit?")
+						.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+							@TargetApi(Build.VERSION_CODES.LOLLIPOP)
+							@Override
+							public void onClick(DialogInterface dialog, int which) {
+								finishAndRemoveTask();
+							}
+						})
+						.setNegativeButton("No", null)
+						.show();
+			}
+				//getSupportFragmentManager().popBackStackImmediate();
+
+		}
+		return super.onKeyDown(keyCode, event);
+	}
+*/
+
 
 	/** The temp tab view. */
 	private View temp;
@@ -430,4 +490,30 @@ public class MainActivity extends CustomActivity
 		else
 			tab = temp;
 	}
+
+/*
+	@Override
+	public void onBackPressed() {
+		super.onBackPressed();
+
+		getSupportFragmentManager().popBackStackImmediate();
+
+
+		/*
+		new AlertDialog.Builder(this)
+				.setMessage("Are you sure you want to exit?")
+				.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						MainActivity.super.onBackPressed();
+					}
+				})
+				.setNegativeButton("No", null)
+				.show();
+		super.onBackPressed();
+
+
+	}
+*/
+
 }

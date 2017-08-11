@@ -1,13 +1,18 @@
 package com.adrenalinelife.custom;
 
 import android.app.ActionBar;
+import android.app.AlertDialog;
+import android.app.FragmentManager;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.WindowManager;
+import android.widget.Toast;
+
 import com.adrenalinelife.R;
 import com.adrenalinelife.utils.ExceptionHandler;
 import com.adrenalinelife.utils.ImageLoader;
@@ -88,6 +93,31 @@ public class CustomActivity extends FragmentActivity implements OnClickListener
 			v.setOnTouchListener(TOUCH);
 		return v;
 	}
+
+	/*
+	@Override
+	public void onBackPressed() {
+		//super.onBackPressed();
+		new AlertDialog.Builder(this)
+				.setMessage("Are you sure you want to exit?")
+				.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						if (getSupportFragmentManager().getBackStackEntryCount() != 0) {
+							Toast.makeText(getParent(),"Popping Back Stack",Toast.LENGTH_SHORT).show();
+							getSupportFragmentManager().popBackStack();
+						} else
+							Toast.makeText(getParent(),"Nothing To Pop Back To",Toast.LENGTH_SHORT).show();
+						//CustomActivity.super.onBackPressed();
+					}
+				})
+				.setNegativeButton("No", null)
+				.show();
+
+	}
+
+*/
+
 
 	/**
 	 * Sets the click listener for a view with given id.

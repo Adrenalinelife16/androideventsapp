@@ -13,7 +13,7 @@ import com.adrenalinelife.utils.Const;
  * The Class PagingFragment can be extended by any fragment who includes a
  * ListView which require to load contents page by page.
  */
-abstract public class PagingFragment extends CustomFragment implements
+public class PagingFragment extends CustomFragment implements
 		OnScrollListener
 {
 
@@ -112,9 +112,13 @@ abstract public class PagingFragment extends CustomFragment implements
 				&& hasMore)
 			loadNextPage();
 	}
+
 	/**
 	 * Load next page.
 	 */
-	protected abstract void loadNextPage();
+	protected void loadNextPage() {
+
+	}
+
 
 }

@@ -87,4 +87,5 @@ public class CustomFragment extends Fragment implements OnClickListener
 		if (loader != null)
 			loader.clear();
 	}
+
 }

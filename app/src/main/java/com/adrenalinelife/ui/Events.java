@@ -1,12 +1,18 @@
 package com.adrenalinelife.ui;
 
 import android.app.AlertDialog;
+import android.app.FragmentManager;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.text.Html;
 import android.view.LayoutInflater;
@@ -45,6 +51,9 @@ import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -67,6 +76,8 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 	Button mFilterAll;
 	Button mDiscoverEvents;
 
+	public Uri shareImageUri;
+
 
 	/** Swipe Refresh Layout **/
 	private SwipeRefreshLayout SwipeRefresh;
@@ -81,7 +92,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 							 Bundle savedInstanceState)
 	{
 		super.onCreateView(inflater, container, savedInstanceState);
-		final View v = inflater.inflate(R.layout.events, null);
+		final View v = inflater.inflate(R.layout.events, null, false);
 		setHasOptionsMenu(true);
 
 		///////////////////////////////////////////////// - Initiating Views
@@ -98,11 +109,11 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 
 		filterResults = (ListView) v.findViewById(R.id.list);
 
-/////////////////////////////////////////////////  - Calling Initial onCreate Methods
+/////////////////////////////////////////////  - Calling Initial onCreate Methods
 		setFilterTextWhite();
 		mFilterAll.setTextColor(getResources().getColor(R.color.adrenaline_red));
 		setProgramList(v);
-///////////////////////////////////////////////// - setOnClickListeners for each day in the filter tab
+////////////////////////////////////////////// - setOnClickListeners for each day in the filter tab
 
 		mDiscoverEvents.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -111,12 +122,21 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 				setFilterTextWhite();
 				mDiscoverEvents.setTextColor(getResources().getColor(R.color.adrenaline_red));
 
+				DiscoverEvents f = new DiscoverEvents();
+				android.support.v4.app.FragmentManager fm = getFragmentManager();
+				FragmentTransaction ft = fm.beginTransaction();
+				ft.add(R.id.content_frame, f).addToBackStack("Discover Events").commit();
+
+
+				/*
 				//Start Fragment!
 				CustomFragment f = new DiscoverEvents();
 				android.support.v4.app.FragmentManager fragmentManager = getFragmentManager();
 				android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-				fragmentTransaction.replace(getId(), f);
+				fragmentTransaction.addToBackStack("Discover Events");
+				fragmentTransaction.add(getId(), f);
 				fragmentTransaction.commit();
+				*/
 
 			}
 		});
@@ -278,11 +298,13 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
                 final SearchAdapter sA = new SearchAdapter(getActivity(), pList);
                 filterResults.setAdapter(sA);
 
-				if (newText.length() >= 0) {
+				if (newText.length() >= 1) {
                     String search = "s" + newText;
 
 					sA.getFilter().filter(search);
 					Log.e(search);
+				} if (newText == "") {
+					setProgramList(v);
 				}
 				return true;
 			}
@@ -443,9 +465,9 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
                     });
             if (bm == null)
                 img.setImageBitmap(bmNoImg);
-            else
-                img.setImageBitmap(bm);
-
+            else {
+				img.setImageBitmap(bm);
+			}
 			return convertView;
 		}
 	}
@@ -516,8 +538,10 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 					});
 			if (bm == null)
 				img.setImageBitmap(bmNoImg);
-			else
+			else {
 				img.setImageBitmap(bm);
+			}
+
 
 			return convertView;
 		}
@@ -686,5 +710,10 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		mFilterAll.setTextColor(getResources().getColor(R.color.red));
 
 	}
+
+
+
+
+
 
 }

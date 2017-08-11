@@ -41,7 +41,7 @@
             android:ems="10"
             android:hint="Event Name"
             android:imeOptions="actionNext"
-            android:inputType="textPersonName"
+            android:inputType="textCapSentences|textAutoCorrect|textPersonName"
             android:padding="10dp"/>
 
         <Spinner
@@ -70,7 +70,7 @@
             android:gravity="top"
             android:hint="Details about your event! Ex: CONTACT INFO, Skill level, New Event or Repeat Event. . ."
             android:imeOptions="actionDone"
-            android:inputType="textMultiLine|textLongMessage"
+            android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textImeMultiLine|textLongMessage"
             android:padding="10dp"/>
 
         <LinearLayout
@@ -197,7 +197,7 @@
             android:background="@drawable/search_bar"
             android:ems="10"
             android:hint="Location Name"
-            android:inputType="textPersonName"
+            android:inputType="textCapSentences|textAutoCorrect|textPersonName"
             android:padding="10dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -214,7 +214,7 @@
             android:background="@drawable/search_bar"
             android:ems="10"
             android:hint="Address"
-            android:inputType="textPersonName"
+            android:inputType="textCapSentences|textAutoCorrect|textPostalAddress"
             android:padding="10dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -230,7 +230,7 @@
             android:background="@drawable/search_bar"
             android:ems="10"
             android:hint="City"
-            android:inputType="textPersonName"
+            android:inputType="textCapSentences|textAutoCorrect|textPersonName"
             android:padding="10dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"

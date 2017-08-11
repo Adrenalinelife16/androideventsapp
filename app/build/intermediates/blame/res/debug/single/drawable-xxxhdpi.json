@@ -28,12 +28,12 @@
         "source": "/Users/Martare/.android/build-cache/1034932d6ed822d05128538d2973d97125cf75e4/output/res/drawable-xxxhdpi/places_ic_clear.png"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/abc_ic_menu_cut_mtrl_alpha.png",
-        "source": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/drawable-xxxhdpi/abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/abc_switch_track_mtrl_alpha.9.png",
         "source": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/drawable-xxxhdpi/abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/drawable-xxxhdpi/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/powered_by_google_light.png",

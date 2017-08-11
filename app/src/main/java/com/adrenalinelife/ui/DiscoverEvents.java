@@ -1,19 +1,17 @@
 package com.adrenalinelife.ui;
 
-import android.content.Intent;
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
-import com.adrenalinelife.Browser;
 import com.adrenalinelife.R;
-import com.adrenalinelife.create_event.reviewCreateEvent;
 import com.adrenalinelife.custom.CustomFragment;
 
 public class DiscoverEvents extends CustomFragment {
@@ -36,6 +34,8 @@ public class DiscoverEvents extends CustomFragment {
     ImageButton runningButton;
     ImageButton lacrosseButton;
     ImageButton footballButton;
+    ImageButton campingButton;
+    ImageButton bowlingButton;
 
     public Bundle mBundle;
 
@@ -341,8 +341,43 @@ public class DiscoverEvents extends CustomFragment {
             }
         });
 
+        //ImageButton moreButton;
+        campingButton = (ImageButton) v.findViewById(R.id.b_camping);
+        campingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view ) {
+                mBundle = new Bundle();
+                mBundle.putString("Filter", "camp");
+                CategoryEvents catEvents = new CategoryEvents();
+                catEvents.setArguments(mBundle);
+                android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.add(R.id.content_frame, catEvents);
+                transaction.addToBackStack("Camping");
+                transaction.commit();
+            }
+        });
+
+        //ImageButton moreButton;
+        bowlingButton = (ImageButton) v.findViewById(R.id.b_bowling);
+        bowlingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view ) {
+                mBundle = new Bundle();
+                mBundle.putString("Filter", "bowling");
+                CategoryEvents catEvents = new CategoryEvents();
+                catEvents.setArguments(mBundle);
+                android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.add(R.id.content_frame, catEvents);
+                transaction.addToBackStack("Bowling");
+                transaction.commit();
+            }
+        });
+
         return v;
+
     }
+
+
 
 
 

@@ -103,7 +103,7 @@
                     android:layout_weight="1"
                     android:background="@color/white_smoke_dk"
                     android:scaleType="fitXY"
-                    android:src="@drawable/a_frisbee"
+                    android:src="@drawable/a_discgames"
                     tools:layout_editor_absoluteX="46dp"
                     tools:layout_editor_absoluteY="174dp"/>
             </LinearLayout>
@@ -276,6 +276,32 @@
                     app:layout_constraintBottom_toTopOf="@+id/imageButton10"
                     tools:layout_editor_absoluteX="46dp"/>
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/b_camping"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/actionbar_bg_white"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/a_camping"/>
+
+                <ImageButton
+                    android:id="@+id/b_bowling"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/actionbar_bg_white"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/a_bowling"/>
             </LinearLayout>
 
         </LinearLayout>

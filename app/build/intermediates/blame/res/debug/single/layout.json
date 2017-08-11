@@ -88,10 +88,6 @@
         "source": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/two_date_time.xml",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/two_date_time.xml"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/my_tickets.xml",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/my_tickets.xml"
     },
@@ -224,16 +220,12 @@
         "source": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/layout/notification_media_action.xml"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/four_finalize.xml",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/four_finalize.xml"
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/edit_create_event.xml",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/edit_create_event.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
         "source": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/layout/abc_popup_menu_item_layout.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/edit_create_event.xml",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/edit_create_event.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
@@ -256,10 +248,6 @@
         "source": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/layout/abc_action_menu_layout.xml"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/one_category.xml",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/one_category.xml"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/splash.xml",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/splash.xml"
     },
@@ -270,10 +258,6 @@
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/events.xml",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/events.xml"
-    },
-    {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/three_create_event.xml",
-        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/layout/three_create_event.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/layout/review_create_event.xml",

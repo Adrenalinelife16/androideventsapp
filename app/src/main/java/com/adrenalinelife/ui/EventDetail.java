@@ -4,9 +4,14 @@ import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -14,6 +19,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,11 +30,11 @@ import com.adrenalinelife.custom.CustomFragment;
 import com.adrenalinelife.model.Event;
 import com.adrenalinelife.utils.Commons;
 import com.adrenalinelife.utils.Const;
+import com.adrenalinelife.utils.ImageLoader;
 import com.adrenalinelife.utils.Log;
 import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
-import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -40,6 +46,9 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import static com.adrenalinelife.web.WebAccess.GET_FAV_EVENTS;
@@ -65,6 +74,11 @@ public class EventDetail extends CustomFragment
 	/** The e. */
 	private Event e;
 
+	private Uri shareImageUri;
+
+	public ImageView imgShare;
+
+
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState)
@@ -78,8 +92,6 @@ public class EventDetail extends CustomFragment
 
 		showDetails(v);
 		setupMap(v, savedInstanceState);
-
-
 
 		return v;
 	}
@@ -172,7 +184,6 @@ public class EventDetail extends CustomFragment
 		mMapView = (MapView) v.findViewById(R.id.map);
 		mMapView.onCreate(savedInstanceState);
 	}
-
 	/**
 	 * This method simply place a few dummy location markers on Map View. You
 	 * can write your own logic for loading the locations and placing the marker
@@ -231,14 +242,11 @@ public class EventDetail extends CustomFragment
 	{
 		if (item.getItemId() == R.id.menu_share)
 		{
+			getLocalBitmapUri();
 			Intent i = new Intent(Intent.ACTION_SEND);
-			i.setType("*/*");
-
-			i.putExtra(Intent.EXTRA_TEXT, e.getTitle() + " - " + "Find more local events and activities like this one by downloading the Adrenaline Life App Now! OneLink.to/Life");
-
-
-			//i.putExtra(Intent.EXTRA_TEXT, e.getDesc());
-			//i.putExtra(Intent.EXTRA_SUBJECT, e.getTitle());
+			i.setType("image/*");
+			i.putExtra(Intent.EXTRA_STREAM, shareImageUri);
+			i.putExtra(Intent.EXTRA_TEXT, e.getTitle() + " - " + "Download the Adrenaline Life Beta App now and #FindYourLife" + " - " + "www.onelink.to/life");
 			startActivity(Intent.createChooser(i, getString(R.string.share)));
 		}
 		else //(item.getItemId() == R.id.menu_fav)
@@ -356,4 +364,77 @@ public class EventDetail extends CustomFragment
 		if (requestCode == Const.REQ_LOGIN && resultCode == Activity.RESULT_OK)
 			bookTicket();
 	}
+
+	public Uri getLocalBitmapUri() {
+		// Extract Bitmap from ImageView drawable
+		Bitmap bmp;
+		if (e.getImage() != "") {
+			bmp = loader.loadImage(e.getImage(),
+					new ImageLoader.ImageLoadedListener() {
+						@Override
+						public void imageLoaded(Bitmap bm)
+						{
+							if (bm != null)
+								Toast.makeText(parent, "No BitMap", Toast.LENGTH_SHORT).show();
+								imgShare.setImageBitmap(bmNoImg);
+						}
+					});
+		} else {
+			//Get Bitmap for Drawable File no_image.png
+			bmp = BitmapFactory.decodeResource(getContext().getResources(), R.drawable.no_imagebig);
+		}
+
+		// Store image to default external storage directory
+		Uri bmpUri = null;
+		try {
+			File file =  new File(Environment.getExternalStoragePublicDirectory(
+					Environment.DIRECTORY_DOWNLOADS), "share_image_" + System.currentTimeMillis() + ".png");
+			file.getParentFile().mkdirs();
+			FileOutputStream out = new FileOutputStream(file);
+			bmp.compress(Bitmap.CompressFormat.PNG, 90, out);
+			out.close();
+			bmpUri = Uri.fromFile(file);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+
+		shareImageUri = bmpUri;
+		return bmpUri;
+
+	}
+
+
+
+/*
+	public Uri getLocalBitmapUri(ImageView imageView) {
+		// Extract Bitmap from ImageView drawable
+		Drawable drawable = imageView.getDrawable();
+		Bitmap bmp = null;
+		if (drawable instanceof BitmapDrawable){
+			bmp = ((BitmapDrawable) imageView.getDrawable()).getBitmap();
+		} else {
+			return null;
+		}
+		// Store image to default external storage directory
+		Uri bmpUri = null;
+		try {
+			File file =  new File(Environment.getExternalStoragePublicDirectory(
+					Environment.DIRECTORY_DOWNLOADS), "share_image_" + System.currentTimeMillis() + ".png");
+			file.getParentFile().mkdirs();
+			FileOutputStream out = new FileOutputStream(file);
+			bmp.compress(Bitmap.CompressFormat.PNG, 90, out);
+			out.close();
+			bmpUri = Uri.fromFile(file);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		shareImageUri = bmpUri;
+		return bmpUri;
+	}
+	*/
+
+
+
 }

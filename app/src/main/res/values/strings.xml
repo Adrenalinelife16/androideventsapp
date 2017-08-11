@@ -66,13 +66,15 @@
     <string name="select_category">Select a Category</string>
     <string name="alert_login">Signing in...</string>
     <string name="logout_success">Logout Successful</string>
-    <string name="err_field_empty">Please fill all the fields.</string>
+    <string name="err_field_empty">Please fill in all the fields.</string>
     <string name="err_email">Please enter valid email address.</string>
     <string name="err_pwd">Password does not match!</string>
     <string name="book_ticket">Book Event</string>
     <string name="category_view">Categories</string>
     <string name="onResponse">Connection Accepted!</string>
     <string name="onError">Connection Denied!</string>
+
+    <string name="Beta_Share_Intent">Find more local events and activities like this one by downloading the Adrenaline Life App Now! OneLink.to/Life</string>
 
     <string name="msg_event_book_success">Event has been successfully booked.</string>
     <string name="help_centre_text">Today, people expect things to find them, not the other way around.

@@ -82,20 +82,17 @@ public class Register extends CustomActivity {
 		mPwd2 = ((EditText) findViewById(R.id.reg_con_pwd)).getText()
 				.toString().trim();
 		////////////////////////////////////////////////////////////////////////////////////////////////
-		if (Commons.isEmpty(mFirst) || Commons.isEmpty(mFirst)
-				|| Commons.isEmpty(mFirst))
+		if (Commons.isEmpty(mFirst))
 		{
 			Utils.showDialog(THIS, R.string.err_field_empty);
 			return;
 		}
-		if (Commons.isEmpty(mLast) || Commons.isEmpty(mLast)
-				|| Commons.isEmpty(mLast))
+		if (Commons.isEmpty(mLast))
 		{
 			Utils.showDialog(THIS, R.string.err_field_empty);
 			return;
 		}
-		if (Commons.isEmpty(mUserName) || Commons.isEmpty(mUserName)
-				|| Commons.isEmpty(mUserName))
+		if (Commons.isEmpty(mUserName))
 		{
 			Utils.showDialog(THIS, R.string.err_field_empty);
 			return;

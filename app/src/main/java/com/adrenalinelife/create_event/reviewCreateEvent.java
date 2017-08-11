@@ -238,8 +238,6 @@ public class reviewCreateEvent extends CustomActivity {
                             // Launch Events Fragment
                             //Intent i = new Intent(reviewCreateEvent.this, Events.class);
                             //startActivity(i);
-
-
                             AlertDialog.Builder builder = new AlertDialog.Builder(reviewCreateEvent.this);
                             builder.setMessage( "Event Creation Successful")
                                     .setPositiveButton("Okay", new DialogInterface.OnClickListener() {

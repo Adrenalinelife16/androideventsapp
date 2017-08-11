@@ -257,17 +257,19 @@ public class editCreateEvent extends CustomActivity {
 
     public void doCreateEvent() throws FileNotFoundException {
 
-        //Event Name
+        //Event Name////////////////////////////////////////////////////////////////////////////////
         mEventName = ((EditText) findViewById(R.id.event_name)).getText()
                 .toString().trim();
-        //Category
+
+        //Category//////////////////////////////////////////////////////////////////////////////////
         sCategorySpinner = (Spinner) findViewById(R.id.cate_spinner);
         mCategory = sCategorySpinner.getSelectedItem().toString();
-        //Event Details
+
+        //Event Details/////////////////////////////////////////////////////////////////////////////
         mDescription = ((EditText) findViewById(R.id.event_details)).getText()
                 .toString().trim();
 
-        // Get Location Info
+        // Get Location Info////////////////////////////////////////////////////////////////////////
         mLocation = ((EditText) findViewById(R.id.locationName)).getText()
                 .toString().trim();
 
@@ -281,7 +283,6 @@ public class editCreateEvent extends CustomActivity {
 
         mZip = ((EditText) findViewById(R.id.locationZip)).getText()
                 .toString().trim();
-
 
         //Check if Text is empty////////////////////////////////////////////////////////////////////
         if (Commons.isEmpty(mDescription))
@@ -318,6 +319,12 @@ public class editCreateEvent extends CustomActivity {
             return;
         }
 
+        if (Commons.isEmpty(mZip) || mZip.length() < 4)
+        {
+            Utils.showDialog(THIS, R.string.err_field_empty);
+            return;
+        }
+
         if (mStartDatePicker == null)
         {
             Utils.showDialog(THIS, R.string.err_field_empty);
@@ -344,7 +351,7 @@ public class editCreateEvent extends CustomActivity {
 
         if (mCategory.equals("Select a Category"))
         {
-            Utils.showDialog(THIS, R.string.err_field_empty);
+            Utils.showDialog(THIS, "Please select a Category");
             return;
         }
         ////////////////////////////////////////////////////////////////////////////////////////////
