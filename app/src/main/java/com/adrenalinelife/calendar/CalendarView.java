@@ -12,6 +12,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -21,6 +22,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -34,6 +36,7 @@ import com.adrenalinelife.R;
 import com.adrenalinelife.custom.CustomActivity;
 import com.adrenalinelife.custom.CustomFragment;
 import com.adrenalinelife.model.Event;
+import com.adrenalinelife.ui.FavEvents;
 import com.adrenalinelife.utils.Commons;
 import com.adrenalinelife.utils.Const;
 import com.adrenalinelife.utils.ImageLoader;
@@ -71,6 +74,7 @@ public class CalendarView extends CustomFragment implements DateChangeListener
 	/** The event for selected date. */
 	private ArrayList<Event> eventSel;
 
+	public Button mFavButton;
 
 
 	@Override
@@ -81,6 +85,20 @@ public class CalendarView extends CustomFragment implements DateChangeListener
 		View v = inflater.inflate(R.layout.calendar, null);
 		setHasOptionsMenu(true);
         //v.findViewById(R.id.vTabs).setVisibility(View.VISIBLE);
+
+		mFavButton = (Button) v.findViewById(R.id.favButton);
+		mFavButton.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				FavEvents fE = new FavEvents();
+				android.support.v4.app.FragmentManager fm = getFragmentManager();
+				FragmentTransaction ft = fm.beginTransaction();
+				ft.add(R.id.content_frame, fE).addToBackStack("My Favorites").commit();
+			}
+		});
+
+
+
 
 		setupEventList(v);
 

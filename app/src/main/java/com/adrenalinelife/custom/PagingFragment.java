@@ -120,5 +120,4 @@ public class PagingFragment extends CustomFragment implements
 
 	}
 
-
 }

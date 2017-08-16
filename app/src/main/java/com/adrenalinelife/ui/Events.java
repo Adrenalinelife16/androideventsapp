@@ -1,24 +1,15 @@
 package com.adrenalinelife.ui;
 
-import android.app.AlertDialog;
-import android.app.FragmentManager;
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.text.Html;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
@@ -36,10 +27,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.adrenalinelife.EventDetailActivity;
-import com.adrenalinelife.Login;
 import com.adrenalinelife.R;
-import com.adrenalinelife.create_event.editCreateEvent;
-import com.adrenalinelife.custom.CustomFragment;
 import com.adrenalinelife.custom.PagingFragment;
 import com.adrenalinelife.model.Event;
 import com.adrenalinelife.utils.Commons;
@@ -52,9 +40,6 @@ import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -77,14 +62,9 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 	Button mFilterAll;
 	Button mDiscoverEvents;
 
-	public Uri shareImageUri;
 	public LinearLayout vTabs;
-
-
 	/** Swipe Refresh Layout **/
 	private SwipeRefreshLayout SwipeRefresh;
-
-
 	/** The Events list. */
 	private final ArrayList<Event> pList = new ArrayList<>();
 
@@ -96,6 +76,7 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		super.onCreateView(inflater, container, savedInstanceState);
 		final View v = inflater.inflate(R.layout.events, null, false);
 		setHasOptionsMenu(true);
+		setRetainInstance(true);
 
 		///////////////////////////////////////////////// - Initiating Views
 
@@ -109,6 +90,8 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		mFilterAll = (Button) v.findViewById(R.id.button_all_filter);
 		mDiscoverEvents = (Button) v.findViewById(R.id.discover_btn);
 		filterResults = (ListView) v.findViewById(R.id.list);
+		vTabs = (LinearLayout) v.findViewById(R.id.vTabsF);
+		vTabs.setVisibility(View.GONE);
 
 		/////////////////////////////////////  - Calling Initial onCreate Methods
 		setFilterTextWhite();
@@ -622,6 +605,8 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		}
 	}
 	////////////////////////////////////////////////////////////////////////////////////////////////
+
+	/*
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
 	{
@@ -629,8 +614,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 
 		super.onCreateOptionsMenu(menu, inflater);
 	}
-
-
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
 	{
@@ -649,16 +632,14 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 							// User cancelled the dialog
 						}
 					});
-
 			AlertDialog action = builder.create();
 			action.show();
 		} if (item.getItemId() == R.id.menu_fav && StaticData.pref.contains(Const.USER_ID)){
-			Intent intent = new Intent(getActivity(), editCreateEvent.class);
-			startActivity(intent);
+		Intent intent = new Intent(getActivity(), editCreateEvent.class);
+		startActivity(intent);
 	}
 		return true;
 	}
-
 
 /*
 	// DELETE THIS METHOD AFTER CREATE EVENTS IS FINISHED
@@ -700,10 +681,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		mFilterAll.setTextColor(getResources().getColor(R.color.red));
 
 	}
-
-
-
-
 
 
 }

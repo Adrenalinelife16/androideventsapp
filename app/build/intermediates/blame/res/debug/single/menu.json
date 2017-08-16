@@ -16,6 +16,10 @@
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/menu/add.xml"
     },
     {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/menu/share.xml",
+        "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/menu/share.xml"
+    },
+    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/menu/map.xml",
         "source": "/Users/Martare/Documents/androidstudioeventsapp/app/src/main/res/menu/map.xml"
     },

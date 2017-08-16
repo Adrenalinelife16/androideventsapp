@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.text.Html;
 import android.view.LayoutInflater;
@@ -16,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
@@ -27,6 +29,7 @@ import android.widget.Toast;
 
 import com.adrenalinelife.EventDetailActivity;
 import com.adrenalinelife.R;
+import com.adrenalinelife.calendar.CalendarView;
 import com.adrenalinelife.custom.PagingFragment;
 import com.adrenalinelife.model.Event;
 import com.adrenalinelife.utils.Commons;
@@ -68,6 +71,9 @@ public class FavEvents extends PagingFragment
 
     public View mDayFilterScroll;
     public LinearLayout mExtActionBar;
+    public LinearLayout mTabs;
+
+    public Button mCalButton;
 
     ////////////////////////////////////////////////////////////////////////////////////////////////
     @Override
@@ -84,6 +90,20 @@ public class FavEvents extends PagingFragment
         mDayFilterScroll.setVisibility(View.GONE);
         mExtActionBar = (LinearLayout) v.findViewById(R.id.extActionBar);
         mExtActionBar.setVisibility(View.GONE);
+        mTabs = (LinearLayout) v.findViewById(R.id.vTabsF);
+        mTabs.setVisibility(View.VISIBLE);
+
+        mCalButton = (Button) v.findViewById(R.id.calButton);
+        mCalButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CalendarView cV = new CalendarView();
+                android.support.v4.app.FragmentManager fm = getFragmentManager();
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.add(R.id.content_frame, cV).addToBackStack("Calendar").commit();
+            }
+        });
+
 
         performCheck();
         setProgramList(v);

@@ -9,6 +9,55 @@
     >
 
     <LinearLayout
+        android:id="@+id/vTabsF"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/actionbar_bg_6solid"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/calButton"
+            style="@style/tab_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/my_cal"/>
+
+        <View
+            android:id="@+id/view"
+            style="@style/tab_divider"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            />
+
+        <Button
+            android:id="@+id/favButton"
+            style="@style/tab_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="@string/my_fav"/>
+
+        <View
+            android:id="@+id/view2"
+            style="@style/tab_divider"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/tab_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/my_tkcts"/>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/extActionBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

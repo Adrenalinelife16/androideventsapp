@@ -1,32 +1,29 @@
 package com.adrenalinelife;
 
 import android.annotation.TargetApi;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.FragmentManager;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.Uri;
-import android.nfc.Tag;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager.OnBackStackChangedListener;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.adrenalinelife.calendar.CalendarView;
+import com.adrenalinelife.create_event.editCreateEvent;
 import com.adrenalinelife.custom.CustomActivity;
 import com.adrenalinelife.custom.CustomFragment;
 import com.adrenalinelife.model.Data;
@@ -35,7 +32,6 @@ import com.adrenalinelife.ui.FavEvents;
 import com.adrenalinelife.ui.FeedList;
 import com.adrenalinelife.ui.LeftNavAdapter;
 import com.adrenalinelife.ui.More;
-import com.adrenalinelife.ui.MyTickets;
 import com.adrenalinelife.ui.Events;
 import com.adrenalinelife.utils.Const;
 import com.adrenalinelife.utils.StaticData;
@@ -51,7 +47,7 @@ public class MainActivity extends CustomActivity
 {
 
 	private static final String TAG = "initial";
-	private static final String TAG_ANSWERS_FRAGMENT = null;
+
 	/** The drawer layout. */
 	private DrawerLayout drawerLayout;
 
@@ -73,9 +69,9 @@ public class MainActivity extends CustomActivity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		tab = setClick(R.id.tab1);
-		setClick(R.id.tab2);
-		setClick(R.id.tab3);
+		//tab = setClick(R.id.tab1);
+		//setClick(R.id.tab2);
+		//setClick(R.id.tab3);
 
 		setupContainer();
 		setupDrawer();
@@ -202,9 +198,9 @@ public class MainActivity extends CustomActivity
 		}
 		else if (pos == 2)
 		{
-			tab.setEnabled(true);
-			tab = findViewById(R.id.tab1);
-			tab.setEnabled(false);
+			//tab.setEnabled(true);
+			//tab = findViewById(R.id.tab1);
+			//tab.setEnabled(false);
 
 			title = getString(R.string.my_cal);
 			f = new CalendarView();
@@ -212,9 +208,9 @@ public class MainActivity extends CustomActivity
 		else if (pos == 21)
 		{
 			if (StaticData.pref.contains(Const.USER_ID)) {
-				tab.setEnabled(true);
-				tab = findViewById(R.id.tab2);
-				tab.setEnabled(false);
+				//tab.setEnabled(true);
+				//tab = findViewById(R.id.tab2);
+				//tab.setEnabled(false);
 				title = getString(R.string.my_fav);
 				f = new FavEvents();
 				f.setArg(new Bundle());
@@ -276,8 +272,8 @@ public class MainActivity extends CustomActivity
 			Intent intent = new Intent(THIS, Login.class);
 			startActivity(intent);
 		}
-		findViewById(R.id.vTabs).setVisibility(
-				pos == 2 ? View.VISIBLE : View.GONE);
+		//findViewById(R.id.vTabs).setVisibility(
+		//		pos == 2 ? View.VISIBLE : View.GONE);
 
 		if (f != null)
 		{
@@ -295,7 +291,7 @@ public class MainActivity extends CustomActivity
 			*/
 			Log.e("No WHILE, begin transaction ", String.valueOf(getSupportFragmentManager().getBackStackEntryCount()));
 			getSupportFragmentManager().beginTransaction()
-					.replace(R.id.content_frame, f, TAG)
+					.add(R.id.content_frame, f, TAG)
 					.addToBackStack(title)
 					.commit();
 
@@ -366,16 +362,45 @@ public class MainActivity extends CustomActivity
 	}*/
 
 	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+
+		getMenuInflater().inflate(R.menu.add, menu);
+		return super.onCreateOptionsMenu(menu);
+	}
+
+	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
 	{
 		if (drawerToggle.onOptionsItemSelected(item))
 		{
 			return true;
 		}
+		if (item.getItemId() == R.id.menu_fav && StaticData.pref.contains(Const.USER_ID)){
+			Intent intent = new Intent(MainActivity.this, editCreateEvent.class);
+			startActivity(intent);
+		} if (item.getItemId() == R.id.menu_fav && !StaticData.pref.contains(Const.USER_ID))
+	{
+		AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+		builder.setMessage(R.string.err_login)
+				.setPositiveButton(R.string.login, new DialogInterface.OnClickListener() {
+					public void onClick(DialogInterface dialog, int id) {
+						Intent intent = new Intent(MainActivity.this, Login.class);
+						startActivity(intent);
+					}
+				})
+				.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+					public void onClick(DialogInterface dialog, int id) {
+						// User cancelled the dialog
+					}
+				});
+		AlertDialog action = builder.create();
+		action.show();
+	}
 
 		return super.onOptionsItemSelected(item);
 	}
 
+/*
 	// This will disable the back button inside fragments and ask the user to exit the app every single time.
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event)
@@ -393,12 +418,10 @@ public class MainActivity extends CustomActivity
 					})
 					.setNegativeButton("No", null)
 					.show();
-
 		}
 		return super.onKeyDown(keyCode, event);
 	}
-
-/*
+*/
 	//This will allow the back button to back through each view in the stack, if no more, ask the user to exit the app
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event)
@@ -406,14 +429,13 @@ public class MainActivity extends CustomActivity
 		if (keyCode == KeyEvent.KEYCODE_BACK)
 		{
 			Log.e("back stack = ", String.valueOf(getSupportFragmentManager().getBackStackEntryCount()));
-			if (getSupportFragmentManager().getBackStackEntryCount() > 1) {
+
+			if (getSupportFragmentManager().getBackStackEntryCount() > 2) {
 				FragmentManager fm = this.getFragmentManager();
-
-				fm.popBackStackImmediate(0, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-				removeCurrentFragment(TAG);
-
-		} 	if (getSupportFragmentManager().getBackStackEntryCount() <= 1) {
-				Toast.makeText(this,"Nothing To Pop Back To",Toast.LENGTH_SHORT).show();
+				fm.popBackStack();
+				//fm.popBackStackImmediate(0, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+		}	else {
+				//Toast.makeText(this,"Nothing To Pop Back To",Toast.LENGTH_SHORT).show();
 				new AlertDialog.Builder(this)
 						.setMessage("Are you sure you want to exit?")
 						.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
@@ -426,48 +448,8 @@ public class MainActivity extends CustomActivity
 						.setNegativeButton("No", null)
 						.show();
 			}
-
 		}
 		return super.onKeyDown(keyCode, event);
-	}
-*/
-
-
-	/** The temp tab view. */
-	private View temp;
-
-	@Override
-	public void onClick(View v)
-	{
-
-		super.onClick(v);
-		if (v.getId() == R.id.tab1 || v.getId() == R.id.tab2
-				|| v.getId() == R.id.tab3)
-		{
-			temp = tab;
-			tab.setEnabled(true);
-			tab = v;
-			tab.setEnabled(false);
-			if (v.getId() == R.id.tab1)
-				launchFragment(2);
-			else if (v.getId() == R.id.tab2)
-				launchFragment(21);
-
-			else
-			{
-				if (!StaticData.pref.contains(Const.USER_ID))
-
-				{
-					Log.d("User ID", Const.USER_ID);
-					startActivityForResult(new Intent(THIS, Login.class),
-							Const.REQ_LOGIN);
-					tab.setEnabled(true);
-					temp.setEnabled(false);
-				}
-				else
-					launchFragment(22);
-			}
-		}
 	}
 
 	@Override
@@ -477,62 +459,6 @@ public class MainActivity extends CustomActivity
 		StaticData.clear();
 	}
 
-	@Override
-	public void onActivityResult(int requestCode, int resultCode, Intent data)
-	{
-		super.onActivityResult(requestCode, resultCode, data);
-		if (requestCode == Const.REQ_LOGIN && resultCode == Activity.RESULT_OK)
-		{
-			temp.setEnabled(true);
-			tab.setEnabled(false);
-			launchFragment(22);
-		}
-		else
-			tab = temp;
-	}
-
-/*
-	@Override
-	public void onBackPressed() {
-		super.onBackPressed();
-
-		getSupportFragmentManager().popBackStackImmediate();
-
-
-		/*
-		new AlertDialog.Builder(this)
-				.setMessage("Are you sure you want to exit?")
-				.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						MainActivity.super.onBackPressed();
-					}
-				})
-				.setNegativeButton("No", null)
-				.show();
-		super.onBackPressed();
-
-
-	}
-*/
-
-
-
-	public void removeCurrentFragment(String fragmentTag)
-	{
-		FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-		Fragment currentFrag =  getSupportFragmentManager().findFragmentByTag(fragmentTag);
-		String fragName = "NONE";
-
-		if (currentFrag != null)
-			fragName = currentFrag.getClass().getSimpleName();
-
-		Log.d(TAG, "flag name " + fragName);
-
-		if (currentFrag != null && currentFrag.isVisible())
-			transaction.remove(currentFrag);
-
-		transaction.commit();
-	}
-
 }
+
+

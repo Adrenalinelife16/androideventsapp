@@ -1,20 +1,12 @@
 package com.adrenalinelife.ui;
 
-import android.app.ActionBar;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.support.annotation.IdRes;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -31,7 +23,6 @@ import android.widget.Toast;
 
 import com.adrenalinelife.EventDetailActivity;
 import com.adrenalinelife.R;
-import com.adrenalinelife.custom.CustomFragment;
 import com.adrenalinelife.custom.PagingFragment;
 import com.adrenalinelife.model.Event;
 import com.adrenalinelife.utils.Commons;
@@ -44,8 +35,6 @@ import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
 
-import java.io.FileDescriptor;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -58,25 +47,20 @@ public class CategoryEvents extends PagingFragment
     /** Search View **/
     static ListView filterResults;
 
-
     /** Swipe Refresh Layout **/
     private SwipeRefreshLayout SwipeRefresh;
 
     /** The Events list. */
     private static final ArrayList<Event> pList = new ArrayList<>();
 
-    public static String filterKey;
-
     public View mDayFilterScroll;
     public LinearLayout mExtActionBar;
     public SearchView searchView;
 
     public Bundle mBundle;
-    public Intent mIntentOut;
     public String mFilter;
 
-    public FragmentManager mFragmentManager;
-    public ActionBar mBar;
+    public LinearLayout vTabs;
     ////////////////////////////////////////////////////////////////////////////////////////////////////
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -95,6 +79,8 @@ public class CategoryEvents extends PagingFragment
         mDayFilterScroll.setVisibility(View.GONE);
         mExtActionBar = (LinearLayout) v.findViewById(R.id.extActionBar);
         mExtActionBar.setVisibility(View.GONE);
+        vTabs = (LinearLayout) v.findViewById(R.id.vTabsF);
+        vTabs.setVisibility(View.GONE);
 
         //performDiscoverSetup();
         setProgramList(v);
