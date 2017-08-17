@@ -32,6 +32,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapViewer extends CustomFragment
 {
 
+
+	//android:value="AIzaSyDgjrUoJNZTQeYeS6W-Q7RMjs5yMzRTCfU"/>
 	/** The map view. */
 	private MapView mMapView;
 

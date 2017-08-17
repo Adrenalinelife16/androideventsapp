@@ -43,9 +43,11 @@
                     android:id="@+id/lblAddress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:inputType="textPostalAddress"
                     android:text="Milan, Via Orefici 7, 20123 Italy"
                     android:textColor="@color/main_color_gray_dk"
-                    android:textSize="@dimen/txt_14sp" />
+                    android:textSize="@dimen/txt_14sp"/>
 
                 <LinearLayout
                     android:id="@+id/da"
@@ -93,19 +95,21 @@
                 android:text="@string/description"
                 android:textColor="@color/adrenaline_red"
                 android:textSize="@dimen/txt_15sp"/>
-            
+
             <TextView
-                    android:id="@+id/lblDesc"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/white"
-                    android:text="Milan, Via Orefici 7, 20123 Italy"
-                    android:textColor="@color/main_color_gray_dk"
-                    android:textSize="@dimen/txt_14sp"
-                     android:paddingLeft="@dimen/pad_10dp"
-                android:paddingRight="@dimen/pad_10dp" 
+                android:id="@+id/lblDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:background="@color/white"
+                android:inputType="textMultiLine"
+                android:linksClickable="true"
                 android:paddingBottom="@dimen/pad_10dp"
-                android:autoLink="all"/>
+                android:paddingLeft="@dimen/pad_10dp"
+                android:paddingRight="@dimen/pad_10dp"
+                android:text="Milan, Via Orefici 7, 20123 Italy"
+                android:textColor="@color/main_color_gray_dk"
+                android:textSize="@dimen/txt_14sp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"

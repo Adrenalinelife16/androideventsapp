@@ -17,7 +17,7 @@ ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidM
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:7:5-9:40
-MERGED from [com.android.support:support-v13:23.1.1] /Users/Martare/.android/build-cache/1a9a77fd8d82f953dbee93af5f14f7ab6e077e00/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v13:25.3.1] /Users/Martare/.android/build-cache/779af521c1c4476f6b9da8bc51866608c81b9390/output/AndroidManifest.xml:21:5-23:55
 MERGED from [com.google.android.gms:play-services:8.4.0] /Users/Martare/.android/build-cache/2710a6d7278ed3403dcba4e957729015a27e751d/output/AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:23:5-42
 MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/Martare/.android/build-cache/ca404dc47f7839b7c311f63c343acfe9499a4c3a/output/AndroidManifest.xml:18:5-42
@@ -45,8 +45,17 @@ MERGED from [com.google.android.gms:play-services-wearable:8.4.0] /Users/Martare
 MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/Martare/.android/build-cache/7307b0f4aba3c36a53bafffd4dbd589e33027821/output/AndroidManifest.xml:18:5-42
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/Martare/.android/build-cache/df209fa9de3637e3f693abf64434398eb94f418a/output/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] /Users/Martare/.android/build-cache/33ff9b3903467d82a72aa7d105a6bdc151bfca39/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.3.1] /Users/Martare/.android/build-cache/8633e36fbccd7734be94c45b4a4303c6efaa792d/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/Martare/.android/build-cache/72a2f3c6b9bcbc37aaf1e9126dde1ecc4142a826/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/Martare/.android/build-cache/e09cd98d0666d74f0a0f6adace108152093c054f/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/Martare/.android/build-cache/3a035057b8a58b169a51be53497d796db42d2960/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/Martare/.android/build-cache/407d53ecd147e4ba1038761fcb0e7f0b49a57cba/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/Martare/.android/build-cache/54c8ee63801864b39ae5fb6d9726dec181fe4daa/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/Martare/.android/build-cache/5a10b1a3b6cb9cc1161d5e8f0522e061208866ef/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.3.1] /Users/Martare/.android/build-cache/96cab6c0a1f57dee5a7ebbcbf7e03bdcbcced61a/output/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v13:25.3.1] /Users/Martare/.android/build-cache/779af521c1c4476f6b9da8bc51866608c81b9390/output/AndroidManifest.xml:23:9-52
 	android:targetSdkVersion
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:9:9-38
 		INJECTED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml
@@ -123,7 +132,7 @@ ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidM
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:34:22-77
 application
 ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:36:5-146:19
-MERGED from [com.android.support:support-v13:23.1.1] /Users/Martare/.android/build-cache/1a9a77fd8d82f953dbee93af5f14f7ab6e077e00/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v13:25.3.1] /Users/Martare/.android/build-cache/779af521c1c4476f6b9da8bc51866608c81b9390/output/AndroidManifest.xml:29:5-20
 MERGED from [com.google.android.gms:play-services:8.4.0] /Users/Martare/.android/build-cache/2710a6d7278ed3403dcba4e957729015a27e751d/output/AndroidManifest.xml:19:5-20
 MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:24:5-32:19
 MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/Martare/.android/build-cache/ca404dc47f7839b7c311f63c343acfe9499a4c3a/output/AndroidManifest.xml:24:5-20
@@ -149,8 +158,15 @@ MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/Martare/.an
 MERGED from [com.google.android.gms:play-services-wearable:8.4.0] /Users/Martare/.android/build-cache/5194a35ca69f95eed0eb89f1d0b135b1445d79a3/output/AndroidManifest.xml:19:5-20
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/Martare/.android/build-cache/7307b0f4aba3c36a53bafffd4dbd589e33027821/output/AndroidManifest.xml:20:5-24:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/Martare/.android/build-cache/df209fa9de3637e3f693abf64434398eb94f418a/output/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] /Users/Martare/.android/build-cache/33ff9b3903467d82a72aa7d105a6bdc151bfca39/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /Users/Martare/.android/build-cache/8633e36fbccd7734be94c45b4a4303c6efaa792d/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/Martare/.android/build-cache/72a2f3c6b9bcbc37aaf1e9126dde1ecc4142a826/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/Martare/.android/build-cache/e09cd98d0666d74f0a0f6adace108152093c054f/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/Martare/.android/build-cache/3a035057b8a58b169a51be53497d796db42d2960/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/Martare/.android/build-cache/407d53ecd147e4ba1038761fcb0e7f0b49a57cba/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/Martare/.android/build-cache/54c8ee63801864b39ae5fb6d9726dec181fe4daa/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/Martare/.android/build-cache/5a10b1a3b6cb9cc1161d5e8f0522e061208866ef/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/Martare/.android/build-cache/96cab6c0a1f57dee5a7ebbcbf7e03bdcbcced61a/output/AndroidManifest.xml:29:5-20
 	android:label
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:39:9-41
 	android:allowBackup
@@ -332,6 +348,21 @@ ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidM
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:144:13-67
 	android:name
 		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:141:13-59
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v13:25.3.1] /Users/Martare/.android/build-cache/779af521c1c4476f6b9da8bc51866608c81b9390/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] /Users/Martare/.android/build-cache/8633e36fbccd7734be94c45b4a4303c6efaa792d/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/Martare/.android/build-cache/72a2f3c6b9bcbc37aaf1e9126dde1ecc4142a826/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/Martare/.android/build-cache/e09cd98d0666d74f0a0f6adace108152093c054f/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/Martare/.android/build-cache/3a035057b8a58b169a51be53497d796db42d2960/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/Martare/.android/build-cache/407d53ecd147e4ba1038761fcb0e7f0b49a57cba/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/Martare/.android/build-cache/54c8ee63801864b39ae5fb6d9726dec181fe4daa/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/Martare/.android/build-cache/5a10b1a3b6cb9cc1161d5e8f0522e061208866ef/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/Martare/.android/build-cache/96cab6c0a1f57dee5a7ebbcbf7e03bdcbcced61a/output/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:support-v13:25.3.1] /Users/Martare/.android/build-cache/779af521c1c4476f6b9da8bc51866608c81b9390/output/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:support-v13:25.3.1] /Users/Martare/.android/build-cache/779af521c1c4476f6b9da8bc51866608c81b9390/output/AndroidManifest.xml:26:9-47
 activity#com.google.android.gms.ads.AdActivity
 ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:26:9-29:64
 	android:configChanges

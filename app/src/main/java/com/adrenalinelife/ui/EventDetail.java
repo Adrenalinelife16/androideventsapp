@@ -12,6 +12,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.annotation.RequiresApi;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -79,6 +80,7 @@ public class EventDetail extends CustomFragment
 	public ImageView imgShare;
 
 
+	@RequiresApi(api = Build.VERSION_CODES.N)
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState)
@@ -101,6 +103,7 @@ public class EventDetail extends CustomFragment
 	 *
 	 * @param v the v
 	 */
+	@RequiresApi(api = Build.VERSION_CODES.N)
 	private void showDetails(View v)
 	{
 		TextView lbl = (TextView) v.findViewById(R.id.lblTitle);
@@ -109,8 +112,9 @@ public class EventDetail extends CustomFragment
 		lbl = (TextView) v.findViewById(R.id.lblAddress);
 		lbl.setText(e.getLocation());
 
+		Log.e("Description = ", e.getDesc());
 		lbl = (TextView) v.findViewById(R.id.lblDesc);
-		lbl.setText(Html.fromHtml(e.getDesc()));
+		lbl.setText(e.getDesc());
 
 		lbl = (TextView) v.findViewById(R.id.lblDate);
 		if (e.getStartDate().equalsIgnoreCase(e.getEndDate()))
