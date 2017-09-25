@@ -8,10 +8,13 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.location.Location;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.text.Html;
 import android.view.LayoutInflater;
@@ -26,6 +29,7 @@ import android.widget.Toast;
 
 import com.adrenalinelife.BookTkt;
 import com.adrenalinelife.Login;
+import com.adrenalinelife.MainActivity;
 import com.adrenalinelife.R;
 import com.adrenalinelife.custom.CustomFragment;
 import com.adrenalinelife.model.Event;
@@ -36,6 +40,12 @@ import com.adrenalinelife.utils.Log;
 import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.FusedLocationProviderApi;
+import com.google.android.gms.location.LocationListener;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -63,7 +73,7 @@ import static com.adrenalinelife.web.WebAccess.getUserParams;
  * need to write your own logic for loading actual contents related to Events
  * and also need to show actual location for Event.
  */
-public class EventDetail extends CustomFragment
+public class EventDetail extends CustomFragment implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener
 {
 
 	/** The map view. */
@@ -72,11 +82,22 @@ public class EventDetail extends CustomFragment
 	/** The Google map. */
 	private GoogleMap mMap;
 
+	/** Location */
+	public GoogleApiClient mGoogleApiClient;
+	private LocationRequest mLocationRequest;
+	private FusedLocationProviderApi mFusedLocationProviderApi = LocationServices.FusedLocationApi;
+	private double mMyLatitude;
+	private double mMyLongitude;
+	private double mLocationMiles;
+	public double mLocationMeters;
+	private TextView mDistance;
+	private int mMiles;
+
 	/** The e. */
 	private Event e;
 
+	/** Share Image */
 	private Uri shareImageUri;
-
 	public ImageView imgShare;
 
 
@@ -89,6 +110,17 @@ public class EventDetail extends CustomFragment
 		View v = inflater.inflate(R.layout.event_detail, null);
 		e = (Event) getArg().getSerializable(Const.EXTRA_DATA);
 		setHasOptionsMenu(true);
+
+		//Grab Location
+		mLocationRequest = new LocationRequest();
+		mLocationRequest.setInterval(60 * 10000);
+		mLocationRequest.setPriority(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY);
+		mGoogleApiClient = new GoogleApiClient.Builder(getContext())
+				.addApi(LocationServices.API)
+				.addConnectionCallbacks(this)
+				.addOnConnectionFailedListener(this)
+				.build();
+		mGoogleApiClient.connect();
 
 		setTouchNClick(v.findViewById(R.id.btnReg));
 
@@ -124,16 +156,12 @@ public class EventDetail extends CustomFragment
 		else
 			lbl.setText(Commons.millsToDateTime(e.getStartDateTime()) + " to "
 					+ Commons.millsToDateTime(e.getEndDateTime()));
-/*
-		lbl = (TextView) v.findViewById(R.id.lblCost);
-		lbl.setText(e.getPrice() == 0 ? getString(R.string.free_event) : "$"
-				+ e.getPrice());
-*/
+
+		mDistance = (TextView) v.findViewById(R.id.distance_event);
+		mDistance.setText(" " + mMiles);
+
 	}
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onPause()
-	 */
 	@Override
 	public void onPause()
 	{
@@ -141,23 +169,21 @@ public class EventDetail extends CustomFragment
 		super.onPause();
 	}
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onDestroy()
-	 */
 	@Override
 	public void onDestroy()
 	{
 		mMapView.onDestroy();
+		mGoogleApiClient.disconnect();
 		super.onDestroy();
 	}
 
-	/* (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onResume()
-	 */
 	@Override
 	public void onResume()
 	{
 		super.onResume();
+		if (mGoogleApiClient.isConnected()){
+			requestLocationUpdates();
+		}
 		mMapView.onResume();
 
 		mMap = mMapView.getMap();
@@ -169,6 +195,59 @@ public class EventDetail extends CustomFragment
 		}
 	}
 
+	//////////////////////////////////////////////////////////////// - Google Location API
+	@Override
+	public void onConnected(@Nullable Bundle bundle) {
+		mFusedLocationProviderApi.requestLocationUpdates(mGoogleApiClient,  mLocationRequest, this);
+	}
+
+	private void requestLocationUpdates() {
+		//Add Request Permission Here
+		LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, (LocationListener) getActivity());
+	}
+
+	@Override
+	public void onConnectionSuspended(int i) {
+
+	}
+
+	@Override
+	public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+
+	}
+
+	@Override
+	public void onLocationChanged(Location location) {
+		//Toast.makeText(getActivity(), "location :"+location.getLatitude()+" , "+location.getLongitude(), Toast.LENGTH_SHORT).show();
+		mMyLatitude = location.getLatitude();
+		mMyLongitude = location.getLongitude();
+		LocationToMiles();
+		mDistance.setText(" " + mMiles);
+
+	}
+
+	public double LocationToMiles(){
+		double eLatitude = e.getLatitude();
+		double eLongitude = e.getLongitude();
+
+		//Event Location
+		Location startPoint = new Location("locationA");
+		startPoint.setLatitude(eLatitude);
+		startPoint.setLongitude(eLongitude);
+
+		//User Location
+		Location endPoint = new Location("locationB");
+		endPoint.setLatitude(mMyLatitude);
+		endPoint.setLongitude(mMyLongitude);
+
+		//Convert Meters to Miles
+		mLocationMeters = startPoint.distanceTo(endPoint);
+		mLocationMiles = mLocationMeters * 0.000621371;
+		mMiles = (int) mLocationMiles;
+
+		return mMiles;
+	}
+	//////////////////////////////////////////////////////////////// - Google Location API
 	/**
 	 * Setup and initialize the Google map view.
 	 * 

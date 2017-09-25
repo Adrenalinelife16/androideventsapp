@@ -40,20 +40,20 @@
         "source": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_light.xml",
-        "source": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/drawable/common_plus_signin_btn_icon_light.xml"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
         "source": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/drawable/abc_ic_go_search_api_material.xml"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable/mr_ic_play_light.xml",
-        "source": "/Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/res/drawable/mr_ic_play_light.xml"
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_light.xml",
+        "source": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/drawable/common_plus_signin_btn_icon_light.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
         "source": "/Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/res/drawable/abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable/mr_ic_play_light.xml",
+        "source": "/Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/res/drawable/mr_ic_play_light.xml"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",

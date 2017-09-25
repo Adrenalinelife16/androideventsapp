@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.adrenalinelife"
-    android:versionCode="5"
-    android:versionName="1.3" >
+    android:versionCode="6"
+    android:versionName="1.4" >
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -46,7 +46,7 @@
         android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyDgjrUoJNZTQeYeS6W-Q7RMjs5yMzRTCfU" />
+            android:value="AIzaSyDEeBgQzzKLLUNnHnRuj9ievVt1h61DfiU" />
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />

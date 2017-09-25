@@ -6,6 +6,7 @@ import android.app.FragmentManager;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.location.Location;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -21,6 +22,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.adrenalinelife.calendar.CalendarView;
 import com.adrenalinelife.create_event.editCreateEvent;
@@ -35,6 +37,11 @@ import com.adrenalinelife.ui.More;
 import com.adrenalinelife.ui.Events;
 import com.adrenalinelife.utils.Const;
 import com.adrenalinelife.utils.StaticData;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.FusedLocationProviderApi;
+import com.google.android.gms.location.LocationListener;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationServices;
 
 import java.util.ArrayList;
 

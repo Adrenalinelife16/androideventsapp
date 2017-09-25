@@ -84,12 +84,12 @@
         "source": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-hdpi/common_google_signin_btn_icon_dark_focused.9.png",
-        "source": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/drawable-hdpi/common_google_signin_btn_icon_dark_focused.9.png"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-hdpi/common_plus_signin_btn_icon_light_disabled.9.png",
         "source": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/drawable-hdpi/common_plus_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-hdpi/common_google_signin_btn_icon_dark_focused.9.png",
+        "source": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/drawable-hdpi/common_google_signin_btn_icon_dark_focused.9.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-hdpi/abc_ic_go_search_api_mtrl_alpha.png",
@@ -160,12 +160,12 @@
         "source": "/Users/Martare/.android/build-cache/e785235ddc8c4b5505d2034b42903e911b3a473b/output/res/drawable-hdpi/abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_cast_on_1_light.png",
-        "source": "/Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/res/drawable-hdpi/ic_cast_on_1_light.png"
-    },
-    {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-hdpi/common_plus_signin_btn_text_light_normal.9.png",
         "source": "/Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/res/drawable-hdpi/common_plus_signin_btn_text_light_normal.9.png"
+    },
+    {
+        "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_cast_on_1_light.png",
+        "source": "/Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/res/drawable-hdpi/ic_cast_on_1_light.png"
     },
     {
         "merged": "/Users/Martare/Documents/androidstudioeventsapp/app/build/intermediates/res/merged/debug/drawable-hdpi/common_plus_signin_btn_text_light_disabled.9.png",

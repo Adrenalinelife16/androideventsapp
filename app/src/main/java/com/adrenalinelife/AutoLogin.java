@@ -18,7 +18,7 @@ import com.adrenalinelife.web.WebHelper;
 /**
  * Created by Chazz Romeo on 7/10/2017.
  */
-public class AutoLogin extends CustomActivity
+public abstract class AutoLogin extends CustomActivity
 {
 
 	public Bundle mBundle;
