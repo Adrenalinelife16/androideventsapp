@@ -3215,10 +3215,12 @@ containing a value of this type.
         public static final int media_route_list=0x7f0d0109;
         public static final int media_route_volume_layout=0x7f0d0112;
         public static final int media_route_volume_slider=0x7f0d0113;
-        public static final int menu_back=0x7f0d0159;
+        public static final int menu_add=0x7f0d0159;
+        public static final int menu_back=0x7f0d015a;
         public static final int menu_fav=0x7f0d0157;
-        public static final int menu_map=0x7f0d015a;
-        public static final int menu_share=0x7f0d015c;
+        public static final int menu_map=0x7f0d015b;
+        public static final int menu_search=0x7f0d0158;
+        public static final int menu_share=0x7f0d015d;
         public static final int middle=0x7f0d0026;
         public static final int monochrome=0x7f0d0051;
         public static final int more_Login=0x7f0d0103;
@@ -3262,7 +3264,6 @@ containing a value of this type.
         public static final int re_start=0x7f0d0144;
         public static final int re_state=0x7f0d014a;
         public static final int re_zip=0x7f0d014b;
-        public static final int refresh=0x7f0d0158;
         public static final int reg_con_pwd=0x7f0d013c;
         public static final int reg_email=0x7f0d013a;
         public static final int reg_first_name=0x7f0d0137;
@@ -3289,7 +3290,7 @@ containing a value of this type.
         public static final int search_close_btn=0x7f0d0080;
         public static final int search_edit_frame=0x7f0d007c;
         public static final int search_go_btn=0x7f0d0082;
-        public static final int search_icon=0x7f0d015b;
+        public static final int search_icon=0x7f0d015c;
         public static final int search_mag_icon=0x7f0d007d;
         public static final int search_plate=0x7f0d007e;
         public static final int search_src_text=0x7f0d007f;

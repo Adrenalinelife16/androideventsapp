@@ -1111,10 +1111,12 @@ int id media_route_control_frame 0x7f0d010d
 int id media_route_list 0x7f0d0109
 int id media_route_volume_layout 0x7f0d0112
 int id media_route_volume_slider 0x7f0d0113
-int id menu_back 0x7f0d0159
+int id menu_add 0x7f0d0159
+int id menu_back 0x7f0d015a
 int id menu_fav 0x7f0d0157
-int id menu_map 0x7f0d015a
-int id menu_share 0x7f0d015c
+int id menu_map 0x7f0d015b
+int id menu_search 0x7f0d0158
+int id menu_share 0x7f0d015d
 int id middle 0x7f0d0026
 int id monochrome 0x7f0d0051
 int id more_Login 0x7f0d0103
@@ -1158,7 +1160,6 @@ int id re_locationname 0x7f0d0147
 int id re_start 0x7f0d0144
 int id re_state 0x7f0d014a
 int id re_zip 0x7f0d014b
-int id refresh 0x7f0d0158
 int id reg_con_pwd 0x7f0d013c
 int id reg_email 0x7f0d013a
 int id reg_first_name 0x7f0d0137
@@ -1185,7 +1186,7 @@ int id search_button 0x7f0d007b
 int id search_close_btn 0x7f0d0080
 int id search_edit_frame 0x7f0d007c
 int id search_go_btn 0x7f0d0082
-int id search_icon 0x7f0d015b
+int id search_icon 0x7f0d015c
 int id search_mag_icon 0x7f0d007d
 int id search_plate 0x7f0d007e
 int id search_src_text 0x7f0d007f

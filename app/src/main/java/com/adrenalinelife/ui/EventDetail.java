@@ -56,6 +56,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
+import org.w3c.dom.Text;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -111,9 +112,11 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 		e = (Event) getArg().getSerializable(Const.EXTRA_DATA);
 		setHasOptionsMenu(true);
 
-		//Grab Location
+		//Initiate Location
 		mLocationRequest = new LocationRequest();
-		mLocationRequest.setInterval(60 * 10000);
+		//mLocationRequest.setInterval(60); //60 Milliseconds
+		mLocationRequest.setFastestInterval(0);
+		mLocationRequest.setNumUpdates(2); //Only call this 1 time
 		mLocationRequest.setPriority(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY);
 		mGoogleApiClient = new GoogleApiClient.Builder(getContext())
 				.addApi(LocationServices.API)
@@ -121,6 +124,8 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 				.addOnConnectionFailedListener(this)
 				.build();
 		mGoogleApiClient.connect();
+		Log.e("Google Client");
+		////////////////////
 
 		setTouchNClick(v.findViewById(R.id.btnReg));
 
@@ -144,6 +149,9 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 		lbl = (TextView) v.findViewById(R.id.lblAddress);
 		lbl.setText(e.getLocation());
 
+		//lbl = (TextView) v.findViewById(R.id.lblAdress2);
+		//lbl.setText(e.get);
+
 		Log.e("Description = ", e.getDesc());
 		lbl = (TextView) v.findViewById(R.id.lblDesc);
 		lbl.setText(e.getDesc());
@@ -166,6 +174,7 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 	public void onPause()
 	{
 		mMapView.onPause();
+		mGoogleApiClient.disconnect();
 		super.onPause();
 	}
 
@@ -218,7 +227,7 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 
 	@Override
 	public void onLocationChanged(Location location) {
-		//Toast.makeText(getActivity(), "location :"+location.getLatitude()+" , "+location.getLongitude(), Toast.LENGTH_SHORT).show();
+		Toast.makeText(getActivity(), "Location: " + location.getLatitude() + " , " + location.getLongitude(), Toast.LENGTH_SHORT).show();
 		mMyLatitude = location.getLatitude();
 		mMyLongitude = location.getLongitude();
 		LocationToMiles();
