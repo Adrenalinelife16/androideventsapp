@@ -1,13 +1,12 @@
 package com.adrenalinelife.ui;
 
+
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.net.Uri;
 import android.os.Build;
@@ -16,7 +15,6 @@ import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
-import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -29,7 +27,7 @@ import android.widget.Toast;
 
 import com.adrenalinelife.BookTkt;
 import com.adrenalinelife.Login;
-import com.adrenalinelife.MainActivity;
+import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.R;
 import com.adrenalinelife.custom.CustomFragment;
 import com.adrenalinelife.model.Event;
@@ -37,7 +35,6 @@ import com.adrenalinelife.utils.Commons;
 import com.adrenalinelife.utils.Const;
 import com.adrenalinelife.utils.ImageLoader;
 import com.adrenalinelife.utils.Log;
-import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
 import com.google.android.gms.common.ConnectionResult;
@@ -56,7 +53,6 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
-import org.w3c.dom.Text;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -114,10 +110,9 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 
 		//Initiate Location
 		mLocationRequest = new LocationRequest();
-		//mLocationRequest.setInterval(60); //60 Milliseconds
-		mLocationRequest.setFastestInterval(0);
-		mLocationRequest.setNumUpdates(2); //Only call this 1 time
-		mLocationRequest.setPriority(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY);
+		mLocationRequest.setFastestInterval(100); //Call Immediately
+		mLocationRequest.setNumUpdates(1); //Only call this 1 time
+		mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
 		mGoogleApiClient = new GoogleApiClient.Builder(getContext())
 				.addApi(LocationServices.API)
 				.addConnectionCallbacks(this)
@@ -147,23 +142,27 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 		lbl.setText(e.getTitle());
 
 		lbl = (TextView) v.findViewById(R.id.lblAddress);
-		lbl.setText(e.getLocation());
+		lbl.setText(e.getAddress());
 
-		//lbl = (TextView) v.findViewById(R.id.lblAdress2);
-		//lbl.setText(e.get);
+		lbl = (TextView) v.findViewById(R.id.lblAdress2);
+		lbl.setText(e.getCitystate() + " " + e.getZip());
 
 		Log.e("Description = ", e.getDesc());
 		lbl = (TextView) v.findViewById(R.id.lblDesc);
 		lbl.setText(e.getDesc());
 
 		lbl = (TextView) v.findViewById(R.id.lblDate);
-		if (e.getStartDate().equalsIgnoreCase(e.getEndDate()))
-			lbl.setText(Commons.millsToDate(e.getStartDateTime()) + " "
-					+ Commons.millsToTime(e.getStartDateTime()) + " - "
+		lbl.setText(Commons.millsToDate(e.getStartDateTime()));
+
+		lbl = (TextView) v.findViewById(R.id.lblDate2);
+		if (e.getStartTime().equals(e.getEndTime())) {
+			lbl.setVisibility(View.GONE);
+		} else {
+			lbl.setText(Commons.millsToTime(e.getStartDateTime())
+					+ " to "
 					+ Commons.millsToTime(e.getEndDateTime()));
-		else
-			lbl.setText(Commons.millsToDateTime(e.getStartDateTime()) + " to "
-					+ Commons.millsToDateTime(e.getEndDateTime()));
+
+		}
 
 		mDistance = (TextView) v.findViewById(R.id.distance_event);
 		mDistance.setText(" " + mMiles);
@@ -191,7 +190,7 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 	{
 		super.onResume();
 		if (mGoogleApiClient.isConnected()){
-			requestLocationUpdates();
+			locationGranted();
 		}
 		mMapView.onResume();
 
@@ -207,12 +206,13 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 	//////////////////////////////////////////////////////////////// - Google Location API
 	@Override
 	public void onConnected(@Nullable Bundle bundle) {
-		mFusedLocationProviderApi.requestLocationUpdates(mGoogleApiClient,  mLocationRequest, this);
+		//Add Request Permission Here
+        locationGranted();
+		//mFusedLocationProviderApi.requestLocationUpdates(mGoogleApiClient,  mLocationRequest, this);
 	}
 
-	private void requestLocationUpdates() {
-		//Add Request Permission Here
-		LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, (LocationListener) getActivity());
+	public void locationGranted(){
+		mFusedLocationProviderApi.requestLocationUpdates(mGoogleApiClient,  mLocationRequest, this);
 	}
 
 	@Override
@@ -227,12 +227,11 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 
 	@Override
 	public void onLocationChanged(Location location) {
-		Toast.makeText(getActivity(), "Location: " + location.getLatitude() + " , " + location.getLongitude(), Toast.LENGTH_SHORT).show();
+		//Toast.makeText(getActivity(), "Location: " + location.getLatitude() + " , " + location.getLongitude(), Toast.LENGTH_SHORT).show();
 		mMyLatitude = location.getLatitude();
 		mMyLongitude = location.getLongitude();
 		LocationToMiles();
 		mDistance.setText(" " + mMiles);
-
 	}
 
 	public double LocationToMiles(){

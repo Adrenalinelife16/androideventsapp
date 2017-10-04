@@ -1,6 +1,5 @@
 package com.adrenalinelife.web;
 
-import android.graphics.Bitmap;
 import android.util.Log;
 
 import com.adrenalinelife.database.DbHelper;
@@ -157,6 +156,10 @@ public class WebHelper extends WebAccess
 				+ js.getString("location_region") + ", "
 				+ js.getString("location_country") + "- "
 				+ js.getString("location_postcode"));
+		e.setAddress(js.getString("location_address"));
+		e.setCitystate(js.getString("location_town") + ", "
+				+ js.getString("location_state"));
+		e.setZip(js.getString("location_postcode"));
 		e.setLocation(e.getLocation().replaceAll(", null", ""));
 		e.setLocation(e.getLocation().replaceAll("- null", ""));
 

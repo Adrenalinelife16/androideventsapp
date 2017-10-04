@@ -36,8 +36,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="3dp"
             android:orientation="vertical">
 
             <ImageView
@@ -50,7 +48,7 @@
                 android:layout_alignParentStart="false"
                 android:adjustViewBounds="false"
                 android:cropToPadding="false"
-                android:scaleType="fitXY"
+                android:scaleType="centerCrop"
                 android:src="@drawable/no_imagebig"/>
 
         </LinearLayout>
@@ -69,6 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
                 android:lines="1"
                 android:text="Event Title"
                 android:textColor="@color/adrenaline_red"

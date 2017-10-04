@@ -22,6 +22,9 @@ public class StaticData
 	/** Stored User ID */
 	public static String User_iD;
 
+	/** Stored User ID */
+	public static String location_Access;
+
 	/** The app context. */
 	public static Context appContext;
 	
@@ -204,5 +207,6 @@ public class StaticData
 
 		dir.delete();
 	}
+
 
 }

@@ -39,7 +39,16 @@ public class Event implements Serializable
 
 	/** The location. */
 	private String location;
-	
+
+	/** The Address. */
+	private String address;
+
+	/** The City plus Zip. */
+	private String citystate;
+
+	/** The City plus Zip. */
+	private String zip;
+
 	/** The latitude. */
 	private double latitude;
 	
@@ -63,6 +72,7 @@ public class Event implements Serializable
 
 	/** The id. */
 	private String id;
+
 
 	/**
 	 * Instantiates a new event.
@@ -425,6 +435,30 @@ public class Event implements Serializable
 	public void setBooked(boolean isBooked)
 	{
 		this.isBooked = isBooked;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getCitystate() {
+		return citystate;
+	}
+
+	public void setCitystate(String citystate) {
+		this.citystate = citystate;
+	}
+
+	public String getZip() {
+		return zip;
+	}
+
+	public void setZip(String zip) {
+		this.zip = zip;
 	}
 
 }

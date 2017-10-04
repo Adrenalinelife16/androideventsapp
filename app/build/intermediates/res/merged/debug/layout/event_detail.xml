@@ -53,7 +53,7 @@
 
                         <TextView
                             android:id="@+id/lblAddress"
-                            android:layout_width="150dp"
+                            android:layout_width="200dp"
                             android:layout_height="wrap_content"
                             android:layout_weight=".75"
                             android:clickable="true"
@@ -61,6 +61,13 @@
                             android:text="Milan, Via Orefici 7, 20123 Italy"
                             android:textColor="@color/main_color_gray_dk"
                             android:textSize="@dimen/txt_14sp"/>
+
+                        <TextView
+                            android:id="@+id/lblAdress2"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".75"
+                            android:text="TextView"/>
 
                         <LinearLayout
                             android:id="@+id/da"
@@ -87,6 +94,12 @@
                                 android:text="12/23/13   12:00AM - 3:00PM  "
                                 android:textColor="@color/main_color_gray_dk"
                                 android:textSize="@dimen/txt_14sp"/>
+
+                            <TextView
+                                android:id="@+id/lblDate2"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="TextView"/>
                         </LinearLayout>
 
                     </LinearLayout>

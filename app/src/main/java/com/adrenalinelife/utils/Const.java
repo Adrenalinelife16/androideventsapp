@@ -25,6 +25,9 @@ public class Const
 	/** The Constant USER_ID. */
 	public static final String USER_ID = "userId";
 
+	/** The Constant LOCATION_ACCESS. */
+	public static final String LOCATION_ACCESS = "no";
+
 	/** The Constant PAGE_SIZE_100. */
 	public static final int PAGE_SIZE_100 = 100;
 	
