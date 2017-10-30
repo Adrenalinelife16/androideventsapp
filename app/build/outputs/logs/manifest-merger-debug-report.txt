@@ -1,459 +1,614 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:2:1-148:12
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:2:1-148:12
+INJECTED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:2:1-148:12
+INJECTED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:2:1-148:12
+INJECTED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:2:1-148:12
+MERGED from [com.android.support:support-v13:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.1.aar/63b4aa359f0a8cb09e4d3f487ddbe490/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-8.4.0.aar/b8eaf58d0b244659b61081c1cd59ccbc/AndroidManifest.xml:16:1-20:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/1a57c813acadc59c02a711606f2bb1eb/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:design:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/26040b52e69619d0e4cba2bcd42acadd/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-cast:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-cast-8.4.0.aar/86a657d0f008a68468ababc906eeb366/AndroidManifest.xml:16:1-20:12
+MERGED from [com.android.support:mediarouter-v7:23.0.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-23.0.0.aar/8698f080135b6f32bd560ba30754f3da/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/fd197a99fccffd021bce0301a9bd01a2/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:multidex:1.0.2] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/8853b281fbf45cec36c0b1fa1620b73e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/9a8ba68998ad1f978a0ec44d9c04f1f6/AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.support:transition:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/fa043c5ec8fd134706df498419693a74/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/fbc5eeffbc39ca14ab4aa7525f4e4cb0/AndroidManifest.xml:16:1-33:12
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-analytics-8.4.0.aar/c878af36d1003e44a19918771578355f/AndroidManifest.xml:16:1-25:12
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appindexing-8.4.0.aar/a977179b4d95888c6b3fa1ee00ad96e4/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/fd1ff450df5c12f01d721904d74f2c04/AndroidManifest.xml:16:1-31:12
+MERGED from [com.google.android.gms:play-services-appstate:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appstate-8.4.0.aar/95ebba668aaa58f0bea7e98d499d6fe6/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-auth:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/23f5880138eb98098dcdf2c0ebab4765/AndroidManifest.xml:16:1-33:12
+MERGED from [com.google.android.gms:play-services-games:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-games-8.4.0.aar/2ecacec2693d10c81495be9efb912cb6/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-drive-8.4.0.aar/3ca8525c57d2d8a3100a93d8d5750657/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-fitness:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-fitness-8.4.0.aar/a31b8e97bad76e490ad6516251fb36e5/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-gcm-8.4.0.aar/3bfd135a672a8e44ffe227bb6428f50a/AndroidManifest.xml:16:1-25:12
+MERGED from [com.google.android.gms:play-services-wallet:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-wallet-8.4.0.aar/2d76a2fc7e82af219acef06a98128290/AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-identity:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-identity-8.4.0.aar/203d408c2783ec3ad1e45c26eae35e74/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-location:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-location-8.4.0.aar/7fbbdd34268cc8f4ec6bdd9c5768210d/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/b91c714696d73580860a80a6b947ddcf/AndroidManifest.xml:16:1-28:12
+MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-nearby-8.4.0.aar/5f14baac025ff0cb795c095fdf425671/AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-panorama:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-panorama-8.4.0.aar/a4053280338c095183039ba585b12eb3/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-plus:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-plus-8.4.0.aar/044ab69dc82b99f04ab970721afe859f/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-safetynet:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-8.4.0.aar/9a9a9b2d008e6872ff17d5929256d17a/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-vision:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-vision-8.4.0.aar/20177a553e2c5f3f768daa7bfe06eeb6/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-wearable:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-wearable-8.4.0.aar/013906bbe39ee0a148802160fc55bede/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-base-8.4.0.aar/794763e4023b23f4eeda9f7d34fcb213/AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:16:1-47:12
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-basement-8.4.0.aar/ba76307bf5586f6b8cfc4c3f04d856a3/AndroidManifest.xml:16:1-26:12
+MERGED from [com.android.support:support-v4:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/7126c632888b211d57331a95e2f35d2c/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/34326c8c477460823aed3b74e5581159/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/05d95855b3bc4b9b5460a5e17e808571/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/e0824a9a05112ddb86efb96a32bc64cf/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/7e51dd04c8c9f6bcd1dba4df164833b2/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/b3619b0a2a1554a1b0568e02939ac23c/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/f46e25256681e8fecfc57f5d99ef2b80/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-compat:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/be99ccd9d941015e89f15b133906528c/AndroidManifest.xml:17:1-31:12
+INJECTED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:2:1-148:12
+INJECTED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:2:1-148:12
+INJECTED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:2:1-148:12
 	package
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:3:11-39
-		INJECTED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:3:11-39
+		INJECTED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml
 	android:versionName
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:5:11-36
-		INJECTED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml
-	android:versionCode
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:4:11-34
-		INJECTED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:5:11-36
+		INJECTED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:4:11-34
+		INJECTED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml
 uses-sdk
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:7:5-9:40
-MERGED from [com.android.support:support-v13:25.3.1] /Users/Martare/.android/build-cache/779af521c1c4476f6b9da8bc51866608c81b9390/output/AndroidManifest.xml:21:5-23:55
-MERGED from [com.google.android.gms:play-services:8.4.0] /Users/Martare/.android/build-cache/2710a6d7278ed3403dcba4e957729015a27e751d/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:23:5-42
-MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/Martare/.android/build-cache/ca404dc47f7839b7c311f63c343acfe9499a4c3a/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/Martare/.android/build-cache/c8aae2bfade13ca5af9b193450a8b59c387c0322/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-appstate:8.4.0] /Users/Martare/.android/build-cache/eb69710c3c84a74ee5c691cafb84fe3b0a06d044/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/9c0a2da65f3e1322bf7837b7b0627d52c8653eca/output/AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-cast:8.4.0] /Users/Martare/.android/build-cache/1e51502b176bb57a24f2873368688c4055209d0c/output/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:mediarouter-v7:23.0.0] /Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-fitness:8.4.0] /Users/Martare/.android/build-cache/62d06edc0cb478607a10c7e1d67bcdba525c34d7/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-games:8.4.0] /Users/Martare/.android/build-cache/f5c98b73c5b2ac6d5f399bb7e50e6737082ce6b1/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-drive:8.4.0] /Users/Martare/.android/build-cache/c978a116750a75194b95185ef3ad360d5c2aac2f/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/Martare/.android/build-cache/2e5f3d3e69206bca354fa6da6ef6b3cf6d3ad962/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-location:8.4.0] /Users/Martare/.android/build-cache/1034932d6ed822d05128538d2973d97125cf75e4/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /Users/Martare/.android/build-cache/fbf4acfba664d71386c25cdc849d410c9b71d5b0/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-panorama:8.4.0] /Users/Martare/.android/build-cache/5beba4d1df1f6eae0535737ee9167fecb106b4f6/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-plus:8.4.0] /Users/Martare/.android/build-cache/ea48800bcf28fbaa9ff5b3a3d3e3349d1ffecb8a/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-safetynet:8.4.0] /Users/Martare/.android/build-cache/b96c55431c6cfe98208dfe3cd4b0925e723330fd/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-vision:8.4.0] /Users/Martare/.android/build-cache/b5c677a018737e46e4add6657bb1568d6b868547/output/AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-wallet:8.4.0] /Users/Martare/.android/build-cache/75e1d57504b9f579f67513631b5e4e3bf1a1f408/output/AndroidManifest.xml:19:5-42
-MERGED from [com.google.android.gms:play-services-identity:8.4.0] /Users/Martare/.android/build-cache/0395f8f2637b5e9af38d95ae148c03361e5984a4/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/Martare/.android/build-cache/3db9090576283f98127a1bb6bbb11babf326dabc/output/AndroidManifest.xml:26:5-42
-MERGED from [com.google.android.gms:play-services-wearable:8.4.0] /Users/Martare/.android/build-cache/5194a35ca69f95eed0eb89f1d0b135b1445d79a3/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/Martare/.android/build-cache/d0245cc537f4599d7205577b7dfc95d3a8aa2607/output/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/Martare/.android/build-cache/7307b0f4aba3c36a53bafffd4dbd589e33027821/output/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/Martare/.android/build-cache/df209fa9de3637e3f693abf64434398eb94f418a/output/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:design:25.3.1] /Users/Martare/.android/build-cache/e4fcf4cb41d84a17aa239824862fae854a9b5c0e/output/AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/Martare/.android/build-cache/54c8ee63801864b39ae5fb6d9726dec181fe4daa/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/Martare/.android/build-cache/5a10b1a3b6cb9cc1161d5e8f0522e061208866ef/output/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/Martare/.android/build-cache/a278d70c1866b592ee520de63dcfb20178307300/output/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:transition:25.3.1] /Users/Martare/.android/build-cache/64f95db11ee5c947fd65ca699a3a80be34cdde2c/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:25.3.1] /Users/Martare/.android/build-cache/8633e36fbccd7734be94c45b4a4303c6efaa792d/output/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.3.1] /Users/Martare/.android/build-cache/72a2f3c6b9bcbc37aaf1e9126dde1ecc4142a826/output/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.3.1] /Users/Martare/.android/build-cache/e09cd98d0666d74f0a0f6adace108152093c054f/output/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.3.1] /Users/Martare/.android/build-cache/3a035057b8a58b169a51be53497d796db42d2960/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.3.1] /Users/Martare/.android/build-cache/407d53ecd147e4ba1038761fcb0e7f0b49a57cba/output/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.3.1] /Users/Martare/.android/build-cache/96cab6c0a1f57dee5a7ebbcbf7e03bdcbcced61a/output/AndroidManifest.xml:21:5-23:58
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:7:5-9:40
+INJECTED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:7:5-9:40
+INJECTED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:7:5-9:40
+MERGED from [com.android.support:support-v13:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.1.aar/63b4aa359f0a8cb09e4d3f487ddbe490/AndroidManifest.xml:21:5-23:55
+MERGED from [com.android.support:support-v13:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.1.aar/63b4aa359f0a8cb09e4d3f487ddbe490/AndroidManifest.xml:21:5-23:55
+MERGED from [com.google.android.gms:play-services:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-8.4.0.aar/b8eaf58d0b244659b61081c1cd59ccbc/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-8.4.0.aar/b8eaf58d0b244659b61081c1cd59ccbc/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/1a57c813acadc59c02a711606f2bb1eb/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/1a57c813acadc59c02a711606f2bb1eb/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/26040b52e69619d0e4cba2bcd42acadd/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/26040b52e69619d0e4cba2bcd42acadd/AndroidManifest.xml:21:5-23:62
+MERGED from [com.google.android.gms:play-services-cast:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-cast-8.4.0.aar/86a657d0f008a68468ababc906eeb366/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-cast:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-cast-8.4.0.aar/86a657d0f008a68468ababc906eeb366/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:mediarouter-v7:23.0.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-23.0.0.aar/8698f080135b6f32bd560ba30754f3da/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:mediarouter-v7:23.0.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-23.0.0.aar/8698f080135b6f32bd560ba30754f3da/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/fd197a99fccffd021bce0301a9bd01a2/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/fd197a99fccffd021bce0301a9bd01a2/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:multidex:1.0.2] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/8853b281fbf45cec36c0b1fa1620b73e/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/8853b281fbf45cec36c0b1fa1620b73e/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/9a8ba68998ad1f978a0ec44d9c04f1f6/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/9a8ba68998ad1f978a0ec44d9c04f1f6/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/fa043c5ec8fd134706df498419693a74/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/fa043c5ec8fd134706df498419693a74/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/fbc5eeffbc39ca14ab4aa7525f4e4cb0/AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/fbc5eeffbc39ca14ab4aa7525f4e4cb0/AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-analytics-8.4.0.aar/c878af36d1003e44a19918771578355f/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-analytics-8.4.0.aar/c878af36d1003e44a19918771578355f/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appindexing-8.4.0.aar/a977179b4d95888c6b3fa1ee00ad96e4/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appindexing-8.4.0.aar/a977179b4d95888c6b3fa1ee00ad96e4/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/fd1ff450df5c12f01d721904d74f2c04/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/fd1ff450df5c12f01d721904d74f2c04/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appstate:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appstate-8.4.0.aar/95ebba668aaa58f0bea7e98d499d6fe6/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appstate:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appstate-8.4.0.aar/95ebba668aaa58f0bea7e98d499d6fe6/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-auth:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/23f5880138eb98098dcdf2c0ebab4765/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-auth:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/23f5880138eb98098dcdf2c0ebab4765/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-games:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-games-8.4.0.aar/2ecacec2693d10c81495be9efb912cb6/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-games:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-games-8.4.0.aar/2ecacec2693d10c81495be9efb912cb6/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-drive-8.4.0.aar/3ca8525c57d2d8a3100a93d8d5750657/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-drive-8.4.0.aar/3ca8525c57d2d8a3100a93d8d5750657/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-fitness:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-fitness-8.4.0.aar/a31b8e97bad76e490ad6516251fb36e5/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-fitness:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-fitness-8.4.0.aar/a31b8e97bad76e490ad6516251fb36e5/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-gcm-8.4.0.aar/3bfd135a672a8e44ffe227bb6428f50a/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-gcm-8.4.0.aar/3bfd135a672a8e44ffe227bb6428f50a/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-wallet:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-wallet-8.4.0.aar/2d76a2fc7e82af219acef06a98128290/AndroidManifest.xml:19:5-42
+MERGED from [com.google.android.gms:play-services-wallet:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-wallet-8.4.0.aar/2d76a2fc7e82af219acef06a98128290/AndroidManifest.xml:19:5-42
+MERGED from [com.google.android.gms:play-services-identity:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-identity-8.4.0.aar/203d408c2783ec3ad1e45c26eae35e74/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-identity:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-identity-8.4.0.aar/203d408c2783ec3ad1e45c26eae35e74/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-location:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-location-8.4.0.aar/7fbbdd34268cc8f4ec6bdd9c5768210d/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-location:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-location-8.4.0.aar/7fbbdd34268cc8f4ec6bdd9c5768210d/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/b91c714696d73580860a80a6b947ddcf/AndroidManifest.xml:26:5-42
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/b91c714696d73580860a80a6b947ddcf/AndroidManifest.xml:26:5-42
+MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-nearby-8.4.0.aar/5f14baac025ff0cb795c095fdf425671/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-nearby-8.4.0.aar/5f14baac025ff0cb795c095fdf425671/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-panorama:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-panorama-8.4.0.aar/a4053280338c095183039ba585b12eb3/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-panorama:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-panorama-8.4.0.aar/a4053280338c095183039ba585b12eb3/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-plus:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-plus-8.4.0.aar/044ab69dc82b99f04ab970721afe859f/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-plus:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-plus-8.4.0.aar/044ab69dc82b99f04ab970721afe859f/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-safetynet:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-8.4.0.aar/9a9a9b2d008e6872ff17d5929256d17a/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-safetynet:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-8.4.0.aar/9a9a9b2d008e6872ff17d5929256d17a/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-vision:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-vision-8.4.0.aar/20177a553e2c5f3f768daa7bfe06eeb6/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-vision:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-vision-8.4.0.aar/20177a553e2c5f3f768daa7bfe06eeb6/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-wearable:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-wearable-8.4.0.aar/013906bbe39ee0a148802160fc55bede/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-wearable:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-wearable-8.4.0.aar/013906bbe39ee0a148802160fc55bede/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-base-8.4.0.aar/794763e4023b23f4eeda9f7d34fcb213/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-base-8.4.0.aar/794763e4023b23f4eeda9f7d34fcb213/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-basement-8.4.0.aar/ba76307bf5586f6b8cfc4c3f04d856a3/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-basement-8.4.0.aar/ba76307bf5586f6b8cfc4c3f04d856a3/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/7126c632888b211d57331a95e2f35d2c/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/7126c632888b211d57331a95e2f35d2c/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/34326c8c477460823aed3b74e5581159/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/34326c8c477460823aed3b74e5581159/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/05d95855b3bc4b9b5460a5e17e808571/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/05d95855b3bc4b9b5460a5e17e808571/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/e0824a9a05112ddb86efb96a32bc64cf/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/e0824a9a05112ddb86efb96a32bc64cf/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/7e51dd04c8c9f6bcd1dba4df164833b2/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/7e51dd04c8c9f6bcd1dba4df164833b2/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/b3619b0a2a1554a1b0568e02939ac23c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/b3619b0a2a1554a1b0568e02939ac23c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/f46e25256681e8fecfc57f5d99ef2b80/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/f46e25256681e8fecfc57f5d99ef2b80/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/be99ccd9d941015e89f15b133906528c/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/be99ccd9d941015e89f15b133906528c/AndroidManifest.xml:21:5-23:58
+INJECTED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:7:5-9:40
+INJECTED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:7:5-9:40
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v13:25.3.1] /Users/Martare/.android/build-cache/779af521c1c4476f6b9da8bc51866608c81b9390/output/AndroidManifest.xml:23:9-52
+		ADDED from [com.android.support:support-v13:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.1.aar/63b4aa359f0a8cb09e4d3f487ddbe490/AndroidManifest.xml:23:9-52
 	android:targetSdkVersion
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:9:9-38
-		INJECTED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:9:9-38
+		INJECTED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:8:9-35
-		INJECTED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:8:9-35
+		INJECTED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:11:5-66
-MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/Martare/.android/build-cache/ca404dc47f7839b7c311f63c343acfe9499a4c3a/output/AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:19:5-67
-MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/Martare/.android/build-cache/2e5f3d3e69206bca354fa6da6ef6b3cf6d3ad962/output/AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/Martare/.android/build-cache/3db9090576283f98127a1bb6bbb11babf326dabc/output/AndroidManifest.xml:21:5-66
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:11:5-66
+MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/fbc5eeffbc39ca14ab4aa7525f4e4cb0/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/fbc5eeffbc39ca14ab4aa7525f4e4cb0/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-analytics-8.4.0.aar/c878af36d1003e44a19918771578355f/AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-analytics-8.4.0.aar/c878af36d1003e44a19918771578355f/AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/fd1ff450df5c12f01d721904d74f2c04/AndroidManifest.xml:19:5-67
+MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/fd1ff450df5c12f01d721904d74f2c04/AndroidManifest.xml:19:5-67
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-gcm-8.4.0.aar/3bfd135a672a8e44ffe227bb6428f50a/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-gcm-8.4.0.aar/3bfd135a672a8e44ffe227bb6428f50a/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/b91c714696d73580860a80a6b947ddcf/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/b91c714696d73580860a80a6b947ddcf/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:21:5-67
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:11:22-64
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:11:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:12:5-80
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:12:5-80
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:12:22-78
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:12:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:13:5-78
-MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:21:5-78
-MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/Martare/.android/build-cache/ca404dc47f7839b7c311f63c343acfe9499a4c3a/output/AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /Users/Martare/.android/build-cache/fbf4acfba664d71386c25cdc849d410c9b71d5b0/output/AndroidManifest.xml:19:5-79
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/Martare/.android/build-cache/3db9090576283f98127a1bb6bbb11babf326dabc/output/AndroidManifest.xml:20:5-78
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:13:5-78
+MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/fbc5eeffbc39ca14ab4aa7525f4e4cb0/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/fbc5eeffbc39ca14ab4aa7525f4e4cb0/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-analytics-8.4.0.aar/c878af36d1003e44a19918771578355f/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-analytics-8.4.0.aar/c878af36d1003e44a19918771578355f/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/b91c714696d73580860a80a6b947ddcf/AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/b91c714696d73580860a80a6b947ddcf/AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-nearby-8.4.0.aar/5f14baac025ff0cb795c095fdf425671/AndroidManifest.xml:19:5-79
+MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-nearby-8.4.0.aar/5f14baac025ff0cb795c095fdf425671/AndroidManifest.xml:19:5-79
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:13:22-76
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:13:22-76
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:14:5-78
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:14:5-78
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:14:22-76
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:14:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:15:5-80
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:15:5-80
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:15:22-78
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:15:22-78
 uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:16:5-97
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:16:5-97
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:16:22-95
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:16:22-95
 permission#com.adrenalinelife.permission.MAPS_RECEIVE
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:18:5-20:46
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:18:5-20:46
 	android:protectionLevel
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:20:9-44
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:20:9-44
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:19:9-66
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:19:9-66
 uses-permission#android.permission.CALL_PHONE
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:22:5-24:35
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:22:5-24:35
 	android:required
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:24:9-33
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:24:9-33
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:23:9-53
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:23:9-53
 uses-permission#com.adrenalinelife.permission.MAPS_RECEIVE
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:25:5-81
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:25:5-81
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:25:22-79
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:25:22-79
 uses-feature#0x00020000
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:29:5-31:34
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/Martare/.android/build-cache/3db9090576283f98127a1bb6bbb11babf326dabc/output/AndroidManifest.xml:22:5-24:33
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:29:5-31:34
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/b91c714696d73580860a80a6b947ddcf/AndroidManifest.xml:22:5-24:33
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/b91c714696d73580860a80a6b947ddcf/AndroidManifest.xml:22:5-24:33
 	android:glEsVersion
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:30:9-41
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:30:9-41
 	android:required
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:31:9-32
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:31:9-32
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:33:5-74
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:33:5-74
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:33:22-72
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:33:22-72
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:34:5-79
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:34:5-79
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:34:22-77
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:34:22-77
 application
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:36:5-146:19
-MERGED from [com.android.support:support-v13:25.3.1] /Users/Martare/.android/build-cache/779af521c1c4476f6b9da8bc51866608c81b9390/output/AndroidManifest.xml:29:5-20
-MERGED from [com.google.android.gms:play-services:8.4.0] /Users/Martare/.android/build-cache/2710a6d7278ed3403dcba4e957729015a27e751d/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:24:5-32:19
-MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/Martare/.android/build-cache/ca404dc47f7839b7c311f63c343acfe9499a4c3a/output/AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/Martare/.android/build-cache/c8aae2bfade13ca5af9b193450a8b59c387c0322/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:20:5-30:19
-MERGED from [com.google.android.gms:play-services-appstate:8.4.0] /Users/Martare/.android/build-cache/eb69710c3c84a74ee5c691cafb84fe3b0a06d044/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/9c0a2da65f3e1322bf7837b7b0627d52c8653eca/output/AndroidManifest.xml:20:5-32:19
-MERGED from [com.google.android.gms:play-services-cast:8.4.0] /Users/Martare/.android/build-cache/1e51502b176bb57a24f2873368688c4055209d0c/output/AndroidManifest.xml:19:5-20
-MERGED from [com.android.support:mediarouter-v7:23.0.0] /Users/Martare/.android/build-cache/323bec9665a19e4cc888570475ca111427e274eb/output/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-fitness:8.4.0] /Users/Martare/.android/build-cache/62d06edc0cb478607a10c7e1d67bcdba525c34d7/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-games:8.4.0] /Users/Martare/.android/build-cache/f5c98b73c5b2ac6d5f399bb7e50e6737082ce6b1/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-drive:8.4.0] /Users/Martare/.android/build-cache/c978a116750a75194b95185ef3ad360d5c2aac2f/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/Martare/.android/build-cache/2e5f3d3e69206bca354fa6da6ef6b3cf6d3ad962/output/AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.gms:play-services-location:8.4.0] /Users/Martare/.android/build-cache/1034932d6ed822d05128538d2973d97125cf75e4/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:26:5-46:19
-MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /Users/Martare/.android/build-cache/fbf4acfba664d71386c25cdc849d410c9b71d5b0/output/AndroidManifest.xml:20:5-20
-MERGED from [com.google.android.gms:play-services-panorama:8.4.0] /Users/Martare/.android/build-cache/5beba4d1df1f6eae0535737ee9167fecb106b4f6/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-plus:8.4.0] /Users/Martare/.android/build-cache/ea48800bcf28fbaa9ff5b3a3d3e3349d1ffecb8a/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-safetynet:8.4.0] /Users/Martare/.android/build-cache/b96c55431c6cfe98208dfe3cd4b0925e723330fd/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-vision:8.4.0] /Users/Martare/.android/build-cache/b5c677a018737e46e4add6657bb1568d6b868547/output/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-identity:8.4.0] /Users/Martare/.android/build-cache/0395f8f2637b5e9af38d95ae148c03361e5984a4/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/Martare/.android/build-cache/3db9090576283f98127a1bb6bbb11babf326dabc/output/AndroidManifest.xml:27:5-20
-MERGED from [com.google.android.gms:play-services-wearable:8.4.0] /Users/Martare/.android/build-cache/5194a35ca69f95eed0eb89f1d0b135b1445d79a3/output/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/Martare/.android/build-cache/7307b0f4aba3c36a53bafffd4dbd589e33027821/output/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/Martare/.android/build-cache/df209fa9de3637e3f693abf64434398eb94f418a/output/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:design:25.3.1] /Users/Martare/.android/build-cache/e4fcf4cb41d84a17aa239824862fae854a9b5c0e/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/Martare/.android/build-cache/54c8ee63801864b39ae5fb6d9726dec181fe4daa/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/Martare/.android/build-cache/5a10b1a3b6cb9cc1161d5e8f0522e061208866ef/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:25.3.1] /Users/Martare/.android/build-cache/64f95db11ee5c947fd65ca699a3a80be34cdde2c/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-v4:25.3.1] /Users/Martare/.android/build-cache/8633e36fbccd7734be94c45b4a4303c6efaa792d/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] /Users/Martare/.android/build-cache/72a2f3c6b9bcbc37aaf1e9126dde1ecc4142a826/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] /Users/Martare/.android/build-cache/e09cd98d0666d74f0a0f6adace108152093c054f/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] /Users/Martare/.android/build-cache/3a035057b8a58b169a51be53497d796db42d2960/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] /Users/Martare/.android/build-cache/407d53ecd147e4ba1038761fcb0e7f0b49a57cba/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] /Users/Martare/.android/build-cache/96cab6c0a1f57dee5a7ebbcbf7e03bdcbcced61a/output/AndroidManifest.xml:29:5-20
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:36:5-146:19
+MERGED from [com.android.support:support-v13:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.1.aar/63b4aa359f0a8cb09e4d3f487ddbe490/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v13:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.1.aar/63b4aa359f0a8cb09e4d3f487ddbe490/AndroidManifest.xml:29:5-20
+MERGED from [com.google.android.gms:play-services:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-8.4.0.aar/b8eaf58d0b244659b61081c1cd59ccbc/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-8.4.0.aar/b8eaf58d0b244659b61081c1cd59ccbc/AndroidManifest.xml:19:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/1a57c813acadc59c02a711606f2bb1eb/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/1a57c813acadc59c02a711606f2bb1eb/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/26040b52e69619d0e4cba2bcd42acadd/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/26040b52e69619d0e4cba2bcd42acadd/AndroidManifest.xml:29:5-20
+MERGED from [com.google.android.gms:play-services-cast:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-cast-8.4.0.aar/86a657d0f008a68468ababc906eeb366/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-cast:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-cast-8.4.0.aar/86a657d0f008a68468ababc906eeb366/AndroidManifest.xml:19:5-20
+MERGED from [com.android.support:mediarouter-v7:23.0.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-23.0.0.aar/8698f080135b6f32bd560ba30754f3da/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:mediarouter-v7:23.0.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-23.0.0.aar/8698f080135b6f32bd560ba30754f3da/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/fd197a99fccffd021bce0301a9bd01a2/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/fd197a99fccffd021bce0301a9bd01a2/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:transition:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/fa043c5ec8fd134706df498419693a74/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/fa043c5ec8fd134706df498419693a74/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/fbc5eeffbc39ca14ab4aa7525f4e4cb0/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/fbc5eeffbc39ca14ab4aa7525f4e4cb0/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-analytics-8.4.0.aar/c878af36d1003e44a19918771578355f/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-analytics-8.4.0.aar/c878af36d1003e44a19918771578355f/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appindexing-8.4.0.aar/a977179b4d95888c6b3fa1ee00ad96e4/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appindexing-8.4.0.aar/a977179b4d95888c6b3fa1ee00ad96e4/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/fd1ff450df5c12f01d721904d74f2c04/AndroidManifest.xml:20:5-30:19
+MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/fd1ff450df5c12f01d721904d74f2c04/AndroidManifest.xml:20:5-30:19
+MERGED from [com.google.android.gms:play-services-appstate:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appstate-8.4.0.aar/95ebba668aaa58f0bea7e98d499d6fe6/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-appstate:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appstate-8.4.0.aar/95ebba668aaa58f0bea7e98d499d6fe6/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-auth:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/23f5880138eb98098dcdf2c0ebab4765/AndroidManifest.xml:20:5-32:19
+MERGED from [com.google.android.gms:play-services-auth:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/23f5880138eb98098dcdf2c0ebab4765/AndroidManifest.xml:20:5-32:19
+MERGED from [com.google.android.gms:play-services-games:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-games-8.4.0.aar/2ecacec2693d10c81495be9efb912cb6/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-games:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-games-8.4.0.aar/2ecacec2693d10c81495be9efb912cb6/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-drive-8.4.0.aar/3ca8525c57d2d8a3100a93d8d5750657/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-drive-8.4.0.aar/3ca8525c57d2d8a3100a93d8d5750657/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-fitness:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-fitness-8.4.0.aar/a31b8e97bad76e490ad6516251fb36e5/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-fitness:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-fitness-8.4.0.aar/a31b8e97bad76e490ad6516251fb36e5/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-gcm-8.4.0.aar/3bfd135a672a8e44ffe227bb6428f50a/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-gcm-8.4.0.aar/3bfd135a672a8e44ffe227bb6428f50a/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-identity:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-identity-8.4.0.aar/203d408c2783ec3ad1e45c26eae35e74/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-identity:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-identity-8.4.0.aar/203d408c2783ec3ad1e45c26eae35e74/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-location:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-location-8.4.0.aar/7fbbdd34268cc8f4ec6bdd9c5768210d/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-location:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-location-8.4.0.aar/7fbbdd34268cc8f4ec6bdd9c5768210d/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/b91c714696d73580860a80a6b947ddcf/AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/b91c714696d73580860a80a6b947ddcf/AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-nearby-8.4.0.aar/5f14baac025ff0cb795c095fdf425671/AndroidManifest.xml:20:5-20
+MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-nearby-8.4.0.aar/5f14baac025ff0cb795c095fdf425671/AndroidManifest.xml:20:5-20
+MERGED from [com.google.android.gms:play-services-panorama:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-panorama-8.4.0.aar/a4053280338c095183039ba585b12eb3/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-panorama:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-panorama-8.4.0.aar/a4053280338c095183039ba585b12eb3/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-plus:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-plus-8.4.0.aar/044ab69dc82b99f04ab970721afe859f/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-plus:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-plus-8.4.0.aar/044ab69dc82b99f04ab970721afe859f/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-8.4.0.aar/9a9a9b2d008e6872ff17d5929256d17a/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-8.4.0.aar/9a9a9b2d008e6872ff17d5929256d17a/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-vision:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-vision-8.4.0.aar/20177a553e2c5f3f768daa7bfe06eeb6/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-vision:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-vision-8.4.0.aar/20177a553e2c5f3f768daa7bfe06eeb6/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-wearable:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-wearable-8.4.0.aar/013906bbe39ee0a148802160fc55bede/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-wearable:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-wearable-8.4.0.aar/013906bbe39ee0a148802160fc55bede/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:26:5-46:19
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:26:5-46:19
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-basement-8.4.0.aar/ba76307bf5586f6b8cfc4c3f04d856a3/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-basement-8.4.0.aar/ba76307bf5586f6b8cfc4c3f04d856a3/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/7126c632888b211d57331a95e2f35d2c/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/7126c632888b211d57331a95e2f35d2c/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/34326c8c477460823aed3b74e5581159/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/34326c8c477460823aed3b74e5581159/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/05d95855b3bc4b9b5460a5e17e808571/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/05d95855b3bc4b9b5460a5e17e808571/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/e0824a9a05112ddb86efb96a32bc64cf/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/e0824a9a05112ddb86efb96a32bc64cf/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/7e51dd04c8c9f6bcd1dba4df164833b2/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/7e51dd04c8c9f6bcd1dba4df164833b2/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/b3619b0a2a1554a1b0568e02939ac23c/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/b3619b0a2a1554a1b0568e02939ac23c/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/f46e25256681e8fecfc57f5d99ef2b80/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/f46e25256681e8fecfc57f5d99ef2b80/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/be99ccd9d941015e89f15b133906528c/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/be99ccd9d941015e89f15b133906528c/AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:39:9-41
-	android:allowBackup
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:37:9-35
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:39:9-41
 	android:icon
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:38:9-42
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:38:9-42
+	android:allowBackup
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:37:9-35
 	android:theme
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:40:9-40
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:40:9-40
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:41:9-43:70
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:41:9-43:70
 	android:value
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:43:13-68
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:43:13-68
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:42:13-62
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:42:13-62
 meta-data#com.google.android.gms.version
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:44:9-46:68
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/Martare/.android/build-cache/7307b0f4aba3c36a53bafffd4dbd589e33027821/output/AndroidManifest.xml:21:9-23:69
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:44:9-46:68
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-basement-8.4.0.aar/ba76307bf5586f6b8cfc4c3f04d856a3/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-basement-8.4.0.aar/ba76307bf5586f6b8cfc4c3f04d856a3/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:46:13-66
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:46:13-66
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:45:13-58
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:45:13-58
 activity#com.adrenalinelife.SplashScreen
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:48:9-59:20
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:48:9-59:20
 	android:screenOrientation
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:51:13-49
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:51:13-49
 	android:label
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:50:13-45
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:50:13-45
 	android:windowSoftInputMode
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:53:13-54
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:53:13-54
 	android:theme
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:52:13-77
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:52:13-77
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:49:13-41
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:49:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:54:13-58:29
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:54:13-58:29
 action#android.intent.action.MAIN
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:55:17-68
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:55:17-68
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:55:25-66
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:55:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:57:17-76
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:57:17-76
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:57:27-74
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:57:27-74
 activity#com.adrenalinelife.MainActivity
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:60:9-65:20
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:60:9-65:20
 	android:screenOrientation
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:63:13-49
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:63:13-49
 	android:label
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:62:13-45
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:62:13-45
 	android:windowSoftInputMode
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:64:13-67
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:64:13-67
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:61:13-41
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:61:13-41
 activity#com.adrenalinelife.MapViewActivity
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:66:9-70:20
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:66:9-70:20
 	android:screenOrientation
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:68:13-49
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:68:13-49
 	android:windowSoftInputMode
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:69:13-67
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:69:13-67
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:67:13-44
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:67:13-44
 activity#com.adrenalinelife.EventDetailActivity
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:71:9-75:20
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:71:9-75:20
 	android:screenOrientation
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:73:13-49
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:73:13-49
 	android:windowSoftInputMode
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:74:13-67
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:74:13-67
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:72:13-48
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:72:13-48
 activity#com.adrenalinelife.FeedDetail
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:76:9-80:20
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:76:9-80:20
 	android:screenOrientation
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:78:13-49
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:78:13-49
 	android:windowSoftInputMode
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:79:13-67
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:79:13-67
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:77:13-39
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:77:13-39
 activity#com.adrenalinelife.Login
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:81:9-85:20
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:81:9-85:20
 	android:screenOrientation
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:83:13-49
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:83:13-49
 	android:windowSoftInputMode
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:84:13-67
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:84:13-67
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:82:13-34
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:82:13-34
 activity#com.adrenalinelife.AutoLogin
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:86:9-90:20
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:86:9-90:20
 	android:screenOrientation
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:88:13-49
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:88:13-49
 	android:windowSoftInputMode
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:89:13-67
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:89:13-67
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:87:13-38
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:87:13-38
 activity#com.adrenalinelife.Register
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:91:9-95:20
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:91:9-95:20
 	android:screenOrientation
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:93:13-49
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:93:13-49
 	android:windowSoftInputMode
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:94:13-67
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:94:13-67
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:92:13-37
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:92:13-37
 activity#com.adrenalinelife.BookTkt
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:96:9-100:20
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:96:9-100:20
 	android:screenOrientation
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:98:13-49
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:98:13-49
 	android:windowSoftInputMode
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:99:13-67
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:99:13-67
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:97:13-36
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:97:13-36
 activity#com.adrenalinelife.Browser
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:101:9-105:20
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:101:9-105:20
 	android:screenOrientation
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:103:13-49
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:103:13-49
 	android:windowSoftInputMode
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:104:13-67
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:104:13-67
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:102:13-36
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:102:13-36
 activity#com.adrenalinelife.MoreDetail
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:106:9-110:20
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:106:9-110:20
 	android:screenOrientation
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:108:13-49
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:108:13-49
 	android:windowSoftInputMode
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:109:13-67
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:109:13-67
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:107:13-39
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:107:13-39
 activity#com.adrenalinelife.Logout
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:111:9-115:20
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:111:9-115:20
 	android:screenOrientation
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:113:13-49
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:113:13-49
 	android:windowSoftInputMode
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:114:13-67
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:114:13-67
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:112:13-35
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:112:13-35
 activity#com.adrenalinelife.Settings
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:116:9-120:20
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:116:9-120:20
 	android:screenOrientation
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:118:13-49
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:118:13-49
 	android:windowSoftInputMode
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:119:13-67
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:119:13-67
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:117:13-37
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:117:13-37
 activity#com.adrenalinelife.create_event.editCreateEvent
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:121:9-125:20
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:121:9-125:20
 	android:screenOrientation
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:123:13-49
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:123:13-49
 	android:windowSoftInputMode
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:124:13-67
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:124:13-67
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:122:13-57
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:122:13-57
 activity#com.adrenalinelife.ui.DiscoverEvents
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:126:9-129:20
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:126:9-129:20
 	android:label
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:128:13-67
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:128:13-67
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:127:13-46
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:127:13-46
 activity#com.adrenalinelife.DiscoverBrowser
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:130:9-133:20
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:130:9-133:20
 	android:label
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:132:13-53
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:132:13-53
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:131:13-44
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:131:13-44
 activity#com.adrenalinelife.ui.CategoryEvents
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:134:9-139:20
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:134:9-139:20
 	android:screenOrientation
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:137:13-49
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:137:13-49
 	android:label
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:136:13-50
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:136:13-50
 	android:windowSoftInputMode
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:138:13-67
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:138:13-67
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:135:13-46
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:135:13-46
 activity#com.adrenalinelife.create_event.reviewCreateEvent
-ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:140:9-145:20
+ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:140:9-145:20
 	android:screenOrientation
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:143:13-49
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:143:13-49
 	android:label
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:142:13-65
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:142:13-65
 	android:windowSoftInputMode
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:144:13-67
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:144:13-67
 	android:name
-		ADDED from /Users/Martare/Documents/androidstudioeventsapp/app/src/main/AndroidManifest.xml:141:13-59
+		ADDED from /Users/sophielaswell/Documents/AdrenalineAndroidApp/app/src/main/AndroidManifest.xml:141:13-59
 meta-data#android.support.VERSION
-ADDED from [com.android.support:support-v13:25.3.1] /Users/Martare/.android/build-cache/779af521c1c4476f6b9da8bc51866608c81b9390/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:design:25.3.1] /Users/Martare/.android/build-cache/e4fcf4cb41d84a17aa239824862fae854a9b5c0e/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/Martare/.android/build-cache/f0ec5f50b5c8a3551ade02a24af6178b9c68d4f0/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/Martare/.android/build-cache/54c8ee63801864b39ae5fb6d9726dec181fe4daa/output/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/Martare/.android/build-cache/5a10b1a3b6cb9cc1161d5e8f0522e061208866ef/output/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/Martare/.android/build-cache/a278d70c1866b592ee520de63dcfb20178307300/output/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:transition:25.3.1] /Users/Martare/.android/build-cache/64f95db11ee5c947fd65ca699a3a80be34cdde2c/output/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-v4:25.3.1] /Users/Martare/.android/build-cache/8633e36fbccd7734be94c45b4a4303c6efaa792d/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] /Users/Martare/.android/build-cache/72a2f3c6b9bcbc37aaf1e9126dde1ecc4142a826/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] /Users/Martare/.android/build-cache/e09cd98d0666d74f0a0f6adace108152093c054f/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] /Users/Martare/.android/build-cache/3a035057b8a58b169a51be53497d796db42d2960/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] /Users/Martare/.android/build-cache/407d53ecd147e4ba1038761fcb0e7f0b49a57cba/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] /Users/Martare/.android/build-cache/96cab6c0a1f57dee5a7ebbcbf7e03bdcbcced61a/output/AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:support-v13:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.1.aar/63b4aa359f0a8cb09e4d3f487ddbe490/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:design:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/26040b52e69619d0e4cba2bcd42acadd/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:design:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/26040b52e69619d0e4cba2bcd42acadd/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/fd197a99fccffd021bce0301a9bd01a2/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/fd197a99fccffd021bce0301a9bd01a2/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/9a8ba68998ad1f978a0ec44d9c04f1f6/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/9a8ba68998ad1f978a0ec44d9c04f1f6/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/fa043c5ec8fd134706df498419693a74/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/fa043c5ec8fd134706df498419693a74/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/7126c632888b211d57331a95e2f35d2c/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/7126c632888b211d57331a95e2f35d2c/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/34326c8c477460823aed3b74e5581159/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/34326c8c477460823aed3b74e5581159/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/05d95855b3bc4b9b5460a5e17e808571/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/05d95855b3bc4b9b5460a5e17e808571/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/e0824a9a05112ddb86efb96a32bc64cf/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/e0824a9a05112ddb86efb96a32bc64cf/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/7e51dd04c8c9f6bcd1dba4df164833b2/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/7e51dd04c8c9f6bcd1dba4df164833b2/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/b3619b0a2a1554a1b0568e02939ac23c/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/b3619b0a2a1554a1b0568e02939ac23c/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/f46e25256681e8fecfc57f5d99ef2b80/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/f46e25256681e8fecfc57f5d99ef2b80/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/be99ccd9d941015e89f15b133906528c/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/be99ccd9d941015e89f15b133906528c/AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:support-v13:25.3.1] /Users/Martare/.android/build-cache/779af521c1c4476f6b9da8bc51866608c81b9390/output/AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:support-v13:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.1.aar/63b4aa359f0a8cb09e4d3f487ddbe490/AndroidManifest.xml:27:9-31
 	android:name
-		ADDED from [com.android.support:support-v13:25.3.1] /Users/Martare/.android/build-cache/779af521c1c4476f6b9da8bc51866608c81b9390/output/AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:support-v13:25.3.1] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.1.aar/63b4aa359f0a8cb09e4d3f487ddbe490/AndroidManifest.xml:26:9-47
 activity#com.google.android.gms.ads.AdActivity
-ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:26:9-29:64
+ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/fbc5eeffbc39ca14ab4aa7525f4e4cb0/AndroidManifest.xml:26:9-29:64
 	android:configChanges
-		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:28:13-122
+		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/fbc5eeffbc39ca14ab4aa7525f4e4cb0/AndroidManifest.xml:28:13-122
 	android:theme
-		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:29:13-61
+		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/fbc5eeffbc39ca14ab4aa7525f4e4cb0/AndroidManifest.xml:29:13-61
 	android:name
-		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:27:13-65
+		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/fbc5eeffbc39ca14ab4aa7525f4e4cb0/AndroidManifest.xml:27:13-65
 activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
-ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:30:9-31:52
+ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/fbc5eeffbc39ca14ab4aa7525f4e4cb0/AndroidManifest.xml:30:9-31:52
 	android:theme
-		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:31:13-50
+		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/fbc5eeffbc39ca14ab4aa7525f4e4cb0/AndroidManifest.xml:31:13-50
 	android:name
-		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/Martare/.android/build-cache/1fe62309474641099021a63c9d16741ba5f93721/output/AndroidManifest.xml:30:19-91
+		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/fbc5eeffbc39ca14ab4aa7525f4e4cb0/AndroidManifest.xml:30:19-91
 activity#com.google.android.gms.appinvite.PreviewActivity
-ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:21:9-29:20
+ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/fd1ff450df5c12f01d721904d74f2c04/AndroidManifest.xml:21:9-29:20
 	android:exported
-		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:23:17-40
+		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/fd1ff450df5c12f01d721904d74f2c04/AndroidManifest.xml:23:17-40
 	android:theme
-		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:24:17-63
+		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/fd1ff450df5c12f01d721904d74f2c04/AndroidManifest.xml:24:17-63
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:22:17-48
+		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/fd1ff450df5c12f01d721904d74f2c04/AndroidManifest.xml:22:17-48
 intent-filter#android.intent.category.DEFAULT+com.google.android.gms.appinvite.ACTION_PREVIEW
-ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:25:13-28:29
+ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/fd1ff450df5c12f01d721904d74f2c04/AndroidManifest.xml:25:13-28:29
 action#com.google.android.gms.appinvite.ACTION_PREVIEW
-ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:26:17-89
+ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/fd1ff450df5c12f01d721904d74f2c04/AndroidManifest.xml:26:17-89
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:26:25-87
+		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/fd1ff450df5c12f01d721904d74f2c04/AndroidManifest.xml:26:25-87
 category#android.intent.category.DEFAULT
-ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:27:17-75
+ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/fd1ff450df5c12f01d721904d74f2c04/AndroidManifest.xml:27:17-75
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/Martare/.android/build-cache/e53771a25eefde5436fdd88233aeb592c383dc38/output/AndroidManifest.xml:27:27-73
+		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/fd1ff450df5c12f01d721904d74f2c04/AndroidManifest.xml:27:27-73
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/9c0a2da65f3e1322bf7837b7b0627d52c8653eca/output/AndroidManifest.xml:21:9-24:46
+ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/23f5880138eb98098dcdf2c0ebab4765/AndroidManifest.xml:21:9-24:46
 	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/9c0a2da65f3e1322bf7837b7b0627d52c8653eca/output/AndroidManifest.xml:23:19-52
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/23f5880138eb98098dcdf2c0ebab4765/AndroidManifest.xml:23:19-52
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/9c0a2da65f3e1322bf7837b7b0627d52c8653eca/output/AndroidManifest.xml:24:19-43
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/23f5880138eb98098dcdf2c0ebab4765/AndroidManifest.xml:24:19-43
 	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/9c0a2da65f3e1322bf7837b7b0627d52c8653eca/output/AndroidManifest.xml:22:19-78
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/23f5880138eb98098dcdf2c0ebab4765/AndroidManifest.xml:22:19-78
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/9c0a2da65f3e1322bf7837b7b0627d52c8653eca/output/AndroidManifest.xml:21:19-72
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/23f5880138eb98098dcdf2c0ebab4765/AndroidManifest.xml:21:19-72
 service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/9c0a2da65f3e1322bf7837b7b0627d52c8653eca/output/AndroidManifest.xml:28:9-31:110
+ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/23f5880138eb98098dcdf2c0ebab4765/AndroidManifest.xml:28:9-31:110
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/9c0a2da65f3e1322bf7837b7b0627d52c8653eca/output/AndroidManifest.xml:30:13-36
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/23f5880138eb98098dcdf2c0ebab4765/AndroidManifest.xml:30:13-36
 	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/9c0a2da65f3e1322bf7837b7b0627d52c8653eca/output/AndroidManifest.xml:31:13-107
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/23f5880138eb98098dcdf2c0ebab4765/AndroidManifest.xml:31:13-107
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/Martare/.android/build-cache/9c0a2da65f3e1322bf7837b7b0627d52c8653eca/output/AndroidManifest.xml:29:13-62
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/23f5880138eb98098dcdf2c0ebab4765/AndroidManifest.xml:29:13-62
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/Martare/.android/build-cache/2e5f3d3e69206bca354fa6da6ef6b3cf6d3ad962/output/AndroidManifest.xml:21:5-82
+ADDED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-gcm-8.4.0.aar/3bfd135a672a8e44ffe227bb6428f50a/AndroidManifest.xml:21:5-82
 	android:name
-		ADDED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/Martare/.android/build-cache/2e5f3d3e69206bca354fa6da6ef6b3cf6d3ad962/output/AndroidManifest.xml:21:22-79
+		ADDED from [com.google.android.gms:play-services-gcm:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-gcm-8.4.0.aar/3bfd135a672a8e44ffe227bb6428f50a/AndroidManifest.xml:21:22-79
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:24:5-67
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:24:22-65
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:24:22-65
 provider#com.google.android.gms.measurement.AppMeasurementContentProvider
-ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:28:7-31:37
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:28:7-31:37
 	android:authorities
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:29:11-76
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:29:11-76
 	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:31:11-35
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:31:11-35
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:30:11-90
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:30:11-90
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:33:7-39:18
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:33:7-39:18
 	android:enabled
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:35:11-33
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:35:11-33
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:34:11-83
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:34:11-83
 intent-filter#com.google.android.gms.measurement.UPLOAD
-ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:36:9-38:25
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:36:9-38:25
 action#com.google.android.gms.measurement.UPLOAD
-ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:37:11-77
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:37:11-77
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:37:19-75
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:37:19-75
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:41:7-44:37
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:41:7-44:37
 	android:enabled
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:43:11-33
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:43:11-33
 	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:44:11-35
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:44:11-35
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/Martare/.android/build-cache/bc6f75748f1eddca692f01b92cae25c1d74fac83/output/AndroidManifest.xml:42:11-82
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /Users/sophielaswell/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/dd6fcc4eee68bcb45f2e7830761e4548/AndroidManifest.xml:42:11-82
