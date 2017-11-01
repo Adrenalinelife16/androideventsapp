@@ -1,17 +1,25 @@
 package com.adrenalinelife;
 
+import android.*;
+import android.Manifest;
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.FragmentManager;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.location.Location;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.ActionBarDrawerToggle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentManager.OnBackStackChangedListener;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
@@ -69,12 +77,27 @@ public class MainActivity extends CustomActivity
 
 	/** The tab. */
 	private View tab;
+	private int PERMISSIONS_REQUEST_CODE = 11;
 
+	@RequiresApi(api = Build.VERSION_CODES.M)
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (checkSelfPermission(android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, PERMISSIONS_REQUEST_CODE);
+
+            } else {
+                //Toast.makeText(this, "2", Toast.LENGTH_SHORT).show();
+            }
+        } else {
+            //Toast.makeText(this, "3", Toast.LENGTH_SHORT).show();
+
+        }
 
 		//tab = setClick(R.id.tab1);
 		//setClick(R.id.tab2);
@@ -84,6 +107,22 @@ public class MainActivity extends CustomActivity
 		setupDrawer();
 
 	}
+
+	//
+
+	@Override
+	public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+		if (requestCode == PERMISSIONS_REQUEST_CODE) {
+			if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+				//move on
+                Toast.makeText(this, "Location Granted!", Toast.LENGTH_SHORT).show();
+
+            }
+		}
+	}
+
+
+	//
 	/**
 	 * Setup the drawer layout. This method also includes the method calls for
 	 * setting up the Left side drawer.

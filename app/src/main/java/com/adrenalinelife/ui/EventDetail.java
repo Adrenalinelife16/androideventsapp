@@ -1,10 +1,12 @@
 package com.adrenalinelife.ui;
 
 
+import android.Manifest;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.location.Location;
@@ -15,6 +17,7 @@ import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
+import android.support.v4.app.ActivityCompat;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -70,8 +73,7 @@ import static com.adrenalinelife.web.WebAccess.getUserParams;
  * need to write your own logic for loading actual contents related to Events
  * and also need to show actual location for Event.
  */
-public class EventDetail extends CustomFragment implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener
-{
+public class EventDetail extends CustomFragment implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener {
 
 	/** The map view. */
 	private MapView mMapView;
@@ -85,10 +87,11 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 	private FusedLocationProviderApi mFusedLocationProviderApi = LocationServices.FusedLocationApi;
 	private double mMyLatitude;
 	private double mMyLongitude;
-	private double mLocationMiles;
+	public double mLocationMiles;
 	public double mLocationMeters;
 	private TextView mDistance;
 	private int mMiles;
+	public int locationDenied = 0;
 
 	/** The e. */
 	private Event e;
@@ -101,31 +104,39 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 	@RequiresApi(api = Build.VERSION_CODES.N)
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState)
-	{
+							 Bundle savedInstanceState) {
 		super.onCreateView(inflater, container, savedInstanceState);
 		View v = inflater.inflate(R.layout.event_detail, null);
 		e = (Event) getArg().getSerializable(Const.EXTRA_DATA);
 		setHasOptionsMenu(true);
 
-		//Initiate Location
-		mLocationRequest = new LocationRequest();
-		mLocationRequest.setFastestInterval(100); //Call Immediately
-		mLocationRequest.setNumUpdates(1); //Only call this 1 time
-		mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
-		mGoogleApiClient = new GoogleApiClient.Builder(getContext())
-				.addApi(LocationServices.API)
-				.addConnectionCallbacks(this)
-				.addOnConnectionFailedListener(this)
-				.build();
-		mGoogleApiClient.connect();
-		Log.e("Google Client");
-		////////////////////
+		if (ActivityCompat.checkSelfPermission(getContext(), android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+			Toast.makeText(getActivity(), "Location Denied", Toast.LENGTH_SHORT).show();
+			locationDenied = 0;
+
+
+		} else {
+			//Initiate Location
+			locationDenied = 1;
+			mLocationRequest = new LocationRequest();
+			mLocationRequest.setFastestInterval(100); //Call Immediately
+			mLocationRequest.setNumUpdates(1); //Only call this 1 time
+			mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+			mGoogleApiClient = new GoogleApiClient.Builder(getContext())
+					.addApi(LocationServices.API)
+					.addConnectionCallbacks(this)
+					.addOnConnectionFailedListener(this)
+					.build();
+			mGoogleApiClient.connect();
+			Log.e("Google Client");
+
+			setupMap(v, savedInstanceState);
+			////////////////////
+		}
 
 		setTouchNClick(v.findViewById(R.id.btnReg));
-
 		showDetails(v);
-		setupMap(v, savedInstanceState);
+		//setupMap(v, savedInstanceState);
 
 		return v;
 	}
@@ -136,8 +147,7 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 	 * @param v the v
 	 */
 	@RequiresApi(api = Build.VERSION_CODES.N)
-	private void showDetails(View v)
-	{
+	private void showDetails(View v) {
 		TextView lbl = (TextView) v.findViewById(R.id.lblTitle);
 		lbl.setText(e.getTitle());
 
@@ -164,55 +174,69 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 
 		}
 
-		mDistance = (TextView) v.findViewById(R.id.distance_event);
-		mDistance.setText(" " + mMiles);
+		if (locationDenied == 1) {
+			mDistance = (TextView) v.findViewById(R.id.distance_event);
+			mDistance.setText(" " + mMiles);
+		}
+		if (locationDenied == 0) {
+			mDistance = (TextView) v.findViewById(R.id.distance_event);
+			mDistance.setVisibility(View.GONE);
+		}
+
 
 	}
 
 	@Override
-	public void onPause()
-	{
-		mMapView.onPause();
-		mGoogleApiClient.disconnect();
+	public void onPause() {
+		if (locationDenied == 1) {
+			mMapView.onPause();
+			mGoogleApiClient.disconnect();
+		}
+
 		super.onPause();
 	}
 
 	@Override
-	public void onDestroy()
-	{
-		mMapView.onDestroy();
-		mGoogleApiClient.disconnect();
+	public void onDestroy() {
+		if (locationDenied == 1) {
+			mMapView.onDestroy();
+			mGoogleApiClient.disconnect();
+		}
+
 		super.onDestroy();
 	}
 
 	@Override
-	public void onResume()
-	{
+	public void onResume() {
 		super.onResume();
-		if (mGoogleApiClient.isConnected()){
-			locationGranted();
-		}
-		mMapView.onResume();
 
-		mMap = mMapView.getMap();
-		if (mMap != null)
-		{
-			mMap.setMyLocationEnabled(true);
-			mMap.setInfoWindowAdapter(null);
-			setupMarker();
+		if (locationDenied == 1) {
+
+			if (mGoogleApiClient.isConnected()) {
+				locationGranted();
+			}
+			mMapView.onResume();
+
+			mMap = mMapView.getMap();
+			if (mMap != null) {
+				mMap.setMyLocationEnabled(true);
+				mMap.setInfoWindowAdapter(null);
+				setupMarker();
+			}
 		}
+
 	}
 
 	//////////////////////////////////////////////////////////////// - Google Location API
 	@Override
 	public void onConnected(@Nullable Bundle bundle) {
 		//Add Request Permission Here
-        locationGranted();
-		//mFusedLocationProviderApi.requestLocationUpdates(mGoogleApiClient,  mLocationRequest, this);
+		locationGranted();
 	}
 
-	public void locationGranted(){
-		mFusedLocationProviderApi.requestLocationUpdates(mGoogleApiClient,  mLocationRequest, this);
+	public void locationGranted() {
+		mFusedLocationProviderApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, this);
+
 	}
 
 	@Override
