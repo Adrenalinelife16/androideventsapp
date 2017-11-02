@@ -67,7 +67,8 @@
                             android:layout_width="200dp"
                             android:layout_height="wrap_content"
                             android:layout_weight=".75"
-                            android:text="TextView"/>
+                            android:text="TextView"
+                            android:textColor="@color/black" />
 
                         <LinearLayout
                             android:id="@+id/da"
@@ -99,7 +100,8 @@
                                 android:id="@+id/lblDate2"
                                 android:layout_width="200dp"
                                 android:layout_height="wrap_content"
-                                android:text="TextView"/>
+                                android:text="TextView"
+                                android:textColor="@color/black" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -119,7 +121,8 @@
                             android:gravity="right"
                             android:paddingRight="1dp"
                             android:text="14"
-                            android:textSize="20sp"/>
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
 
                         <TextView
                             android:id="@+id/textView5"
@@ -128,7 +131,8 @@
                             android:layout_weight=".5"
                             android:inputType="text"
                             android:text="Mi"
-                            android:textSize="20sp"/>
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
                     </LinearLayout>
 
                 </LinearLayout>

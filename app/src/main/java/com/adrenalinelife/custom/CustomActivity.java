@@ -77,8 +77,8 @@ public class CustomActivity extends FragmentActivity implements OnClickListener
 			return;
 		actionBar.setDisplayShowTitleEnabled(true);
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
-		actionBar.setDisplayUseLogoEnabled(false);
-		actionBar.setLogo(null);
+		//actionBar.setDisplayUseLogoEnabled(false);
+		//actionBar.setLogo(null);
 		actionBar.setBackgroundDrawable(getResources().getDrawable(
 				R.drawable.actionbar_bg_6));
 		actionBar.setDisplayHomeAsUpEnabled(true);

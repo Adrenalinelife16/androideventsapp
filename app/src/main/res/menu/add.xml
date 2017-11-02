@@ -3,10 +3,10 @@
 
 	<item
 		android:id="@+id/menu_fav"
-		android:icon="@drawable/add_button"
+		android:icon="@drawable/add_button_white"
 		android:showAsAction="always"
 		android:title="@string/my_fav"
-		app:showAsAction="always"/>
+		app:showAsAction="always" />
 
 
 </menu>

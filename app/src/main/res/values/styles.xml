@@ -1,6 +1,9 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar"></style>
+    <style name="AppBaseTheme" parent="android:Theme.Holo">
+
+    </style>
+
 
     <style name="AppTheme" parent="AppBaseTheme">
         <item name="android:homeAsUpIndicator">@drawable/ic_back</item>

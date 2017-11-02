@@ -1,14 +1,27 @@
 package com.adrenalinelife.ui;
 
+import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.ColorRes;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.text.Html;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
@@ -26,7 +39,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.adrenalinelife.EventDetailActivity;
+import com.adrenalinelife.Login;
 import com.adrenalinelife.R;
+import com.adrenalinelife.create_event.editCreateEvent;
 import com.adrenalinelife.custom.PagingFragment;
 import com.adrenalinelife.model.Event;
 import com.adrenalinelife.utils.Commons;
@@ -44,7 +59,7 @@ import java.util.List;
 
 import static com.adrenalinelife.utils.Const.EXTRA_DATA;
 
-public class Events extends PagingFragment implements SearchView.OnQueryTextListener
+public class Events extends PagingFragment
 {
 	/** Search View **/
 	SearchView searchView;
@@ -228,61 +243,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		//Configure the refreshing colors
 		SwipeRefresh.setColorSchemeResources(android.R.color.holo_red_light);
 		//Toast.makeText(activity, String.valueOf(hasFocus),Toast.LENGTH_SHORT).show();
-
-        //////////////////////////////////////////// - SearchView Setup
-
-		/***Search View***/
-		searchView = (SearchView) v.findViewById(R.id.searchEvents);
-		searchView.setQueryHint("Search Local Events");
-		searchView.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View view) {
-				searchView.setIconified(false);
-			}
-		});
-		searchView.setOnQueryTextFocusChangeListener(new View.OnFocusChangeListener()
-		{
-			@Override
-			public void onFocusChange(View v, boolean hasFocus) {
-
-			}
-		});
-		searchView.setOnCloseListener(new SearchView.OnCloseListener() {
-			@Override
-			public boolean onClose() {
-				searchView.setQuery("", false);
-				searchView.clearFocus();
-				return false;
-			}
-		});
-		searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener()
-		{
-			@Override
-			public boolean onQueryTextSubmit(String query) {
-                //Hide Keyboard//
-                InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(getActivity().INPUT_METHOD_SERVICE);
-                imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
-				return true;
-			}
-			@Override
-			public boolean onQueryTextChange(String newText) {
-
-                final SearchAdapter sA = new SearchAdapter(getActivity(), pList);
-                filterResults.setAdapter(sA);
-
-				if (newText.length() >= 1) {
-                    String search = "s" + newText;
-
-					sA.getFilter().filter(search);
-					Log.e(search);
-				} if (newText == "") {
-					setProgramList(v);
-				}
-				return true;
-			}
-		});
-		////////////////////////////////////////////END SEARCHVIEW SETUP
-
 		return v;
 	}
 	// End of onCreate Method
@@ -381,10 +341,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 			}
 		}).start();
 	}
-    @Override
-    public boolean onQueryTextSubmit(String s) {return false;}
-    @Override
-    public boolean onQueryTextChange(String s) {return false;}
     ////////////////////////////////////////////////////////////////////////////////////////////////
 	private class ProgramAdapter extends BaseAdapter
 	{
@@ -605,55 +561,52 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 	}
 	////////////////////////////////////////////////////////////////////////////////////////////////
 
-	/*
+
+	@RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
 	{
+		menu.clear();
+
+		//Setup search button in action bar
+		final MenuItem item = menu.add("");
+		item.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+		final SearchView searchView = new SearchView(getActivity());
+		item.setActionView(searchView);
+
+		//add "add" button to action bar
 		inflater.inflate(R.menu.add, menu);
+
+		searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener()
+		{
+			@Override
+			public boolean onQueryTextSubmit(String query) {
+				//Hide Keyboard//
+				InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(getActivity().INPUT_METHOD_SERVICE);
+				imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
+				return true;
+			}
+			@Override
+			public boolean onQueryTextChange(String newText) {
+
+				final SearchAdapter sA = new SearchAdapter(getActivity(), pList);
+				filterResults.setAdapter(sA);
+
+				if (newText.length() >= 1) {
+					String search = "s" + newText;
+
+					sA.getFilter().filter(search);
+					Log.e(search);
+				} if (newText == "") {
+					sA.getFilter().filter("s");
+				}
+				return true;
+			}
+		});
 
 		super.onCreateOptionsMenu(menu, inflater);
 	}
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item)
-	{
-		if (item.getItemId() == R.id.menu_fav && !StaticData.pref.contains(Const.USER_ID))
-		{
-			AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-			builder.setMessage(R.string.err_login)
-					.setPositiveButton(R.string.login, new DialogInterface.OnClickListener() {
-						public void onClick(DialogInterface dialog, int id) {
-							Intent intent = new Intent(getActivity(), Login.class);
-							startActivity(intent);
-						}
-					})
-					.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-						public void onClick(DialogInterface dialog, int id) {
-							// User cancelled the dialog
-						}
-					});
-			AlertDialog action = builder.create();
-			action.show();
-		} if (item.getItemId() == R.id.menu_fav && StaticData.pref.contains(Const.USER_ID)){
-		Intent intent = new Intent(getActivity(), editCreateEvent.class);
-		startActivity(intent);
-	}
-		return true;
-	}
 
-/*
-	// DELETE THIS METHOD AFTER CREATE EVENTS IS FINISHED
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item)
-	{
-		if (item.getItemId() == R.id.menu_fav)
-		{
-            Intent intent = new Intent(getActivity(), editCreateEvent.class);
-            startActivity(intent);
-		}
-		return true;
-	}
-
-	*/
 	////////////////////////////////////////////////////////////////////////////////////////////////
 
 	public void setFilterTextWhite(){
@@ -673,8 +626,6 @@ public class Events extends PagingFragment implements SearchView.OnQueryTextList
 		final SearchAdapter refreshA = new SearchAdapter(getActivity(), pList);
 		filterResults.setAdapter(refreshA);
 		setFilterTextWhite();
-		searchView.setQuery("", false);
-		searchView.clearFocus();
 		refreshA.getFilter().filter("r");
 		refreshA.notifyDataSetChanged();
 		mFilterAll.setTextColor(getResources().getColor(R.color.red));

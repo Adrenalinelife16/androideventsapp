@@ -2,13 +2,13 @@
 	xmlns:android="http://schemas.android.com/apk/res/android" >
 
 	<item
-		android:id="@+id/menu_search"
-		android:icon="@drawable/search_bar"
+		android:id="@+id/menu_search2"
+		android:icon="@drawable/search_btn"
 		android:showAsAction="always"
 		android:title="@string/search"
 		android:visible="true"
 		app:actionViewClass="android.widget.SearchView"
-		app:showAsAction="always"/>
+		app:showAsAction="always" />
 
 	<item
 		android:id="@+id/menu_add"

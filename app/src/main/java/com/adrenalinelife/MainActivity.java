@@ -406,14 +406,14 @@ public class MainActivity extends CustomActivity
 		getMenuInflater().inflate(R.menu.main, menu);
 		return super.onCreateOptionsMenu(menu);
 	}*/
-
+/*
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 
 		getMenuInflater().inflate(R.menu.add, menu);
 		return super.onCreateOptionsMenu(menu);
 	}
-
+*/
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
 	{
