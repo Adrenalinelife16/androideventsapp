@@ -11,13 +11,20 @@ android {
         targetSdkVersion 25
         multiDexEnabled true
     }
-
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
     buildTypes {
         debug { debuggable true }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
+        dexOptions {
+            javaMaxHeapSize "4g"
+        }
+
     }
 
     packagingOptions {
@@ -40,4 +47,6 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:appcompat-v7:25.4.0'
     compile 'com.android.support:design:25.4.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
 }

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:background="@drawable/actionbar_bg_white"
-              android:gravity="center_vertical"
-              android:orientation="horizontal"
-              android:padding="@dimen/pad_5dp"
-              android:weightSum="1">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/pad_5dp"
+    android:weightSum="1">
 
     <ImageView
         android:id="@+id/img1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:alpha=".75"/>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/no_imagebig" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,7 +33,7 @@
                 android:paddingTop="12dp"
                 android:text="TextView"
                 android:textColor="@color/black"
-                android:textSize="@dimen/txt_13sp"/>
+                android:textSize="@dimen/txt_13sp" />
 
             <TextView
                 android:id="@+id/textView1"
@@ -44,7 +44,7 @@
                 android:paddingTop="10dp"
                 android:text="|"
                 android:textColor="@color/main_color_gray_dk"
-                android:textSize="@dimen/txt_12sp"/>
+                android:textSize="@dimen/txt_12sp" />
 
             <TextView
                 android:id="@+id/lbl2"
@@ -53,7 +53,7 @@
                 android:paddingTop="12dp"
                 android:text="TextView"
                 android:textColor="@color/main_color_gray_dk"
-                android:textSize="@dimen/txt_13sp"/>
+                android:textSize="@dimen/txt_13sp" />
 
         </LinearLayout>
 
@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:text="TextView"
             android:textColor="@color/adrenaline_red"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/lbl4"
@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:text="TextView"
             android:textColor="@color/main_color_gray_dk"
-            android:textSize="@dimen/txt_12sp"/>
+            android:textSize="@dimen/txt_12sp" />
     </LinearLayout>
 
 

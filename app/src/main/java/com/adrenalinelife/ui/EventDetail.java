@@ -171,7 +171,6 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 			lbl.setText(Commons.millsToTime(e.getStartDateTime())
 					+ " to "
 					+ Commons.millsToTime(e.getEndDateTime()));
-
 		}
 
 		if (locationDenied == 1) {
@@ -182,8 +181,6 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 			mDistance = (TextView) v.findViewById(R.id.distance_event);
 			mDistance.setVisibility(View.GONE);
 		}
-
-
 	}
 
 	@Override
@@ -192,7 +189,6 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 			mMapView.onPause();
 			mGoogleApiClient.disconnect();
 		}
-
 		super.onPause();
 	}
 
@@ -202,7 +198,6 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 			mMapView.onDestroy();
 			mGoogleApiClient.disconnect();
 		}
-
 		super.onDestroy();
 	}
 
@@ -236,7 +231,6 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 
 	public void locationGranted() {
 		mFusedLocationProviderApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, this);
-
 	}
 
 	@Override

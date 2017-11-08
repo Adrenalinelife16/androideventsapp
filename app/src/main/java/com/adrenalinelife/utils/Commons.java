@@ -138,7 +138,7 @@ public class Commons
 		if (DateUtils.isToday(mills))
 		{
 			return StaticData.res.getString(R.string.today)
-					+ new SimpleDateFormat(" - hh:mm a").format(d);
+					+ new SimpleDateFormat(" - h:mm a").format(d);
 		}
 		//String format = "dd MMM yyyy - hh:mm a";
 		String format = "EEEE h:mm a - MMM dd yyyy";
@@ -169,6 +169,13 @@ public class Commons
 
 		Date d = new Date(mills);
 		String format = "EEEE - MMM dd yyyy";
+		return new SimpleDateFormat(format).format(d);
+	}
+	public static String mToDate(long mills)
+	{
+
+		Date d = new Date(mills);
+		String format = "MMM dd yyyy";
 		return new SimpleDateFormat(format).format(d);
 	}
 

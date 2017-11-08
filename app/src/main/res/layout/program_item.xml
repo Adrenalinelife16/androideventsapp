@@ -7,16 +7,36 @@
                 android:maxHeight="25dp">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/img1"
         android:layout_width="match_parent"
-        android:layout_height="225dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/actionbar_bg_white"/>
+        android:layout_height="200dp"
+        android:adjustViewBounds="false"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
         android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lbl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"
+            android:gravity="bottom"
+            android:lines="2"
+            android:text="Event Title"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/lbl3"
@@ -29,65 +49,9 @@
             android:shadowDy="1"
             android:shadowRadius="1"
             android:text="Date!"
-            android:textColor="@color/black"
-            android:textSize="16dp"
-            android:textStyle="bold"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/img1"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentLeft="false"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentStart="false"
-                android:adjustViewBounds="false"
-                android:cropToPadding="false"
-                android:scaleType="centerCrop"
-                android:src="@drawable/no_imagebig"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_alignBottom="@+id/img1"
-            android:background="@drawable/actionbar_bg_white"
-            android:gravity="center_vertical"
-            android:orientation="vertical"
-            >
-
-            <TextView
-                android:id="@+id/lbl1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="3dp"
-                android:lines="1"
-                android:text="Event Title"
-                android:textColor="@color/adrenaline_red"
-                android:textSize="@dimen/txt_18sp"
-                android:textStyle="bold"/>
-
-            <TextView
-                android:id="@+id/lbl2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="3dp"
-                android:ellipsize="end"
-                android:lineSpacingExtra="3sp"
-                android:lines="2"
-                android:text="Event Description"
-                android:textColor="@color/black"
-                android:textSize="@dimen/txt_14sp"/>
-
-        </LinearLayout>
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

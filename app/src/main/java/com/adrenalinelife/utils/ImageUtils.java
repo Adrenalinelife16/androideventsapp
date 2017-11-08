@@ -111,6 +111,33 @@ public class ImageUtils
 	 * @param bitmap the bitmap
 	 * @return the rounded corner bitmap
 	 */
+
+	public static Bitmap getRoundedCornerBitmapMore(Bitmap bitmap)
+	{
+		if (bitmap == null)
+			return null;
+		int cw = bitmap.getWidth();
+		int ch = bitmap.getHeight();
+		Bitmap output = Bitmap.createBitmap(cw, ch, Config.ARGB_8888);
+		Canvas canvas = new Canvas(output);
+
+		final int color = 0xff424242;
+		final Paint paint = new Paint();
+		paint.setStyle(Style.FILL);
+		Rect rect = new Rect(0, 0, cw, ch);
+		RectF rectF = new RectF(rect);
+		final float roundPx = 15 * StaticData.density;
+
+		paint.setAntiAlias(true);
+		canvas.drawARGB(0, 0, 0, 0);
+		paint.setColor(color);
+		canvas.drawRoundRect(rectF, roundPx, roundPx, paint);
+
+		paint.setXfermode(new PorterDuffXfermode(Mode.SRC_IN));
+		canvas.drawBitmap(bitmap, rect, rect, paint);
+
+		return output;
+	}
 	public static Bitmap getRoundedCornerBitmap(Bitmap bitmap)
 	{
 		if (bitmap == null)
@@ -125,7 +152,7 @@ public class ImageUtils
 		paint.setStyle(Style.FILL);
 		Rect rect = new Rect(0, 0, cw, ch);
 		RectF rectF = new RectF(rect);
-		final float roundPx = 5 * StaticData.density;
+		final float roundPx = 10 * StaticData.density;
 
 		paint.setAntiAlias(true);
 		canvas.drawARGB(0, 0, 0, 0);
@@ -138,6 +165,32 @@ public class ImageUtils
 		return output;
 	}
 
+	public static Bitmap getRoundedCornerBitmapLess(Bitmap bitmap)
+	{
+		if (bitmap == null)
+			return null;
+		int cw = bitmap.getWidth();
+		int ch = bitmap.getHeight();
+		Bitmap output = Bitmap.createBitmap(cw, ch, Config.ARGB_8888);
+		Canvas canvas = new Canvas(output);
+
+		final int color = 0xff424242;
+		final Paint paint = new Paint();
+		paint.setStyle(Style.FILL);
+		Rect rect = new Rect(0, 0, cw, ch);
+		RectF rectF = new RectF(rect);
+		final float roundPx = 6 * StaticData.density;
+
+		paint.setAntiAlias(true);
+		canvas.drawARGB(0, 0, 0, 0);
+		paint.setColor(color);
+		canvas.drawRoundRect(rectF, roundPx, roundPx, paint);
+
+		paint.setXfermode(new PorterDuffXfermode(Mode.SRC_IN));
+		canvas.drawBitmap(bitmap, rect, rect, paint);
+
+		return output;
+	}
 	/**
 	 * Gets the framed bitmap.
 	 *
@@ -293,7 +346,8 @@ public class ImageUtils
 		Canvas c = new Canvas(bm1);
 		c.drawColor(Color.parseColor("#b5b5b5"));
 		c.drawBitmap(bm, x, y, null);
-		return bm1;
+		Bitmap bm2 = getRoundedCornerBitmap(bm1);
+		return bm2;
 	}
 
 	/**

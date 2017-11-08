@@ -1,9 +1,11 @@
 package com.adrenalinelife.ui;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -31,6 +33,7 @@ import com.adrenalinelife.EventDetailActivity;
 import com.adrenalinelife.R;
 import com.adrenalinelife.calendar.CalendarView;
 import com.adrenalinelife.custom.PagingFragment;
+import com.adrenalinelife.custom.PicassoTransform;
 import com.adrenalinelife.model.Event;
 import com.adrenalinelife.utils.Commons;
 import com.adrenalinelife.utils.Const;
@@ -41,6 +44,7 @@ import com.adrenalinelife.utils.Log;
 import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
+import com.squareup.picasso.Picasso;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -239,37 +243,6 @@ public class FavEvents extends PagingFragment
         @Override
         public View getView(int position, View convertView, ViewGroup parent)
         {
-            if (convertView == null)
-                convertView = getLayoutInflater(null).inflate(
-                        R.layout.program_item, null);
-
-            Event d = getItem(position);
-            TextView lbl = (TextView) convertView.findViewById(R.id.lbl1);
-            lbl.setText(d.getTitle());
-
-            lbl = (TextView) convertView.findViewById(R.id.lbl2);
-            lbl.setText(Html.fromHtml(d.getDesc()));
-
-            lbl = (TextView) convertView.findViewById(R.id.lbl3);
-
-            lbl.setText(Commons.millsToDateTime(d.getStartDateTime()));
-
-            ImageView img = (ImageView) convertView.findViewById(R.id.img1);
-            Bitmap bm = loader.loadImage(d.getImage(),
-                    new ImageLoadedListener() {
-
-                        @Override
-                        public void imageLoaded(Bitmap bm)
-                        {
-                            if (bm != null)
-                                notifyDataSetChanged();
-                        }
-                    });
-            if (bm == null)
-                img.setImageBitmap(bmNoImg);
-            else
-                img.setImageBitmap(bm);
-
             return convertView;
         }
     }
@@ -309,6 +282,7 @@ public class FavEvents extends PagingFragment
             return position;
         }
 
+        @SuppressLint("RestrictedApi")
         @Override
         public View getView(int position, View convertView, ViewGroup parent)
         {
@@ -320,28 +294,44 @@ public class FavEvents extends PagingFragment
             TextView lbl = (TextView) convertView.findViewById(R.id.lbl1);
             lbl.setText(d.getTitle());
 
-            lbl = (TextView) convertView.findViewById(R.id.lbl2);
-            lbl.setText(Html.fromHtml(d.getDesc()));
-
             lbl = (TextView) convertView.findViewById(R.id.lbl3);
 
-            lbl.setText(Commons.millsToDateTime(d.getStartDateTime()));
+            // 12:00AM to All Day
+            if (Commons.millsToDateTime(d.getStartDateTime()).contains("Today - 12:00 AM")){
+                lbl.setText("Today - " + Commons.mToDate(d.getStartDateTime()));
+            } else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Monday 12:00 AM")){
+                lbl.setText("Monday - " + Commons.mToDate(d.getStartDateTime()));
+            }
+            else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Tuesday 12:00 AM")){
+                lbl.setText("Tuesday - " + Commons.mToDate(d.getStartDateTime()));
+            }
+            else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Wednesday 12:00 AM")){
+                lbl.setText("Wednesday - " + Commons.mToDate(d.getStartDateTime()));
+            }
+            else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Thursday 12:00 AM")){
+                lbl.setText("Thursday - " + Commons.mToDate(d.getStartDateTime()));
+            }
+            else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Friday 12:00 AM")){
+                lbl.setText("Friday - " + Commons.mToDate(d.getStartDateTime()));
+            }
+            else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Saturday 12:00 AM")){
+                lbl.setText("Saturday - " + Commons.mToDate(d.getStartDateTime()));
+            }
+            else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Sunday 12:00 AM")){
+                lbl.setText("Sunday - " + Commons.mToDate(d.getStartDateTime()));
+            }
+            else {
+                lbl.setText(Commons.millsToDateTime(d.getStartDateTime()));
+            }
 
             ImageView img = (ImageView) convertView.findViewById(R.id.img1);
 
-            Bitmap bm = loader.loadImage(d.getImage(),
-                    new ImageLoadedListener() {
-                        @Override
-                        public void imageLoaded(Bitmap bm)
-                        {
-                            if (bm != null)
-                                notifyDataSetChanged();
-                        }
-                    });
-            if (bm == null)
-                img.setImageBitmap(bmNoImg);
-            else
-                img.setImageBitmap(bm);
+            //Log.e("ProgramAdapter GetView");
+            ImageView shadow = (ImageView) convertView.findViewById(R.id.shadow);
+            Bitmap sh = BitmapFactory.decodeResource(getContext().getResources(), R.drawable.shadow_medium);
+            shadow.setImageBitmap(ImageUtils.getRoundedCornerBitmapLess(sh));
+
+            Picasso.with(getContext()).load(d.getImage()).transform(new PicassoTransform(40,0)).placeholder(R.drawable.no_imagebig).into(img);
 
             return convertView;
         }

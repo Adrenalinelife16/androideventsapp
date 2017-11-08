@@ -7,6 +7,7 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Locale;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -35,6 +36,7 @@ import com.adrenalinelife.MainActivity;
 import com.adrenalinelife.R;
 import com.adrenalinelife.custom.CustomActivity;
 import com.adrenalinelife.custom.CustomFragment;
+import com.adrenalinelife.custom.PicassoTransform;
 import com.adrenalinelife.model.Event;
 import com.adrenalinelife.ui.FavEvents;
 import com.adrenalinelife.utils.Commons;
@@ -46,6 +48,7 @@ import com.adrenalinelife.utils.Log;
 import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
+import com.squareup.picasso.Picasso;
 
 /**
  * The Class CalendarView is Fragment class to hold the Calendar view.
@@ -97,11 +100,7 @@ public class CalendarView extends CustomFragment implements DateChangeListener
 			}
 		});
 
-
-
-
 		setupEventList(v);
-
 		initCalendarView(v);
 
 		return v;
@@ -341,41 +340,52 @@ public class CalendarView extends CustomFragment implements DateChangeListener
 			return position;
 		}
 
+		@SuppressLint("RestrictedApi")
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent)
 		{
 			if (convertView == null)
 				convertView = getLayoutInflater(null).inflate(
-						R.layout.event_item, null);
+						R.layout.event_item2, null);
 
 			Event d = getItem(position);
-			TextView lbl = (TextView) convertView.findViewById(R.id.lbl1);
-			lbl.setText(Commons.millsToDate(d.getStartDateTime()));
 
-			lbl = (TextView) convertView.findViewById(R.id.lbl2);
-			lbl.setText(Commons.millsToTime(d.getStartDateTime()));
-
-			lbl = (TextView) convertView.findViewById(R.id.lbl3);
+			TextView lbl = (TextView) convertView.findViewById(R.id.txtSmall);
 			lbl.setText(d.getTitle());
 
-			lbl = (TextView) convertView.findViewById(R.id.lbl4);
-			lbl.setText(d.getLocation());
+			lbl = (TextView) convertView.findViewById(R.id.dateSmall);
 
-			ImageView img = (ImageView) convertView.findViewById(R.id.img1);
-			Bitmap bm = loader.loadImage(d.getImage(),
-					new ImageLoadedListener() {
+			// 12:00AM to All Day
+			if (Commons.millsToDateTime(d.getStartDateTime()).contains("Today - 12:00 AM")){
+				lbl.setText("Today - " + Commons.mToDate(d.getStartDateTime()));
+			} else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Monday 12:00 AM")){
+				lbl.setText("Monday - " + Commons.mToDate(d.getStartDateTime()));
+			}
+			else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Tuesday 12:00 AM")){
+				lbl.setText("Tuesday - " + Commons.mToDate(d.getStartDateTime()));
+			}
+			else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Wednesday 12:00 AM")){
+				lbl.setText("Wednesday - " + Commons.mToDate(d.getStartDateTime()));
+			}
+			else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Thursday 12:00 AM")){
+				lbl.setText("Thursday - " + Commons.mToDate(d.getStartDateTime()));
+			}
+			else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Friday 12:00 AM")){
+				lbl.setText("Friday - " + Commons.mToDate(d.getStartDateTime()));
+			}
+			else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Saturday 12:00 AM")){
+				lbl.setText("Saturday - " + Commons.mToDate(d.getStartDateTime()));
+			}
+			else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Sunday 12:00 AM")){
+				lbl.setText("Sunday - " + Commons.mToDate(d.getStartDateTime()));
+			}
+			else {
+				lbl.setText(Commons.millsToDateTime(d.getStartDateTime()));
+			}
 
-						@Override
-						public void imageLoaded(Bitmap bm)
-						{
-							if (bm != null)
-								notifyDataSetChanged();
-						}
-					});
-			if (bm == null)
-				img.setImageBitmap(bmNoImg);
-			else
-				img.setImageBitmap(bm);
+			ImageView img = (ImageView) convertView.findViewById(R.id.imgSmall);
+			Picasso.with(getContext()).load(d.getImage()).transform(new PicassoTransform(30,0)).placeholder(R.drawable.no_imagebig).into(img);
+
 
 			return convertView;
 		}

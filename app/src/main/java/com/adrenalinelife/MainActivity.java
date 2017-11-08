@@ -116,7 +116,6 @@ public class MainActivity extends CustomActivity
 			if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 				//move on
                 Toast.makeText(this, "Location Granted!", Toast.LENGTH_SHORT).show();
-
             }
 		}
 	}
@@ -233,7 +232,6 @@ public class MainActivity extends CustomActivity
 		else if (pos == 1)
 		{
 			title = getString(R.string.Discover_Events);
-			//f = new CategoryEvents();
 			f = new DiscoverEvents();
 		}
 		else if (pos == 3)
@@ -244,19 +242,12 @@ public class MainActivity extends CustomActivity
 		}
 		else if (pos == 2)
 		{
-			//tab.setEnabled(true);
-			//tab = findViewById(R.id.tab1);
-			//tab.setEnabled(false);
-
 			title = getString(R.string.my_cal);
 			f = new CalendarView();
 		}
 		else if (pos == 21)
 		{
 			if (StaticData.pref.contains(Const.USER_ID)) {
-				//tab.setEnabled(true);
-				//tab = findViewById(R.id.tab2);
-				//tab.setEnabled(false);
 				title = getString(R.string.my_fav);
 				f = new FavEvents();
 				f.setArg(new Bundle());
@@ -295,9 +286,6 @@ public class MainActivity extends CustomActivity
 
 			AlertDialog action = builder.create();
 			action.show();
-			// Old Method
-			//title = getString(R.string.my_tkcts);
-			//f = new MyTickets();
 			pos = 2;
 
 
@@ -323,18 +311,6 @@ public class MainActivity extends CustomActivity
 
 		if (f != null)
 		{
-			/*
-			while (getSupportFragmentManager().getBackStackEntryCount() > 0)
-			{
-				Log.e("while loop! ", String.valueOf(getSupportFragmentManager().getBackStackEntryCount()));
-				getSupportFragmentManager().popBackStackImmediate();
-			}
-
-			FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-			fragmentTransaction.addToBackStack(title);
-			fragmentTransaction.add(R.id.content_frame, f);
-			fragmentTransaction.commit();
-			*/
 			Log.e("No WHILE, begin transaction ", String.valueOf(getSupportFragmentManager().getBackStackEntryCount()));
 			getSupportFragmentManager().beginTransaction()
 					.add(R.id.content_frame, f, TAG)
@@ -400,20 +376,7 @@ public class MainActivity extends CustomActivity
 		drawerToggle.onConfigurationChanged(newConfig);
 	}
 
-	/*@Override
-	public boolean onCreateOptionsMenu(Menu menu)
-	{
-		getMenuInflater().inflate(R.menu.main, menu);
-		return super.onCreateOptionsMenu(menu);
-	}*/
-/*
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
 
-		getMenuInflater().inflate(R.menu.add, menu);
-		return super.onCreateOptionsMenu(menu);
-	}
-*/
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
 	{
