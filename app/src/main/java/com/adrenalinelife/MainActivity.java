@@ -45,13 +45,19 @@ import com.adrenalinelife.ui.More;
 import com.adrenalinelife.ui.Events;
 import com.adrenalinelife.utils.Const;
 import com.adrenalinelife.utils.StaticData;
+import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.answers.Answers;
+import com.crashlytics.android.answers.CustomEvent;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.FusedLocationProviderApi;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
+import com.muddzdev.styleabletoastlibrary.StyleableToast;
 
 import java.util.ArrayList;
+
+import io.fabric.sdk.android.Fabric;
 
 /**
  * The Class MainActivity is the base activity class of the application. This
@@ -86,6 +92,15 @@ public class MainActivity extends CustomActivity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+		/** Fabric Initializing **/
+		Fabric.with(this, new Answers());
+		Fabric.with(this, new Crashlytics());
+		final Fabric fabric = new Fabric.Builder(this)
+				.kits(new Crashlytics())
+				.debuggable(true)
+				.build();
+		Fabric.with(fabric);
+
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (checkSelfPermission(android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -114,14 +129,20 @@ public class MainActivity extends CustomActivity
 	public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
 		if (requestCode == PERMISSIONS_REQUEST_CODE) {
 			if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
 				//move on
-                Toast.makeText(this, "Location Granted!", Toast.LENGTH_SHORT).show();
-            }
+				StyleableToast.makeText(this, "Location Granted", Toast.LENGTH_LONG, R.style.ToastGranted).show();
+            } else {
+				//move on
+				StyleableToast.makeText(this, "Location Denied", Toast.LENGTH_LONG, R.style.ToastDenied).show();
+			}
+
+
 		}
 	}
 
-
 	//
+
 	/**
 	 * Setup the drawer layout. This method also includes the method calls for
 	 * setting up the Left side drawer.
@@ -231,6 +252,10 @@ public class MainActivity extends CustomActivity
 		}
 		else if (pos == 1)
 		{
+			/** Fabric "Discover Events Page" **/
+			Answers.getInstance().logCustom(new CustomEvent("Discover Events Page")
+					.putCustomAttribute("Activity", "Nav Bar"));
+
 			title = getString(R.string.Discover_Events);
 			f = new DiscoverEvents();
 		}
@@ -384,6 +409,7 @@ public class MainActivity extends CustomActivity
 		{
 			return true;
 		}
+
 		if (item.getItemId() == R.id.menu_fav && StaticData.pref.contains(Const.USER_ID)){
 			Intent intent = new Intent(MainActivity.this, editCreateEvent.class);
 			startActivity(intent);
@@ -406,8 +432,10 @@ public class MainActivity extends CustomActivity
 		action.show();
 	}
 
+
 		return super.onOptionsItemSelected(item);
 	}
+
 
 /*
 	// This will disable the back button inside fragments and ask the user to exit the app every single time.

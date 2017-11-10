@@ -9,6 +9,9 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -41,6 +44,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.zip.Inflater;
 
 import static com.adrenalinelife.utils.Const.EXTRA_DATA;
 
@@ -75,7 +79,7 @@ public class CategoryEvents extends PagingFragment
         mBundle = getArguments();
         mFilter = mBundle.getString("Filter");
         final View v = inflater.inflate(R.layout.events, null);
-        setHasOptionsMenu(true);
+        setHasOptionsMenu(false);
 
         searchView = (SearchView) v.findViewById(R.id.searchEvents);
         searchView.setVisibility(View.GONE);
@@ -399,5 +403,7 @@ public class CategoryEvents extends PagingFragment
         favA.notifyDataSetChanged();
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 }
 

@@ -40,6 +40,9 @@ import com.adrenalinelife.utils.ImageLoader;
 import com.adrenalinelife.utils.Log;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
+import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.answers.Answers;
+import com.crashlytics.android.answers.CustomEvent;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.FusedLocationProviderApi;
@@ -53,6 +56,7 @@ import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.muddzdev.styleabletoastlibrary.StyleableToast;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -61,6 +65,8 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+
+import io.fabric.sdk.android.Fabric;
 
 import static com.adrenalinelife.web.WebAccess.GET_FAV_EVENTS;
 import static com.adrenalinelife.web.WebAccess.executePostRequest;
@@ -110,8 +116,21 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 		e = (Event) getArg().getSerializable(Const.EXTRA_DATA);
 		setHasOptionsMenu(true);
 
+		/** Fabric Initializing **/
+		Fabric.with(getActivity(), new Answers());
+		Fabric.with(getActivity(), new Crashlytics());
+		final Fabric fabric = new Fabric.Builder(getActivity())
+				.kits(new Crashlytics())
+				.debuggable(true)
+				.build();
+		Fabric.with(fabric);
+
+		/** Fabric **/
+		Answers.getInstance().logCustom(new CustomEvent("Event Pressed")
+				.putCustomAttribute("Event Name", e.getTitle()));
+
 		if (ActivityCompat.checkSelfPermission(getContext(), android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-			Toast.makeText(getActivity(), "Location Denied", Toast.LENGTH_SHORT).show();
+			StyleableToast.makeText(getContext(), "Location Denied", Toast.LENGTH_LONG, R.style.ToastGrey).show();
 			locationDenied = 0;
 
 

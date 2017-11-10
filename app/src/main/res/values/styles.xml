@@ -1,9 +1,7 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <style name="AppBaseTheme" parent="android:Theme.Holo">
-
     </style>
-
 
     <style name="AppTheme" parent="AppBaseTheme">
         <item name="android:homeAsUpIndicator">@drawable/ic_back</item>
@@ -12,6 +10,21 @@
     <style name="btn" parent="android:Widget.Holo.Light.Button">
         <item name="android:minHeight">1dp</item>
         <item name="android:minWidth">1dp</item>
+    </style>
+
+    <style name="ToastGrey">
+        <item name="android:textColor">@color/white_smoke</item>
+        <item name="android:colorBackground">@color/adrenaline_grey</item>
+    </style>
+
+    <style name="ToastGranted">
+        <item name="android:textColor">@color/white_smoke</item>
+        <item name="android:colorBackground">@color/adrenaline_green</item>
+    </style>
+
+    <style name="ToastDenied">
+        <item name="android:textColor">@color/white_smoke</item>
+        <item name="android:colorBackground">@color/adrenaline_red</item>
     </style>
     
      <style name="tab_btn" parent="@style/btn">

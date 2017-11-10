@@ -1,34 +1,16 @@
 package com.adrenalinelife.ui;
 
 import android.annotation.SuppressLint;
-import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.BitmapShader;
-import android.graphics.Canvas;
-import android.graphics.Paint;
-import android.graphics.PorterDuff;
-import android.graphics.PorterDuffXfermode;
-import android.graphics.Rect;
-import android.graphics.RectF;
-import android.graphics.Shader;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.ColorRes;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.graphics.drawable.DrawableCompat;
-import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
-import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -50,22 +32,27 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.adrenalinelife.EventDetailActivity;
-import com.adrenalinelife.Login;
 import com.adrenalinelife.R;
-import com.adrenalinelife.create_event.editCreateEvent;
 import com.adrenalinelife.custom.PagingFragment;
 import com.adrenalinelife.custom.PicassoTransform;
 import com.adrenalinelife.model.Event;
 import com.adrenalinelife.utils.Commons;
 import com.adrenalinelife.utils.Const;
 import com.adrenalinelife.utils.ImageLoader;
-import com.adrenalinelife.utils.ImageLoader.ImageLoadedListener;
 import com.adrenalinelife.utils.ImageUtils;
 import com.adrenalinelife.utils.Log;
 import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
+
+import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.answers.CustomEvent;
+import com.crashlytics.android.answers.SearchEvent;
+import com.muddzdev.styleabletoastlibrary.StyleableToast;
 import com.squareup.picasso.Picasso;
+
+import com.crashlytics.android.answers.Answers;
+import io.fabric.sdk.android.Fabric;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -75,7 +62,6 @@ import static com.adrenalinelife.utils.Const.EXTRA_DATA;
 public class Events extends PagingFragment
 {
 	/** Search View **/
-	SearchView searchView;
 	ListView filterResults;
 
 	/** Filter by Day **/
@@ -88,8 +74,6 @@ public class Events extends PagingFragment
 	Button mFilterSunday;
 	Button mFilterAll;
 	Button mDiscoverEvents;
-
-	public LeftNavAdapter adapter1;
 
 	public LinearLayout vTabs;
 	/** Swipe Refresh Layout **/
@@ -106,6 +90,15 @@ public class Events extends PagingFragment
 		final View v = inflater.inflate(R.layout.events, null, false);
 		setHasOptionsMenu(true);
 		setRetainInstance(true);
+
+		/** Fabric Initializing **/
+		Fabric.with(getActivity(), new Answers());
+		Fabric.with(getActivity(), new Crashlytics());
+		final Fabric fabric = new Fabric.Builder(getActivity())
+				.kits(new Crashlytics())
+				.debuggable(true)
+				.build();
+		Fabric.with(fabric);
 
 		///////////////////////////////////////////////// - Initiating Views
 
@@ -135,6 +128,11 @@ public class Events extends PagingFragment
 				setFilterTextWhite();
 				mDiscoverEvents.setTextColor(getResources().getColor(R.color.adrenaline_red));
 
+				/** Fabric "Discover Events Page" **/
+				Answers.getInstance().logCustom(new CustomEvent("Discover Events Page")
+								.putCustomAttribute("Activity", "Events Page"));
+
+
 				DiscoverEvents f = new DiscoverEvents();
 				android.support.v4.app.FragmentManager fm = getFragmentManager();
 				FragmentTransaction ft = fm.beginTransaction();
@@ -158,6 +156,10 @@ public class Events extends PagingFragment
 			@Override
 			public void onClick(View view) {
 
+				/** Fabric **/
+				Answers.getInstance().logCustom(new CustomEvent("Events_Filter")
+						.putCustomAttribute("Day", "Monday"));
+
 				setFilterTextWhite();
 				mFilterMonday.setTextColor(getResources().getColor(R.color.adrenaline_red));
 				final SearchAdapter monA = new SearchAdapter(getActivity(), pList);
@@ -170,6 +172,10 @@ public class Events extends PagingFragment
 		mFilterTuesday.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
+
+				/** Fabric **/
+				Answers.getInstance().logCustom(new CustomEvent("Events_Filter")
+						.putCustomAttribute("Day", "Tuesday"));
 
 				setFilterTextWhite();
 				mFilterTuesday.setTextColor(getResources().getColor(R.color.adrenaline_red));
@@ -184,6 +190,10 @@ public class Events extends PagingFragment
 			@Override
 			public void onClick(View view) {
 
+				/** Fabric **/
+				Answers.getInstance().logCustom(new CustomEvent("Events_Filter")
+						.putCustomAttribute("Day", "Wednesday"));
+
 				setFilterTextWhite();
 				mFilterWednesday.setTextColor(getResources().getColor(R.color.adrenaline_red));
 				final SearchAdapter monA = new SearchAdapter(getActivity(), pList);
@@ -196,6 +206,10 @@ public class Events extends PagingFragment
 		mFilterThursday.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
+
+				/** Fabric **/
+				Answers.getInstance().logCustom(new CustomEvent("Events_Filter")
+						.putCustomAttribute("Day", "Thursday"));
 
 				setFilterTextWhite();
 				mFilterThursday.setTextColor(getResources().getColor(R.color.adrenaline_red));
@@ -210,6 +224,10 @@ public class Events extends PagingFragment
 			@Override
 			public void onClick(View view) {
 
+				/** Fabric **/
+				Answers.getInstance().logCustom(new CustomEvent("Events_Filter")
+						.putCustomAttribute("Day", "Friday"));
+
 				setFilterTextWhite();
 				mFilterFriday.setTextColor(getResources().getColor(R.color.adrenaline_red));
 				final SearchAdapter monA = new SearchAdapter(getActivity(), pList);
@@ -221,6 +239,10 @@ public class Events extends PagingFragment
 		mFilterSaturday.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
+
+				/** Fabric **/
+				Answers.getInstance().logCustom(new CustomEvent("Events_Filter")
+						.putCustomAttribute("Day", "Saturday"));
 
 				setFilterTextWhite();
 				mFilterSaturday.setTextColor(getResources().getColor(R.color.adrenaline_red));
@@ -234,6 +256,10 @@ public class Events extends PagingFragment
 		mFilterSunday.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
+
+				/** Fabric **/
+				Answers.getInstance().logCustom(new CustomEvent("Events_Filter")
+						.putCustomAttribute("Day", "Sunday"));
 
 				setFilterTextWhite();
 				mFilterSunday.setTextColor(getResources().getColor(R.color.adrenaline_red));
@@ -266,6 +292,7 @@ public class Events extends PagingFragment
 
 	private void setProgramList(View v)
 	{
+
 		initPagingList((ListView) v.findViewById(R.id.list),
 				new ProgramAdapter());
 		list.setOnItemClickListener(new OnItemClickListener() {
@@ -391,9 +418,6 @@ public class Events extends PagingFragment
 			TextView lbl = (TextView) convertView.findViewById(R.id.lbl1);
 			lbl.setText(d.getTitle());
 
-			//lbl = (TextView) convertView.findViewById(R.id.lbl2);
-			//lbl.setText(Html.fromHtml(d.getDesc()));
-
 			lbl = (TextView) convertView.findViewById(R.id.lbl3);
 
 			// 12:00AM to All Day
@@ -401,7 +425,7 @@ public class Events extends PagingFragment
 				lbl.setText("Today - " + Commons.mToDate(d.getStartDateTime()));
 			} else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Monday 12:00 AM")){
 			lbl.setText("Monday - " + Commons.mToDate(d.getStartDateTime()));
-		}
+			}
 			else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Tuesday 12:00 AM")){
 				lbl.setText("Tuesday - " + Commons.mToDate(d.getStartDateTime()));
 			}
@@ -423,8 +447,6 @@ public class Events extends PagingFragment
 			else {
 				lbl.setText(Commons.millsToDateTime(d.getStartDateTime()));
 			}
-
-			//Log.e("Commons = ", Commons.millsToDateTime(d.getStartDateTime()));
 
 			ImageView img = (ImageView) convertView.findViewById(R.id.img1);
 
@@ -601,12 +623,10 @@ public class Events extends PagingFragment
                     Log.e(fList);
 					notifyDataSetChanged();
 				} else {
-                    Toast.makeText(getActivity(), "No Results Found!",Toast.LENGTH_SHORT).show();
+					StyleableToast.makeText(getContext(), "No Results Found", Toast.LENGTH_LONG, R.style.ToastGrey).show();
                     fList.clear();
 					notifyDataSetInvalidated();
-				}
-			}
-		};
+				}}};
 		@Override
 		public Filter getFilter() {
 			return myFilter;
@@ -620,7 +640,6 @@ public class Events extends PagingFragment
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
 	{
 		menu.clear();
-
 		//Setup search button in action bar
 		final MenuItem item = menu.add("");
 		item.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
@@ -634,6 +653,12 @@ public class Events extends PagingFragment
 		{
 			@Override
 			public boolean onQueryTextSubmit(String query) {
+
+				/** Fabric **/
+				Answers.getInstance().logSearch(new SearchEvent());
+				Answers.getInstance().logSearch(new SearchEvent()
+						.putQuery(query));
+
 				//Hide Keyboard//
 				InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(getActivity().INPUT_METHOD_SERVICE);
 				imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
@@ -656,8 +681,6 @@ public class Events extends PagingFragment
 				return true;
 			}
 		});
-
-		super.onCreateOptionsMenu(menu, inflater);
 	}
 
 	////////////////////////////////////////////////////////////////////////////////////////////////
@@ -684,6 +707,4 @@ public class Events extends PagingFragment
 		mFilterAll.setTextColor(getResources().getColor(R.color.red));
 
 	}
-
-
 }
