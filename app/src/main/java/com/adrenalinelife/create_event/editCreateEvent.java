@@ -35,20 +35,15 @@ import java.util.Date;
 
 public class editCreateEvent extends CustomActivity {
 
-    public Bundle mBundleIn;
     public Bundle mBundleOut;
     public Intent mIntentOut;
     public String mImageUri;
-
-
     //Bundle Variables
     public Spinner sCategorySpinner;
     public TextView tEndDatePicker;
     public TextView tEndTimePicker;
     public TextView tStartDatePicker;
     public TextView tStartTimePicker;
-
-
     //Strings to Parameters
     public String mEventName;
     public String mCategory;
@@ -222,10 +217,7 @@ public class editCreateEvent extends CustomActivity {
             }
         });
         //End Time//////////////////////////////////////////////////////////////////////////////////
-
-
     }
-
     @Override
     public void onClick(View v)
     {
@@ -242,20 +234,13 @@ public class editCreateEvent extends CustomActivity {
         {
             chooseEventImage();
         }
-        else
-        {
-
-        }
     }
-
     public void chooseEventImage()
     {
         Intent intent = new Intent(Intent.ACTION_PICK,android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         intent.setType("image/*");
         startActivityForResult(intent, PICK_EVENT_PHOTO);
-
     }
-
     public void doCreateEvent() throws FileNotFoundException {
 
         //Event Name////////////////////////////////////////////////////////////////////////////////
@@ -419,11 +404,8 @@ public class editCreateEvent extends CustomActivity {
                 e.printStackTrace();
             }
             imageView.setImageBitmap(bmp);
-
         }
         if (resultCode == 1) {
-
-
         }
     }
 
@@ -443,7 +425,6 @@ public class editCreateEvent extends CustomActivity {
 
         return mImage;
     }
-
 
     public String startTimeToString(int hour, int min){
 

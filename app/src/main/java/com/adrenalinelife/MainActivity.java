@@ -1,16 +1,12 @@
 package com.adrenalinelife;
 
-import android.*;
-import android.Manifest;
 import android.annotation.TargetApi;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.FragmentManager;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
-import android.location.Location;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -19,12 +15,10 @@ import android.support.annotation.RequiresApi;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentManager.OnBackStackChangedListener;
-import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.KeyEvent;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -45,28 +39,21 @@ import com.adrenalinelife.ui.More;
 import com.adrenalinelife.ui.Events;
 import com.adrenalinelife.utils.Const;
 import com.adrenalinelife.utils.StaticData;
+
+import io.fabric.sdk.android.Fabric;
 import com.crashlytics.android.Crashlytics;
 import com.crashlytics.android.answers.Answers;
 import com.crashlytics.android.answers.CustomEvent;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.FusedLocationProviderApi;
-import com.google.android.gms.location.LocationListener;
-import com.google.android.gms.location.LocationRequest;
-import com.google.android.gms.location.LocationServices;
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
 
 import java.util.ArrayList;
-
-import io.fabric.sdk.android.Fabric;
 
 /**
  * The Class MainActivity is the base activity class of the application. This
  * activity is launched after the Splash and it holds all the Fragments used in
  * the app. It also creates the Navigation Drawer on left side.
  */
-public class MainActivity extends CustomActivity
-{
-
+public class MainActivity extends CustomActivity {
 	private static final String TAG = "initial";
 
 	/** The drawer layout. */
@@ -101,48 +88,30 @@ public class MainActivity extends CustomActivity
 				.build();
 		Fabric.with(fabric);
 
-
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (checkSelfPermission(android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                 ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, PERMISSIONS_REQUEST_CODE);
-
-            } else {
-                //Toast.makeText(this, "2", Toast.LENGTH_SHORT).show();
             }
-        } else {
-            //Toast.makeText(this, "3", Toast.LENGTH_SHORT).show();
-
         }
-
-		//tab = setClick(R.id.tab1);
-		//setClick(R.id.tab2);
-		//setClick(R.id.tab3);
-
 		setupContainer();
 		setupDrawer();
-
 	}
-
 	//
 
 	@Override
 	public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
 		if (requestCode == PERMISSIONS_REQUEST_CODE) {
 			if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
-				//move on
+				//Granted
 				StyleableToast.makeText(this, "Location Granted", Toast.LENGTH_LONG, R.style.ToastGranted).show();
             } else {
-				//move on
+				//Denied
 				StyleableToast.makeText(this, "Location Denied", Toast.LENGTH_LONG, R.style.ToastDenied).show();
 			}
-
-
 		}
 	}
 
 	//
-
 	/**
 	 * Setup the drawer layout. This method also includes the method calls for
 	 * setting up the Left side drawer.
@@ -194,14 +163,11 @@ public class MainActivity extends CustomActivity
 				launchFragment(pos);
 			}
 		});
-
 	}
-
 	/**
 	 * This method returns a list of dummy items for left navigation slider. You
 	 * can write or replace this method with the actual implementation for list
 	 * items.
-	 * 
 	 * @return the dummy items
 	 */
 	private ArrayList<Data> getDummyLeftNavItems(){
@@ -237,8 +203,7 @@ public class MainActivity extends CustomActivity
 	 * This method can be used to attach Fragment on activity view for a
 	 * particular tab position. You can customize this method as per your need.
 	 * 
-	 * @param pos
-	 *            the position of tab selected.
+	 * @param pos the position of tab selected.
 	 */
 	public void launchFragment(int pos)
 	{
@@ -300,7 +265,6 @@ public class MainActivity extends CustomActivity
 		}
 		else if (pos == 22)
 		{
-
 			AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
 			builder.setMessage("Sorry, Feature Coming Soon!")
 					.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
@@ -312,8 +276,6 @@ public class MainActivity extends CustomActivity
 			AlertDialog action = builder.create();
 			action.show();
 			pos = 2;
-
-
 		}
 		else if (pos == 4)
 		{
@@ -331,12 +293,8 @@ public class MainActivity extends CustomActivity
 			Intent intent = new Intent(THIS, Login.class);
 			startActivity(intent);
 		}
-		//findViewById(R.id.vTabs).setVisibility(
-		//		pos == 2 ? View.VISIBLE : View.GONE);
-
 		if (f != null)
 		{
-			Log.e("No WHILE, begin transaction ", String.valueOf(getSupportFragmentManager().getBackStackEntryCount()));
 			getSupportFragmentManager().beginTransaction()
 					.add(R.id.content_frame, f, TAG)
 					.addToBackStack(title)
@@ -346,7 +304,6 @@ public class MainActivity extends CustomActivity
 				adapter.setSelection(pos);
 		}
 	}
-
 	/**
 	 * Setup the container fragment for drawer layout. The current
 	 * implementation of this method simply calls launchFragment method for tab
@@ -366,7 +323,6 @@ public class MainActivity extends CustomActivity
 				});
 		launchFragment(0);
 	}
-
 	/**
 	 * Set the action bar title text.
 	 */
@@ -384,7 +340,6 @@ public class MainActivity extends CustomActivity
 				.getName();
 		getActionBar().setTitle(title);
 	}
-
 	@Override
 	protected void onPostCreate(Bundle savedInstanceState)
 	{
@@ -392,7 +347,6 @@ public class MainActivity extends CustomActivity
 		// Sync the toggle state after onRestoreInstanceState has occurred.
 		drawerToggle.syncState();
 	}
-
 	@Override
 	public void onConfigurationChanged(Configuration newConfig)
 	{
@@ -400,8 +354,6 @@ public class MainActivity extends CustomActivity
 		// Pass any configuration change to the drawer toggle
 		drawerToggle.onConfigurationChanged(newConfig);
 	}
-
-
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
 	{
@@ -409,8 +361,12 @@ public class MainActivity extends CustomActivity
 		{
 			return true;
 		}
-
 		if (item.getItemId() == R.id.menu_fav && StaticData.pref.contains(Const.USER_ID)){
+
+			/** Fabric **/
+			Answers.getInstance().logCustom(new CustomEvent("Create Event")
+					.putCustomAttribute("Page", 1));
+
 			Intent intent = new Intent(MainActivity.this, editCreateEvent.class);
 			startActivity(intent);
 		} if (item.getItemId() == R.id.menu_fav && !StaticData.pref.contains(Const.USER_ID))
@@ -431,34 +387,8 @@ public class MainActivity extends CustomActivity
 		AlertDialog action = builder.create();
 		action.show();
 	}
-
-
 		return super.onOptionsItemSelected(item);
 	}
-
-
-/*
-	// This will disable the back button inside fragments and ask the user to exit the app every single time.
-	@Override
-	public boolean onKeyDown(int keyCode, KeyEvent event)
-	{
-		if (keyCode == KeyEvent.KEYCODE_BACK)
-		{
-			new AlertDialog.Builder(this)
-					.setMessage("Are you sure you want to exit?")
-					.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-						@TargetApi(Build.VERSION_CODES.LOLLIPOP)
-						@Override
-						public void onClick(DialogInterface dialog, int which) {
-							finishAndRemoveTask();
-						}
-					})
-					.setNegativeButton("No", null)
-					.show();
-		}
-		return super.onKeyDown(keyCode, event);
-	}
-*/
 	//This will allow the back button to back through each view in the stack, if no more, ask the user to exit the app
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event)

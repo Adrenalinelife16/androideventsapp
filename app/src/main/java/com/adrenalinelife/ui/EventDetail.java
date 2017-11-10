@@ -1,7 +1,6 @@
 package com.adrenalinelife.ui;
 
-
-import android.Manifest;
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -106,7 +105,6 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 	private Uri shareImageUri;
 	public ImageView imgShare;
 
-
 	@RequiresApi(api = Build.VERSION_CODES.N)
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -132,7 +130,6 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 		if (ActivityCompat.checkSelfPermission(getContext(), android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
 			StyleableToast.makeText(getContext(), "Location Denied", Toast.LENGTH_LONG, R.style.ToastGrey).show();
 			locationDenied = 0;
-
 
 		} else {
 			//Initiate Location
@@ -220,6 +217,7 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 		super.onDestroy();
 	}
 
+	@SuppressLint("MissingPermission")
 	@Override
 	public void onResume() {
 		super.onResume();
@@ -238,39 +236,31 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 				setupMarker();
 			}
 		}
-
 	}
-
 	//////////////////////////////////////////////////////////////// - Google Location API
 	@Override
 	public void onConnected(@Nullable Bundle bundle) {
 		//Add Request Permission Here
 		locationGranted();
 	}
-
+	@Override
+	public void onConnectionSuspended(int i) {
+	}
+	@SuppressLint("MissingPermission")
 	public void locationGranted() {
 		mFusedLocationProviderApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, this);
 	}
-
-	@Override
-	public void onConnectionSuspended(int i) {
-
-	}
-
 	@Override
 	public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-
+		StyleableToast.makeText(getContext(), "Google Connection Failed", Toast.LENGTH_LONG, R.style.ToastDenied).show();
 	}
-
 	@Override
 	public void onLocationChanged(Location location) {
-		//Toast.makeText(getActivity(), "Location: " + location.getLatitude() + " , " + location.getLongitude(), Toast.LENGTH_SHORT).show();
 		mMyLatitude = location.getLatitude();
 		mMyLongitude = location.getLongitude();
 		LocationToMiles();
 		mDistance.setText(" " + mMiles);
 	}
-
 	public double LocationToMiles(){
 		double eLatitude = e.getLatitude();
 		double eLongitude = e.getLongitude();
@@ -418,57 +408,6 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 		}
 		return super.onOptionsItemSelected(item);
 	}
-
-	@Override
-	public void onClick(View v)
-	{
-		super.onClick(v);
-		if (v.getId() == R.id.btnReg)
-		{
-			bookTicket();
-		}
-	}
-	/**
-	 * Book ticket.
-	 */
-	private void bookTicket()
-	{
-		if (e.isBooked())
-			Utils.showDialog(parent, R.string.err_event_booked);
-		else if (e.getAvailSpace() <= 0)
-			Utils.showDialog(parent, R.string.err_no_space);
-		else if (e.getEndDateTime() < System.currentTimeMillis())
-			Utils.showDialog(parent, R.string.err_past_event);
-		else if (!StaticData.pref.contains(Const.USER_ID))
-			startActivityForResult(new Intent(parent, Login.class),
-					Const.REQ_LOGIN);
-		else
-		{
-			final ProgressDialog dia = parent
-					.showProgressDia(R.string.alert_wait);
-			new Thread(new Runnable() {
-				@Override
-				public void run()
-				{
-					final boolean book = WebHelper.isBooked(e);
-					parent.runOnUiThread(new Runnable() {
-						@Override
-						public void run()
-						{
-							dia.dismiss();
-							if (book)
-								Utils.showDialog(parent,
-										R.string.err_event_booked);
-							else
-								startActivity(new Intent(parent, BookTkt.class)
-										.putExtra(Const.EXTRA_DATA, e));
-						}
-					});
-				}
-			}).start();
-		}
-	}
-
 	public static String checkFavoriteEvents(Event z)
 	{
 		try
@@ -485,16 +424,6 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 		}
 		return null;
 	}
-
-
-	@Override
-	public void onActivityResult(int requestCode, int resultCode, Intent data)
-	{
-		super.onActivityResult(requestCode, resultCode, data);
-		if (requestCode == Const.REQ_LOGIN && resultCode == Activity.RESULT_OK)
-			bookTicket();
-	}
-
 	public Uri getLocalBitmapUri() {
 		// Extract Bitmap from ImageView drawable
 		Bitmap bmp;
@@ -526,11 +455,8 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
-
 		shareImageUri = bmpUri;
 		return bmpUri;
-
 	}
 
 }

@@ -100,7 +100,7 @@ public class Events extends PagingFragment
 				.build();
 		Fabric.with(fabric);
 
-		///////////////////////////////////////////////// - Initiating Views
+		//////////////////////////////////// - Initiating Views
 
 		mFilterMonday = (Button) v.findViewById(R.id.btn_mon);
 		mFilterTuesday = (Button) v.findViewById(R.id.btn_tues);
@@ -127,155 +127,89 @@ public class Events extends PagingFragment
 				//Take User to Discover Events Page
 				setFilterTextWhite();
 				mDiscoverEvents.setTextColor(getResources().getColor(R.color.adrenaline_red));
-
 				/** Fabric "Discover Events Page" **/
 				Answers.getInstance().logCustom(new CustomEvent("Discover Events Page")
 								.putCustomAttribute("Activity", "Events Page"));
-
-
 				DiscoverEvents f = new DiscoverEvents();
 				android.support.v4.app.FragmentManager fm = getFragmentManager();
 				FragmentTransaction ft = fm.beginTransaction();
 				ft.add(R.id.content_frame, f).addToBackStack("Discover Events").commit();
-
-
 			}
 		});
-
 		mFilterAll.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-
 				setFilterTextWhite();
 				mFilterAll.setTextColor(getResources().getColor(R.color.adrenaline_red));
 				softEventRefresh();
 			}
 		});
-
 		mFilterMonday.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-
 				/** Fabric **/
 				Answers.getInstance().logCustom(new CustomEvent("Events_Filter")
 						.putCustomAttribute("Day", "Monday"));
-
-				setFilterTextWhite();
-				mFilterMonday.setTextColor(getResources().getColor(R.color.adrenaline_red));
-				final SearchAdapter monA = new SearchAdapter(getActivity(), pList);
-				filterResults.setAdapter(monA);
-				monA.getFilter().filter("dMon");
-				monA.notifyDataSetChanged();
-			}
-		});
-
+				filterButtons(mFilterMonday, "dMon");
+			}});
 		mFilterTuesday.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-
 				/** Fabric **/
 				Answers.getInstance().logCustom(new CustomEvent("Events_Filter")
 						.putCustomAttribute("Day", "Tuesday"));
-
-				setFilterTextWhite();
-				mFilterTuesday.setTextColor(getResources().getColor(R.color.adrenaline_red));
-				final SearchAdapter monA = new SearchAdapter(getActivity(), pList);
-				filterResults.setAdapter(monA);
-				monA.getFilter().filter("dTue");
-				monA.notifyDataSetChanged();
-			}
-		});
-
+				filterButtons(mFilterTuesday, "dTue");
+			}});
 		mFilterWednesday.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-
 				/** Fabric **/
 				Answers.getInstance().logCustom(new CustomEvent("Events_Filter")
 						.putCustomAttribute("Day", "Wednesday"));
-
-				setFilterTextWhite();
-				mFilterWednesday.setTextColor(getResources().getColor(R.color.adrenaline_red));
-				final SearchAdapter monA = new SearchAdapter(getActivity(), pList);
-				filterResults.setAdapter(monA);
-				monA.getFilter().filter("dWed");
-				monA.notifyDataSetChanged();
+				filterButtons(mFilterWednesday, "dWed");
 			}
 		});
-
 		mFilterThursday.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-
 				/** Fabric **/
 				Answers.getInstance().logCustom(new CustomEvent("Events_Filter")
 						.putCustomAttribute("Day", "Thursday"));
-
-				setFilterTextWhite();
-				mFilterThursday.setTextColor(getResources().getColor(R.color.adrenaline_red));
-				final SearchAdapter monA = new SearchAdapter(getActivity(), pList);
-				filterResults.setAdapter(monA);
-				monA.getFilter().filter("dThu");
-				monA.notifyDataSetChanged();
+				filterButtons(mFilterThursday, "dThu");
 			}
 		});
-
 		mFilterFriday.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-
 				/** Fabric **/
 				Answers.getInstance().logCustom(new CustomEvent("Events_Filter")
 						.putCustomAttribute("Day", "Friday"));
-
-				setFilterTextWhite();
-				mFilterFriday.setTextColor(getResources().getColor(R.color.adrenaline_red));
-				final SearchAdapter monA = new SearchAdapter(getActivity(), pList);
-				filterResults.setAdapter(monA);
-				monA.getFilter().filter("dFri");
-				monA.notifyDataSetChanged();
+				filterButtons(mFilterFriday, "dFri");
 			}
 		});
 		mFilterSaturday.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-
 				/** Fabric **/
 				Answers.getInstance().logCustom(new CustomEvent("Events_Filter")
 						.putCustomAttribute("Day", "Saturday"));
-
-				setFilterTextWhite();
-				mFilterSaturday.setTextColor(getResources().getColor(R.color.adrenaline_red));
-				final SearchAdapter monA = new SearchAdapter(getActivity(), pList);
-				filterResults.setAdapter(monA);
-				monA.getFilter().filter("dSat");
-				monA.notifyDataSetChanged();
+				filterButtons(mFilterSaturday, "dSat");
 			}
 		});
-
 		mFilterSunday.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-
 				/** Fabric **/
 				Answers.getInstance().logCustom(new CustomEvent("Events_Filter")
 						.putCustomAttribute("Day", "Sunday"));
-
-				setFilterTextWhite();
-				mFilterSunday.setTextColor(getResources().getColor(R.color.adrenaline_red));
-				final SearchAdapter monA = new SearchAdapter(getActivity(), pList);
-				filterResults.setAdapter(monA);
-				monA.getFilter().filter("dSun");
-				monA.notifyDataSetChanged();
+				filterButtons(mFilterSunday, "dSun");
 			}
 		});
 		//////////////////////////////////////////// - Swipe to Refresh
-
 		SwipeRefresh = (SwipeRefreshLayout) v.findViewById(R.id.EventsRefresh);
 		SwipeRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
 			@Override
 			public void onRefresh() {
-
 				setFilterTextWhite();
                 mFilterAll.setTextColor(getResources().getColor(R.color.adrenaline_red));
 				setProgramList(v);
@@ -706,5 +640,16 @@ public class Events extends PagingFragment
 		refreshA.notifyDataSetChanged();
 		mFilterAll.setTextColor(getResources().getColor(R.color.red));
 
+	}
+
+
+	public void filterButtons(Button button, String day){
+
+		setFilterTextWhite();
+		button.setTextColor(getResources().getColor(R.color.adrenaline_red));
+		final SearchAdapter monA = new SearchAdapter(getActivity(), pList);
+		filterResults.setAdapter(monA);
+		monA.getFilter().filter(day);
+		monA.notifyDataSetChanged();
 	}
 }
