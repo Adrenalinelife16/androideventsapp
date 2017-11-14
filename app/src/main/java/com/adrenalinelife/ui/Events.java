@@ -129,7 +129,7 @@ public class Events extends PagingFragment
 				mDiscoverEvents.setTextColor(getResources().getColor(R.color.adrenaline_red));
 				/** Fabric "Discover Events Page" **/
 				Answers.getInstance().logCustom(new CustomEvent("Discover Events Page")
-								.putCustomAttribute("Activity", "Events Page"));
+						.putCustomAttribute("Activity", "Events Page"));
 				DiscoverEvents f = new DiscoverEvents();
 				android.support.v4.app.FragmentManager fm = getFragmentManager();
 				FragmentTransaction ft = fm.beginTransaction();
@@ -219,10 +219,16 @@ public class Events extends PagingFragment
 		//Configure the refreshing colors
 		SwipeRefresh.setColorSchemeResources(android.R.color.holo_red_light);
 		//Toast.makeText(activity, String.valueOf(hasFocus),Toast.LENGTH_SHORT).show();
+
 		return v;
 	}
 	// End of onCreate Method
 	////////////////////////////////////////////////////////////////////////////////////////////////
+
+	@Override
+	public void onResume() {
+		super.onResume();
+	}
 
 	private void setProgramList(View v)
 	{
@@ -616,7 +622,6 @@ public class Events extends PagingFragment
 			}
 		});
 	}
-
 	////////////////////////////////////////////////////////////////////////////////////////////////
 
 	public void setFilterTextWhite(){
@@ -630,21 +635,15 @@ public class Events extends PagingFragment
 		mFilterAll.setTextColor(getResources().getColor(R.color.white));
 		mDiscoverEvents.setTextColor(getResources().getColor(R.color.white));
 	}
-
 	public void softEventRefresh(){
-
 		final SearchAdapter refreshA = new SearchAdapter(getActivity(), pList);
 		filterResults.setAdapter(refreshA);
 		setFilterTextWhite();
 		refreshA.getFilter().filter("r");
 		refreshA.notifyDataSetChanged();
 		mFilterAll.setTextColor(getResources().getColor(R.color.red));
-
 	}
-
-
 	public void filterButtons(Button button, String day){
-
 		setFilterTextWhite();
 		button.setTextColor(getResources().getColor(R.color.adrenaline_red));
 		final SearchAdapter monA = new SearchAdapter(getActivity(), pList);

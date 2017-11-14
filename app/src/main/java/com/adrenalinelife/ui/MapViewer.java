@@ -1,5 +1,6 @@
 package com.adrenalinelife.ui;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -17,6 +18,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMap.OnInfoWindowClickListener;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
+import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
@@ -29,7 +31,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
  * markers on map. You can customize this class to load and display actual
  * locations on map.
  */
-public class MapViewer extends CustomFragment
+public class MapViewer extends CustomFragment implements OnMapReadyCallback
 {
 
 
@@ -71,22 +73,8 @@ public class MapViewer extends CustomFragment
 		super.onResume();
 		mMapView.onResume();
 
-		mMap = mMapView.getMap();
-		if (mMap != null)
-		{
-			mMap.setMyLocationEnabled(true);
-			mMap.setInfoWindowAdapter(null);
-			mMap.setOnInfoWindowClickListener(new OnInfoWindowClickListener() {
+		mMapView.getMapAsync(this);
 
-				@Override
-				public void onInfoWindowClick(Marker arg0)
-				{
-					startActivity(new Intent(getActivity(),
-							EventDetailActivity.class));
-				}
-			});
-			setupMarker();
-		}
 	}
 
 	/**
@@ -155,4 +143,25 @@ public class MapViewer extends CustomFragment
 		return super.onOptionsItemSelected(item);
 	}
 
+	@SuppressLint("MissingPermission")
+	@Override
+	public void onMapReady(GoogleMap googleMap) {
+
+		mMap = googleMap;
+		if (mMap != null)
+		{
+			mMap.setMyLocationEnabled(true);
+			mMap.setInfoWindowAdapter(null);
+			mMap.setOnInfoWindowClickListener(new OnInfoWindowClickListener() {
+
+				@Override
+				public void onInfoWindowClick(Marker arg0)
+				{
+					startActivity(new Intent(getActivity(),
+							EventDetailActivity.class));
+				}
+			});
+			setupMarker();
+		}
+	}
 }

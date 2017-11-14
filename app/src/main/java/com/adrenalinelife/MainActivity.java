@@ -45,6 +45,7 @@ import com.crashlytics.android.Crashlytics;
 import com.crashlytics.android.answers.Answers;
 import com.crashlytics.android.answers.CustomEvent;
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
+import com.onesignal.OneSignal;
 
 import java.util.ArrayList;
 
@@ -87,6 +88,12 @@ public class MainActivity extends CustomActivity {
 				.debuggable(true)
 				.build();
 		Fabric.with(fabric);
+
+		/** Recieve Notifications **/
+		OneSignal.startInit(this)
+				.inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
+				.unsubscribeWhenNotificationsAreDisabled(true)
+				.init();
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (checkSelfPermission(android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {

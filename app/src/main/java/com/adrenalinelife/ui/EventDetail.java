@@ -2,7 +2,6 @@ package com.adrenalinelife.ui;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
-import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -27,8 +26,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.adrenalinelife.BookTkt;
-import com.adrenalinelife.Login;
 import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.R;
 import com.adrenalinelife.custom.CustomFragment;
@@ -52,6 +49,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
+import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -78,7 +76,7 @@ import static com.adrenalinelife.web.WebAccess.getUserParams;
  * need to write your own logic for loading actual contents related to Events
  * and also need to show actual location for Event.
  */
-public class EventDetail extends CustomFragment implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener {
+public class EventDetail extends CustomFragment implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener, OnMapReadyCallback {
 
 	/** The map view. */
 	private MapView mMapView;
@@ -152,7 +150,6 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 
 		setTouchNClick(v.findViewById(R.id.btnReg));
 		showDetails(v);
-		//setupMap(v, savedInstanceState);
 
 		return v;
 	}
@@ -229,12 +226,7 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 			}
 			mMapView.onResume();
 
-			mMap = mMapView.getMap();
-			if (mMap != null) {
-				mMap.setMyLocationEnabled(true);
-				mMap.setInfoWindowAdapter(null);
-				setupMarker();
-			}
+			mMapView.getMapAsync(this);
 		}
 	}
 	//////////////////////////////////////////////////////////////// - Google Location API
@@ -302,6 +294,18 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 		mMapView = (MapView) v.findViewById(R.id.map);
 		mMapView.onCreate(savedInstanceState);
 	}
+	@SuppressLint("MissingPermission")
+	@Override
+	public void onMapReady(GoogleMap googleMap) {
+		mMap = googleMap;
+
+		if (mMap != null) {
+			mMap.setMyLocationEnabled(true);
+			mMap.setInfoWindowAdapter(null);
+			setupMarker();
+		}
+	}
+
 	/**
 	 * This method simply place a few dummy location markers on Map View. You
 	 * can write your own logic for loading the locations and placing the marker
@@ -458,5 +462,6 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 		shareImageUri = bmpUri;
 		return bmpUri;
 	}
+
 
 }

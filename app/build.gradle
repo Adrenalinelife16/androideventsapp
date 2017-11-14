@@ -2,14 +2,17 @@ apply plugin: 'com.android.application'
 
 android {
     useLibrary 'org.apache.http.legacy'
-    compileSdkVersion 25
+    compileSdkVersion 26
     buildToolsVersion '26.0.2'
 
     defaultConfig {
         applicationId "com.adrenalinelife"
         minSdkVersion 19
-        targetSdkVersion 25
+        targetSdkVersion 26
         multiDexEnabled true
+        manifestPlaceholders = [onesignal_app_id: "7893c05e-649b-402a-8f04-ad41cbeb0235",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "REMOTE"]
     }
     lintOptions {
         checkReleaseBuilds false
@@ -47,20 +50,25 @@ buildscript {
 apply plugin: 'io.fabric'
 
 repositories {
+    maven { url 'https://maven.google.com' }
     maven { url 'https://maven.fabric.io/public' }
 }
 
 dependencies {
     compile 'org.apache.httpcomponents:httpcore:4.4.1'
+    //noinspection DuplicatePlatformClasses
     compile 'org.apache.httpcomponents:httpclient:4.5'
-    compile 'com.android.support:support-v13:25.3.1'
-    compile 'com.google.android.gms:play-services:8.4.0'
+    //noinspection GradleCompatible
+    compile 'com.android.support:support-v13:26.1.0'
+    compile 'com.google.android.gms:play-services:11.6.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:appcompat-v7:25.4.0'
-    compile 'com.android.support:design:25.4.0'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+
+    //Picasso Image Processing
     compile 'com.squareup.picasso:picasso:2.5.2'
 
-    //Fabric
+    //Fabric Analytics
     compile('com.crashlytics.sdk.android:answers:1.4.1@aar') {
         transitive = true
     }
@@ -70,5 +78,8 @@ dependencies {
 
     //Custom Toast Message
     compile 'com.muddzdev:styleabletoast:1.0.9'
+
+    //OneSignal Notifications
+    compile 'com.onesignal:OneSignal:[3.6.5, 3.99.99]'
 
 }
