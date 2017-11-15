@@ -44,6 +44,8 @@ import com.adrenalinelife.utils.Log;
 import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
+import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.answers.Answers;
 import com.squareup.picasso.Picasso;
 
 import org.apache.http.NameValuePair;
@@ -51,6 +53,8 @@ import org.apache.http.message.BasicNameValuePair;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import io.fabric.sdk.android.Fabric;
 
 import static com.adrenalinelife.utils.Const.EXTRA_DATA;
 import static com.adrenalinelife.web.WebAccess.GET_FAV_EVENTS;
@@ -87,6 +91,15 @@ public class FavEvents extends PagingFragment
         super.onCreateView(inflater, container, savedInstanceState);
         final View v = inflater.inflate(R.layout.events, null);
         setHasOptionsMenu(true);
+
+        /** Fabric Initializing **/
+        Fabric.with(getActivity(), new Answers());
+        Fabric.with(getActivity(), new Crashlytics());
+        final Fabric fabric = new Fabric.Builder(getActivity())
+                .kits(new Crashlytics())
+                .debuggable(true)
+                .build();
+        Fabric.with(fabric);
 
         searchView = (SearchView) v.findViewById(R.id.searchEvents);
         searchView.setVisibility(View.GONE);

@@ -17,6 +17,11 @@ import com.adrenalinelife.Settings;
 import com.adrenalinelife.custom.CustomFragment;
 import com.adrenalinelife.utils.Const;
 import com.adrenalinelife.utils.StaticData;
+import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.answers.Answers;
+import com.crashlytics.android.answers.CustomEvent;
+
+import io.fabric.sdk.android.Fabric;
 
 /**
  * The Class More is the Fragment class that is launched when the user clicks on
@@ -40,6 +45,15 @@ public class More extends CustomFragment
 	{
 		super.onCreateView(inflater, container, savedInstanceState);
 		View v = inflater.inflate(R.layout.more, null);
+
+		/** Fabric Initializing **/
+		Fabric.with(getActivity(), new Answers());
+		Fabric.with(getActivity(), new Crashlytics());
+		final Fabric fabric = new Fabric.Builder(getActivity())
+				.kits(new Crashlytics())
+				.debuggable(true)
+				.build();
+		Fabric.with(fabric);
 
 		if (!StaticData.pref.contains(Const.USER_ID)) { //We are not logged in
 
@@ -85,6 +99,10 @@ public class More extends CustomFragment
 		int text;
 		if (v.getId() == R.id.help)
 		{
+			/** Fabric **/
+			Answers.getInstance().logCustom(new CustomEvent("Settings_Pressed")
+					.putCustomAttribute("Settings_Page", "Help"));
+
 			title = R.string.help_center;
 			text = R.string.help_centre_text;
 					startActivity(new Intent(parent, MoreDetail.class).putExtra(
@@ -92,6 +110,10 @@ public class More extends CustomFragment
 		}
 		else if (v.getId() == R.id.privacy)
 		{
+			/** Fabric **/
+			Answers.getInstance().logCustom(new CustomEvent("Settings_Pressed")
+					.putCustomAttribute("Settings_Page", "Privacy"));
+
 			title = R.string.privacy;
 			text = R.string.privacy_text;
 					startActivity(new Intent(parent, MoreDetail.class).putExtra(
@@ -99,6 +121,10 @@ public class More extends CustomFragment
 		}
 		else if (v.getId() == R.id.terms)
 		{
+			/** Fabric **/
+			Answers.getInstance().logCustom(new CustomEvent("Settings_Pressed")
+					.putCustomAttribute("Settings_Page", "Terms and Conditions"));
+
 			title = R.string.terms_condi;
 			text = R.string.terms_text;
 					startActivity(new Intent(parent, MoreDetail.class).putExtra(
@@ -106,6 +132,11 @@ public class More extends CustomFragment
 		}
 		else if (v.getId() == R.id.more_Login)
 		{
+
+			/** Fabric **/
+			Answers.getInstance().logCustom(new CustomEvent("Settings_Pressed")
+					.putCustomAttribute("Settings_Page", "Login"));
+
             title = R.string.terms_condi;
             text = R.string.terms_text;
 			startActivity(new Intent(parent, Login.class).putExtra(
@@ -113,6 +144,10 @@ public class More extends CustomFragment
 		}
 		else if (v.getId() == R.id.more_Logout)
 		{
+			/** Fabric **/
+			Answers.getInstance().logCustom(new CustomEvent("Settings_Pressed")
+					.putCustomAttribute("Settings_Page", "Logout"));
+
             title = R.string.terms_condi;
             text = R.string.terms_text;
 			startActivity(new Intent(parent, Logout.class).putExtra(
@@ -120,6 +155,10 @@ public class More extends CustomFragment
 		}
 		else if (v.getId() == R.id.more_register)
 		{
+			/** Fabric **/
+			Answers.getInstance().logCustom(new CustomEvent("Settings_Pressed")
+					.putCustomAttribute("Settings_Page", "Register"));
+
             title = R.string.terms_condi;
             text = R.string.terms_text;
 			startActivity(new Intent(parent, Register.class).putExtra(

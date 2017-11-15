@@ -7,6 +7,10 @@ import android.widget.TextView;
 
 import com.adrenalinelife.custom.CustomActivity;
 import com.adrenalinelife.utils.Const;
+import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.answers.Answers;
+
+import io.fabric.sdk.android.Fabric;
 
 /**
  * The Class MoreDetail is the Activity class that is launched when the user
@@ -20,6 +24,15 @@ public class MoreDetail extends CustomActivity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.about);
+
+		/** Fabric Initializing **/
+		Fabric.with(this, new Answers());
+		Fabric.with(this, new Crashlytics());
+		final Fabric fabric = new Fabric.Builder(this)
+				.kits(new Crashlytics())
+				.debuggable(true)
+				.build();
+		Fabric.with(fabric);
 
 		getActionBar().setTitle(
 				getIntent().getIntExtra(Const.EXTRA_DATA1, R.string.app_name));

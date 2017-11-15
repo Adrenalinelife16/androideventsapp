@@ -40,11 +40,15 @@ import com.adrenalinelife.utils.Log;
 import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
+import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.answers.Answers;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.zip.Inflater;
+
+import io.fabric.sdk.android.Fabric;
 
 import static com.adrenalinelife.utils.Const.EXTRA_DATA;
 
@@ -80,6 +84,15 @@ public class CategoryEvents extends PagingFragment
         mFilter = mBundle.getString("Filter");
         final View v = inflater.inflate(R.layout.events, null);
         setHasOptionsMenu(false);
+
+        /** Fabric Initializing **/
+        Fabric.with(getActivity(), new Answers());
+        Fabric.with(getActivity(), new Crashlytics());
+        final Fabric fabric = new Fabric.Builder(getActivity())
+                .kits(new Crashlytics())
+                .debuggable(true)
+                .build();
+        Fabric.with(fabric);
 
         searchView = (SearchView) v.findViewById(R.id.searchEvents);
         searchView.setVisibility(View.GONE);

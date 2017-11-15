@@ -400,7 +400,7 @@ public class editCreateEvent extends CustomActivity {
                 Log.e("bmp", bmp);
                 saveImage(bmp);
             } catch (IOException e) {
-                // TODO Auto-generated catch block
+                //TODO Auto-generated catch block
                 e.printStackTrace();
             }
             imageView.setImageBitmap(bmp);

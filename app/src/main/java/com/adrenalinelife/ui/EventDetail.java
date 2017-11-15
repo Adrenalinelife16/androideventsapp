@@ -6,7 +6,8 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.net.Uri;
 import android.os.Build;
@@ -16,6 +17,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.FileProvider;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -32,7 +34,6 @@ import com.adrenalinelife.custom.CustomFragment;
 import com.adrenalinelife.model.Event;
 import com.adrenalinelife.utils.Commons;
 import com.adrenalinelife.utils.Const;
-import com.adrenalinelife.utils.ImageLoader;
 import com.adrenalinelife.utils.Log;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
@@ -54,6 +55,7 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
+import com.squareup.picasso.Picasso;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -96,12 +98,12 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 	private int mMiles;
 	public int locationDenied = 0;
 
+	/** Share Image */
+	public Uri bmpuri;
+	public ImageView iV;
+
 	/** The e. */
 	private Event e;
-
-	/** Share Image */
-	private Uri shareImageUri;
-	public ImageView imgShare;
 
 	@RequiresApi(api = Build.VERSION_CODES.N)
 	@Override
@@ -161,23 +163,29 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 	 */
 	@RequiresApi(api = Build.VERSION_CODES.N)
 	private void showDetails(View v) {
-		TextView lbl = (TextView) v.findViewById(R.id.lblTitle);
+		//For Share Image
+		iV = v.findViewById(R.id.shareImageView);
+		Picasso.with(getContext()).load(e.getImage()).into(iV);
+		iV.setVisibility(View.GONE);
+
+		//Event Detail Page
+		TextView lbl = v.findViewById(R.id.lblTitle);
 		lbl.setText(e.getTitle());
 
-		lbl = (TextView) v.findViewById(R.id.lblAddress);
+		lbl = v.findViewById(R.id.lblAddress);
 		lbl.setText(e.getAddress());
 
-		lbl = (TextView) v.findViewById(R.id.lblAdress2);
+		lbl = v.findViewById(R.id.lblAdress2);
 		lbl.setText(e.getCitystate() + " " + e.getZip());
 
 		Log.e("Description = ", e.getDesc());
-		lbl = (TextView) v.findViewById(R.id.lblDesc);
+		lbl = v.findViewById(R.id.lblDesc);
 		lbl.setText(e.getDesc());
 
-		lbl = (TextView) v.findViewById(R.id.lblDate);
+		lbl = v.findViewById(R.id.lblDate);
 		lbl.setText(Commons.millsToDate(e.getStartDateTime()));
 
-		lbl = (TextView) v.findViewById(R.id.lblDate2);
+		lbl = v.findViewById(R.id.lblDate2);
 		if (e.getStartTime().equals(e.getEndTime())) {
 			lbl.setVisibility(View.GONE);
 		} else {
@@ -187,11 +195,11 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 		}
 
 		if (locationDenied == 1) {
-			mDistance = (TextView) v.findViewById(R.id.distance_event);
+			mDistance = v.findViewById(R.id.distance_event);
 			mDistance.setText(" " + mMiles);
 		}
 		if (locationDenied == 0) {
-			mDistance = (TextView) v.findViewById(R.id.distance_event);
+			mDistance = v.findViewById(R.id.distance_event);
 			mDistance.setVisibility(View.GONE);
 		}
 	}
@@ -305,7 +313,6 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 			setupMarker();
 		}
 	}
-
 	/**
 	 * This method simply place a few dummy location markers on Map View. You
 	 * can write your own logic for loading the locations and placing the marker
@@ -366,26 +373,32 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 	{
 		if (item.getItemId() == R.id.menu_share)
 		{
-			getLocalBitmapUri();
+			/** Fabric **/
+			Answers.getInstance().logCustom(new CustomEvent("Share_Event")
+					.putCustomAttribute("Event Name", e.getTitle()));
+			getLocalBitmapUri(iV);
 			Intent i = new Intent(Intent.ACTION_SEND);
 			i.setType("image/*");
-			i.putExtra(Intent.EXTRA_STREAM, shareImageUri);
-			i.putExtra(Intent.EXTRA_TEXT, e.getTitle() + " - " + "Find more local events and activities like this one by downloading the Adrenaline Life app now! #FindYourLife" + " - " + "www.onelink.to/life");
+			i.putExtra(Intent.EXTRA_STREAM, bmpuri);
+			i.putExtra(Intent.EXTRA_TEXT, e.getTitle() + " - " + "Find more local events and activities like this one by downloading the Adrenaline app now! #FindYourLife" + " - " + "www.onelink.to/life");
 			startActivity(Intent.createChooser(i, getString(R.string.share)));
 		}
 		else //(item.getItemId() == R.id.menu_fav)
 		{
+			/** Fabric **/
+			Answers.getInstance().logCustom(new CustomEvent("Fav_Event")
+					.putCustomAttribute("Event Name", e.getTitle()));
 			e.setFav(!e.isFav());
 			if (e.isFav())
 			{
 				item.setIcon(R.drawable.ic_fav_orange);
-				Toast.makeText(parent, R.string.msg_add_fav, Toast.LENGTH_SHORT).show();
+				StyleableToast.makeText(getActivity(), "Event added to favorites", Toast.LENGTH_LONG, R.style.ToastGranted).show();
 			}
 			else
 			{
 				item.setIcon(R.drawable.ic_fav);
 				item.setTitle(R.string.add_to_fav);
-				Toast.makeText(parent, R.string.msg_rem_fav, Toast.LENGTH_SHORT).show();
+				StyleableToast.makeText(getActivity(), "Event removed from favorites", Toast.LENGTH_LONG, R.style.ToastDenied).show();
 			}
 			final ProgressDialog dia = parent
 					.showProgressDia(R.string.alert_loading);
@@ -428,40 +441,27 @@ public class EventDetail extends CustomFragment implements GoogleApiClient.Conne
 		}
 		return null;
 	}
-	public Uri getLocalBitmapUri() {
-		// Extract Bitmap from ImageView drawable
+	public Uri getLocalBitmapUri(ImageView iV) {
+		Drawable drawable = iV.getDrawable();
 		Bitmap bmp;
-		if (e.getImage() != "") {
-			bmp = loader.loadImage(e.getImage(),
-					new ImageLoader.ImageLoadedListener() {
-						@Override
-						public void imageLoaded(Bitmap bm)
-						{
-							if (bm != null)
-								Toast.makeText(parent, "No BitMap", Toast.LENGTH_SHORT).show();
-								imgShare.setImageBitmap(bmNoImg);
-						}
-					});
+		if (drawable instanceof BitmapDrawable){
+			bmp = ((BitmapDrawable) iV.getDrawable()).getBitmap();
 		} else {
-			//Get Bitmap for Drawable File no_image.png
-			bmp = BitmapFactory.decodeResource(getContext().getResources(), R.drawable.no_imagebig);
+			return null;
 		}
 		// Store image to default external storage directory
-		Uri bmpUri = null;
+		Uri u = null;
 		try {
-			File file =  new File(Environment.getExternalStoragePublicDirectory(
-					Environment.DIRECTORY_DOWNLOADS), "share_image_" + System.currentTimeMillis() + ".png");
+			File file =  new File(getActivity().getExternalFilesDir(Environment.DIRECTORY_PICTURES), "share_image_" + System.currentTimeMillis() + ".png");
 			file.getParentFile().mkdirs();
 			FileOutputStream out = new FileOutputStream(file);
 			bmp.compress(Bitmap.CompressFormat.PNG, 90, out);
 			out.close();
-			bmpUri = Uri.fromFile(file);
+			u = FileProvider.getUriForFile(getActivity(), "com.codepath.fileprovider", file);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		shareImageUri = bmpUri;
-		return bmpUri;
+		bmpuri = u;
+		return bmpuri;
 	}
-
-
 }

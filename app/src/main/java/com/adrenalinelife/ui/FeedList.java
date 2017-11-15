@@ -33,8 +33,12 @@ import com.adrenalinelife.utils.ImageUtils;
 import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
+import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.answers.Answers;
 
 import java.util.ArrayList;
+
+import io.fabric.sdk.android.Fabric;
 
 
 public class FeedList extends CustomFragment
@@ -53,6 +57,15 @@ public class FeedList extends CustomFragment
 		super.onCreateView(inflater, container, savedInstanceState);
 		final View v = inflater.inflate(R.layout.programs, null);
 		setFeedList(v);
+
+		/** Fabric Initializing **/
+		Fabric.with(getActivity(), new Answers());
+		Fabric.with(getActivity(), new Crashlytics());
+		final Fabric fabric = new Fabric.Builder(getActivity())
+				.kits(new Crashlytics())
+				.debuggable(true)
+				.build();
+		Fabric.with(fabric);
 
 		SwipeRefresh = (SwipeRefreshLayout) v.findViewById(R.id.EventsRefresh);
 		SwipeRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {

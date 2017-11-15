@@ -14,6 +14,11 @@ import com.adrenalinelife.utils.Const;
 import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
+import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.answers.Answers;
+import com.crashlytics.android.answers.CustomEvent;
+
+import io.fabric.sdk.android.Fabric;
 
 /**
  * Created by Chazz Romeo on 7/10/2017.
@@ -31,6 +36,15 @@ public abstract class AutoLogin extends CustomActivity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.login);
+
+		/** Fabric Initializing **/
+		Fabric.with(this, new Answers());
+		Fabric.with(this, new Crashlytics());
+		final Fabric fabric = new Fabric.Builder(this)
+				.kits(new Crashlytics())
+				.debuggable(true)
+				.build();
+		Fabric.with(fabric);
 
 		setTouchNClick(R.id.button_login_submit);
 		setTouchNClick(R.id.button_reg);
@@ -88,6 +102,10 @@ public abstract class AutoLogin extends CustomActivity
 									.apply();
 							setResult(RESULT_OK);
 							Log.v("User_ID", StaticData.User_iD);
+
+							/** Fabric **/
+							Answers.getInstance().logCustom(new CustomEvent("User_Logged_In"));
+
 							finish();
 						}
 					}

@@ -1,18 +1,18 @@
 package com.adrenalinelife.ui;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
 import android.os.Bundle;
-import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 import com.adrenalinelife.R;
 import com.adrenalinelife.custom.CustomFragment;
+import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.answers.Answers;
+import com.crashlytics.android.answers.CustomEvent;
+
+import io.fabric.sdk.android.Fabric;
 
 public class DiscoverEvents extends CustomFragment {
 
@@ -46,12 +46,25 @@ public class DiscoverEvents extends CustomFragment {
         final View v = inflater.inflate(R.layout.discover_events, null);
         setHasOptionsMenu(false);
 
+        /** Fabric Initializing **/
+        Fabric.with(getActivity(), new Answers());
+        Fabric.with(getActivity(), new Crashlytics());
+        final Fabric fabric = new Fabric.Builder(getActivity())
+                .kits(new Crashlytics())
+                .debuggable(true)
+                .build();
+        Fabric.with(fabric);
+
 
         //yoga
         yogaButton = (ImageButton) v.findViewById(R.id.b_yoga);
         yogaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
+
+                /** Fabric **/
+                Answers.getInstance().logCustom(new CustomEvent("Categories_Discover")
+                        .putCustomAttribute("Category", "Yoga"));
 
                 mBundle = new Bundle();
                 mBundle.putString("Filter", "yoga");
@@ -71,6 +84,9 @@ public class DiscoverEvents extends CustomFragment {
         basketballButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
+                /** Fabric **/
+                Answers.getInstance().logCustom(new CustomEvent("Categories_Discover")
+                        .putCustomAttribute("Category", "Basketball"));
                 mBundle = new Bundle();
                 mBundle.putString("Filter", "basketball");
 
@@ -88,6 +104,9 @@ public class DiscoverEvents extends CustomFragment {
         soccerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
+                /** Fabric **/
+                Answers.getInstance().logCustom(new CustomEvent("Categories_Discover")
+                        .putCustomAttribute("Category", "Soccer"));
                 mBundle = new Bundle();
                 mBundle.putString("Filter", "soccer");
                 CategoryEvents catEvents = new CategoryEvents();
@@ -105,6 +124,9 @@ public class DiscoverEvents extends CustomFragment {
         golfButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
+                /** Fabric **/
+                Answers.getInstance().logCustom(new CustomEvent("Categories_Discover")
+                        .putCustomAttribute("Category", "Golf"));
                 mBundle = new Bundle();
                 mBundle.putString("Filter", "golf");
                 CategoryEvents catEvents = new CategoryEvents();
@@ -121,6 +143,9 @@ public class DiscoverEvents extends CustomFragment {
         frisbeeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
+                /** Fabric **/
+                Answers.getInstance().logCustom(new CustomEvent("Categories_Discover")
+                        .putCustomAttribute("Category", "Frisbee"));
                 mBundle = new Bundle();
                 mBundle.putString("Filter", "frisbee");
                 CategoryEvents catEvents = new CategoryEvents();
@@ -137,6 +162,9 @@ public class DiscoverEvents extends CustomFragment {
         tennisButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
+                /** Fabric **/
+                Answers.getInstance().logCustom(new CustomEvent("Categories_Discover")
+                        .putCustomAttribute("Category", "Tennis"));
                 mBundle = new Bundle();
                 mBundle.putString("Filter", "tennis");
                 CategoryEvents catEvents = new CategoryEvents();
@@ -153,6 +181,9 @@ public class DiscoverEvents extends CustomFragment {
         fishingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
+                /** Fabric **/
+                Answers.getInstance().logCustom(new CustomEvent("Categories_Discover")
+                        .putCustomAttribute("Category", "Fishing"));
                 mBundle = new Bundle();
                 mBundle.putString("Filter", "fishing");
                 CategoryEvents catEvents = new CategoryEvents();
@@ -170,6 +201,9 @@ public class DiscoverEvents extends CustomFragment {
         baseballButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
+                /** Fabric **/
+                Answers.getInstance().logCustom(new CustomEvent("Categories_Discover")
+                        .putCustomAttribute("Category", "Baseball/Softball"));
                 mBundle = new Bundle();
                 mBundle.putString("Filter", "baseball");
                 CategoryEvents catEvents = new CategoryEvents();
@@ -186,6 +220,9 @@ public class DiscoverEvents extends CustomFragment {
         kickballButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
+                /** Fabric **/
+                Answers.getInstance().logCustom(new CustomEvent("Categories_Discover")
+                        .putCustomAttribute("Category", "Kickball"));
                 mBundle = new Bundle();
                 mBundle.putString("Filter", "kickball");
                 CategoryEvents catEvents = new CategoryEvents();
@@ -202,6 +239,9 @@ public class DiscoverEvents extends CustomFragment {
         tablegamesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
+                /** Fabric **/
+                Answers.getInstance().logCustom(new CustomEvent("Categories_Discover")
+                        .putCustomAttribute("Category", "Table Games"));
                 mBundle = new Bundle();
                 mBundle.putString("Filter", "table");
                 CategoryEvents catEvents = new CategoryEvents();
@@ -218,6 +258,9 @@ public class DiscoverEvents extends CustomFragment {
         billiardsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
+                /** Fabric **/
+                Answers.getInstance().logCustom(new CustomEvent("Categories_Discover")
+                        .putCustomAttribute("Category", "Billiards"));
                 mBundle = new Bundle();
                 mBundle.putString("Filter", "billiards");
                 CategoryEvents catEvents = new CategoryEvents();
@@ -234,6 +277,9 @@ public class DiscoverEvents extends CustomFragment {
         fitnessButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
+                /** Fabric **/
+                Answers.getInstance().logCustom(new CustomEvent("Categories_Discover")
+                        .putCustomAttribute("Category", "Fitness"));
                 mBundle = new Bundle();
                 mBundle.putString("Filter", "fitness");
                 CategoryEvents catEvents = new CategoryEvents();
@@ -250,6 +296,9 @@ public class DiscoverEvents extends CustomFragment {
         climbingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
+                /** Fabric **/
+                Answers.getInstance().logCustom(new CustomEvent("Categories_Discover")
+                        .putCustomAttribute("Category", "Climbing"));
                 mBundle = new Bundle();
                 mBundle.putString("Filter", "climbing");
                 CategoryEvents catEvents = new CategoryEvents();
@@ -266,6 +315,9 @@ public class DiscoverEvents extends CustomFragment {
         lacrosseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
+                /** Fabric **/
+                Answers.getInstance().logCustom(new CustomEvent("Categories_Discover")
+                        .putCustomAttribute("Category", "Lacrosse"));
                 mBundle = new Bundle();
                 mBundle.putString("Filter", "lacrosse");
                 CategoryEvents catEvents = new CategoryEvents();
@@ -282,6 +334,9 @@ public class DiscoverEvents extends CustomFragment {
         footballButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
+                /** Fabric **/
+                Answers.getInstance().logCustom(new CustomEvent("Categories_Discover")
+                        .putCustomAttribute("Category", "Football"));
                 mBundle = new Bundle();
                 mBundle.putString("Filter", "football");
                 CategoryEvents catEvents = new CategoryEvents();
@@ -298,6 +353,9 @@ public class DiscoverEvents extends CustomFragment {
         runningButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
+                /** Fabric **/
+                Answers.getInstance().logCustom(new CustomEvent("Categories_Discover")
+                        .putCustomAttribute("Category", "Running"));
                 mBundle = new Bundle();
                 mBundle.putString("Filter", "running");
                 CategoryEvents catEvents = new CategoryEvents();
@@ -314,6 +372,9 @@ public class DiscoverEvents extends CustomFragment {
         ridingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
+                /** Fabric **/
+                Answers.getInstance().logCustom(new CustomEvent("Categories_Discover")
+                        .putCustomAttribute("Category", "Riding"));
                 mBundle = new Bundle();
                 mBundle.putString("Filter", "riding");
                 CategoryEvents catEvents = new CategoryEvents();
@@ -330,6 +391,9 @@ public class DiscoverEvents extends CustomFragment {
         watergamesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
+                /** Fabric **/
+                Answers.getInstance().logCustom(new CustomEvent("Categories_Discover")
+                        .putCustomAttribute("Category", "Water Games"));
                 mBundle = new Bundle();
                 mBundle.putString("Filter", "water");
                 CategoryEvents catEvents = new CategoryEvents();
@@ -346,6 +410,9 @@ public class DiscoverEvents extends CustomFragment {
         campingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
+                /** Fabric **/
+                Answers.getInstance().logCustom(new CustomEvent("Categories_Discover")
+                        .putCustomAttribute("Category", "Camps"));
                 mBundle = new Bundle();
                 mBundle.putString("Filter", "camp");
                 CategoryEvents catEvents = new CategoryEvents();
@@ -362,6 +429,9 @@ public class DiscoverEvents extends CustomFragment {
         bowlingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view ) {
+                /** Fabric **/
+                Answers.getInstance().logCustom(new CustomEvent("Categories_Discover")
+                        .putCustomAttribute("Category", "Bowling"));
                 mBundle = new Bundle();
                 mBundle.putString("Filter", "bowling");
                 CategoryEvents catEvents = new CategoryEvents();

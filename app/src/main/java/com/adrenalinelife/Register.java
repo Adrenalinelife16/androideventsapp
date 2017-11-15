@@ -14,6 +14,12 @@ import com.adrenalinelife.utils.Const;
 import com.adrenalinelife.utils.Log;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
+import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.answers.Answers;
+import com.crashlytics.android.answers.CustomEvent;
+
+import io.fabric.sdk.android.Fabric;
+
 /**
  * The Class Register is the Activity class that is launched when the user
  * clicks on Register button in Login screen and it allow user to register him
@@ -38,6 +44,16 @@ public class Register extends CustomActivity {
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.register_user);
+
+		/** Fabric Initializing **/
+		Fabric.with(this, new Answers());
+		Fabric.with(this, new Crashlytics());
+		final Fabric fabric = new Fabric.Builder(this)
+				.kits(new Crashlytics())
+				.debuggable(true)
+				.build();
+		Fabric.with(fabric);
+
 
 		setTouchNClick(R.id.button_reg_cancel);
 		setTouchNClick(R.id.button_reg_submit);
@@ -124,6 +140,8 @@ public class Register extends CustomActivity {
 							Utils.showDialog(THIS, st.getMessage());
 						else
 						{
+							/** Fabric **/
+							Answers.getInstance().logCustom(new CustomEvent("User_Registered"));
 							//Create Bundle for Login
 							mBundle = new Bundle();
 							mBundle.putString("email", mNiceName);

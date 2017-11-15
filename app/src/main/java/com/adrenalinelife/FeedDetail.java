@@ -12,6 +12,10 @@ import com.adrenalinelife.custom.CustomActivity;
 import com.adrenalinelife.model.Feed;
 import com.adrenalinelife.utils.Commons;
 import com.adrenalinelife.utils.Const;
+import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.answers.Answers;
+
+import io.fabric.sdk.android.Fabric;
 
 /**
  * The Class FeedDetail is the Activity class that is launched when the user
@@ -26,6 +30,15 @@ public class FeedDetail extends CustomActivity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.web);
+
+		/** Fabric Initializing **/
+		Fabric.with(this, new Answers());
+		Fabric.with(this, new Crashlytics());
+		final Fabric fabric = new Fabric.Builder(this)
+				.kits(new Crashlytics())
+				.debuggable(true)
+				.build();
+		Fabric.with(fabric);
 
 		WebView w = (WebView) findViewById(R.id.web);
 		w.getSettings().setBuiltInZoomControls(true);

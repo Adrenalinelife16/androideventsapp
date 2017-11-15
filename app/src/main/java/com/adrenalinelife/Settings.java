@@ -9,6 +9,10 @@ import android.widget.TextView;
 import com.adrenalinelife.custom.CustomActivity;
 import com.adrenalinelife.utils.Const;
 import com.adrenalinelife.utils.StaticData;
+import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.answers.Answers;
+
+import io.fabric.sdk.android.Fabric;
 
 /**
  * Created by Chazz Romeo on 7/10/2017.
@@ -22,6 +26,16 @@ public class Settings extends CustomActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings);
+
+        /** Fabric Initializing **/
+        Fabric.with(this, new Answers());
+        Fabric.with(this, new Crashlytics());
+        final Fabric fabric = new Fabric.Builder(this)
+                .kits(new Crashlytics())
+                .debuggable(true)
+                .build();
+        Fabric.with(fabric);
+
         mLogin = (TextView) findViewById(R.id.Login);
         mLogout = (TextView) findViewById(R.id.Logout);
 
