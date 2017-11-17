@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/main_color_gray_lt"
-              android:orientation="vertical"
-    >
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/adrenaline_grey"
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/vTabsC"
@@ -21,14 +20,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:enabled="false"
-            android:text="@string/my_cal"/>
+            android:text="@string/my_cal" />
 
         <View
             android:id="@+id/view"
             style="@style/tab_divider"
             android:layout_width="1dp"
-            android:layout_height="match_parent"
-            />
+            android:layout_height="match_parent" />
 
         <Button
             android:id="@+id/favButton"
@@ -36,14 +34,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/my_fav"/>
+            android:text="@string/my_fav" />
 
         <View
             android:id="@+id/view2"
             style="@style/tab_divider"
             android:layout_width="1dp"
-            android:layout_height="match_parent"
-            />
+            android:layout_height="match_parent" />
 
         <Button
             android:id="@+id/attendButton"
@@ -73,7 +70,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:background="@drawable/arrow_left"/>
+                android:background="@drawable/arrow_left" />
         </RelativeLayout>
 
         <TextView
@@ -82,8 +79,8 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="@string/app_name"
-            android:textColor="@color/main_color_gray_dk"
-            android:textSize="@dimen/txt_16sp"/>
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_16sp" />
 
         <RelativeLayout
             android:id="@+id/next"
@@ -96,7 +93,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:background="@drawable/arrow_right"/>
+                android:background="@drawable/arrow_right" />
         </RelativeLayout>
     </RelativeLayout>
 
@@ -115,7 +112,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="S"/>
+            android:text="S" />
 
         <TextView
             android:id="@id/textView1"
@@ -123,7 +120,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="M"/>
+            android:text="M" />
 
         <TextView
             android:id="@id/textView1"
@@ -131,7 +128,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="T"/>
+            android:text="T" />
 
         <TextView
             android:id="@id/textView1"
@@ -139,7 +136,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="W"/>
+            android:text="W" />
 
         <TextView
             android:id="@id/textView1"
@@ -147,7 +144,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="T"/>
+            android:text="T" />
 
         <TextView
             android:id="@id/textView1"
@@ -155,7 +152,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="F"/>
+            android:text="F" />
 
         <TextView
             android:id="@id/textView1"
@@ -163,7 +160,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="S"/>
+            android:text="S" />
     </LinearLayout>
 
     <GridView
@@ -179,7 +176,7 @@
         android:paddingRight="@dimen/pad_10dp"
         android:stretchMode="columnWidth"
         android:verticalSpacing="@dimen/pad_1dp"
-        tools:listitem="@layout/calendar_item"/>
+        tools:listitem="@layout/calendar_item" />
 
     <ListView
         android:id="@+id/list"

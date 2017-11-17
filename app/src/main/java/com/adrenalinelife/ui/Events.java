@@ -1,6 +1,7 @@
 package com.adrenalinelife.ui;
 
 import android.annotation.SuppressLint;
+import android.app.Fragment;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +10,7 @@ import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
@@ -99,6 +101,7 @@ public class Events extends PagingFragment
 				.debuggable(true)
 				.build();
 		Fabric.with(fabric);
+
 
 		//////////////////////////////////// - Initiating Views
 

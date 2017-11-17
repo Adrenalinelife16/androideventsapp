@@ -55,7 +55,7 @@ import java.util.ArrayList;
  * the app. It also creates the Navigation Drawer on left side.
  */
 public class MainActivity extends CustomActivity {
-	private static final String TAG = "initial";
+	public String TAG = "initial";
 
 	/** The drawer layout. */
 	private DrawerLayout drawerLayout;
@@ -218,6 +218,7 @@ public class MainActivity extends CustomActivity {
 		String title = null;
 		if (pos == 0)
 		{
+			TAG = "events";
 			title = getString(R.string.Events);
 			f = new Events();
 			f.setArg(null);
