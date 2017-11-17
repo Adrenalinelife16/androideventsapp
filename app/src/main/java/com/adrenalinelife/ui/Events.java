@@ -478,9 +478,9 @@ public class Events extends PagingFragment
 				lbl.setText(Commons.millsToDateTime(d.getStartDateTime()));
 			}
 
-			ImageView img = (ImageView) convertView.findViewById(R.id.img1);
+			ImageView img = convertView.findViewById(R.id.img1);
 			//Log.e("ProgramAdapter GetView");
-			ImageView shadow = (ImageView) convertView.findViewById(R.id.shadow);
+			ImageView shadow = convertView.findViewById(R.id.shadow);
 			Bitmap sh = BitmapFactory.decodeResource(getContext().getResources(), R.drawable.shadow_medium);
 			shadow.setImageBitmap(ImageUtils.getRoundedCornerBitmapLess(sh));
 
@@ -573,8 +573,6 @@ public class Events extends PagingFragment
 		}
 	}
 	////////////////////////////////////////////////////////////////////////////////////////////////
-
-
 	@RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)

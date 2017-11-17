@@ -48,7 +48,12 @@ import com.adrenalinelife.utils.Log;
 import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
+import com.afollestad.materialdialogs.MaterialDialog;
+import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.answers.Answers;
 import com.squareup.picasso.Picasso;
+
+import io.fabric.sdk.android.Fabric;
 
 /**
  * The Class CalendarView is Fragment class to hold the Calendar view.
@@ -78,6 +83,7 @@ public class CalendarView extends CustomFragment implements DateChangeListener
 	private ArrayList<Event> eventSel;
 
 	public Button mFavButton;
+	public Button mAttendButton;
 
 
 	@Override
@@ -89,6 +95,15 @@ public class CalendarView extends CustomFragment implements DateChangeListener
 		setHasOptionsMenu(true);
         //v.findViewById(R.id.vTabs).setVisibility(View.VISIBLE);
 
+		/** Fabric Initializing **/
+		Fabric.with(getActivity(), new Answers());
+		Fabric.with(getActivity(), new Crashlytics());
+		final Fabric fabric = new Fabric.Builder(getActivity())
+				.kits(new Crashlytics())
+				.debuggable(true)
+				.build();
+		Fabric.with(fabric);
+
 		mFavButton = (Button) v.findViewById(R.id.favButton);
 		mFavButton.setOnClickListener(new OnClickListener() {
 			@Override
@@ -99,6 +114,21 @@ public class CalendarView extends CustomFragment implements DateChangeListener
 				ft.add(R.id.content_frame, fE).addToBackStack("My Favorites").commit();
 			}
 		});
+
+		mAttendButton = (Button) v.findViewById(R.id.attendButton);
+		mAttendButton.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				new MaterialDialog.Builder(getContext())
+						.title("Attending Events")
+						.content("This feature is coming soon")
+						.negativeText("Dismiss")
+						.show();
+			}
+		});
+
+
+
 
 		setupEventList(v);
 		initCalendarView(v);
@@ -383,7 +413,10 @@ public class CalendarView extends CustomFragment implements DateChangeListener
 				lbl.setText(Commons.millsToDateTime(d.getStartDateTime()));
 			}
 
-			ImageView img = (ImageView) convertView.findViewById(R.id.imgSmall);
+
+			ImageView img = convertView.findViewById(R.id.imgSmall);
+			ImageView img2 = convertView.findViewById(R.id.shadowSmall);
+			Picasso.with(getContext()).load(R.drawable.shadow_medium).transform(new PicassoTransform(30,0)).into(img2);
 			Picasso.with(getContext()).load(d.getImage()).transform(new PicassoTransform(30,0)).placeholder(R.drawable.no_imagebig).into(img);
 
 

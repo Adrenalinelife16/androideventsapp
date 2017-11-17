@@ -46,12 +46,12 @@
             />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/attendButton"
             style="@style/tab_btn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/my_tkcts"/>
+            android:text="@string/my_tkcts" />
 
     </LinearLayout>
 

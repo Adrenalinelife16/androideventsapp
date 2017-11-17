@@ -321,7 +321,7 @@ public class CategoryEvents extends PagingFragment
             ImageView img = (ImageView) convertView.findViewById(R.id.imgSmall);
 
             ImageView shadow = (ImageView) convertView.findViewById(R.id.shadowSmall);
-            Bitmap sh = BitmapFactory.decodeResource(getContext().getResources(), R.drawable.shadow_dark);
+            Bitmap sh = BitmapFactory.decodeResource(getContext().getResources(), R.drawable.shadow_medium);
             shadow.setImageBitmap(ImageUtils.getRoundedCornerBitmapLess(sh));
 
             Picasso.with(getContext()).load(d.getImage()).transform(new PicassoTransform(40,0)).placeholder(R.drawable.no_image).into(img);

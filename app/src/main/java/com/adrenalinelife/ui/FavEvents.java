@@ -38,12 +38,12 @@ import com.adrenalinelife.model.Event;
 import com.adrenalinelife.utils.Commons;
 import com.adrenalinelife.utils.Const;
 import com.adrenalinelife.utils.ImageLoader;
-import com.adrenalinelife.utils.ImageLoader.ImageLoadedListener;
 import com.adrenalinelife.utils.ImageUtils;
 import com.adrenalinelife.utils.Log;
 import com.adrenalinelife.utils.StaticData;
 import com.adrenalinelife.utils.Utils;
 import com.adrenalinelife.web.WebHelper;
+import com.afollestad.materialdialogs.MaterialDialog;
 import com.crashlytics.android.Crashlytics;
 import com.crashlytics.android.answers.Answers;
 import com.squareup.picasso.Picasso;
@@ -74,6 +74,7 @@ public class FavEvents extends PagingFragment
 
     /** The Events list. */
     private static final ArrayList<Event> pList = new ArrayList<>();
+    private static final ArrayList<Event> dList = new ArrayList<>();
 
     public static String stringOfFav;
 
@@ -82,6 +83,9 @@ public class FavEvents extends PagingFragment
     public LinearLayout mTabs;
 
     public Button mCalButton;
+    public Button mAttendButton;
+
+    public boolean i = false;
 
     ////////////////////////////////////////////////////////////////////////////////////////////////
     @Override
@@ -121,6 +125,17 @@ public class FavEvents extends PagingFragment
             }
         });
 
+        mAttendButton = (Button) v.findViewById(R.id.attendButton);
+        mAttendButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new MaterialDialog.Builder(getContext())
+                        .title("Attending Events")
+                        .content("This feature is coming soon")
+                        .negativeText("Dismiss")
+                        .show();
+            }
+        });
 
         performCheck();
         setProgramList(v);
@@ -238,25 +253,25 @@ public class FavEvents extends PagingFragment
         @Override
         public int getCount()
         {
-            return pList.size();
+            return 0;
         }
 
         @Override
         public Event getItem(int position)
         {
-            return pList.get(position);
+            return null;
         }
 
         @Override
         public long getItemId(int position)
         {
-            return position;
+            return 0;
         }
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent)
         {
-            return convertView;
+            return null;
         }
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -299,52 +314,57 @@ public class FavEvents extends PagingFragment
         @Override
         public View getView(int position, View convertView, ViewGroup parent)
         {
-            if (convertView == null)
-                convertView = getLayoutInflater(null).inflate(
-                        R.layout.program_item, null);
+            if (i == true) {
+                if (convertView == null)
+                    convertView = getLayoutInflater(null).inflate(
+                            R.layout.program_item, null);
 
-            Event d = getItem(position);
-            TextView lbl = (TextView) convertView.findViewById(R.id.lbl1);
-            lbl.setText(d.getTitle());
+                Event d = getItem(position);
+                TextView lbl = (TextView) convertView.findViewById(R.id.lbl1);
+                lbl.setText(d.getTitle());
 
-            lbl = (TextView) convertView.findViewById(R.id.lbl3);
+                lbl = (TextView) convertView.findViewById(R.id.lbl3);
 
-            // 12:00AM to All Day
-            if (Commons.millsToDateTime(d.getStartDateTime()).contains("Today - 12:00 AM")){
-                lbl.setText("Today - " + Commons.mToDate(d.getStartDateTime()));
-            } else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Monday 12:00 AM")){
-                lbl.setText("Monday - " + Commons.mToDate(d.getStartDateTime()));
-            }
-            else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Tuesday 12:00 AM")){
-                lbl.setText("Tuesday - " + Commons.mToDate(d.getStartDateTime()));
-            }
-            else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Wednesday 12:00 AM")){
-                lbl.setText("Wednesday - " + Commons.mToDate(d.getStartDateTime()));
-            }
-            else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Thursday 12:00 AM")){
-                lbl.setText("Thursday - " + Commons.mToDate(d.getStartDateTime()));
-            }
-            else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Friday 12:00 AM")){
-                lbl.setText("Friday - " + Commons.mToDate(d.getStartDateTime()));
-            }
-            else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Saturday 12:00 AM")){
-                lbl.setText("Saturday - " + Commons.mToDate(d.getStartDateTime()));
-            }
-            else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Sunday 12:00 AM")){
-                lbl.setText("Sunday - " + Commons.mToDate(d.getStartDateTime()));
-            }
-            else {
-                lbl.setText(Commons.millsToDateTime(d.getStartDateTime()));
-            }
+                // 12:00AM to All Day
+                if (Commons.millsToDateTime(d.getStartDateTime()).contains("Today - 12:00 AM")){
+                    lbl.setText("Today - " + Commons.mToDate(d.getStartDateTime()));
+                } else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Monday 12:00 AM")){
+                    lbl.setText("Monday - " + Commons.mToDate(d.getStartDateTime()));
+                }
+                else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Tuesday 12:00 AM")){
+                    lbl.setText("Tuesday - " + Commons.mToDate(d.getStartDateTime()));
+                }
+                else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Wednesday 12:00 AM")){
+                    lbl.setText("Wednesday - " + Commons.mToDate(d.getStartDateTime()));
+                }
+                else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Thursday 12:00 AM")){
+                    lbl.setText("Thursday - " + Commons.mToDate(d.getStartDateTime()));
+                }
+                else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Friday 12:00 AM")){
+                    lbl.setText("Friday - " + Commons.mToDate(d.getStartDateTime()));
+                }
+                else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Saturday 12:00 AM")){
+                    lbl.setText("Saturday - " + Commons.mToDate(d.getStartDateTime()));
+                }
+                else if (Commons.millsToDateTime(d.getStartDateTime()).contains("Sunday 12:00 AM")){
+                    lbl.setText("Sunday - " + Commons.mToDate(d.getStartDateTime()));
+                }
+                else {
+                    lbl.setText(Commons.millsToDateTime(d.getStartDateTime()));
+                }
 
-            ImageView img = (ImageView) convertView.findViewById(R.id.img1);
+                ImageView img = (ImageView) convertView.findViewById(R.id.img1);
 
-            //Log.e("ProgramAdapter GetView");
-            ImageView shadow = (ImageView) convertView.findViewById(R.id.shadow);
-            Bitmap sh = BitmapFactory.decodeResource(getContext().getResources(), R.drawable.shadow_medium);
-            shadow.setImageBitmap(ImageUtils.getRoundedCornerBitmapLess(sh));
+                //Log.e("ProgramAdapter GetView");
+                ImageView shadow = (ImageView) convertView.findViewById(R.id.shadow);
+                Bitmap sh = BitmapFactory.decodeResource(getContext().getResources(), R.drawable.shadow_medium);
+                shadow.setImageBitmap(ImageUtils.getRoundedCornerBitmapLess(sh));
 
-            Picasso.with(getContext()).load(d.getImage()).transform(new PicassoTransform(40,0)).placeholder(R.drawable.no_imagebig).into(img);
+                Picasso.with(getContext()).load(d.getImage()).transform(new PicassoTransform(40,0)).placeholder(R.drawable.no_imagebig).into(img);
+
+            } else {
+                return null;
+            }
 
             return convertView;
         }
@@ -380,12 +400,14 @@ public class FavEvents extends PagingFragment
             @SuppressWarnings("unchecked")
             @Override
             protected void publishResults(CharSequence newText, FilterResults results) {
+                fList.clear();
                 if (results.count > 0) {
                     fList.clear();
                     fList.addAll((ArrayList<Event>) results.values);
                     final View v = inflater.inflate(R.layout.events, null);
                     setSearchList(v, fList);
                     notifyDataSetChanged();
+                    i = true;
                 } else {
                     Toast.makeText(getActivity(), "No Results Found!",Toast.LENGTH_SHORT).show();
                     fList.clear();
@@ -405,8 +427,8 @@ public class FavEvents extends PagingFragment
         filterResults.setAdapter(favA);
         String favFilter = "f" + stringOfFav;
         favA.getFilter().filter(favFilter);
-        adapter.notifyDataSetChanged();
-        favA.notifyDataSetChanged();
+        //adapter.notifyDataSetChanged();
+        //favA.notifyDataSetChanged();
     }
     public static String checkFavoriteEvents2()
     {
