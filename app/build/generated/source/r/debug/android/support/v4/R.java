@@ -93,6 +93,7 @@ public final class R {
         public static final int right_icon = 0x7f09019e;
         public static final int right_side = 0x7f09019f;
         public static final int status_bar_latest_event_content = 0x7f0901d7;
+        public static final int tag_transition_group = 0x7f0901e2;
         public static final int text = 0x7f0901e6;
         public static final int text2 = 0x7f0901e8;
         public static final int time = 0x7f0901f7;
@@ -120,7 +121,7 @@ public final class R {
         public static final int notification_template_part_time = 0x7f0c006f;
     }
     public static final class string {
-        public static final int status_bar_notification_info_overflow = 0x7f1000d3;
+        public static final int status_bar_notification_info_overflow = 0x7f1000d5;
     }
     public static final class style {
         public static final int TextAppearance_Compat_Notification = 0x7f110105;
