@@ -73,6 +73,9 @@ public class Event implements Serializable
 	/** The id. */
 	private String id;
 
+	/** The id. */
+	private String category;
+
 
 	/**
 	 * Instantiates a new event.
@@ -461,4 +464,11 @@ public class Event implements Serializable
 		this.zip = zip;
 	}
 
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
 }

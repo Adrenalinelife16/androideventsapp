@@ -66,6 +66,8 @@ public class WebAccess
 
 	public static final String GET_FAV_EVENTS = "api/getFavEvents";
 
+	public static final String GET_CATS = "api/event_cat";
+
 	protected static final String ADD_REMOVE_FAV = "api/addRemoveFav";
 
 	protected static final String USER_HAS_FAV_EVENT = "api/isFavourite";
@@ -119,7 +121,7 @@ public class WebAccess
 	 * @param save the save
 	 * @return the string
 	 */
-	protected static String executeGetRequest(String restUrl, boolean save)
+	public static String executeGetRequest(String restUrl, boolean save)
 	{
 		/*long time = System.currentTimeMillis();
 		if (save && time - StaticData.pref.getLong(restUrl, 0) < Const.TEN_MIN)
@@ -138,13 +140,14 @@ public class WebAccess
 				if (res != null)
 				{
 					String strRes = EntityUtils.toString(res.getEntity());
-					Log.e("URL = " + BASE_URL + restUrl);
+					Log.e("GET REQUEST URL = " + BASE_URL + restUrl);
 					// Log.e("PARAM="+param.toString());
-					Log.e("RES = " + strRes);
+					Log.e("GET REQUEST RES = " + strRes);
 					if (strRes != null)
 					{
 						if (save)
 							saveToFile(restUrl, null, strRes);
+						Log.e("String Response from GET Request = ", strRes);
 						return strRes;
 					}
 				}

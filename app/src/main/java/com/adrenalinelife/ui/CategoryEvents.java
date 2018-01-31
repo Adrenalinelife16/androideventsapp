@@ -337,41 +337,20 @@ public class CategoryEvents extends PagingFragment
                 ArrayList<Event> tempList = new ArrayList<>();
                 String q = newText.toString().substring(1);
 
-                //SEARCH FILTER
-                if (newText.toString().toLowerCase().startsWith("x")) {
-                    Log.e(q);
-                    Event item;
-                    for (int i = 0; i < fList.size(); i++) {
-
-                        String eName;
-                        String eDesc;
-                        eName = fList.get(i).getTitle().toLowerCase();
-                        eDesc = fList.get(i).getDesc().toLowerCase();
-
-                        if (eName.contains(q.toLowerCase()) || eDesc.contains(q.toLowerCase())) {
-                            item = fList.get(i);
-                            tempList.add(item);
-                            Log.e(item);
-                        }
-                        filterResults.values = tempList;
-                        filterResults.count = tempList.size();
-                    }
-                }
                 //CATEGORY FILTER
                 if (mFilter.toLowerCase() != null){
                     Log.e(newText);
                     Event item;
                     for (int i = 0; i < fList.size(); i++) {
 
-                        String eName;
-                        String eDesc;
-                        eName = fList.get(i).getTitle().toLowerCase();
-                        eDesc = fList.get(i).getDesc().toLowerCase();
+                        String eCat;
+                        eCat = fList.get(i).getCategory().toLowerCase();
+                        Log.e("eCat = ", eCat);
 
-                        if (eName.contains(q.toLowerCase()) || eDesc.contains(q.toLowerCase())) {
+                        if (eCat.contains(q.toLowerCase())) {
                             item = fList.get(i);
                             tempList.add(item);
-                            Log.e(item);
+                            Log.e("Item in the for loop = ", item);
                         }
                         filterResults.values = tempList;
                         filterResults.count = tempList.size();

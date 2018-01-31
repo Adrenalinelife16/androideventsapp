@@ -54,12 +54,22 @@ import com.muddzdev.styleabletoastlibrary.StyleableToast;
 import com.squareup.picasso.Picasso;
 
 import com.crashlytics.android.answers.Answers;
+
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
+import org.json.JSONObject;
+
 import io.fabric.sdk.android.Fabric;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static com.adrenalinelife.utils.Const.EXTRA_DATA;
+import static com.adrenalinelife.web.WebAccess.GET_CATS;
+import static com.adrenalinelife.web.WebAccess.GET_FAV_EVENTS;
+import static com.adrenalinelife.web.WebAccess.executeGetRequest;
+import static com.adrenalinelife.web.WebAccess.executePostRequest;
+import static com.adrenalinelife.web.WebAccess.getUserParams;
 
 public class Events extends PagingFragment
 {
@@ -101,7 +111,6 @@ public class Events extends PagingFragment
 				.debuggable(true)
 				.build();
 		Fabric.with(fabric);
-
 
 		//////////////////////////////////// - Initiating Views
 

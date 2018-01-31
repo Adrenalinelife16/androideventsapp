@@ -85,7 +85,7 @@ public class FavEvents extends PagingFragment
     public Button mCalButton;
     public Button mAttendButton;
 
-    public boolean i = false;
+    public boolean i = true;
 
     ////////////////////////////////////////////////////////////////////////////////////////////////
     @Override

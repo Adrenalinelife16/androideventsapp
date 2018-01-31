@@ -148,6 +148,8 @@ public class WebHelper extends WebAccess
 		e.setStartTime(js.getString("event_start_time"));
 		e.setImage(js.getString("event_image_url"));
 		e.setDesc(js.getString("event_content"));
+		e.setCategory(js.getString("event_category"));
+		Log.e("Events category = ", e.getCategory());
 		e.setEndDate(js.getString("event_end_date"));
 		e.setEndTime(js.getString("event_end_time"));
 		e.setLocation(js.getString("location_address") + ", "
